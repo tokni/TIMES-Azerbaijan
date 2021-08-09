@@ -1,0 +1,1 @@
+export default "Wråke, M., Karlsson, K., Kofoed-Wiuff, A., Folsland Bolkesjø, T., Lindroos, T.J., Tennbakk, B., Ogner Jåstad, E., Bosack Simonsen, M., Hagberg, M., Unger, T., Putkonen, N., Lehtilä, A. & Koljonen, T. (2021, August XX ). Nordic Clean Energy Scenarios: Results Viewer. Nordic Energy Research. Retrieved from https://cleanenergyscenarios.nordicenergy.org"
