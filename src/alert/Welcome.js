@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Octicon from "react-octicon";
 import {createBreakpoint} from 'styled-components-breakpoint';
 
-export const breakpoint = createBreakpoint({
+export const breakpoint = createBreakpoint({ //
   xs: 0,
   sm: 550,
   md: 1394,
