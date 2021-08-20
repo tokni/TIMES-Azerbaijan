@@ -17,6 +17,7 @@ import mapRegionToDataRegions from "./../data/mapRegionToDataRegions"
 import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import { CSVLink } from 'react-csv'
 import CSV_citation from "../data/citation"
+import { useTranslation } from 'react-i18next'
 
 const ChartHeader = styled.div`
   display: flex;
@@ -41,7 +42,15 @@ const ChartContainer = styled.div`
   margin-bottom: 10px;
   border-radius: 4px;
 `
-const LineChart = ({lineData, selectedScenario, selectedScenario2, selectedCountries, chartName }) => {
+const LineChart = ({
+  lineData, 
+  selectedScenario, 
+  selectedScenario2, 
+  selectedCountries, 
+  chartName, 
+  label
+}) => {
+  const [t] = useTranslation()
   let selectedDataRegions = [] 
     mapRegionToDataRegions.forEach((mapRegion) => {
         if(selectedCountries.includes(mapRegion.path_id)) {
@@ -55,28 +64,41 @@ const LineChart = ({lineData, selectedScenario, selectedScenario2, selectedCount
   if (selectedScenario2.includes("_copy"))
   selectedScenario2 = selectedScenario2.replace("_copy", "")
   let legends = new Set()
-    lineData.data.scenarios
+    /* lineData.data.scenarios
     .find(o => o.scenario.toLowerCase() === selectedScenario.toLowerCase())
     .indicators.find(o => o.indicator === chartName).regions.forEach((reg)=>{
       reg.indicatorGroups.forEach((group)=>{
         legends.add(group.indicatorGroup)
       })
-    })
+    }) */
     
   legends = selectedDataRegions
-
+  let dataFailure = "no"
   let indicatorData1 = []
   let indicatorData2 = []
   let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
     return scenario.scenario.toLowerCase() === selectedScenario.toLowerCase()
   })
+  if (!selectedScenarioData) {
+    console.log("Scenario: " + selectedScenario + " not found in data")
+    dataFailure = "Scenario: " + selectedScenario + " not found in data"
+  }
+  console.log("selectedScenarioData: ", selectedScenarioData)
+  console.log("chartName: ", chartName)
   indicatorData1 = selectedScenarioData.indicators.find((indicator) => {
+    console.log("indicator.indicator: ", indicator.indicator)
     return indicator.indicator === chartName
   })
+  console.log("indicatorData1: ", indicatorData1)
+  if (!indicatorData1) {
+    console.log("Indicator " + chartName + " not found in data")
+    dataFailure = "Indicator " + chartName + " not found in data"
+  }
   selectedScenario2 !== "" && selectedDataRegions.forEach((country, i)=>{
     let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
       return scenario.scenario.toLowerCase() === selectedScenario2.toLowerCase()
     })
+    console.log("indicatorData2: ", indicatorData2)
     indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
       return indicator.indicator === chartName
     })
@@ -121,14 +143,16 @@ const LineChart = ({lineData, selectedScenario, selectedScenario2, selectedCount
   //let tempLine = null
   return (
     <>
+    {dataFailure === "no" ?
   <ChartContainer>
     <ChartHeader>
-      <ChartTitle>{parseHtml(indicatorData1.indicator.replaceAll("CO2", "CO<sub>2</sub>"))}</ChartTitle>
+      {/* <ChartTitle>{parseHtml(indicatorData1.indicator.replaceAll("CO2", "CO<sub>2</sub>"))}</ChartTitle> */}
+      <ChartTitle>{parseHtml(t(chartName))}</ChartTitle>
       <CSVLink 
         data={getCSVData(indicatorData1, selectedScenario, indicatorData2, selectedScenario2)}
         filename={indicatorData1.indicator + " " + selectedCountries + ".csv"}
       >
-        Download as CSV</CSVLink>
+        {t("general.download-as-csv")}</CSVLink>
     </ChartHeader>
       <VictoryChart domainPadding={20}
         containerComponent={
@@ -161,7 +185,7 @@ const LineChart = ({lineData, selectedScenario, selectedScenario2, selectedCount
             key={2}
             offsetX={80}
             domain={[0, .001]}
-            label={indicatorData1.unit}
+            label={t(label)}
           />
           <VictoryGroup >
             {selectedDataRegions.map((country, i)=>{
@@ -253,7 +277,8 @@ const LineChart = ({lineData, selectedScenario, selectedScenario2, selectedCount
           />
       </VictoryChart>
       </ChartContainer>
-  </>
+  : <div>{dataFailure}</div>}
+  </> 
     )
 }
 

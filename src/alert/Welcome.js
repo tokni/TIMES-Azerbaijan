@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Octicon from "react-octicon";
 import {createBreakpoint} from 'styled-components-breakpoint';
+import { useTranslation } from "react-i18next";
+import parseHtml from "html-react-parser"
 
 export const breakpoint = createBreakpoint({ //
   xs: 0,
@@ -16,6 +18,7 @@ const AlertContainer = styled.div`
   position: ${props => props.isOpen ? 'relative' : 'absolute'};
   right: ${props => props.isOpen ? null : '35px'};
   padding: 10px;
+  padding-left: 15px;
   margin-bottom: 10px;
   margin-right: 15px;
   ${'' /* border-width: 1px;
@@ -42,7 +45,6 @@ const AlertBody = styled.div`
   margin: 0px;
   align-self: center;
   max-width: 1090px;
-  
 `;
 AlertBody.displayName = "AlertBody";
 const AlertTitle = styled.div`
@@ -50,7 +52,7 @@ const AlertTitle = styled.div`
   font-weight: 600;
   ${'' /* color: #454547; */}
   color: white;
-  max-width: 1090px
+  max-width: 1090px;
 `;
 const AlertBodyParagraph = styled.div`
   ${'' /* color: #6F7173; */}
@@ -69,7 +71,6 @@ const CloseWindowIcon = styled.div`
   justify-content: center;
   align-items: center;
   
-  
   :hover {
     cursor: pointer;
     transform: scale(1.15)
@@ -78,11 +79,11 @@ const CloseWindowIcon = styled.div`
 CloseWindowIcon.displayName = "CloseWindowIcon";
 const welcomeText = {
   "tab1": {
-    "welcome1": <p>Welcome to the Nordic Clean Energy Scenarios results viewer</p>,
-	"welcome2": <p>On this webpage you can explore the full modelling results from the Nordic Clean Energy Scenarios project, funded by Nordic Energy Research.</p>,
-	"welcome3": <p>This web tool allows you to compare the results from three different scenarios developed by the project, view the effects on the energy system when applying additional assumptions to the model, and delve deeper into the full downloadable data provided in the statistics database and model results. For further instructions on how to use the web tool and get the most out of the presented results please see, <a href="./about" style={{color: "white"}}>How to use the results viewer tool</a>. To learn more about the project and access the full report please see <a href="./how-to-use" style={{color: "white"}}>About Nordic Clean Energy Scenarios.</a></p>,
-	"welcome4": <p>All NCES scenarios reach carbon neutrality by 2050, but technology choice, fuel consumption, and cost will adapt to the options available to change assumptions on the technological readiness of CCS technologies and limitations on bioenergy availability. </p>,
-	"welcome5": <p>The results presented here are highly dependent on assumptions for technology developments and their potential availability, efficiency, and cost to just mention a few factors influencing future pathway developments. The many combinations of scenarios represented in this tool demonstrates the inherent uncertainty of using scenario modelling to predict the future Nordic energy system. What these results tell us is rather which solutions are competing, what synergies exists between low carbon energy technologies, and what factors their development is contingent on.</p>,
+    "welcome1": <div>Welcome to the Nordic Clean Energy Scenarios results viewer</div>,
+	  "welcome2": <p>On this webpage you can explore the full modelling results from the Nordic Clean Energy Scenarios project, funded by Nordic Energy Research.</p>,
+	  "welcome3": <p>This web tool allows you to compare the results from three different scenarios developed by the project, view the effects on the energy system when applying additional assumptions to the model, and delve deeper into the full downloadable data provided in the statistics database and model results. For further instructions on how to use the web tool and get the most out of the presented results please see, <a href="./about" style={{color: "white"}}>How to use the results viewer tool</a>. To learn more about the project and access the full report please see <a href="./how-to-use" style={{color: "white"}}>About Nordic Clean Energy Scenarios.</a></p>,
+	  "welcome4": <p>All NCES scenarios reach carbon neutrality by 2050, but technology choice, fuel consumption, and cost will adapt to the options available to change assumptions on the technological readiness of CCS technologies and limitations on bioenergy availability. </p>,
+	  "welcome5": <p>The results presented here are highly dependent on assumptions for technology developments and their potential availability, efficiency, and cost to just mention a few factors influencing future pathway developments. The many combinations of scenarios represented in this tool demonstrates the inherent uncertainty of using scenario modelling to predict the future Nordic energy system. What these results tell us is rather which solutions are competing, what synergies exists between low carbon energy technologies, and what factors their development is contingent on.</p>,
   },
   "tab2": {
     "welcome1": <p>The upstream sector includes oil and gas production, fossil refineries, biorefineries and PtX plants.</p>,
@@ -128,6 +129,7 @@ const welcomeText = {
 	  "welcome4": <p>The indicators illustrate differences in the structure of the energy system across the Nordic countries.</p>,
 	  "welcome5": <p>Try to select the same scenario twice and see how increase price of CO<sub>2</sub> storage or limit on import of biomass influence the indicators.</p>,
   },
+
   "tabHistory": {
     "welcome1": <p>Welcome to Nordic Energy Statistics Database visualisations.</p>,
     "welcome2": <p>The database aims for harmonising energy sector and related data across all the five Nordic countries. It will serve as a reference for research work as well as for the general public to see energy related data and selected progress indicators. </p>,
@@ -139,23 +141,23 @@ const welcomeText = {
   }
 }
 function Welcome(props) {
+  const [t] = useTranslation()
   return (
     <AlertContainer  isOpen={props.isOpen}>
-    {props.isOpen && <AlertTitle>{welcomeText[props.tab].welcome1}</AlertTitle>}
+    {props.isOpen && <AlertTitle>{parseHtml(t("welcome-text.tab1.welcome1"))}</AlertTitle>}
       {props.isOpen && props.tab === "tab1" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome5}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome3"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome4"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome5"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{welcomeText[props.tab].welcome6}</AlertBodyParagraph>
         <AlertBodyParagraph>{welcomeText[props.tab].welcome7}</AlertBodyParagraph>
         <AlertBodyParagraph>{welcomeText[props.tab].welcome8}</AlertBodyParagraph>
         <AlertBodyParagraph>{welcomeText[props.tab].welcome9}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab2" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab2.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab2.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab3" && <AlertBody>
         <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>

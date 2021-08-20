@@ -1,9 +1,9 @@
 export default 
  	 [ 
 		"Upstream Sector CO2 Emission",
-		"Fossil Refineries",
+		/* "Fossil Refineries",
 		"Primary Biomass Supply",
 		"Import/Export of Bio-Energy",
 		"RE Refineries Input",
-		"RE Refineries Output",
+		"RE Refineries Output", */
 	 ]

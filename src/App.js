@@ -234,6 +234,7 @@ export class App extends React.Component {
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
                     selectedCountries={this.state.selectedCountries}
+                    index={1}
                   />
                 )}
               />
@@ -244,6 +245,7 @@ export class App extends React.Component {
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
                     selectedCountries={this.state.selectedCountries}
+                    index={2}
                   />
                 )}
               />

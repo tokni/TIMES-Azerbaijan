@@ -8,6 +8,8 @@ import ToggleSwitch from "./ToggleSwitch";
 import { useTranslation } from "react-i18next";
 import MapContainer from "../map/MapContainer";
 import citation from "../data/citation"
+import i18next from 'i18next';
+import parseHtml from 'html-react-parser';
 
 const MenuLayout = styled.div`
   display: none;
@@ -46,6 +48,26 @@ const AppLogo = styled.img`
     cursor: pointer;
   }
 `;
+const LanguageGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-top: 20px;
+`;
+
+const LanguageButton = styled.button`
+  margin-right: 5px;
+  cursor: pointer;
+  opacity:  ${props => (props.selected ? "0.8" : "0.6")};
+  font-weight: ${props => (props.selected ? "bold" : "normal")};
+  ${'' /* box-shadow: ${props => (props.selected ? "0 3px 5px gray" : "normal")}; */}
+`;
+const LanguageTitle = styled.div`
+  margin-right: 5px;
+  margin-left: 15px;
+  color: #212121;
+  opacity: 0.8;
+`
 /* const AppLogo2 = styled.img`
   padding: 0px;
   max-width: 180px;
@@ -233,48 +255,58 @@ function ScenarioSelectionMenu(props) {
             to="/about"
             selected={props.selectedPage === "/about"}
           >
-            {t("menu.desktop.about")}
+            {parseHtml(t("menu.desktop.about"))}
           </MenuItem>
           <MenuItem
             to="/scenarios"
             selected={props.selectedPage === "/scenarios"}
           >
-            {t("menu.desktop.scenarios")}
+            {parseHtml(t("menu.desktop.scenarios"))}
           </MenuItem>
           <MenuItem
             to="/findings"
             selected={props.selectedPage === "/findings"}
           >
-            {t("menu.desktop.findings")}
+            {parseHtml(t("menu.desktop.findings"))}
           </MenuItem>
           <MenuItem
             to="/model"
             selected={props.selectedPage === "/model"}
           >
-            {t("menu.desktop.model")}
+            {parseHtml(t("menu.desktop.model"))}
           </MenuItem>
           <MenuItem
             to="/historical"
             selected={props.selectedPage === "/historical"}
           >
-            {t("menu.desktop.historical")}
+            {parseHtml(t("menu.desktop.historical"))}
           </MenuItem>
           <MenuItem
             to="/how-to-use"
             selected={props.selectedPage === "/how-to-use"}
           >
-            {t("menu.desktop.howto")}
+            {parseHtml(t("menu.desktop.howto"))}
           </MenuItem>
         </MenuRoutes>
       </MenuHeader>
       {scenarioSelectorVisible && 
       <>
         <MenuSeparatorLine />
-        <Header narrowVersion={false}>{t("general.countries")}</Header>
-          <MapContainer
-            selectedCountries={props.selectedCountries}
-            selectCountry={props.selectCountry}
-          />
+          <LanguageTitle>{parseHtml(t("general.change-language"))}</LanguageTitle>
+          <LanguageGroup>
+            <LanguageButton
+              selected={i18next.languages[0] === "dk"}
+              onClick={() => i18next.changeLanguage("dk")}
+            >
+              DK
+            </LanguageButton>
+            <LanguageButton
+              selected={i18next.languages[0] === "en"}
+              onClick={() => i18next.changeLanguage("en")}
+            >
+              EN
+            </LanguageButton>
+          </LanguageGroup>
         <MenuSeparatorLine />
       </>
       }
@@ -287,7 +319,7 @@ function ScenarioSelectionMenu(props) {
           selectedValue={props.scenarioSelection.scenarioSelectionNoOptions}
           selectedValue2={props.scenarioSelection.scenarioSelectionNoOptions2}
           scenarioCombinations={props.scenarioCombinations}
-          dimensionTitle={t("general.scenarios")}
+          dimensionTitle={parseHtml(t("general.scenarios"))}
           narrowVersion={false}
           options={props.options}
           toggleOption={props.toggleOption}
@@ -303,13 +335,11 @@ function ScenarioSelectionMenu(props) {
           }
         }}
       > 
-        
-        
         <ToggleSwitchText
           singleMode={props.scenarioSelection.scenarioSelection2 === ""}
           selected={props.scenarioSelection.showDifference}
         >
-          {t("general.scenario-difference")}
+          {parseHtml(t("general.scenario-difference"))}
         </ToggleSwitchText>
         <ToggleSwitch
           available={props.scenarioSelection.scenarioSelection2 !== ""}
@@ -321,14 +351,14 @@ function ScenarioSelectionMenu(props) {
         singleMode={props.scenarioSelection.scenarioSelection2 === ""}
         selected={props.scenarioSelection.showDifference}
       >
-        {t("general.red-minus-green")}
+        {parseHtml(t("general.red-minus-green"))}
       </ScenarioDifferenceText>}
       <MenuSeparatorLine /></>}
       <MenuFooter>
         <CopyrightNotice>
-          <CitationIntro>When using the results presented in the result viewer use the following citation:</CitationIntro>
-          <Citation>{citation}</Citation>
-          <Header> {t("general.developed-by")}</Header>
+          <CitationIntro>{parseHtml(t("general.citation-title"))}</CitationIntro>
+          <Citation>{parseHtml(t("general.citation"))}</Citation>
+          <Header> {parseHtml(t("general.developed-by"))}</Header>
           <CopyrightItem>
             <ExternalLink href="http://www.tokni.com">
               <LinkLogo src="./images/tokni.png" alt="Tøkni" data-tip="Tøkni - Nordic Software Consultancy"/>
@@ -338,7 +368,8 @@ function ScenarioSelectionMenu(props) {
             </ExternalLink>
           </CopyrightItem>
           <CopyrightItem>
-            <HelpText>If you are experiencing issues with the web tool please contact Kenneth Karlsson at The Energy Modelling Lab.</HelpText>
+            <HelpText>{parseHtml(t("general.troubleshoot-title"))}
+            </HelpText>
           </CopyrightItem>
           <CopyrightItem>
             <HelpLink href="mailto:kenneth.karlsson@energymodellinglab.com">kenneth.karlsson@ energymodellinglab.com</HelpLink>

@@ -19,6 +19,7 @@ import periods from './../data/years'
 import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import { CSVLink } from 'react-csv'
 import CSV_citation from "../data/citation"
+import { useTranslation } from 'react-i18next';
 
 const ChartContainer = styled.div`
   width: 550px;
@@ -42,6 +43,7 @@ const ChartTitle = styled.div`
   font-weight: bold;
 `
 const StackedBarChart = props => {
+  const [t] = useTranslation()
   const stackedBar = props.stackedBar
   const scenario = props.selectedScenario.includes("_copy") ? props.selectedScenario.replace("_copy", "") : props.selectedScenario
   const scenario2 = props.selectedScenario2
@@ -72,14 +74,14 @@ const StackedBarChart = props => {
     minY = Math.round(Math.min(minY, totalYearValuesNegativeScenario1[year],
       scenario2 ? totalYearValuesNegativeScenario2[year] : Infinity))
   })
-  let t = 1
+  let ttt = 1
   let i = 0
   let range = [2,4,6,8,10]
-  while(t < maxY) {
-    t = range[i%5]*Math.pow(range[4], Math.floor(i/5))
+  while(ttt < maxY) {
+    ttt = range[i%5]*Math.pow(range[4], Math.floor(i/5))
     i++
   }
-  maxY = t
+  maxY = ttt
   let u=0
   let j=0
   while(u > minY && j < 40) {
@@ -94,14 +96,17 @@ const StackedBarChart = props => {
   else 
     base = maxY
   let legends = new Set()
-  stackedBar.data.scenarios
+  /* stackedBar.data.scenarios
   .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
   .indicators.find(o => o.indicator === chartName).regions.forEach((reg)=>{
     reg.indicatorGroups.forEach((group)=>{
       legends.add(group.indicatorGroup)
     })
+  }) */
+  console.log("legends tab1 chart1: ", Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})))
+  Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})).forEach((entry) => {
+    legends.add(entry[1])
   })
-  
   const defTick = [0, 0.25, 0.5, 0.75]
   const getTickValues = () => {
     let ret = []
@@ -168,12 +173,12 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
   return (
     <ChartContainer>
     <ChartHeader>
-      <ChartTitle>{parseHtml(chartTitle.replaceAll("CO2", "CO<sub>2</sub>"))}</ChartTitle>
+      <ChartTitle>{parseHtml(t(chartName))}</ChartTitle>
       <CSVLink 
         data={getCSVData(dataScenario1[0], scenario, dataScenario2 ? dataScenario2[0] : [], scenario2, unit )}
         filename={chartTitle + " " + selectedCountries + ".csv"}
       >
-        Download as CSV</CSVLink>
+        {t("general.download-as-csv")}</CSVLink>
     </ChartHeader>
       <VictoryChart
         domainPadding={20}
@@ -193,7 +198,7 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
             ((tick * base) / props.divideValues).toLocaleString()
           }
           tickValues={getTickValues()}
-          label={unit}
+          label={t(props.label)}
         />
         {combinedChart === true && (
           <VictoryAxis

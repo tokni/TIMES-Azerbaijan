@@ -33,6 +33,7 @@ const ScenarioSelectionList = props => {
   const handleChange = (event, value) => {
     props.updateScenarioSelection(event, props.name, value);
   };
+  console.log("from t: ", t("scenarios", {returnObjects: true}))
   const scenarioSwitches = props.options;
   const { scenarioCombinations, dimensionTitle, narrowVersion } = props;
   let stringValue = props.selectedValue.toString();
@@ -57,7 +58,8 @@ const ScenarioSelectionList = props => {
       })
       OptionDisplay.push(newOption)
     })
-  let scenarioOptions = OptionDisplay.map(option => {
+  //let scenarioOptions2 = 
+  let scenarioOptions = OptionDisplay.map((option, i) => {
       let optionValue = option.nameNoOptions;
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
@@ -72,17 +74,19 @@ const ScenarioSelectionList = props => {
             
           >
             <ScenarioNameContainer
-              data-tip={option.desc}
+              data-tip={t("scenarios", {returnObjects: true})["short-description" + (i + 1)]}
               narrowVersion={narrowVersion}
               onClick={event => {
               handleChange(event, optionValue);
             }}
             >
               {narrowVersion === false &&
-                option.short_description
+                t("scenarios", {returnObjects: true})["name" + (i + 1)]
+                //option.short_description
                 }
               {narrowVersion === true &&
-                option.ultra_short_description
+                t("scenarios", {returnObjects: true})["ultra-short-description" + (i + 1)]
+                //option.ultra_short_description
                 }
             </ScenarioNameContainer>
             <IconContainer narrowVersion={narrowVersion}>
@@ -97,7 +101,7 @@ const ScenarioSelectionList = props => {
                   cancelBubble(event); //prevent onclick for scenario being fired
                 }}
                 data-tip={
-                  t("options.opt0") +
+                  t("options.name1") +
                   " " +
                   (!scenarioCombinations.optionsAvailable[optionValue].opt0
                     ? t("options.unavailable")
@@ -118,7 +122,7 @@ const ScenarioSelectionList = props => {
                   cancelBubble(event); //prevent onclick for scenario being fired
                 }}
                 data-tip={
-                  t("options.opt1") +
+                  t("options.name1") +
                   " " +
                   (!scenarioCombinations.optionsAvailable[optionValue].opt1
                     ? t("options.unavailable")
