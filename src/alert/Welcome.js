@@ -144,7 +144,7 @@ function Welcome(props) {
   const [t] = useTranslation()
   return (
     <AlertContainer  isOpen={props.isOpen}>
-    {props.isOpen && <AlertTitle>{parseHtml(t("welcome-text.tab1.welcome1"))}</AlertTitle>}
+    {props.isOpen && <AlertTitle>{welcomeText[props.tab].welcome1}</AlertTitle>}
       {props.isOpen && props.tab === "tab1" && <AlertBody>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome2"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome3"))}</AlertBodyParagraph>

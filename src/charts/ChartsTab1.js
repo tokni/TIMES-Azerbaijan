@@ -9,7 +9,6 @@ import { MainArea, Flex, Scenario1Description, Scenario2Description } from './Ch
 import stackedBar from '../data/stackedBarTab1'
 import LineChart from './LineChart'
 import indicators from '../data/indicatorsTab1'
-import scenarioCombinations from "../data/scenarioCombinations"
 import { useTranslation } from 'react-i18next';
 
 const Charts = props => {

@@ -6,8 +6,6 @@ import { Link, useLocation } from "react-router-dom";
 import ScenarioSelectionList from "../scenarioSelection/ScenarioSelectionList";
 import ToggleSwitch from "./ToggleSwitch";
 import { useTranslation } from "react-i18next";
-import MapContainer from "../map/MapContainer";
-import citation from "../data/citation"
 import i18next from 'i18next';
 import parseHtml from 'html-react-parser';
 
