@@ -19,6 +19,7 @@ import ChartsTab9 from './charts/ChartsTab9'
 import ChartsTab10 from './charts/ChartsTab10'
 import PageRenderer from './pages/PageRenderer'
 import scenarioCombinations from './data/scenarioCombinations'
+import { withTranslation } from 'react-i18next';
 
 ReactGA.initialize('UA-145591344-2')
 ReactGA.pageview(window.location.pathname + window.location.search)
@@ -28,7 +29,6 @@ const Page = styled.div`
   margin: 0px;
   display: flex;
   box-sizing: border-box;
-  
 `
 const LeftColumn = styled.div`
   height: 100%;
@@ -333,7 +333,7 @@ export class App extends React.Component {
                 path="/about"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/about.md']} />
+                    <PageRenderer markdownFiles={['descriptions/about']} />
                   )
                 }}
               />
@@ -341,7 +341,7 @@ export class App extends React.Component {
                 path="/model"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/model.md']} />
+                    <PageRenderer markdownFiles={['descriptions/model']} />
                   )
                 }}
               />
@@ -349,7 +349,7 @@ export class App extends React.Component {
                 path="/scenarios"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/scenarios.md']} />
+                    <PageRenderer markdownFiles={['descriptions/scenarios']} />
                   )
                 }}
               />
@@ -358,7 +358,7 @@ export class App extends React.Component {
                 path="/findings"
                   render={() => {
                     return (
-                      <PageRenderer markdownFiles={['descriptions/findings.md']} />
+                      <PageRenderer markdownFiles={['descriptions/findings']} />
                     )
                   }}
                 />
@@ -367,7 +367,7 @@ export class App extends React.Component {
                 path="/historical"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/historical.md']} />
+                    <PageRenderer markdownFiles={['descriptions/historical']} />
                   )
                 }}
               />
@@ -376,7 +376,7 @@ export class App extends React.Component {
                 path="/how-to-use"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/howto.md']} />
+                    <PageRenderer markdownFiles={['descriptions/howto']} />
                   )
                 }}
               />
@@ -388,4 +388,4 @@ export class App extends React.Component {
   }
 }
 
-export default withRouter(App)
+export default withRouter(withTranslation("common")(App))

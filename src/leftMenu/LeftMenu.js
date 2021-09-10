@@ -287,7 +287,6 @@ function ScenarioSelectionMenu(props) {
           </MenuItem>
         </MenuRoutes>
       </MenuHeader>
-      {scenarioSelectorVisible && 
       <>
         <MenuSeparatorLine />
           <LanguageTitle>{parseHtml(t("general.change-language"))}</LanguageTitle>
@@ -307,7 +306,7 @@ function ScenarioSelectionMenu(props) {
           </LanguageGroup>
         <MenuSeparatorLine />
       </>
-      }
+      
       {location.pathname !== "/tab9" && location.pathname !== "/tab10" && scenarioSelectorVisible &&
       <>
       <ScenarioSelection>

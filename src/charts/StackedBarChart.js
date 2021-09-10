@@ -250,6 +250,7 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
                   labelComponent={<VictoryTooltip />}
                   style={{
                     data: { fill: () => {
+                      console.log("chartGroupName: ", chartGroupName)
                       if (indicatorgroup_colors[chartGroupName]) 
                         return indicatorgroup_colors[chartGroupName]
                       else

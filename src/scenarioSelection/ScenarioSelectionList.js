@@ -33,7 +33,6 @@ const ScenarioSelectionList = props => {
   const handleChange = (event, value) => {
     props.updateScenarioSelection(event, props.name, value);
   };
-  console.log("from t: ", t("scenarios", {returnObjects: true}))
   const scenarioSwitches = props.options;
   const { scenarioCombinations, dimensionTitle, narrowVersion } = props;
   let stringValue = props.selectedValue.toString();

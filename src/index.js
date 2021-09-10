@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './i18n';
 import Root from './Root'
+
+import './i18n'
 
 const render = Component => {
   ReactDOM.render(

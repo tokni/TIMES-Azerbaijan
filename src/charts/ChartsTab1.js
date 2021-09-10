@@ -24,8 +24,6 @@ const Charts = props => {
           closeWelcome={props.closeWelcome} 
           tab="tab1"
         />
-        {console.log("selected sc: ", selectedScenario)}
-        {console.log("selected sc2: ", selectedScenario2)}
         <ScenarioDescriptionsContainer isWelcomeOpen={props.scenarioSelection.showWelcome}>
           <Scenario1Description>
             {selectedScenario2 && <div>{t("scenarios.selectedScenario-bar-and-line")}</div>}
@@ -50,7 +48,6 @@ const Charts = props => {
            
             indicators.map((i, index) => 
             {
-              console.log("i: ", i)
               if (i === "chart-titles.tab1.chart5" ) 
                 return(<LineChart 
                   key={i+' '+index}

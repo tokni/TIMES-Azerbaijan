@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import i18next from "i18next"
+import { withTranslation } from "react-i18next";
 
 const ReactMarkdown = require('react-markdown/with-html')
 
@@ -29,7 +31,7 @@ class ScenarioDescriptions extends Component {
 
   async updateContent() {
     const posts = await Promise.all(
-      this.props.markdownFiles.map(file => fetch(file).then(res => res.text()))
+      this.props.markdownFiles.map(file => fetch(file + "." + i18next.language + ".md" ).then(res => res.text()))
     ).catch(err => console.error(err));
 
     this.setState(state => ({ ...state, posts }));
@@ -40,15 +42,16 @@ class ScenarioDescriptions extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.markdownFiles[0] !== prevProps.markdownFiles[0]) {
-      this.updateContent();
-    }
+    //console.log("prevProps: ", prevProps)
+    /* if (this.props.markdownFiles[0] !== prevProps.markdownFiles[0]) {
+      this.updateContent(i18next.language);
+    } */
+    this.updateContent();
       
   }
 
   render() {
     const { posts } = this.state;
-
     return (
       <AboutContainer>
         {posts.map((post, idx) => (
@@ -62,7 +65,8 @@ class ScenarioDescriptions extends Component {
 }
 
 ScenarioDescriptions.propTypes = {
-  markdownFiles: PropTypes.array.isRequired
+  markdownFiles: PropTypes.array.isRequired,
+  language: PropTypes.string,
 };
 
-export default ScenarioDescriptions;
+export default withTranslation("common")(ScenarioDescriptions);
