@@ -25,7 +25,7 @@ const AlertContainer = styled.div`
   border-color: blue;
   border-style: solid; */}
   ${'' /* background-color: #eff0f9; */}
-  background-color: #385988;
+  background-color: #3cccfc;
   color: white;
   display: flex;
   flex: 1;
@@ -79,16 +79,16 @@ const CloseWindowIcon = styled.div`
 CloseWindowIcon.displayName = "CloseWindowIcon";
 const welcomeText = {
   "tab1": {
-    "welcome1": <div>Welcome to the Nordic Clean Energy Scenarios results viewer</div>,
-	  "welcome2": <p>On this webpage you can explore the full modelling results from the Nordic Clean Energy Scenarios project, funded by Nordic Energy Research.</p>,
-	  "welcome3": <p>This web tool allows you to compare the results from three different scenarios developed by the project, view the effects on the energy system when applying additional assumptions to the model, and delve deeper into the full downloadable data provided in the statistics database and model results. For further instructions on how to use the web tool and get the most out of the presented results please see, <a href="./about" style={{color: "white"}}>How to use the results viewer tool</a>. To learn more about the project and access the full report please see <a href="./how-to-use" style={{color: "white"}}>About Nordic Clean Energy Scenarios.</a></p>,
-	  "welcome4": <p>All NCES scenarios reach carbon neutrality by 2050, but technology choice, fuel consumption, and cost will adapt to the options available to change assumptions on the technological readiness of CCS technologies and limitations on bioenergy availability. </p>,
-	  "welcome5": <p>The results presented here are highly dependent on assumptions for technology developments and their potential availability, efficiency, and cost to just mention a few factors influencing future pathway developments. The many combinations of scenarios represented in this tool demonstrates the inherent uncertainty of using scenario modelling to predict the future Nordic energy system. What these results tell us is rather which solutions are competing, what synergies exists between low carbon energy technologies, and what factors their development is contingent on.</p>,
+    "welcome1": <div>Welcome to Tab1</div>,
+	  "welcome2": <p>Text</p>,
+	  "welcome3": <p></p>,
+	  "welcome4": <p></p>,
+	  "welcome5": <p></p>,
   },
   "tab2": {
-    "welcome1": <p>The upstream sector includes oil and gas production, fossil refineries, biorefineries and PtX plants.</p>,
-    "welcome2": <p>The total used biomass in the Nordic countries is tracked and also import of biomass and biofuels. Feedstock and produced fuel from both fossil based refineries and renewable based refineries are also shown.</p>,
-    "welcome3": <p>Try to choose the same scenario twice and then activate the bioenergy constraint, the “leaf”, on one of the scenarios – then you can see a big difference in imported bioenergy and input to the RE-refineries.</p>,
+    "welcome1": <p>Tab 2</p>,
+    "welcome2": <p>Text</p>,
+    "welcome3": <p></p>,
   },
   "tab3": {
     "welcome1": <p>Power and district heat production.</p>,
@@ -144,7 +144,7 @@ function Welcome(props) {
   const [t] = useTranslation()
   return (
     <AlertContainer  isOpen={props.isOpen}>
-    {props.isOpen && <AlertTitle>{welcomeText[props.tab].welcome1}</AlertTitle>}
+    {props.isOpen && <AlertTitle>{parseHtml(t("welcome-text." + props.tab + ".welcome1"))}</AlertTitle>}
       {props.isOpen && props.tab === "tab1" && <AlertBody>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome2"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome3"))}</AlertBodyParagraph>

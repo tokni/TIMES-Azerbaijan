@@ -33,8 +33,8 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
         unit = ind.unit
         ind.regions.forEach(r => {
             r.indicatorGroups.forEach(indicatorGroup => {
-              console.log("indicatorGroup: ", indicatorGroup)
-              console.log("accumulatedData: ", accumulatedData)
+              //console.log("indicatorGroup: ", indicatorGroup)
+              //console.log("accumulatedData: ", accumulatedData)
               if (!accumulatedData[indicatorGroup.indicatorGroup]) {
                 accumulatedData[indicatorGroup.indicatorGroup]=[]
                 years.forEach(y => {

@@ -37,7 +37,7 @@ const Slider = styled.span`
 const SwitchInput = styled.input`
   display:none;
   &:checked + span {
-    background-color: ${props => (props.available ? '#385988' : '#555' )};
+    background-color: ${props => (props.available ? '#3cccfc' : '#555' )};
   }
   &:focus + span {
     box-shadow: 0 0 1px ##006eb6;

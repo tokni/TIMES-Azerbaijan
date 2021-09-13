@@ -2,20 +2,20 @@
   "title": "NCES2020",
   "menu": {
     "mobile": {
-      "about": "Om",
-      "scenarios": "Scenarier",
-      "findings": "Ti Nøgler",
-      "model": "Model og Data",
-      "historical": "Historisk Data",
-      "howto": "Hvordan bruges"
+      "page1": "Side1",
+      "page2": "Side2",
+      "page3": "Side3",
+      "page4": "Side4",
+      "page5": "Side5",
+      "page6": "Side6"
     },
     "desktop": {
-      "about": "Om værktøjet",
-      "scenarios": "Beskrivelse af Scenarier",
-      "findings": "Ti Nøgle Beskeder",
-      "model": "ON-TIMES Modellen og Data",
-      "historical": "Nordisk Energi Statistik Database",
-      "howto": "Hvordan man bruger Resultat Betragteren"
+      "page1": "Side1",
+      "page2": "Side2",
+      "page3": "Side3",
+      "page4": "Side4",
+      "page5": "Side5",
+      "page6": "Side6"
     }
   },
   "options": {
@@ -32,7 +32,9 @@
     "scenario-difference": "Scenarie difference",
     "red-minus-green": "Denne function udregner forskellen mellem blå og violette model resultater",
     "tokni": "Tokni",
-    "developed-by": "Udviklet af",
+    "developed-by": "Implementeret af",
+    "disclaimer": "Denne webside er her",
+    "funded_by": "Financieret af EU",
     "countries": "Vælg Lande",
     "change-language": "Vælg Sprog",
     "download-as-csv": "Tag ned som CSV"
@@ -81,7 +83,7 @@
   },
   "tabs": {
     "tab1": "Hoved Resultater",
-    "tab2": "Opstrøm",
+    "tab2": "Fane2",
     "tab3": "Energi",
     "tab4": "Tung Industri",
     "tab5": "Andre Sectorer",
@@ -92,7 +94,7 @@
     "tab10": "Historisk Data",
 	"mobile": {
     "tab1": "Resultater",
-    "tab2": "Opstrøm",
+    "tab2": "Fane2",
     "tab3": "Energi",
     "tab4": "Tung Industri",
     "tab5": "Andre Sectorer",
@@ -105,18 +107,18 @@
   },
   "welcome-text": {
     "tab1": {
-      "welcome1": "Energisystemanalysegruppen på DTU inviterer til debat om klima- og energipolitik med vores værktøj.",
-      "welcome2": "<p>Med dette værktøj kan du udforske forskellige scenarier i forbindelse med Klimaaftalen 2019. Vælg et scenario i venstre menu og se resultatet i graferne nedenfor.</p>",
-      "welcome3": "<p>Værktøjet er udviklet til yderligere at åbne debatten om klima- og energi politik og gøre et kompleks system lettere at forstå. De scenarier der fremvises, skal forstås som tekno-økonomiske potentialer for udviklingen mod 2050, baseret på fuldt fremsyn. Resultater kan ikke konkluderes som den endelige eller korrekte retning for at opnå fossil frihed, men skal derimod vise os hvor langt vi kan nå, hvis teknikken og økonomien fungerer optimalt. Der er derfor behov for yderligere politikker til eksempelvis at håndtere adfærd, der ikke er økonomisk rationel og uperfekte markeder.</p>",
-      "welcome4": "<p>En model er altid en simplificering af den virkelige verden. Ved sammenligning af scenarier skal der derfor tages hensyn til, at det kun er tekno-økonomiske virkemidler (tilskud, afgifter, forbud etc) der kan sammenlignes. Politikker målrettet fx adfærd inddrages ikke.</p>",
-      "welcome5": "<p>De viste scenarier er baseret på beregninger i energisystemmodellen TIMES-DK. Energimodellen er baseret på de grundlæggende forudsætninger om finansiel vækst fra finansministeriet og transportbehovet fra landstrafik modellen. Desuden er der forudsat en teknologisk udvikling, læs mere om dette under forudsætninger.</p>",
-      "welcome6": "<p>Scenario beskrivelserne og resultater er baseret på DTU’s fortolkning af regeringens udspil, udmeldinger fra andre partier samt egne scenarier. Scenarierne vil løbende blive opdateret når nye ting dukker op.</p>",
-      "welcome7": "<p>Seneste opdatering: 3/6-2019</p>"
+      "welcome1": "Velkommen til Fane 1",
+      "welcome2": "<p>Forklaring</p>",
+      "welcome3": "<p>Beskrivelse</p>",
+      "welcome4": "<p></p>",
+      "welcome5": "<p></p>",
+      "welcome6": "<p></p>",
+      "welcome7": "<p></p>"
     },
     "tab2": {
-      "welcome1": "Energisystemanalysegruppen på DTU inviterer til debat om klima- og energipolitik med vores værktøj.",
-      "welcome2": "<p>Med dette værktøj kan du udforske forskellige scenarier i forbindelse med Klimaaftalen 2019. Vælg et scenario i venstre menu og se resultatet i graferne nedenfor.</p>",
-      "welcome3": "<p>Værktøjet er udviklet til yderligere at åbne debatten om klima- og energi politik og gøre et kompleks system lettere at forstå. De scenarier der fremvises, skal forstås som tekno-økonomiske potentialer for udviklingen mod 2050, baseret på fuldt fremsyn. Resultater kan ikke konkluderes som den endelige eller korrekte retning for at opnå fossil frihed, men skal derimod vise os hvor langt vi kan nå, hvis teknikken og økonomien fungerer optimalt. Der er derfor behov for yderligere politikker til eksempelvis at håndtere adfærd, der ikke er økonomisk rationel og uperfekte markeder.</p>"
+      "welcome1": "Velkomment til Fane 2",
+      "welcome2": "<p>Tekst 1</p>",
+      "welcome3": "<p>Tekst 2</p>"
     }
   },
   "chart-titles": {

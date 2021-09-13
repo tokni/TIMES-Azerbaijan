@@ -41,7 +41,7 @@ export const Flex = styled.div`
 
 export const Scenario1Description = styled.div`
   box-sizing: border-box;
-  background-color: #385988;
+  background-color: #3cccfc;
   padding: 15px 25px;
   color: white;
   width: calc(50% - 5px);
@@ -50,7 +50,7 @@ export const Scenario1Description = styled.div`
 export const Scenario2Description = styled.div`
   flex: 1;
   box-sizing: border-box;
-  background-color: #bcbde2;
+  background-color: #ff9900;
   padding: 15px 25px;
   color: white;
   border-radius: 4px;

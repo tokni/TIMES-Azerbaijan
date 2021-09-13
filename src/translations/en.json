@@ -2,20 +2,20 @@
   "title": "NCES",
   "menu": {
     "mobile": {
-      "about": "About NCES",
-      "scenarios": "Scenarios",
-      "findings": "Ten Key",
-      "model": "Model and Data",
-      "historical": "Historical Data",
-      "howto": "How to use"
+      "page1": "Page1",
+      "page2": "Page2",
+      "page3": "Page3",
+      "page4": "Page4",
+      "page5": "Page5",
+      "page6": "Page6"
     },
     "desktop": {
-      "about": "About Nordic Clean Energy Scenarios",
-      "scenarios": "Description of Scenarios",
-      "findings": "Ten Key Messages",
-      "model": "The ON-TIMES Model and Data",
-      "historical": "Nordic Energy Statistics Database",
-      "howto": "How to Use the Results Viewer"
+      "page1": "Page1",
+      "page2": "Page2",
+      "page3": "Page3",
+      "page4": "Page4",
+      "page5": "Page5",
+      "page6": "Page6"
     }
   },
   "general": {
@@ -25,7 +25,9 @@
     "scenario-difference": "Scenario Difference",
     "red-minus-green": "This function will calculate the difference in value between the blue and violet model results.",
     "tokni": "Tokni",
-    "developed-by": "Developed by",
+    "developed-by": "Implemented by",
+    "disclaimer": "This website was created and maintained with the financial support of the European Union. Its contents are the sole responsibility of Equinoccio and Niras and do not necessarily reflect the views of the European Union",
+    "funded_by": "Funded by the European Union",
     "countries": "Choose Countries",
     "change-language": "Change Language",
     "change-unit": "Change Unit",
@@ -36,7 +38,7 @@
   },
   "tabs": {
     "tab1": "Main Results",
-    "tab2": "Upstream",
+    "tab2": "Tab2",
     "tab3": "Power & DH",
     "tab4": "Heavy Industry",
     "tab5": "Other Sectors",
@@ -47,7 +49,7 @@
     "tab10": "Historical Data",
 	"mobile": {
       "tab1": "Main Results",
-      "tab2": "Upstream",
+      "tab2": "Tab2",
       "tab3": "Power & DH",
       "tab4": "Heavy Industry",
       "tab5": "Other Sectors",
@@ -95,16 +97,16 @@
   },
   "welcome-text": {
     "tab1": {
-      "welcome1": "<div>Welcome to the Nordic Clean Energy Scenarios results viewer</div>",
-      "welcome2": "<p>On this webpage you can explore the full modelling results from the Nordic Clean Energy Scenarios project, funded by Nordic Energy Research.</p>",
-      "welcome3": "<p>This web tool allows you to compare the results from three different scenarios developed by the project, view the effects on the energy system when applying additional assumptions to the model, and delve deeper into the full downloadable data provided in the statistics database and model results. For further instructions on how to use the web tool and get the most out of the presented results please see, <a href='./about' style={{color: 'white'}}>How to use the results viewer tool</a>. To learn more about the project and access the full report please see <a href='./how-to-use' style={{color: 'white'}}>About Nordic Clean Energy Scenarios.</a></p>",
-      "welcome4": "<p>All NCES scenarios reach carbon neutrality by 2050, but technology choice, fuel consumption, and cost will adapt to the options available to change assumptions on the technological readiness of CCS technologies and limitations on bioenergy availability. </p>",
-      "welcome5": "<p>The results presented here are highly dependent on assumptions for technology developments and their potential availability, efficiency, and cost to just mention a few factors influencing future pathway developments. The many combinations of scenarios represented in this tool demonstrates the inherent uncertainty of using scenario modelling to predict the future Nordic energy system. What these results tell us is rather which solutions are competing, what synergies exists between low carbon energy technologies, and what factors their development is contingent on.</p>"
+      "welcome1": "<div>Welcome to Tab 1</div>",
+      "welcome2": "<p>Text 1</p>",
+      "welcome3": "<p>Text 2</p>",
+      "welcome4": "<p></p>",
+      "welcome5": "<p></p>"
     },
     "tab2": {
-      "welcome1": "The upstream sector includes oil and gas production, fossil refineries, biorefineries and PtX plants.",
-      "welcome2": "The total used biomass in the Nordic countries is tracked and also import of biomass and biofuels. Feedstock and produced fuel from both fossil based refineries and renewable based refineries are also shown.",
-      "welcome3": "Try to choose the same scenario twice and then activate the bioenergy constraint, the “leaf”, on one of the scenarios – then you can see a big difference in imported bioenergy and input to the RE-refineries."
+      "welcome1": "Tab 2",
+      "welcome2": "Text 1",
+      "welcome3": "Text 2"
     },
     "tab3": {
       "welcome-1": "Power and district heat production.",

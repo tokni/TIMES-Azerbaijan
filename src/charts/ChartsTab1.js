@@ -19,6 +19,7 @@ const Charts = props => {
   
   return (
     <MainArea>
+    {console.log("tab1 begin")}
         <Welcome 
           isOpen={props.scenarioSelection.showWelcome}
           closeWelcome={props.closeWelcome} 
@@ -26,19 +27,21 @@ const Charts = props => {
         />
         <ScenarioDescriptionsContainer isWelcomeOpen={props.scenarioSelection.showWelcome}>
           <Scenario1Description>
-            {selectedScenario2 && <div>{t("scenarios.selectedScenario-bar-and-line")}</div>}
+            {selectedScenario2 && 
+              <div>{t("scenarios.selectedScenario-bar-and-line")}</div>}
             {/* {scenarioCombinations.scenarioCombinations.scenarioOptions.find(
               (option)=>option.name.toLowerCase() === selectedScenario.toLowerCase())?.desc.toUpperCase()
             } */}
             {t("scenarios.description" + props.index)}
           </Scenario1Description>
-          {selectedScenario2 && <Scenario2Description>
+          {selectedScenario2 && 
+          <Scenario2Description>
             <div>{t("scenarios.selectedScenario2-bar-and-line")}</div> 
-          {
+          
             {/* scenarioCombinations.scenarioCombinations.scenarioOptions.find(
               (option)=>option.name.toLowerCase() === selectedScenario2.toLowerCase()
             )?.desc.toUpperCase() */}
-          }</Scenario2Description>}
+          </Scenario2Description>}
         </ScenarioDescriptionsContainer> 
       {(props.scenarioSelection.showDifference === false ||
         (props.scenarioSelection.showDifference === true &&
@@ -103,6 +106,7 @@ const Charts = props => {
           }
           </Flex>
         )}
+        {console.log("tab1 end")}
     </MainArea>
   )
 }

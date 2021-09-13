@@ -11,7 +11,7 @@ import parseHtml from 'html-react-parser';
 
 const MenuLayout = styled.div`
   display: none;
-  height: calc(100vh);
+  min-height: calc(100vh);
   ${breakpoint("desktop")`
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ const MenuHeader = styled.div`
 
 const AppLogo = styled.img`
   padding: 0px;
-  max-width: 250px;
+  max-width: 240px;
   border: 0;
   align-self: center;
   ${'' /* transform: scale(1.8) translate(43px); */}
@@ -136,7 +136,7 @@ const ToggleSwitchText = styled.div`
 const ScenarioDifferenceText = styled.div`
   font-size: 0.7em;
   color: ${props =>
-    props.singleMode ? "gray" : props.selected ? "#385988" : "white"};
+    props.singleMode ? "gray" : props.selected ? "#3cccfc" : "white"};
   margin-left: 30px;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -162,6 +162,7 @@ const CopyrightItem = styled.div`
   padding: 5px 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
 `;
@@ -231,6 +232,28 @@ const HelpText = styled.div`
   color: #666666;
   font-weight: bold;
 `;
+const Disclaimer = styled.div`
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #666666;
+  font-weight: bold;
+`
+const FundedText = styled.div`
+padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #666666;
+  font-weight: bold;
+`
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
   const location = useLocation()
@@ -238,10 +261,10 @@ function ScenarioSelectionMenu(props) {
   return (
     <MenuLayout>
       <MenuHeader>
-        <ExternalLink href="https://www.nordicenergy.org">
+        <ExternalLink href="https://minenergy.gov.az/">
           <AppLogo
-            src="./images/nordic_energy_research_cropped.png"
-            alt="Nordic Energy Research"
+            src="./images/LOGO AZ_transparent.png"
+            alt="The Ministry of Energy of the Republic of Azerbaijan"
           />
           {/* <AppLogo2
             src="./images/NER-Logo_small.png"
@@ -253,37 +276,37 @@ function ScenarioSelectionMenu(props) {
             to="/about"
             selected={props.selectedPage === "/about"}
           >
-            {parseHtml(t("menu.desktop.about"))}
+            {parseHtml(t("menu.desktop.page1"))}
           </MenuItem>
           <MenuItem
             to="/scenarios"
             selected={props.selectedPage === "/scenarios"}
           >
-            {parseHtml(t("menu.desktop.scenarios"))}
+            {parseHtml(t("menu.desktop.page2"))}
           </MenuItem>
           <MenuItem
             to="/findings"
             selected={props.selectedPage === "/findings"}
           >
-            {parseHtml(t("menu.desktop.findings"))}
+            {parseHtml(t("menu.desktop.page3"))}
           </MenuItem>
           <MenuItem
             to="/model"
             selected={props.selectedPage === "/model"}
           >
-            {parseHtml(t("menu.desktop.model"))}
+            {parseHtml(t("menu.desktop.page4"))}
           </MenuItem>
           <MenuItem
             to="/historical"
             selected={props.selectedPage === "/historical"}
           >
-            {parseHtml(t("menu.desktop.historical"))}
+            {parseHtml(t("menu.desktop.page5"))}
           </MenuItem>
           <MenuItem
             to="/how-to-use"
             selected={props.selectedPage === "/how-to-use"}
           >
-            {parseHtml(t("menu.desktop.howto"))}
+            {parseHtml(t("menu.desktop.page6"))}
           </MenuItem>
         </MenuRoutes>
       </MenuHeader>
@@ -353,10 +376,21 @@ function ScenarioSelectionMenu(props) {
       <MenuSeparatorLine /></>}
       <MenuFooter>
         <CopyrightNotice>
-          <CitationIntro>{parseHtml(t("general.citation-title"))}</CitationIntro>
-          <Citation>{parseHtml(t("general.citation"))}</Citation>
+          {/* <CitationIntro>{parseHtml(t("general.citation-title"))}</CitationIntro>
+          <Citation>{parseHtml(t("general.citation"))}</Citation> */}
+          <Disclaimer>{t('general.disclaimer')}</Disclaimer>
+          <ExternalLink href="http://www.eu.com">
+              <LinkLogo src="./images/EU LOGO.jpg" alt="EU" data-tip="EU"/>
+            </ExternalLink>
+          <FundedText>{t('general.funded_by')}</FundedText>
           <Header> {parseHtml(t("general.developed-by"))}</Header>
           <CopyrightItem>
+            <ExternalLink href="http://www.equinoccio.eu/en/" style={{alignSelf: 'flex-end'}}>
+              <LinkLogo src="./images/equinoccio_transparent.png" alt="Equinoccio" data-tip="Equinoccio"/>
+            </ExternalLink>
+            <ExternalLink href="https://www.niras.com/">
+              <LinkLogo src="./images/niras_logo_red.png" alt="Niras" data-tip="Niras"/>
+            </ExternalLink>
             <ExternalLink href="http://www.tokni.com">
               <LinkLogo src="./images/tokni.png" alt="Tøkni" data-tip="Tøkni - Nordic Software Consultancy"/>
             </ExternalLink>
@@ -364,13 +398,13 @@ function ScenarioSelectionMenu(props) {
               <LinkLogo src="./images/eml.png" alt="Energy Modelling Lab" maxWidth="75px" data-tip="Energy Modelling Lab"/>
             </ExternalLink>
           </CopyrightItem>
-          <CopyrightItem>
+          {/* <CopyrightItem>
             <HelpText>{parseHtml(t("general.troubleshoot-title"))}
             </HelpText>
           </CopyrightItem>
           <CopyrightItem>
             <HelpLink href="mailto:kenneth.karlsson@energymodellinglab.com">kenneth.karlsson@ energymodellinglab.com</HelpLink>
-          </CopyrightItem>
+          </CopyrightItem> */}
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>

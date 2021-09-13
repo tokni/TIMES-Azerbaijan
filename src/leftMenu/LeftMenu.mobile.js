@@ -103,7 +103,7 @@ const ToggleSwitchText = styled.div`
 const ScenarioDifferenceText = styled.div`
   font-size: 0.7em;
   color: ${props =>
-    props.singleMode ? "gray" : props.selected ? "#385988" : "white"};
+    props.singleMode ? "gray" : props.selected ? "#3cccfc" : "white"};
   margin: 5px;
 `;
 
