@@ -11,7 +11,7 @@ import ChartsTab1 from './charts/ChartsTab1'
 import ChartsTab2 from './charts/ChartsTab2'
 import PageRenderer from './pages/PageRenderer'
 import scenarioCombinations from './data/scenarioCombinations'
-import { withTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next'
 
 ReactGA.initialize('UA-145591344-2')
 ReactGA.pageview(window.location.pathname + window.location.search)

@@ -1,5 +1,8 @@
 export const indicatorgroup_colors = {
-  'tab1.chart1.legend1': '#ACCC83',         //biofuels
+  'tab1.chart1.legend1.color': '#ACCC83',         //biofuels
+  'tab1.chart1.legend1.en': 'en',
+  'tab1.chart1.legend1.az': 'az',
+
   'tab1.chart1.legend2': '#000000',         //coal
   'tab1.chart1.legend3': '#AE0E16',         //district-heat
   'tab1.chart1.legend4': '#006eb6',         //electricity

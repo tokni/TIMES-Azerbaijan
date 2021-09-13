@@ -148,12 +148,6 @@
     }
   },
   "legends": {
-    "common": {
-      "commonlegend1": "Common Legend 1",
-      "commonlegend2": "Common Legend 2"
-    },
-    "legend1: ": "Legend 1",
-    "legend2: ": "Legend 2",
     "tab1": {
       "common": {
         "commonlegend1": "T1C Legend 1",
