@@ -174,7 +174,7 @@ const ExternalLink = styled.a`
     text-decoration: underline;
   }
 `;
-const HelpLink = styled.a`
+/* const HelpLink = styled.a`
   width: 200px;
   color: white;
   text-decoration: none;
@@ -182,7 +182,7 @@ const HelpLink = styled.a`
     text-decoration: underline;
   }
 color: #666666;
-`;
+`; */
 const LinkLogo = styled.img`
   padding: 0px;
   max-width: 100px;
@@ -198,7 +198,7 @@ const Header = styled.h1`
   align-self: flex-start;
   color: #666666;
 `;
-const Citation = styled.div`
+/* const Citation = styled.div`
   padding: 5px 0;
   display: flex;
   justify-content: space-around;
@@ -209,8 +209,8 @@ const Citation = styled.div`
   color: #666666;
   font-weight: bold;
   font-size: 10px;
-`;
-const CitationIntro = styled.div`
+`; */
+/* const CitationIntro = styled.div`
   padding: 5px 0;
   display: flex;
   justify-content: space-around;
@@ -220,8 +220,8 @@ const CitationIntro = styled.div`
   margin-right: 10px;
   color: #666666;
   font-weight: bold;
-`;
-const HelpText = styled.div`
+`; */
+/* const HelpText = styled.div`
   padding: 5px 0;
   display: flex;
   justify-content: space-around;
@@ -231,7 +231,7 @@ const HelpText = styled.div`
   margin-right: 10px;
   color: #666666;
   font-weight: bold;
-`;
+`; */
 const Disclaimer = styled.div`
   padding: 5px 0;
   display: flex;
