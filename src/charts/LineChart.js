@@ -83,22 +83,22 @@ const LineChart = ({
     console.log("Scenario: " + selectedScenario + " not found in data")
     dataFailure = "Scenario: " + selectedScenario + " not found in data"
   }
-  console.log("selectedScenarioData: ", selectedScenarioData)
-  console.log("chartName: ", chartName)
+  //console.log("selectedScenarioData: ", selectedScenarioData)
+  //console.log("chartName: ", chartName)
   indicatorData1 = selectedScenarioData.indicators.find((indicator) => {
-    console.log("indicator.indicator: ", indicator.indicator)
+    //console.log("indicator.indicator: ", indicator.indicator)
     return indicator.indicator === chartName
   })
-  console.log("indicatorData1: ", indicatorData1)
+  //console.log("indicatorData1: ", indicatorData1)
   if (!indicatorData1) {
-    console.log("Indicator " + chartName + " not found in data")
+    //console.log("Indicator " + chartName + " not found in data")
     dataFailure = "Indicator " + chartName + " not found in data"
   }
   selectedScenario2 !== "" && selectedDataRegions.forEach((country, i)=>{
     let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
       return scenario.scenario.toLowerCase() === selectedScenario2.toLowerCase()
     })
-    console.log("indicatorData2: ", indicatorData2)
+    //console.log("indicatorData2: ", indicatorData2)
     indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
       return indicator.indicator === chartName
     })

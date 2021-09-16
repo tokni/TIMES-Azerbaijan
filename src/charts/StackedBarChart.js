@@ -67,8 +67,8 @@ const StackedBarChart = props => {
   let maxY = -Infinity
   let minY = Infinity
   let base = 0
-  console.log("dataScenario1: ", dataScenario1)
-  console.log("dataScenario2: ", dataScenario2)
+  //console.log("dataScenario1: ", dataScenario1)
+  //console.log("dataScenario2: ", dataScenario2)
   Object.keys(totalYearValuesPositiveScenario1).forEach(year => {
     maxY = Math.round(Math.max(maxY, totalYearValuesPositiveScenario1[year],
       scenario2 ? totalYearValuesPositiveScenario2[year] : -Infinity))
@@ -104,7 +104,7 @@ const StackedBarChart = props => {
       legends.add(group.indicatorGroup)
     })
   }) */
-  console.log("legends tab1 chart1: ", Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})))
+  //console.log("legends tab1 chart1: ", Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})))
   Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})).forEach((entry) => {
     legends.add(entry[1])
   })
@@ -227,7 +227,7 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
         <VictoryGroup offset={15} style={{ data: { width: 15 } }}>
           <VictoryStack>
             {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => {
-            console.log("chartGroupName: ", chartGroupName)
+            //console.log("chartGroupName: ", chartGroupName)
             return(
                 <VictoryBar
                   key={chartGroupName}
@@ -253,7 +253,7 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
                   labelComponent={<VictoryTooltip />}
                   style={{
                     data: { fill: () => {
-                      console.log("chartGroupName: ", chartGroupName)
+                      //console.log("chartGroupName: ", chartGroupName)
                       if (indicatorgroup_colors[chartGroupName]) 
                         return indicatorgroup_colors[chartGroupName]
                       else
@@ -267,9 +267,8 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
           </VictoryStack>
           {scenario2 !== '' && (
             <VictoryStack>
-            {console.log("start 2 chart")}
               {Object.keys(accumulatedDataScenario2).map((chartGroupName, i) => {
-                console.log("chartGroupName 2: ", chartGroupName)
+                //console.log("chartGroupName 2: ", chartGroupName)
                 return(
                   <VictoryBar
                     key={chartGroupName}
@@ -294,7 +293,7 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
                     labelComponent={<VictoryTooltip />}
                     style={{
                     data: { fill: () => {
-                      console.log("chartGroupName 2: ", chartGroupName)
+                      //console.log("chartGroupName 2: ", chartGroupName)
                       if (indicatorgroup_colors[chartGroupName]) 
                         return indicatorgroup_colors[chartGroupName] + '88'
                       else
@@ -308,7 +307,6 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
             </VictoryStack>
           )}
         </VictoryGroup>
-        {console.log("place dy: ", t1)}
         <VictoryAxis 
           key={0} 
           tickValues={periods} 
@@ -349,7 +347,6 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
           labelComponent={<HTMLLabel />}
         />
       </VictoryChart>
-      {console.log("chart end ----------------------")}
     </ChartContainer>
   )
 }

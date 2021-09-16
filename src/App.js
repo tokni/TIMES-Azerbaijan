@@ -14,6 +14,13 @@ import scenarioCombinations from './data/scenarioCombinations'
 import { withTranslation } from 'react-i18next'
 import { useAuth0, withAuth0 } from "@auth0/auth0-react";
 
+if(process.env.NODE_ENV === 'development')
+  console.log("developement build")
+else if (process.env.NODE_ENV === 'production')
+  console.log("production build")
+else
+  console.log("something else build")
+
 const ChartsTab1 = React.lazy(() => import('./charts/ChartsTab1'));
 const ChartsTab2 = React.lazy(() => import('./charts/ChartsTab2'));
 

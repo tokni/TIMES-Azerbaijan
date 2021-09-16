@@ -360,7 +360,7 @@ data.data.nces_elecprod.forEach((item)=>{
   if (fuelTypes.indexOf(item.fuel) === -1)
   fuelTypes.push(item.fuel)
 })
-console.log("accumulatedHistoricalData", accumulatedHistoricalData)
+//console.log("accumulatedHistoricalData", accumulatedHistoricalData)
 return [accumulatedHistoricalData,totalHistoricalYearValues, fuelTypes, csv]
 }
 
@@ -404,7 +404,7 @@ data.data.nces_enercons_trans.forEach((item)=>{
   if (fuelTypes.indexOf(item.fuel) === -1)
   fuelTypes.push(item.fuel)
 })
-console.log("accumulatedHistoricalData", accumulatedHistoricalData)
+//console.log("accumulatedHistoricalData", accumulatedHistoricalData)
 return [accumulatedHistoricalData,totalHistoricalYearValues, fuelTypes, csv]
 }
 
@@ -424,7 +424,7 @@ function createAccumulatedRawHistoricalData9(data, selectedCountries) {
         })
       }
     })
-    console.log("data.data: ", data.data)
+    //console.log("data.data: ", data.data)
   data.data.nces_vehiclenumber.forEach((item, i)=>{ 
     if(histYears.includes(item.year) && selectedDataRegions.includes(item.nces_country.name)) {
       if(Object.keys(accumulatedHistoricalData).includes(item.car_type)) {
@@ -449,8 +449,8 @@ data.data.nces_vehiclenumber.forEach((item)=>{
   if (carTypes.indexOf(item.car_type) === -1)
   carTypes.push(item.car_type)
 })
-console.log("accumulatedHistoricalData", accumulatedHistoricalData)
-console.log("fueltypes: ", carTypes)
+//console.log("accumulatedHistoricalData", accumulatedHistoricalData)
+//console.log("fueltypes: ", carTypes)
 return [accumulatedHistoricalData,totalHistoricalYearValues, carTypes, csv]
 }
 
@@ -470,7 +470,7 @@ function createAccumulatedRawHistoricalData10(data, selectedCountries) {
         })
       }
     })
-    console.log("data.data10: ", data.data)
+    //console.log("data.data10: ", data.data)
   data.data.nces_vehiclenumber_stock.forEach((item, i)=>{ 
     if(histYears.includes(item.year) && selectedDataRegions.includes(item.nces_country.name)) {
       
@@ -501,8 +501,8 @@ data.data.nces_vehiclenumber_stock.forEach((item)=>{
   if (carTypes.indexOf(item.car_model) === -1)
   carTypes.push(item.car_model)
 })
-console.log("accumulatedHistoricalData", accumulatedHistoricalData)
-console.log("fueltypes: ", carTypes)
+//console.log("accumulatedHistoricalData", accumulatedHistoricalData)
+//console.log("fueltypes: ", carTypes)
 return [accumulatedHistoricalData,totalHistoricalYearValues, carTypes, csv]
 }
 function createAccumulatedRawHistoricalData11(data, selectedCountries) {
@@ -524,7 +524,7 @@ function createAccumulatedRawHistoricalData11(data, selectedCountries) {
         })
       }
     })
-    console.log("data.data11: ", data.data)
+    //console.log("data.data11: ", data.data)
   data.data.nces_elecexchange_3rd_country.forEach((item, i)=>{ 
     if(histYears.includes(item.year) && selectedDataRegions.includes(item.nces_country.name)) {
       if(item.exchange_type ==="import") {
@@ -574,7 +574,7 @@ function createAccumulatedRawHistoricalData11(data, selectedCountries) {
   })
 
 let carTypes = []
-console.log("keys: ", Object.keys(accumulatedHistoricalDataPositive).concat(Object.keys(accumulatedHistoricalDataNegative)) )
+//console.log("keys: ", Object.keys(accumulatedHistoricalDataPositive).concat(Object.keys(accumulatedHistoricalDataNegative)) )
 /* Object.keys(accumulatedHistoricalDataPositive).forEach((key) => {
   carTypes.push()
 }) */
@@ -586,9 +586,9 @@ console.log("keys: ", Object.keys(accumulatedHistoricalDataPositive).concat(Obje
   }
 }) */
 
-console.log("accumulatedHistoricalData", accumulatedHistoricalDataPositive)
-console.log("accumulatedHistoricalData", accumulatedHistoricalDataNegative)
-console.log("fueltypes: ", carTypes)
+//console.log("accumulatedHistoricalData", accumulatedHistoricalDataPositive)
+//console.log("accumulatedHistoricalData", accumulatedHistoricalDataNegative)
+//console.log("fueltypes: ", carTypes)
 return [
   {...accumulatedHistoricalDataPositive, ...accumulatedHistoricalDataNegative},
   {...totalHistoricalYearValuesPositive, ...totalHistoricalYearValuesNegative}, 
@@ -636,7 +636,7 @@ data.data.nces_biofuels_prod.forEach((item)=>{
   if (fuelTypes.indexOf(item.fuel) === -1)
   fuelTypes.push(item.fuel)
 })
-console.log("accumulatedHistoricalData", accumulatedHistoricalData)
+//console.log("accumulatedHistoricalData", accumulatedHistoricalData)
 return [accumulatedHistoricalData,totalHistoricalYearValues, fuelTypes, csv]
 }
 
