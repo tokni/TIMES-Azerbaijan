@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Route, withRouter, Switch } from 'react-router-dom'
@@ -7,11 +7,15 @@ import LeftMenu from './leftMenu/LeftMenu'
 import LeftMenuMobile from './leftMenu/LeftMenu.mobile'
 import Tabs from './tabs/Tabs'
 import TabsMobile from './tabs/Tabs.mobile'
-import ChartsTab1 from './charts/ChartsTab1'
-import ChartsTab2 from './charts/ChartsTab2'
+/* import ChartsTab1 from './charts/ChartsTab1' */
+/* import ChartsTab2 from './charts/ChartsTab2' */
 import PageRenderer from './pages/PageRenderer'
 import scenarioCombinations from './data/scenarioCombinations'
 import { withTranslation } from 'react-i18next'
+import { useAuth0, withAuth0 } from "@auth0/auth0-react";
+
+const ChartsTab1 = React.lazy(() => import('./charts/ChartsTab1'));
+const ChartsTab2 = React.lazy(() => import('./charts/ChartsTab2'));
 
 ReactGA.initialize('UA-145591344-2')
 ReactGA.pageview(window.location.pathname + window.location.search)
@@ -47,6 +51,7 @@ const MainSwitch = styled(Switch)`
   flex-wrap: wrap;
   align-content: flex-start;
 `
+
 
 export const changeScenario = (name, value) => ({
   [name]: value,
@@ -181,6 +186,12 @@ export class App extends React.Component {
       selectedCountries: newSelectedCountries,
     })
   }
+
+LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return <button onClick={() => loginWithRedirect()}>Log In</button>;
+};
   
   render() {
     return (
@@ -213,7 +224,7 @@ export class App extends React.Component {
             />
           </Content>
         </LeftColumn>
-        <RightColumn>
+        {this.props.auth0.isAuthenticated && <RightColumn>
           <Content>
             <Tabs selectedChartgroup={this.props.location.pathname} />
             <TabsMobile selectedChartgroup={this.props.location.pathname} />
@@ -222,23 +233,27 @@ export class App extends React.Component {
                 exact
                 path="/"
                 render={() => (
-                  <ChartsTab1
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                    selectedCountries={this.state.selectedCountries}
-                    index={1}
-                  />
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <ChartsTab1
+                      scenarioSelection={this.state}
+                      closeWelcome={this.CloseWelcomeWidget}
+                      selectedCountries={this.state.selectedCountries}
+                      index={1}
+                    />
+                  </Suspense>
                 )}
               />
               <Route
                 path="/tab2"
                 render={() => (
-                  <ChartsTab2
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                    selectedCountries={this.state.selectedCountries}
-                    index={2}
-                  />
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <ChartsTab2
+                      scenarioSelection={this.state}
+                      closeWelcome={this.CloseWelcomeWidget}
+                      selectedCountries={this.state.selectedCountries}
+                      index={2}
+                    />
+                  </Suspense>
                 )}
               />
               <Route
@@ -294,10 +309,13 @@ export class App extends React.Component {
               />
             </MainSwitch>
           </Content>
-        </RightColumn>
-      </Page>
-    )
+        </RightColumn>}
+      </Page> 
+    ) 
+      
+    }
+      
   }
-}
 
-export default withRouter(withTranslation("common")(App))
+
+export default withAuth0(withRouter(withTranslation("common")(App)))

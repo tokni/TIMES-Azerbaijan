@@ -3,14 +3,22 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
 import 'typeface-roboto'
 import { createGlobalStyle } from "styled-components"
+import { Auth0Provider } from "@auth0/auth0-react"
 
 export default class Root extends Component {
   render() {
     return (
-      <Router>
-        <App />
-        <GlobalStyle />
-      </Router>
+      <Auth0Provider
+        domain="times-az.eu.auth0.com"
+        clientId="5RpAOZpRIdNCf8oHfu77DhHvzpKwH8FF"
+        redirectUri="http://localhost:3000"
+        maxAge={1}
+      >
+        <Router>
+          <App />
+          <GlobalStyle />
+        </Router>
+      </Auth0Provider>
     );
   }
 }

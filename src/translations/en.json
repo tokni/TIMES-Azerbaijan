@@ -34,7 +34,9 @@
     "citation-title": "When using the results presented in the result viewer use the following citation:",
     "citation": "Wråke, M., Karlsson, K., Kofoed-Wiuff, A., Folsland Bolkesjø, T., Lindroos, T.J., Tennbakk, B., Ogner Jåstad, E., Bosack Simonsen, M., Hagberg, M., Unger, T., Putkonen, N., Lehtilä, A. & Koljonen, T. (2021, August XX ). Nordic Clean Energy Scenarios: Results Viewer. Nordic Energy Research. Retrieved from https://cleanenergyscenarios.nordicenergy.org",
     "troubleshoot-title": "If you are experiencing issues with the web tool please contact Kenneth Karlsson at The Energy Modelling Lab.",
-    "download-as-csv": "Download as CSV"
+    "download-as-csv": "Download as CSV",
+    "Access_denied_unauthorized_email": "Access Denied, unauthorized email",
+    "access_contact": "To get access contact:"
   },
   "tabs": {
     "tab1": "Main Results",

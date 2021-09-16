@@ -8,6 +8,8 @@ import ToggleSwitch from "./ToggleSwitch";
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
 import parseHtml from 'html-react-parser';
+import { useAuth0 } from '@auth0/auth0-react';
+import queryString from 'query-string';
 
 const MenuLayout = styled.div`
   display: none;
@@ -254,10 +256,26 @@ padding: 5px 0;
   color: #666666;
   font-weight: bold;
 `
+const LoginContainer = styled.div`
+  display: flex;
+  ${'' /* justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; */}
+` 
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
   const location = useLocation()
+  const {user, isAuthenticated, isLoading, loginWithRedirect, logout} = useAuth0()
   const scenarioSelectorVisible = location.pathname.includes("tab") || location.pathname === "/"
+  let params = queryString.parse(location.search)
+  /* console.log("this.props: ", this.props)
+      console.log("this.props.match.params: ", queryString.parse(this.props.location.search).error_description )
+      let params = queryString.parse(this.props.location.search)
+      if(params.error === "unauthorized") {
+        return(<div>{params.error_description}</div>)
+      }
+      return(<LoginContainer><this.LoginButton>Log in</this.LoginButton></LoginContainer>) */
   return (
     <MenuLayout>
       <MenuHeader>
@@ -266,12 +284,24 @@ function ScenarioSelectionMenu(props) {
             src="./images/LOGO AZ_transparent.png"
             alt="The Ministry of Energy of the Republic of Azerbaijan"
           />
-          {/* <AppLogo2
-            src="./images/NER-Logo_small.png"
-            alt="Nordic Energy Research"
-          /> */}
         </ExternalLink>
-        <MenuRoutes>
+        {console.log("auth0.user: ", user)}
+        {
+          isAuthenticated && <><div>Logged in as: {user?.name} </div><div><button
+            onClick={() => logout({ returnTo: "http://localhost:3000"})}>Log out</button></div></>
+        }
+        {
+          !isAuthenticated && !isLoading && params.error!=="unauthorized" && <LoginContainer><button onClick={()=> loginWithRedirect()}>Log in</button></LoginContainer>}
+            
+            {params.error==="unauthorized" ? <>
+              <div>{t("general." + params?.error_description?.replaceAll(" ", "_").replaceAll(",", "").replaceAll(".", ""))}</div>
+              <div>{t("general.access_contact")}</div>
+              <a href = "mailto:bl@tokni.com">bl@tokni.com</a>
+            </> : <div>No</div>}
+        {
+          isLoading && <div>loading ... </div>
+        }
+        {isAuthenticated && <MenuRoutes>
           <MenuItem
             to="/about"
             selected={props.selectedPage === "/about"}
@@ -308,7 +338,7 @@ function ScenarioSelectionMenu(props) {
           >
             {parseHtml(t("menu.desktop.page6"))}
           </MenuItem>
-        </MenuRoutes>
+        </MenuRoutes>}
       </MenuHeader>
       <>
         <MenuSeparatorLine />
@@ -330,7 +360,7 @@ function ScenarioSelectionMenu(props) {
         <MenuSeparatorLine />
       </>
       
-      {location.pathname !== "/tab9" && location.pathname !== "/tab10" && scenarioSelectorVisible &&
+      {isAuthenticated && scenarioSelectorVisible &&
       <>
       <ScenarioSelection>
         <ScenarioSelectionList
@@ -348,7 +378,7 @@ function ScenarioSelectionMenu(props) {
       </ScenarioSelection>
       {location.pathname !== "/tab8" && <><MenuSeparatorLine />
       
-      <ToggleDifference
+      {isAuthenticated && <ToggleDifference
         onClick={e => {
           if (props.scenarioSelection.scenarioSelection2 !== "") {
             props.toggleDifference(e);
@@ -365,7 +395,7 @@ function ScenarioSelectionMenu(props) {
           available={props.scenarioSelection.scenarioSelection2 !== ""}
           checked={props.scenarioSelection.showDifference}
         />
-      </ToggleDifference></>
+      </ToggleDifference>}</>
       }
       {props.scenarioSelection.scenarioSelection2 !== "" && <ScenarioDifferenceText
         singleMode={props.scenarioSelection.scenarioSelection2 === ""}
