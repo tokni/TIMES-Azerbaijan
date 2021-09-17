@@ -11,7 +11,7 @@ export default class Root extends Component {
       <Auth0Provider
         domain="times-az.eu.auth0.com"
         clientId="5RpAOZpRIdNCf8oHfu77DhHvzpKwH8FF"
-        redirectUri={process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://develop--nces2020.netlify.app/"}
+        redirectUri={process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://develop--times-azerbaijan.vercel.app/"}
         maxAge={1}
       >
         <Router>
