@@ -573,7 +573,7 @@ function createAccumulatedRawHistoricalData11(data, selectedCountries) {
     }
   })
 
-let carTypes = []
+/* let carTypes = [] */
 //console.log("keys: ", Object.keys(accumulatedHistoricalDataPositive).concat(Object.keys(accumulatedHistoricalDataNegative)) )
 /* Object.keys(accumulatedHistoricalDataPositive).forEach((key) => {
   carTypes.push()

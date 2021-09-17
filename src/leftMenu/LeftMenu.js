@@ -297,7 +297,7 @@ function ScenarioSelectionMenu(props) {
               <div>{t("general." + params?.error_description?.replaceAll(" ", "_").replaceAll(",", "").replaceAll(".", ""))}</div>
               <div>{t("general.access_contact")}</div>
               <a href = "mailto:bl@tokni.com">bl@tokni.com</a>
-            </> : <div>No</div>}
+            </> : <div></div>}
         {
           isLoading && <div>loading ... </div>
         }
@@ -308,36 +308,36 @@ function ScenarioSelectionMenu(props) {
           >
             {parseHtml(t("menu.desktop.page1"))}
           </MenuItem>
-          <MenuItem
+          {/* <MenuItem
             to="/scenarios"
             selected={props.selectedPage === "/scenarios"}
           >
             {parseHtml(t("menu.desktop.page2"))}
-          </MenuItem>
-          <MenuItem
+          </MenuItem> */}
+          {/* <MenuItem
             to="/findings"
             selected={props.selectedPage === "/findings"}
           >
             {parseHtml(t("menu.desktop.page3"))}
-          </MenuItem>
-          <MenuItem
+          </MenuItem> */}
+          {/* <MenuItem
             to="/model"
             selected={props.selectedPage === "/model"}
           >
             {parseHtml(t("menu.desktop.page4"))}
-          </MenuItem>
-          <MenuItem
+          </MenuItem> */}
+          {/* <MenuItem
             to="/historical"
             selected={props.selectedPage === "/historical"}
           >
             {parseHtml(t("menu.desktop.page5"))}
-          </MenuItem>
-          <MenuItem
+          </MenuItem> */}
+          {/* <MenuItem
             to="/how-to-use"
             selected={props.selectedPage === "/how-to-use"}
           >
             {parseHtml(t("menu.desktop.page6"))}
-          </MenuItem>
+          </MenuItem> */}
         </MenuRoutes>}
       </MenuHeader>
       <>
