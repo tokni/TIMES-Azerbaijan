@@ -37,7 +37,13 @@
     "funded_by": "Financieret af EU",
     "countries": "Vælg Lande",
     "change-language": "Vælg Sprog",
-    "download-as-csv": "Tag ned som CSV"
+    "change-unit": "Vælg Enhed",
+    "download-as-csv": "Tag ned som CSV",
+    "Access_denied_unauthorized_email": "Adgang nægtet, uautoriseret email",
+    "access_contact": "For at få adgang kontakt:",
+    "login": "Log ind",
+    "logout": "Log ud",
+    "loading": "Henter data ..."
   },
   "scenarios": {
     "selectedScenario-bar-and-line": "VENSTRE BAR ELLER FULD LINJE",

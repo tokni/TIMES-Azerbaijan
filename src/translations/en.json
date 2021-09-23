@@ -1,5 +1,5 @@
 {
-  "title": "NCES",
+  "title": "TIMES-AZ",
   "menu": {
     "mobile": {
       "page1": "Page1",
@@ -36,7 +36,10 @@
     "troubleshoot-title": "If you are experiencing issues with the web tool please contact Kenneth Karlsson at The Energy Modelling Lab.",
     "download-as-csv": "Download as CSV",
     "Access_denied_unauthorized_email": "Access Denied, unauthorized email",
-    "access_contact": "To get access contact:"
+    "access_contact": "To get access contact:",
+    "login": "Log in",
+    "logout": "Log out",
+    "loading": "Loading ..."
   },
   "tabs": {
     "tab1": "Main Results",

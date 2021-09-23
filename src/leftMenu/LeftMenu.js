@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
@@ -266,6 +266,7 @@ const LoginContainer = styled.div`
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
   const location = useLocation()
+  const [unitSelected, setUnitSelected] = useState()
   const {user, isAuthenticated, isLoading, loginWithRedirect, logout} = useAuth0()
   const scenarioSelectorVisible = location.pathname.includes("tab") || location.pathname === "/"
   let params = queryString.parse(location.search)
@@ -288,10 +289,10 @@ function ScenarioSelectionMenu(props) {
         {console.log("auth0.user: ", user)}
         {
           isAuthenticated && <><div>Logged in as: {user?.name} </div><div><button
-            onClick={() => logout({ returnTo: "http://localhost:3000"})}>Log out</button></div></>
+            onClick={() => logout({ returnTo: "http://localhost:3000"})}>{t("general.logout")}</button></div></>
         }
         {
-          !isAuthenticated && !isLoading && params.error!=="unauthorized" && <LoginContainer><button onClick={()=> loginWithRedirect()}>Log in</button></LoginContainer>}
+          !isAuthenticated && !isLoading && params.error!=="unauthorized" && <LoginContainer><button onClick={()=> loginWithRedirect()}>{t("general.login")}</button></LoginContainer>}
             
             {params.error==="unauthorized" ? <>
               <div>{t("general." + params?.error_description?.replaceAll(" ", "_").replaceAll(",", "").replaceAll(".", ""))}</div>
@@ -299,7 +300,7 @@ function ScenarioSelectionMenu(props) {
               <a href = "mailto:bl@tokni.com">bl@tokni.com</a>
             </> : <div></div>}
         {
-          isLoading && <div>loading ... </div>
+          isLoading && <div>{t("general.loading")}</div>
         }
         {isAuthenticated && <MenuRoutes>
           <MenuItem
@@ -358,6 +359,22 @@ function ScenarioSelectionMenu(props) {
             </LanguageButton>
           </LanguageGroup>
         <MenuSeparatorLine />
+        {isAuthenticated && <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
+          <LanguageGroup>
+            <LanguageButton
+              selected={unitSelected === "unit1"}
+              onClick={() => setUnitSelected("unit1")}
+            >
+              Unit1
+            </LanguageButton>
+            <LanguageButton
+              selected={unitSelected === "unit2"}
+              onClick={() => setUnitSelected("unit2")}
+            >
+              Unit2
+            </LanguageButton>
+          </LanguageGroup>
+          <MenuSeparatorLine /></>}
       </>
       
       {isAuthenticated && scenarioSelectorVisible &&
