@@ -3,7 +3,7 @@ export default {
 		{ 
 			scenarioOptions : [ 
 				{ 
-					"id": scenario0, 
+					"id": "scenario0", 
 					"name_en": "REF", 
 					"name_az": "REF", 
 					"nameNoOptions_en": "REF", 
@@ -17,7 +17,7 @@ export default {
 					"opt0": false, 
 				}, 
 				{ 
-					"id": scenario0, 
+					"id": "scenario0", 
 					"name_en": "REF", 
 					"name_az": "REF", 
 					"nameNoOptions_en": "REF_copy", 
@@ -31,7 +31,7 @@ export default {
 					"opt0": false, 
 				}, 
 				{ 
-					"id": scenario1, 
+					"id": "scenario1", 
 					"name_en": "CNS", 
 					"name_az": "CNS", 
 					"nameNoOptions_en": "CNS", 
@@ -45,7 +45,7 @@ export default {
 					"opt0": false, 
 				}, 
 				{ 
-					"id": scenario1, 
+					"id": "scenario1", 
 					"name_en": "CNS", 
 					"name_az": "CNS", 
 					"nameNoOptions_en": "CNS_copy", 
@@ -60,10 +60,10 @@ export default {
 				}, 
 			], 
 			optionsAvailable: { 
-				"Base-SUb-Myopic": { 
+				"scenario0": { 
 					"opt0": false,
 					}, 
-				"AZ-CNS-myopic": { 
+				"scenario1": { 
 					"opt0": false,
 					}, 
 			} 
