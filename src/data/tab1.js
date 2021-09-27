@@ -1351,7 +1351,7 @@ export default {
         ]
       },
       {
-        "scenario": "scenario1",
+        "scenario": "scenario2",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -2700,7 +2700,7 @@ export default {
         ]
       },
       {
-        "scenario": "scenario2",
+        "scenario": "scenario4",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -4049,7 +4049,7 @@ export default {
         ]
       },
       {
-        "scenario": "scenario3",
+        "scenario": "scenario6",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
