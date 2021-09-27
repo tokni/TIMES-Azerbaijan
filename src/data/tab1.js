@@ -805,7 +805,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend32",
+                    "legend": "legend30",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -838,7 +838,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend33",
+                    "legend": "legend31",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -871,7 +871,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend34",
+                    "legend": "legend32",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -904,7 +904,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend33",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1944,7 +1944,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend32",
+                    "legend": "legend30",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1977,7 +1977,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend33",
+                    "legend": "legend31",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -2010,7 +2010,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend34",
+                    "legend": "legend32",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -2043,7 +2043,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend33",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -3083,7 +3083,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend32",
+                    "legend": "legend30",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -3116,7 +3116,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend33",
+                    "legend": "legend31",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -3149,7 +3149,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend34",
+                    "legend": "legend32",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -3182,7 +3182,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend33",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -4222,7 +4222,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend32",
+                    "legend": "legend30",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -4255,7 +4255,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend33",
+                    "legend": "legend31",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -4288,7 +4288,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend34",
+                    "legend": "legend32",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -4321,7 +4321,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend33",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
