@@ -1,0 +1,194 @@
+{
+  "title": "NCES2020",
+  "menu": {
+    "mobile": {
+      "page1": "Side1",
+      "page2": "Side2",
+      "page3": "Side3",
+      "page4": "Side4",
+      "page5": "Side5",
+      "page6": "Side6"
+    },
+    "desktop": {
+      "page1": "Side1",
+      "page2": "Side2",
+      "page3": "Side3",
+      "page4": "Side4",
+      "page5": "Side5",
+      "page6": "Side6"
+    }
+  },
+  "options": {
+    "ccs": "CCS",
+    "bio": "Biomass importrestriktioner",
+    "opt2": "Short description of opt2",
+    "opt3": "Short description of opt3",
+    "unavailable": "(unavailable)"
+  },
+  "general": {
+    "scenarios": "Ssenariləri seçin",
+    "CCS": "CCS",
+    "bio": "Bio",
+    "scenario-difference": "Ssenari Fərqi",
+    "red-minus-green": "Bu funksiya modelin mavi və bənövşəyi nəticələri arasındakı dəyər fərqini hesablayacaq.",
+    "tokni": "Tokni",
+    "developed-by": "tərəfindən həyata keçirilib fix",
+    "disclaimer": "Bu veb sayt Avropa İttifaqı  maliyyə dəstəyi ilə yaradılıb və saxlanılıb. Saytın  məzmununa görə Equinoccio və Niras şirkətləri  məsuliyyət daşıyır və heç bir şəkildə Avropa İttifaqının fikirlərini əks etdirə bilməz.",
+    "funded_by": "Avropa İttifaqı tərəfindən maliyyələşdirilir",
+    "countries": "Ölkələri seçin",
+    "change-language": "Dili dəyişdir ",
+    "change-unit": "Ölçü vahidini dəyişdirin",
+    "download-as-csv": "CSV formatında yükləyin",
+    "Access_denied_unauthorized_email": "Giriş qadağandır, İcazəsiz E -poçt ",
+    "access_contact": "Giriş əldə etmək üçün əlaqə:",
+    "login": "Giriş",
+    "logout": "Çıxış",
+    "loading": "Henter data ..."
+  },
+  "scenarios": {
+    "selectedScenario-bar-and-line": "VENSTRE BAR ELLER FULD LINJE",
+    "selectedScenario2-bar-and-line": "HØJRE BAR ELLER STIPLET LINJE",
+    "name1": "Scenarie Navn 1",
+    "description1": "Scenarie Beskrivelse 1",
+    "short-description1": "S Sd1",
+    "ultra-short-description1": "S Usd1",
+    "name2": "Scenarie Navn 2",
+    "description2": "Scenarie Beskrivelse 2",
+    "short-description2": "S Sd2",
+    "ultra-short-description2": "S Usd2",
+    "name3": "Scenarie Navn 3",
+    "description3": "Scenarie Beskrivelse 3",
+    "short-description3": "S Sd3",
+    "ultra-short-description3": "S Usd3",
+    "name4": "Scenarie Navn 4",
+    "description4": "Scenarie Beskrivelse 4",
+    "short-description4": "S Sd4",
+    "ultra-short-description4": "S Usd4",
+    "name5": "Scenarie Navn 5",
+    "description5": "Scenarie Beskrivelse 5",
+    "short-description5": "S Sd5",
+    "ultra-short-description5": "S Usd5",
+    "name6": "Scenarie Navn 6",
+    "description6": "Scenarie Beskrivelse 6",
+    "short-description6": "S Sd6",
+    "ultra-short-description6": "S Usd6"
+  },
+  "scenario_code": {
+    "Reference": "Reference",
+    "Reference_ccs": "Reference",
+    "Reference_bio": "Reference",
+    "Reference_ccs_bio": "Reference",
+    "Share Optimism": "Share Optimism",
+    "Share Optimism_ccs": "Share Optimism",
+    "Share Optimism_bio": "Share Optimism",
+    "Share Optimism_ccs_bio": "Share Optimism",
+    "Technology Optimism": "Technology Optimism",
+    "Technology Optimism_ccs": "Technology Optimism",
+    "Technology Optimism_bio": "Technology Optimism",
+    "Technology Optimism_ccs_bio": "Technology Optimism"
+  },
+  "tabs": {
+    "tab1": "Hoved Resultater",
+    "tab2": "Fane2",
+    "tab3": "Energi",
+    "tab4": "Tung Industri",
+    "tab5": "Andre Sectorer",
+    "tab6": "Boliger",
+    "tab7": "Transport",
+    "tab8": "NIs",
+    "tab9": "Historiske Indikatorer",
+    "tab10": "Historisk Data",
+	"mobile": {
+    "tab1": "Resultater",
+    "tab2": "Fane2",
+    "tab3": "Energi",
+    "tab4": "Tung Industri",
+    "tab5": "Andre Sectorer",
+    "tab6": "Boliger",
+    "tab7": "Transport",
+    "tab8": "NIs",
+    "tab9": "Hist Ind",
+    "tab10": "Hist Data"
+    }
+  },
+  "welcome-text": {
+    "tab1": {
+      "welcome1": "Velkommen til Fane 1",
+      "welcome2": "<p>Forklaring</p>",
+      "welcome3": "<p>Beskrivelse</p>",
+      "welcome4": "<p></p>",
+      "welcome5": "<p></p>",
+      "welcome6": "<p></p>",
+      "welcome7": "<p></p>"
+    },
+    "tab2": {
+      "welcome1": "Velkomment til Fane 2",
+      "welcome2": "<p>Tekst 1</p>",
+      "welcome3": "<p>Tekst 2</p>"
+    }
+  },
+  "chart-titles": {
+    "tab1": {
+      "chart0": "Primær Energy",
+      "unit0": "u1",
+      "chart1": "CO<sub>2</sub> Emissioner",
+      "unit1": "u2",
+      "chart2": "Kul Indfangelse",
+      "unit2": "u3",
+      "chart3": "Endeligt Energi Forbrug, Energi kilde",
+      "unit3": "u4",
+      "chart4": "Endeligt Energi Forbrug, Sectorer",
+      "unit4": "u5",
+      "chart5": "Marginale Priser - CO<sub>2</sub>",
+      "unit5": "u6"
+    },
+    "tab2": {
+      "chart1": "Diagram 1"
+    },
+    "tab3": {
+      "chart1": "Diagram 1",
+      "chart2": "Diagram 2"
+    }
+  },
+  "legends": {
+    "common": {
+      "commonlegend1": "Common Legend 1",
+      "commonlegend2": "Common Legend 2"
+    },
+    "legend1: ": "Legend 1",
+    "legend2: ": "Legend 2",
+    "tab1": {
+      "common": {
+        "commonlegend1": "T1C Legend 1",
+        "commonlegend2": "T1C Legend 2"
+      },
+      "chart1": {
+        "legend1": "Bio Brændsel",
+        "legend2": "Kul",
+        "legend3": "Distrikt Varme",
+        "legend4": "Elektricitet",
+        "legend5": "Vand",
+        "legend6": "Natur Gas",
+        "legend7": "Olie",
+        "legend8": "Andre",
+        "legend9": "Sol",
+        "legend10": "Kunstig Brændsel",
+        "legend11": "Affald",
+        "legend12": "Vind",
+        "legend13": "Atom"
+      },
+      "legend1: ": "T1 Legend 1",
+      "legend2: ": "T1 Legend 2"
+    },
+    "tab2": {
+      "common": {
+
+      }
+    },
+    "tab3": {
+      "common": {
+        
+      }
+    }
+  }
+}

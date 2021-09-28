@@ -29,25 +29,27 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
       scenario = scenario.replace("_copy", "")
     let scen = data.scenarios
     .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
-    let ind = scen.indicators.find(o => o.indicator === chartName)
+    console.log("scen: ", scen)
+    console.log("chartname: ", chartName)
+    let ind = scen.indicators.find(o => o.chart === chartName)
         unit = ind.unit
         ind.regions.forEach(r => {
             r.indicatorGroups.forEach(indicatorGroup => {
               //console.log("indicatorGroup: ", indicatorGroup)
               //console.log("accumulatedData: ", accumulatedData)
-              if (!accumulatedData[indicatorGroup.indicatorGroup]) {
-                accumulatedData[indicatorGroup.indicatorGroup]=[]
+              if (!accumulatedData[indicatorGroup.legend]) {
+                accumulatedData[indicatorGroup.legend]=[]
                 years.forEach(y => {
-                  accumulatedData[indicatorGroup.indicatorGroup].push({"year": y, "total": 0})
+                  accumulatedData[indicatorGroup.legend].push({"year": y, "total": 0})
                 })
               }
               if (selectedDataRegions.includes(r.region)) {//Only include selected countries
                 indicatorGroup.indicatorGroupValues.forEach((value, index) => {
-                  if (accumulatedData[indicatorGroup.indicatorGroup][index].year !== value.year ) {
+                  if (accumulatedData[indicatorGroup.legend][index].year !== value.year ) {
                      //Extra check we rely on the two arrays being indexed the same way
                     console.log("Error in array indexing")
                   }
-                  accumulatedData[indicatorGroup.indicatorGroup][index].total += percentage ? value.total/selectedCountries.length : value.total
+                  accumulatedData[indicatorGroup.legend][index].total += percentage ? value.total/selectedCountries.length : value.total
                   if (value.total > 0)
                     totalYearValuesPositive[value.year] += percentage ? value.total/selectedCountries.length : value.total
                   else
@@ -56,6 +58,9 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
               }
             })
         })
+        console.log("accum: ", accumulatedData)
+        console.log("totalYearValuesPositive: ", totalYearValuesPositive)
+        console.log("totalYearValuesNegative: ", totalYearValuesNegative)
         return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]
 }
 

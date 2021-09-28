@@ -270,6 +270,11 @@ function ScenarioSelectionMenu(props) {
   const {user, isAuthenticated, isLoading, loginWithRedirect, logout} = useAuth0()
   const scenarioSelectorVisible = location.pathname.includes("tab") || location.pathname === "/"
   let params = queryString.parse(location.search)
+  let dev 
+  if(process.env.NODE_ENV === 'development'){
+    dev = true
+    console.log("developement build")
+  }
   /* console.log("this.props: ", this.props)
       console.log("this.props.match.params: ", queryString.parse(this.props.location.search).error_description )
       let params = queryString.parse(this.props.location.search)
@@ -346,10 +351,10 @@ function ScenarioSelectionMenu(props) {
           <LanguageTitle>{parseHtml(t("general.change-language"))}</LanguageTitle>
           <LanguageGroup>
             <LanguageButton
-              selected={i18next.languages[0] === "dk"}
-              onClick={() => i18next.changeLanguage("dk")}
+              selected={i18next.languages[0] === "az"}
+              onClick={() => i18next.changeLanguage("az")}
             >
-              DK
+              AZ
             </LanguageButton>
             <LanguageButton
               selected={i18next.languages[0] === "en"}
@@ -377,7 +382,7 @@ function ScenarioSelectionMenu(props) {
           <MenuSeparatorLine /></>}
       </>
       
-      {isAuthenticated && scenarioSelectorVisible &&
+      {(dev || isAuthenticated) && scenarioSelectorVisible &&
       <>
       <ScenarioSelection>
         <ScenarioSelectionList

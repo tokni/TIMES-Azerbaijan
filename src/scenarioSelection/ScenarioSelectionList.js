@@ -20,6 +20,7 @@ import {
   faCar,
   faUserFriends
 } from "@fortawesome/free-solid-svg-icons";
+import i18next from 'i18next';
 
 function cancelBubble(e) {
   //Stop propagation to the underlying div
@@ -48,18 +49,17 @@ const ScenarioSelectionList = props => {
     }).forEach((element)=>{
       let newOption = scenarioCombinations.scenarioOptions.find((option) => {
         return(
-          option.nameNoOptions === element.nameNoOptions &&
-          option.opt0===props.options[element.nameNoOptions].opt0 && 
-          option.opt1===props.options[element.nameNoOptions].opt1 && 
-          option.opt2===props.options[element.nameNoOptions].opt2 && 
-          option.opt3===props.options[element.nameNoOptions].opt3
+          option.id === element.id &&
+          option.opt0===props.options[element.id].opt0 /* && 
+          option.opt1===props.options[element.nameNoOptions_en].opt1 && 
+          option.opt2===props.options[element.nameNoOptions_en].opt2 && 
+          option.opt3===props.options[element.nameNoOptions_en].opt3 */
         )
       })
       OptionDisplay.push(newOption)
     })
-  //let scenarioOptions2 = 
   let scenarioOptions = OptionDisplay.map((option, i) => {
-      let optionValue = option.nameNoOptions;
+      let optionValue = option.id;
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
       } else {
@@ -73,18 +73,21 @@ const ScenarioSelectionList = props => {
             
           >
             <ScenarioNameContainer
-              data-tip={t("scenarios", {returnObjects: true})["short-description" + (i + 1)]}
+              //data-tip={t("scenarios", {returnObjects: true})["short-description" + (i + 1)]}
+              data-tip={option["desc_" + i18next.language]}
               narrowVersion={narrowVersion}
               onClick={event => {
               handleChange(event, optionValue);
             }}
             >
               {narrowVersion === false &&
-                t("scenarios", {returnObjects: true})["name" + (i + 1)]
+                option["short_description_" + i18next.language]
+                //t("scenarios", {returnObjects: true})["name" + (i + 1)]
                 //option.short_description
                 }
               {narrowVersion === true &&
-                t("scenarios", {returnObjects: true})["ultra-short-description" + (i + 1)]
+                option["ultra_short_description_" + i18next.language]
+                //t("scenarios", {returnObjects: true})["ultra-short-description" + (i + 1)]
                 //option.ultra_short_description
                 }
             </ScenarioNameContainer>

@@ -20,6 +20,8 @@ import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import { CSVLink } from 'react-csv'
 import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next';
+import legendNames from '../translations/legends'
+import i18next from 'i18next';
 
 const ChartContainer = styled.div`
   width: 550px;
@@ -96,7 +98,12 @@ const StackedBarChart = props => {
     base = -minY
   else 
     base = maxY
+  let legendsOld = new Set()
   let legends = new Set()
+  console.log("accum1: ", accumulatedDataScenario1)
+  Object.keys(accumulatedDataScenario1).forEach((key) => {
+    legends.add(legendNames.legends[key][0]["name_" + i18next.language].substring(0,16))
+  })
   /* stackedBar.data.scenarios
   .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
   .indicators.find(o => o.indicator === chartName).regions.forEach((reg)=>{
@@ -106,8 +113,10 @@ const StackedBarChart = props => {
   }) */
   //console.log("legends tab1 chart1: ", Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})))
   Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})).forEach((entry) => {
-    legends.add(entry[1])
+    legendsOld.add(entry[1])
   })
+  
+  console.log("leg: ", legends)
   const defTick = [0, 0.25, 0.5, 0.75]
   const getTickValues = () => {
     let ret = []
@@ -156,6 +165,7 @@ const HTMLYAxisLabel = props => {
   );
 };
 const HTMLLabel = props => {
+  console.log("label; ", props)
   const text = props.text.replaceAll('§', '')
   const co2Text = text.replace("CO2", "CO<sub>2</sub>")
   return (
@@ -166,11 +176,12 @@ const HTMLLabel = props => {
 };
 const tickValueLength = getTickValues().length
 let tickValueNumberOfNegativeElements = 0
+const topPadding = Math.ceil(legends.size / 4) * 21
 getTickValues().forEach((val) => {
   if (val < 0) tickValueNumberOfNegativeElements++
 })
-let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
-
+let t1 = tickValueNumberOfNegativeElements === 0 ? 0 : tickValueNumberOfNegativeElements/tickValueLength*550 - topPadding/2
+console.log("legendNames: ", legendNames)
   return (
     <ChartContainer>
     <ChartHeader>
@@ -185,7 +196,7 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
         domainPadding={20}
         width={550}
         height={550}
-        padding={{ left: 80, right: 50, top: 50, bottom: 50 }}
+        padding={{ left: 80, right: 50, top: topPadding, bottom: 50 }}
         theme={VictoryTheme.material}
         style={{parent: { height: "550px" }}}
       >
@@ -236,7 +247,7 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
                       return({
                       ...chartGroupValue,
                       label:
-                        chartGroupName +
+                        legendNames.legends[chartGroupName][0]["name_" + i18next.language] +
                         ': ' +
                         (props.YPercentage
                           ? (
@@ -334,7 +345,8 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
             title: { fontSize: 14, leftPadding: -10 },
           }}
           colorScale={colorNER}
-          data={Array.from(legends).map((legend, i) => ({
+          data={Array.from(legends).map((legend, i) => {
+            return({
               name: legend,
               symbol: { fill: () => {
                 if (indicatorgroup_colors[legend]) 
@@ -343,7 +355,8 @@ let t1 = tickValueNumberOfNegativeElements/tickValueLength*550
                   return colorNER[i]
                 },
               }}
-          ))}
+          )}
+          )}
           labelComponent={<HTMLLabel />}
         />
       </VictoryChart>

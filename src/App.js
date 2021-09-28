@@ -14,8 +14,13 @@ import scenarioCombinations from './data/scenarioCombinations'
 import { withTranslation } from 'react-i18next'
 import { useAuth0, withAuth0 } from "@auth0/auth0-react";
 
-if(process.env.NODE_ENV === 'development')
+let dev = false
+
+if(process.env.NODE_ENV === 'development'){
+  dev = true
   console.log("developement build")
+}
+  
 else if (process.env.NODE_ENV === 'production')
   console.log("production build")
 else
@@ -63,17 +68,17 @@ const MainSwitch = styled(Switch)`
 export const changeScenario = (name, value) => ({
   [name]: value,
 })
-const default_scenario = scenarioCombinations.scenarioCombinations.scenarioOptions[0].name;
-const default_countries = ['no','se','dk', "fi", "is"];
+const default_scenario = scenarioCombinations.scenarioCombinations.scenarioOptions[0].id;
+const default_countries = ['no','se','dk', "fi", "is", "az"];
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
   .filter(s => !s.opt0 && !s.op1 && !s.opt2 && !s.opt3)
   .forEach(s => {
-    options[s.nameNoOptions] = {}
-    options[s.nameNoOptions]['opt0'] = false
-    options[s.nameNoOptions]['opt1'] = false
-    options[s.nameNoOptions]['opt2'] = false
-    options[s.nameNoOptions]['opt3'] = false
+    options[s.id] = {}
+    options[s.id]['opt0'] = false
+    options[s.id]['opt1'] = false
+    options[s.id]['opt2'] = false
+    options[s.id]['opt3'] = false
   })
 
 export class App extends React.Component {
@@ -201,6 +206,7 @@ LoginButton = () => {
 };
   
   render() {
+    console.log("from app options: ", this.state.options)
     return (
       <Page>
         <LeftColumn>
@@ -231,7 +237,7 @@ LoginButton = () => {
             />
           </Content>
         </LeftColumn>
-        {this.props.auth0.isAuthenticated && <RightColumn>
+        {(dev || this.props.auth0.isAuthenticated) && <RightColumn>
           <Content>
             <Tabs selectedChartgroup={this.props.location.pathname} />
             <TabsMobile selectedChartgroup={this.props.location.pathname} />

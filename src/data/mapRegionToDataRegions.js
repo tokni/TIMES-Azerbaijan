@@ -34,5 +34,10 @@ export default [
         path_id : "fo", 
         data_regions: [],
     },
+    {
+        country: "Azer",
+        path_id : "az", 
+        data_regions: ["AZ"],
+    },
 ]
 
