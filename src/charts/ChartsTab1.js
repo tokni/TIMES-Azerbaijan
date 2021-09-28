@@ -34,10 +34,12 @@ const Charts = props => {
             {/* {scenarioCombinations.scenarioCombinations.scenarioOptions.find(
               (option)=>option.name.toLowerCase() === selectedScenario.toLowerCase())?.desc.toUpperCase()
             } */}
+            {console.log("selectedScenario: ", selectedScenario)}
             {
               //t("scenarios.description" + props.index)
               scenarioCombinations.scenarioCombinations.scenarioOptions.find(
               (option)=>{
+                console.log("option: ", option)
                 return((option.id.toLowerCase() === selectedScenario.toLowerCase()))
                 }
               )['desc_' + i18next.language]?.toUpperCase()

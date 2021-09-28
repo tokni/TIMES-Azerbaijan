@@ -47,19 +47,23 @@ const ScenarioSelectionList = props => {
         !s.opt2 && 
         !s.opt3) //ensure that each scenario is only listed once
     }).forEach((element)=>{
+      console.log("element: ", element)
       let newOption = scenarioCombinations.scenarioOptions.find((option) => {
         return(
-          option.id === element.id &&
-          option.opt0===props.options[element.id].opt0 /* && 
-          option.opt1===props.options[element.nameNoOptions_en].opt1 && 
+          option.id_noOptions === element.id_noOptions &&
+          option.opt0===props.options[element.id_noOptions].opt0 && 
+          option.opt1===props.options[element.id_noOptions].opt1 /* && 
           option.opt2===props.options[element.nameNoOptions_en].opt2 && 
           option.opt3===props.options[element.nameNoOptions_en].opt3 */
         )
       })
+      console.log("props.option: ", props.options)
+      console.log("newOption: ", newOption)
       OptionDisplay.push(newOption)
     })
   let scenarioOptions = OptionDisplay.map((option, i) => {
-      let optionValue = option.id;
+      console.log("ssl option---------------------------: ", option)
+      let optionValue = option.id_noOptions
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
       } else {
@@ -92,6 +96,7 @@ const ScenarioSelectionList = props => {
                 }
             </ScenarioNameContainer>
             <IconContainer narrowVersion={narrowVersion}>
+            {console.log("optionValue -- -- -- ", optionValue)}
               {scenarioCombinations.optionsAvailable[optionValue].opt0 && <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].opt0
@@ -124,7 +129,7 @@ const ScenarioSelectionList = props => {
                   cancelBubble(event); //prevent onclick for scenario being fired
                 }}
                 data-tip={
-                  t("options.name1") +
+                  t("options.name2") +
                   " " +
                   (!scenarioCombinations.optionsAvailable[optionValue].opt1
                     ? t("options.unavailable")

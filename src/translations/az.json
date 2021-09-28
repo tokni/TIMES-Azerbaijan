@@ -19,11 +19,11 @@
     }
   },
   "options": {
-    "ccs": "CCS",
-    "bio": "Biomass importrestriktioner",
-    "opt2": "Short description of opt2",
-    "opt3": "Short description of opt3",
-    "unavailable": "(unavailable)"
+    "name1": "O name1_az",
+    "description1": "O desc1_az",
+    "name2": "O name1_az",
+    "description2": "O desc2_az",
+    "unavailable": "(unavailable)_az"
   },
   "general": {
     "scenarios": "Ssenariləri seçin",
