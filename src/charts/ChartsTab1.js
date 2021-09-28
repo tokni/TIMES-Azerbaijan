@@ -6,10 +6,12 @@ import Welcome from '../alert/Welcome'
 import StackedBarChart from './StackedBarChart'
 import StackedBarDiffChart from './StackedBarDiffChart'
 import { MainArea, Flex, Scenario1Description, Scenario2Description } from './Charts.style'
-import stackedBar from '../data/stackedBarTab1'
+import stackedBar from '../data/tab1'
 import LineChart from './LineChart'
-import indicators from '../data/indicatorsTab1'
+import indicators from '../data/chartstab1'
 import { useTranslation } from 'react-i18next';
+import scenarioCombinations from '../data/scenarioCombinations'
+import i18next from 'i18next'
 
 const Charts = props => {
   const selectedScenario = props.scenarioSelection.scenarioSelection
@@ -32,7 +34,16 @@ const Charts = props => {
             {/* {scenarioCombinations.scenarioCombinations.scenarioOptions.find(
               (option)=>option.name.toLowerCase() === selectedScenario.toLowerCase())?.desc.toUpperCase()
             } */}
-            {t("scenarios.description" + props.index)}
+            {console.log("selectedScenario: ", selectedScenario)}
+            {
+              //t("scenarios.description" + props.index)
+              scenarioCombinations.scenarioCombinations.scenarioOptions.find(
+              (option)=>{
+                console.log("option: ", option)
+                return((option.id.toLowerCase() === selectedScenario.toLowerCase()))
+                }
+              )['desc_' + i18next.language]?.toUpperCase()
+            }
           </Scenario1Description>
           {selectedScenario2 && 
           <Scenario2Description>

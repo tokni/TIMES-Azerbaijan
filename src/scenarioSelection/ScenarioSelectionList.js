@@ -20,6 +20,7 @@ import {
   faCar,
   faUserFriends
 } from "@fortawesome/free-solid-svg-icons";
+import i18next from 'i18next';
 
 function cancelBubble(e) {
   //Stop propagation to the underlying div
@@ -46,20 +47,23 @@ const ScenarioSelectionList = props => {
         !s.opt2 && 
         !s.opt3) //ensure that each scenario is only listed once
     }).forEach((element)=>{
+      console.log("element: ", element)
       let newOption = scenarioCombinations.scenarioOptions.find((option) => {
         return(
-          option.nameNoOptions === element.nameNoOptions &&
-          option.opt0===props.options[element.nameNoOptions].opt0 && 
-          option.opt1===props.options[element.nameNoOptions].opt1 && 
-          option.opt2===props.options[element.nameNoOptions].opt2 && 
-          option.opt3===props.options[element.nameNoOptions].opt3
+          option.id_noOptions === element.id_noOptions &&
+          option.opt0===props.options[element.id_noOptions].opt0 && 
+          option.opt1===props.options[element.id_noOptions].opt1 /* && 
+          option.opt2===props.options[element.nameNoOptions_en].opt2 && 
+          option.opt3===props.options[element.nameNoOptions_en].opt3 */
         )
       })
+      console.log("props.option: ", props.options)
+      console.log("newOption: ", newOption)
       OptionDisplay.push(newOption)
     })
-  //let scenarioOptions2 = 
   let scenarioOptions = OptionDisplay.map((option, i) => {
-      let optionValue = option.nameNoOptions;
+      console.log("ssl option---------------------------: ", option)
+      let optionValue = option.id_noOptions
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
       } else {
@@ -73,22 +77,26 @@ const ScenarioSelectionList = props => {
             
           >
             <ScenarioNameContainer
-              data-tip={t("scenarios", {returnObjects: true})["short-description" + (i + 1)]}
+              //data-tip={t("scenarios", {returnObjects: true})["short-description" + (i + 1)]}
+              data-tip={option["desc_" + i18next.language]}
               narrowVersion={narrowVersion}
               onClick={event => {
               handleChange(event, optionValue);
             }}
             >
               {narrowVersion === false &&
-                t("scenarios", {returnObjects: true})["name" + (i + 1)]
+                option["short_description_" + i18next.language]
+                //t("scenarios", {returnObjects: true})["name" + (i + 1)]
                 //option.short_description
                 }
               {narrowVersion === true &&
-                t("scenarios", {returnObjects: true})["ultra-short-description" + (i + 1)]
+                option["ultra_short_description_" + i18next.language]
+                //t("scenarios", {returnObjects: true})["ultra-short-description" + (i + 1)]
                 //option.ultra_short_description
                 }
             </ScenarioNameContainer>
             <IconContainer narrowVersion={narrowVersion}>
+            {console.log("optionValue -- -- -- ", optionValue)}
               {scenarioCombinations.optionsAvailable[optionValue].opt0 && <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].opt0
@@ -121,7 +129,7 @@ const ScenarioSelectionList = props => {
                   cancelBubble(event); //prevent onclick for scenario being fired
                 }}
                 data-tip={
-                  t("options.name1") +
+                  t("options.name2") +
                   " " +
                   (!scenarioCombinations.optionsAvailable[optionValue].opt1
                     ? t("options.unavailable")

@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import common_en from "./translations/en.json";
 import common_dk from "./translations/dk.json";
+import common_az from "./translations/az.json"
 
 // the translations
 const resources = {
@@ -10,7 +11,11 @@ const resources = {
   },
   dk: {
     translation: common_dk
+  },
+  az: {
+    translation: common_az
   }
+
 };
 
 i18n
