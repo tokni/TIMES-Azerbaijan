@@ -1,4 +1,4 @@
-export default {
+{
   "legends": {
     "legend0": [
       {
