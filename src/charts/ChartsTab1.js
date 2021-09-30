@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import { createBreakpoint } from 'styled-components-breakpoint'
 import Welcome from '../alert/Welcome'
 import StackedBarChart from './StackedBarChart'
-import StackedBarDiffChart from './StackedBarDiffChart'
+//import StackedBarDiffChart from './StackedBarDiffChart'
 import { MainArea, Flex, Scenario1Description, Scenario2Description } from './Charts.style'
 //import stackedBar from '../data/tab1'
-import LineChart from './LineChart'
+//import LineChart from './LineChart'
 //import indicators from '../data/chartstab1'
 import { useTranslation } from 'react-i18next';
 import scenarioCombinations from '../data/scenarioCombinations'
@@ -77,20 +77,6 @@ const Charts = props => {
            
             indicators.map((i, index) => 
             {
-              if (i === "chart-titles.tab1.chart5" ) 
-                return(<LineChart 
-                  key={i+' '+index}
-                  chartName={i}
-                  chartTitle={i}
-                  selectedScenario={selectedScenario}
-                  selectedScenario2={selectedScenario2}
-                  selectedCountries={selectedCountries}
-                  label={i + ".unit" + index}
-                  minY={0}
-                  maxY={15}
-                  lineData={stackedBar}
-                />)
-              else
               return (
                 <StackedBarChart
                   key={i+' '+index}
@@ -111,7 +97,7 @@ const Charts = props => {
           }
         </Flex>
       )}
-      {props.scenarioSelection.showDifference === true &&
+      {/* {props.scenarioSelection.showDifference === true &&
         selectedScenario2 !== '' && (
         <Flex>
           {
@@ -131,7 +117,7 @@ const Charts = props => {
             )
           }
           </Flex>
-        )}
+        )} */}
         {console.log("tab1 end")}
     </MainArea>
   )

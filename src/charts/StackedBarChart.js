@@ -98,7 +98,7 @@ const StackedBarChart = props => {
     base = -minY
   else 
     base = maxY
-  let legendsOld = new Set()
+  //let legendsOld = new Set()
   let legends = new Set()
   //console.log("accum1: ", accumulatedDataScenario1)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
@@ -112,9 +112,9 @@ const StackedBarChart = props => {
     })
   }) */
   //console.log("legends tab1 chart1: ", Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})))
-  Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})).forEach((entry) => {
+  /* Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})).forEach((entry) => {
     legendsOld.add(entry[1])
-  })
+  }) */
   
   //console.log("leg: ", legends)
   const defTick = [0, 0.25, 0.5, 0.75]
