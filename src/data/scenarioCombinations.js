@@ -228,11 +228,7 @@ export default {
 				}, 
 			], 
 			optionsAvailable: { 
-				"scenario0_copy": { 
-					"opt0": true,
-					"opt1": true,
-					}, 
-				"scenario1": { 
+				"scenario1_copy": { 
 					"opt0": true,
 					"opt1": true,
 					}, 
@@ -240,7 +236,11 @@ export default {
 					"opt0": true,
 					"opt1": true,
 					}, 
-				"scenario1_copy": { 
+				"scenario1": { 
+					"opt0": true,
+					"opt1": true,
+					}, 
+				"scenario0_copy": { 
 					"opt0": true,
 					"opt1": true,
 					}, 
