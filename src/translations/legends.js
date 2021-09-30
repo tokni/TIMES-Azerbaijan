@@ -1,4 +1,4 @@
-export default {
+{
   "legends": {
     "legend0": [
       {
@@ -146,35 +146,23 @@ export default {
     ],
     "legend30": [
       {
-        "name_en": "Transport Freight Trucks Rural",
-        "name_az": "Transport Freight Trucks Rural - AZ"
-      }
-    ],
-    "legend31": [
-      {
-        "name_en": "Transport Freight Trucks Urban",
-        "name_az": "Transport Freight Trucks Urban - AZ"
-      }
-    ],
-    "legend32": [
-      {
         "name_en": "Waste",
         "name_az": "Waste - AZ"
       }
     ],
-    "legend33": [
+    "legend31": [
       {
         "name_en": "Wind",
         "name_az": "Wind - AZ"
       }
     ],
-    "legend34": [
+    "legend32": [
       {
         "name_en": "Wood chips and wood waste",
         "name_az": "Wood chips and wood waste - AZ"
       }
     ],
-    "legend35": [
+    "legend33": [
       {
         "name_en": "Wood pellets",
         "name_az": "Wood pellets - AZ"

@@ -1,4 +1,4 @@
 export default 
  	 [ 
-		"chart-titles.tab1.chart1",
+		"chart-titles.tab1.chart2",
 	 ]
