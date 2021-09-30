@@ -13,7 +13,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -34,7 +34,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -55,7 +55,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -76,7 +76,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -97,7 +97,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -118,7 +118,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -139,7 +139,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -177,7 +177,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -198,7 +198,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -219,7 +219,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -240,7 +240,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -261,7 +261,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -282,7 +282,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -303,7 +303,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -341,7 +341,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -362,7 +362,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -383,7 +383,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -404,7 +404,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -425,7 +425,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -446,7 +446,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -467,7 +467,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -505,7 +505,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -526,7 +526,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -547,7 +547,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -568,7 +568,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -589,7 +589,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -610,7 +610,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -631,7 +631,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -669,7 +669,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -690,7 +690,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -711,7 +711,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -732,7 +732,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -753,7 +753,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -774,7 +774,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -795,7 +795,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -833,7 +833,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -854,7 +854,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -875,7 +875,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -896,7 +896,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -917,7 +917,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -938,7 +938,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -959,7 +959,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -997,7 +997,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1018,7 +1018,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1039,7 +1039,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1060,7 +1060,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1081,7 +1081,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1102,7 +1102,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1123,7 +1123,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1161,7 +1161,7 @@ export default {
                 "region": "AZ",
                 "indicatorGroups": [
                   {
-                    "legend": "legend34",
+                    "legend": "legend0",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1182,7 +1182,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend35",
+                    "legend": "legend1",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1203,7 +1203,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend36",
+                    "legend": "legend2",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1224,7 +1224,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend37",
+                    "legend": "legend3",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1245,7 +1245,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend38",
+                    "legend": "legend4",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1266,7 +1266,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend39",
+                    "legend": "legend5",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
@@ -1287,7 +1287,7 @@ export default {
                     ]
                   },
                   {
-                    "legend": "legend40",
+                    "legend": "legend6",
                     "indicatorGroupValues": [
                       {
                         "year": 2020,
