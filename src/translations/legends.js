@@ -168,10 +168,52 @@
         "name_az": "Wood pellets - AZ"
       }
     ],
+    "legend34": [
+      {
+        "name_en": "Agriculture",
+        "name_az": "Agriculture"
+      }
+    ],
+    "legend35": [
+      {
+        "name_en": "Commercial",
+        "name_az": "Commercial"
+      }
+    ],
+    "legend36": [
+      {
+        "name_en": "Power & Heat",
+        "name_az": "Power & Heat"
+      }
+    ],
+    "legend37": [
+      {
+        "name_en": "Industry",
+        "name_az": "Industry"
+      }
+    ],
+    "legend38": [
+      {
+        "name_en": "Residential",
+        "name_az": "Residential"
+      }
+    ],
+    "legend39": [
+      {
+        "name_en": "Supply",
+        "name_az": "Supply"
+      }
+    ],
     "legend4": [
       {
         "name_en": "Biogas",
         "name_az": "Biogas - AZ"
+      }
+    ],
+    "legend40": [
+      {
+        "name_en": "Transport",
+        "name_az": "Transport"
       }
     ],
     "legend5": [
