@@ -1,4 +1,4 @@
-﻿import React from 'react'
+﻿import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { createBreakpoint } from 'styled-components-breakpoint'
@@ -6,9 +6,9 @@ import Welcome from '../alert/Welcome'
 import StackedBarChart from './StackedBarChart'
 import StackedBarDiffChart from './StackedBarDiffChart'
 import { MainArea, Flex, Scenario1Description, Scenario2Description } from './Charts.style'
-import stackedBar from '../data/tab1'
+//import stackedBar from '../data/tab1'
 import LineChart from './LineChart'
-import indicators from '../data/chartstab1'
+//import indicators from '../data/chartstab1'
 import { useTranslation } from 'react-i18next';
 import scenarioCombinations from '../data/scenarioCombinations'
 import i18next from 'i18next'
@@ -18,14 +18,29 @@ const Charts = props => {
   const selectedScenario2 = props.scenarioSelection.scenarioSelection2
   const selectedCountries = props.selectedCountries
   const [t] = useTranslation()
+  const [stackedBar, setStackedBar] = useState(null)
+  const [indicators, setIndicators] = useState(null)
+  console.log("props ***************************** : ", props)
+  import('../data/charts' + props.tab).then((indicators) => {
+    console.log("indicators: ", indicators)
+    setIndicators(indicators.default)
+  })
+  import('../data/' + props.tab).then((stack) => {
+    console.log("stack: ", stack)
+    setStackedBar(stack.default)
+  })
+
+
+  if (!stackedBar) return <div>Data not ready</div>
   
   return (
     <MainArea>
+    {console.log("indicators: ", indicators)}
     {console.log("tab1 begin")}
         <Welcome 
           isOpen={props.scenarioSelection.showWelcome}
           closeWelcome={props.closeWelcome} 
-          tab="tab1"
+          tab={props.tab}
         />
         <ScenarioDescriptionsContainer isWelcomeOpen={props.scenarioSelection.showWelcome}>
           <Scenario1Description>
@@ -70,7 +85,7 @@ const Charts = props => {
                   selectedScenario={selectedScenario}
                   selectedScenario2={selectedScenario2}
                   selectedCountries={selectedCountries}
-                  label={"chart-titles.tab1.unit" + index}
+                  label={i + ".unit" + index}
                   minY={0}
                   maxY={15}
                   lineData={stackedBar}
@@ -85,7 +100,7 @@ const Charts = props => {
                   selectedScenario2={selectedScenario2}
                   selectedCountries={selectedCountries}
                   combinedChart={false}
-                  label={"chart-titles.tab1.unit" + index}
+                  label={i + ".unit" + index}
                   minY={0}
                   maxY={1500}
                   stackedBar={stackedBar}

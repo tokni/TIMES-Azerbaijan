@@ -100,7 +100,7 @@ const StackedBarChart = props => {
     base = maxY
   let legendsOld = new Set()
   let legends = new Set()
-  console.log("accum1: ", accumulatedDataScenario1)
+  //console.log("accum1: ", accumulatedDataScenario1)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
     legends.add(legendNames.legends[key][0]["name_" + i18next.language].substring(0,16))
   })
@@ -116,7 +116,7 @@ const StackedBarChart = props => {
     legendsOld.add(entry[1])
   })
   
-  console.log("leg: ", legends)
+  //console.log("leg: ", legends)
   const defTick = [0, 0.25, 0.5, 0.75]
   const getTickValues = () => {
     let ret = []
@@ -165,7 +165,7 @@ const HTMLYAxisLabel = props => {
   );
 };
 const HTMLLabel = props => {
-  console.log("label; ", props)
+  //console.log("label; ", props)
   const text = props.text.replaceAll('§', '')
   const co2Text = text.replace("CO2", "CO<sub>2</sub>")
   return (
@@ -181,7 +181,11 @@ getTickValues().forEach((val) => {
   if (val < 0) tickValueNumberOfNegativeElements++
 })
 let t1 = tickValueNumberOfNegativeElements === 0 ? 0 : tickValueNumberOfNegativeElements/tickValueLength*550 - topPadding/2
-console.log("legendNames: ", legendNames)
+//console.log("legendNames: ", legendNames)
+console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)
+if (Object.keys(accumulatedDataScenario1).length === 0) 
+//console.log("accumulatedDataScenario1Empty: ", accumulatedDataScenario1)
+return(<div>No DAta yet</div>)
   return (
     <ChartContainer>
     <ChartHeader>

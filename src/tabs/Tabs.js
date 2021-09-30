@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+//import { useTranslation } from "react-i18next";
+import tabList from "../translations/tabs"
+import i18next from 'i18next';
 
 const TabLayout = styled.div`
   display: none;
@@ -43,16 +45,30 @@ const TabItem = styled(Link)`
   background: ${props => (props.historical ? "#bbb" : "inherit")};
 `;
 
+const createTabs = Object.entries(tabList)
+console.log("createTabs: ", createTabs)
 function Tabs(props) {
-  const { t } = useTranslation();
+  //const { t } = useTranslation();
   return (
     <TabLayout>
-      <TabItem to="/" selected={props.selectedChartgroup === "/"}>
+      {/* <TabItem to="/" selected={props.selectedChartgroup === "/"}>
         {t("tabs.tab1")}
       </TabItem>
       <TabItem to="/tab2" selected={props.selectedChartgroup === "/tab2"}>
         {t("tabs.tab2")}
-      </TabItem>
+      </TabItem> */}
+      {
+        createTabs.map((tab)=>{
+
+          return(
+            <TabItem 
+              to={tab[0] === 'tab1' ? '/' : '/' + tab[0]} 
+              selected={props.selectedChartgroup === tab[0]}
+            >
+              {tab[1]["name_" + i18next.language]}  
+            </TabItem>)
+        })
+      }
       {/* <TabItem to="/tab3" selected={props.selectedChartgroup === "/tab3"}>
         {t("tabs.tab3")}
       </TabItem>

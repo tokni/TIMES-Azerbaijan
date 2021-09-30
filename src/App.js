@@ -13,6 +13,9 @@ import PageRenderer from './pages/PageRenderer'
 import scenarioCombinations from './data/scenarioCombinations'
 import { withTranslation } from 'react-i18next'
 import { useAuth0, withAuth0 } from "@auth0/auth0-react";
+import tabsList from "./translations/tabs"
+
+const createRoutes = Object.entries(tabsList)
 
 let dev = false
 
@@ -27,7 +30,7 @@ else
   console.log("something else build")
 
 const ChartsTab1 = React.lazy(() => import('./charts/ChartsTab1'));
-const ChartsTab2 = React.lazy(() => import('./charts/ChartsTab2'));
+//const ChartsTab2 = React.lazy(() => import('./charts/ChartsTab2'));
 
 ReactGA.initialize('UA-145591344-2')
 ReactGA.pageview(window.location.pathname + window.location.search)
@@ -242,7 +245,7 @@ LoginButton = () => {
             <Tabs selectedChartgroup={this.props.location.pathname} />
             <TabsMobile selectedChartgroup={this.props.location.pathname} />
             <MainSwitch>
-              <Route
+              {/* <Route
                 exact
                 path="/"
                 render={() => (
@@ -255,8 +258,28 @@ LoginButton = () => {
                     />
                   </Suspense>
                 )}
-              />
-              <Route
+              /> */}
+              {
+                createRoutes.map(route => {
+                  return(
+                    <Route 
+                      exact={route[0] === 'tab1' ? true : false}
+                      path={route[0] === 'tab1' ? '/' : '/' + route[0]}
+                      render={() => (
+                        <Suspense fallback={<div>Loading...</div>}>
+                          <ChartsTab1
+                            scenarioSelection={this.state}
+                            closeWelcome={this.CloseWelcomeWidget}
+                            selectedCountries={this.state.selectedCountries}
+                            tab={route[0]}
+                            index={1}
+                          />
+                        </Suspense>
+                      )}
+                  />)
+                })
+              }
+              {/* <Route
                 path="/tab2"
                 render={() => (
                   <Suspense fallback={<div>Loading...</div>}>
@@ -268,7 +291,7 @@ LoginButton = () => {
                     />
                   </Suspense>
                 )}
-              />
+              /> */}
               <Route
                 path="/about"
                 render={() => {

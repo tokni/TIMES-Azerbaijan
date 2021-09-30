@@ -32,6 +32,7 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
     console.log("scen: ", scen)
     console.log("chartname: ", chartName)
     let ind = scen.indicators.find(o => o.chart === chartName)
+    if (!ind) return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]
         unit = ind.unit
         ind.regions.forEach(r => {
             r.indicatorGroups.forEach(indicatorGroup => {
@@ -58,9 +59,9 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
               }
             })
         })
-        console.log("accum: ", accumulatedData)
-        console.log("totalYearValuesPositive: ", totalYearValuesPositive)
-        console.log("totalYearValuesNegative: ", totalYearValuesNegative)
+        //console.log("accum: ", accumulatedData)
+        //console.log("totalYearValuesPositive: ", totalYearValuesPositive)
+        //console.log("totalYearValuesNegative: ", totalYearValuesNegative)
         return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]
 }
 
