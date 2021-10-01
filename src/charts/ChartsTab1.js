@@ -70,41 +70,27 @@ const Charts = props => {
       {(props.scenarioSelection.showDifference === false ||
         (props.scenarioSelection.showDifference === true &&
           selectedScenario2 === '')) && (
-        <Flex>
+            <Flex>
           {
            
             indicators.map((i, index) => 
             {
-              //console.log("indicator: ", i)
-              let scenario = stackedBar.data.scenarios.find((scenario)=>{
-                return scenario.scenario === selectedScenario
-              })
-              if (!scenario) return <div>Scenario not found in data</div>
-              let chartCurrent = scenario.indicators.find((indicator)=>{
-                return indicator.chart === i
-              })
-              if (!chartCurrent) return <div>Scenario found. Chart not found in data</div>
-              console.log("chartCurrent: ", chartCurrent)
-              if (chartCurrent.type === "stackedBar")
-                return (
-                  <StackedBarChart
-                    key={i+' '+index}
-                    chartName={i}
-                    chartTitle={i}
-                    selectedScenario={selectedScenario}
-                    selectedScenario2={selectedScenario2}
-                    selectedCountries={selectedCountries}
-                    combinedChart={false}
-                    label={chartCurrent.unit}
-                    minY={0}
-                    maxY={1500}
-                    stackedBar={stackedBar}
-                    tab={props.tab}
-                    chart={"chart" + (index + 1)}
-                  />)  
-              else 
-                return (<div>Unknown chart type</div>)
-                }
+              return (
+                <StackedBarChart
+                  key={i+' '+index}
+                  chartName={i}
+                  chartTitle={i}
+                  selectedScenario={selectedScenario}
+                  selectedScenario2={selectedScenario2}
+                  selectedCountries={selectedCountries}
+                  combinedChart={false}
+                  label={i + ".unit" + index}
+                  minY={0}
+                  maxY={1500}
+                  stackedBar={stackedBar}
+                  tab={"tab1"}
+                  chart={"chart" + (index + 1)}
+                />)}
             )
           }
         </Flex>

@@ -59,7 +59,7 @@ function Tabs(props) {
       </TabItem> */}
       {
         createTabs.map((tab)=>{
-
+          console.log("tab: ", tab)
           return(
             <TabItem 
               to={tab[0] === 'tab1' ? '/' : '/' + tab[0]} 
