@@ -20,7 +20,7 @@ const Charts = props => {
   const [t] = useTranslation()
   const [stackedBar, setStackedBar] = useState(null)
   const [indicators, setIndicators] = useState(null)
-  console.log("props ***************************** : ", props)
+  //console.log("props ***************************** : ", props)
   import('../data/charts' + props.tab).then((indicators) => {
     console.log("indicators: ", indicators)
     setIndicators(indicators.default)
@@ -35,8 +35,6 @@ const Charts = props => {
   
   return (
     <MainArea>
-    {console.log("indicators: ", indicators)}
-    {console.log("tab1 begin")}
         <Welcome 
           isOpen={props.scenarioSelection.showWelcome}
           closeWelcome={props.closeWelcome} 
@@ -77,22 +75,36 @@ const Charts = props => {
            
             indicators.map((i, index) => 
             {
-              return (
-                <StackedBarChart
-                  key={i+' '+index}
-                  chartName={i}
-                  chartTitle={i}
-                  selectedScenario={selectedScenario}
-                  selectedScenario2={selectedScenario2}
-                  selectedCountries={selectedCountries}
-                  combinedChart={false}
-                  label={i + ".unit" + index}
-                  minY={0}
-                  maxY={1500}
-                  stackedBar={stackedBar}
-                  tab={"tab1"}
-                  chart={"chart" + (index + 1)}
-                />)}
+              //console.log("indicator: ", i)
+              let scenario = stackedBar.data.scenarios.find((scenario)=>{
+                return scenario.scenario === selectedScenario
+              })
+              if (!scenario) return <div>Scenario not found in data</div>
+              let chartCurrent = scenario.indicators.find((indicator)=>{
+                return indicator.chart === i
+              })
+              if (!chartCurrent) return <div>Scenario found. Chart not found in data</div>
+              console.log("chartCurrent: ", chartCurrent)
+              if (chartCurrent.type === "stackedBar")
+                return (
+                  <StackedBarChart
+                    key={i+' '+index}
+                    chartName={i}
+                    chartTitle={i}
+                    selectedScenario={selectedScenario}
+                    selectedScenario2={selectedScenario2}
+                    selectedCountries={selectedCountries}
+                    combinedChart={false}
+                    label={chartCurrent.unit}
+                    minY={0}
+                    maxY={1500}
+                    stackedBar={stackedBar}
+                    tab={props.tab}
+                    chart={"chart" + (index + 1)}
+                  />)  
+              else 
+                return (<div>Unknown chart type</div>)
+                }
             )
           }
         </Flex>
