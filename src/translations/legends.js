@@ -32,8 +32,8 @@
     ],
     "legend102": [
       {
-        "name_en": "Wase",
-        "name_az": "Wase_AZ"
+        "name_en": "Waste",
+        "name_az": "Waste_AZ"
       }
     ],
     "legend103": [
