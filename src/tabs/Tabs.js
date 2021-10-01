@@ -45,7 +45,7 @@ const TabItem = styled(Link)`
   background: ${props => (props.historical ? "#bbb" : "inherit")};
 `;
 
-const createTabs = Object.entries(tabList)
+const createTabs = Object.entries(tabList.tabs)
 console.log("createTabs: ", createTabs)
 function Tabs(props) {
   //const { t } = useTranslation();
@@ -65,7 +65,7 @@ function Tabs(props) {
               to={tab[0] === 'tab1' ? '/' : '/' + tab[0]} 
               selected={props.selectedChartgroup === tab[0]}
             >
-              {tab[1]["name_" + i18next.language]}  
+              {tab[1][0]["name_" + i18next.language]}  
             </TabItem>)
         })
       }

@@ -1,7 +1,8 @@
 export default {
   "data": {
-    "scenario0": [
+    "scenarios": [
       {
+        "scenario": "scenario0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -1202,10 +1203,12 @@ export default {
                 ]
               }
             ]
-          }
+          },
+          
         ]
       },
       {
+        "scenario": "scenario0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -4027,6 +4030,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -4109,6 +4113,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -4521,6 +4526,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -4801,6 +4807,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",
@@ -5475,10 +5482,9 @@ export default {
             ]
           }
         ]
-      }
-    ],
-    "scenario0_opt0": [
+      },
       {
+        "scenario": "scenario0_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -6683,6 +6689,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -9504,6 +9511,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -9586,6 +9594,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -9998,6 +10007,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -10278,6 +10288,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",
@@ -10952,10 +10963,9 @@ export default {
             ]
           }
         ]
-      }
-    ],
-    "scenario0_opt0_opt1": [
+      },
       {
+        "scenario": "scenario0_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -12160,6 +12170,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -14981,6 +14992,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -15063,6 +15075,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -15475,6 +15488,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -15755,6 +15769,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",
@@ -16429,10 +16444,9 @@ export default {
             ]
           }
         ]
-      }
-    ],
-    "scenario0_opt1": [
+      },
       {
+        "scenario": "scenario0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -17637,6 +17651,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -20458,6 +20473,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -20540,6 +20556,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -20952,6 +20969,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -21232,6 +21250,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",
@@ -21906,10 +21925,9 @@ export default {
             ]
           }
         ]
-      }
-    ],
-    "scenario1": [
+      },
       {
+        "scenario": "scenario1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -23114,6 +23132,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -25935,6 +25954,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -26017,6 +26037,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -26429,6 +26450,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -26709,6 +26731,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",
@@ -27383,10 +27406,9 @@ export default {
             ]
           }
         ]
-      }
-    ],
-    "scenario1_opt0": [
+      },
       {
+        "scenario": "scenario1_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -28591,6 +28613,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -31412,6 +31435,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -31494,6 +31518,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -31906,6 +31931,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -32186,6 +32212,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",
@@ -32860,10 +32887,9 @@ export default {
             ]
           }
         ]
-      }
-    ],
-    "scenario1_opt0_opt1": [
+      },
       {
+        "scenario": "scenario1_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -34068,6 +34094,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -36889,6 +36916,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -36971,6 +36999,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -37383,6 +37412,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -37663,6 +37693,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt0_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",
@@ -38337,10 +38368,9 @@ export default {
             ]
           }
         ]
-      }
-    ],
-    "scenario1_opt1": [
+      },
       {
+        "scenario": "scenario1_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart1",
@@ -39545,6 +39575,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart2",
@@ -42366,6 +42397,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart3",
@@ -42448,6 +42480,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart4",
@@ -42860,6 +42893,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart5",
@@ -43140,6 +43174,7 @@ export default {
         ]
       },
       {
+        "scenario": "scenario1_opt1",
         "indicators": [
           {
             "chart": "chart-titles.tab1.chart6",

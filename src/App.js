@@ -15,7 +15,7 @@ import { withTranslation } from 'react-i18next'
 import { useAuth0, withAuth0 } from "@auth0/auth0-react";
 import tabsList from "./translations/tabs"
 
-const createRoutes = Object.entries(tabsList)
+const createRoutes = Object.entries(tabsList.tabs)
 
 let dev = false
 

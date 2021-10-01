@@ -20,7 +20,7 @@ const Charts = props => {
   const [t] = useTranslation()
   const [stackedBar, setStackedBar] = useState(null)
   const [indicators, setIndicators] = useState(null)
-  //console.log("props ***************************** : ", props)
+  console.log("props ***************************** : ", props)
   import('../data/charts' + props.tab).then((indicators) => {
     console.log("indicators: ", indicators)
     setIndicators(indicators.default)
@@ -32,7 +32,8 @@ const Charts = props => {
 
 
   if (!stackedBar) return <div>Data not ready</div>
-  
+  console.log("stackedBar: ", stackedBar)
+  console.log("indicators: ", indicators)
   return (
     <MainArea>
         <Welcome 

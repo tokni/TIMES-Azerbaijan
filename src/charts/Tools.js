@@ -27,8 +27,8 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
     let accumulatedData = {}
     if (scenario.includes("_copy"))
       scenario = scenario.replace("_copy", "")
-    let scen = data.scenarios
-    .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
+    console.log("data.scenarios: ", data)
+    let scen = data.scenarios.find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
     console.log("scen: ", scen)
     console.log("chartname: ", chartName)
     let ind = scen.indicators.find(o => o.chart === chartName)
