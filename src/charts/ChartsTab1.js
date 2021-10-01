@@ -20,7 +20,7 @@ const Charts = props => {
   const [t] = useTranslation()
   const [stackedBar, setStackedBar] = useState(null)
   const [indicators, setIndicators] = useState(null)
-  console.log("props ***************************** : ", props)
+  //console.log("props ***************************** : ", props)
   import('../data/charts' + props.tab).then((indicators) => {
     console.log("indicators: ", indicators)
     setIndicators(indicators.default)
@@ -35,8 +35,6 @@ const Charts = props => {
   
   return (
     <MainArea>
-    {console.log("indicators: ", indicators)}
-    {console.log("tab1 begin")}
         <Welcome 
           isOpen={props.scenarioSelection.showWelcome}
           closeWelcome={props.closeWelcome} 
@@ -72,7 +70,7 @@ const Charts = props => {
       {(props.scenarioSelection.showDifference === false ||
         (props.scenarioSelection.showDifference === true &&
           selectedScenario2 === '')) && (
-        <Flex>
+            <Flex>
           {
            
             indicators.map((i, index) => 

@@ -1202,6 +1202,2823 @@ export default {
                 ]
               }
             ]
+          },
+          {
+            "chart": "chart-titles.tab1.chart2",
+            "type": "stackedBar",
+            "unit": "Mtoe",
+            "regions": [
+              {
+                "region": "AZ",
+                "indicatorGroups": [
+                  {
+                    "legend": "legend10",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend103",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0069820928
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0069406583
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0068454902
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0067492129
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0066451287
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0065228735
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0063826662
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend104",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0002922177
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0002921705
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0002881312
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.000284886
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0002814242
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0002770266
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0002717047
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend105",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0038133907
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.003800145
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0037530986
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0037062372
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0036548312
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0035924121
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0035191128
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend106",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0040207845
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0040226414
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0039845354
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0039455881
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0039008279
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0038425459
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0037709051
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend107",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.5787769031
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.6016752541
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.6142290066
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.6254285872
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.633358184
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.6363561033
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.6340701175
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend108",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0004619776
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0003615477
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0002611178
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0001606879
+                      },
+                      {
+                        "year": 2045,
+                        "total": 6.0258e-05
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend109",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.8402440009
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.8356725401
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.82448884
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.813168641
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.800887752
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.7861328525
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.7694067946
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend11",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend110",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0002379558
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0002379558
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend111",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0366642884
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0366123206
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0362236625
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0358251977
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.035376627
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0348128442
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0341352375
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend112",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.3433777477
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.3006533498
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.2003741193
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.1000948888
+                      },
+                      {
+                        "year": 2040,
+                        "total": 1.87007e-05
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend113",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0852212141
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1264566301
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.2215802959
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.3166263902
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.4109359685
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.403947268
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.3957140244
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend114",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.4106416171
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.4106068859
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.4307187814
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.413562951
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.4218329484
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.4214447778
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.4171819693
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend115",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0331844706
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0336773675
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0095234846
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0225425795
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0094812773
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.003555479
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend116",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0001258017
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0010576857
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.000827754
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0005978223
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0003678907
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.000137959
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend117",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.8340689318
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.7352723318
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.6411641989
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.5418649195
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.4411483996
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.3386914107
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.2764645107
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend119",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0469200378
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1647750612
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.2771056159
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.3860340889
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.4916191369
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.5923356887
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.6490350612
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend12",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0944013429
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1887356966
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.2930141385
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.2278528691
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.2293692044
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.2308297605
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.2221255919
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend13",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0978786316
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1014823826
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.1024060482
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.1032198826
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.1039997794
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.1047791646
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.1055210106
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend131",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.9285094624
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.4284857363
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.1615324102
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0419391673
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0240905383
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.006532858
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0006868404
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend132",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.046940503
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.4841497708
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.4592668306
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.056610022
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0637888415
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0712896089
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0429272637
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend133",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0271024883
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.3277523766
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.49868601
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.1189490208
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0106650452
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0019017974
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend134",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.2826371748
+                      },
+                      {
+                        "year": 2035,
+                        "total": 1.2276282911
+                      },
+                      {
+                        "year": 2040,
+                        "total": 1.4224685536
+                      },
+                      {
+                        "year": 2045,
+                        "total": 1.5387930958
+                      },
+                      {
+                        "year": 2050,
+                        "total": 1.6923942623
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend137",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0347003091
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0343331426
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0330209166
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0324984278
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0343077663
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0421298057
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0440176234
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend138",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend139",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 1.3990191969
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.7340654133
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.2879629109
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0340539836
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0163972306
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend140",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.2054387018
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.3800538132
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.4661355222
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.5250436904
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.5862143274
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.3526910477
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend141",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1141776586
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.1904945182
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.1904945182
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.1040810459
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0185577068
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend142",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0631968316
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.1758403419
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.282609535
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.5275963959
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend145",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend146",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 7.42136e-05
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend147",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.2763544877
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.2478288018
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.1963658589
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.1446788394
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0932158965
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0673350406
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0414541848
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend148",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.000523484
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0328329707
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0818991887
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0818991887
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0818991887
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0818991887
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0813757046
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend149",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0458108896
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0927545732
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.1262301294
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.1616145241
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend151",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0328459744
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0328459744
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0328459744
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0328459744
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0261791369
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.003212969
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend152",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0015903835
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.004334914
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0073061463
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0073061463
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0073061463
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0073061463
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0057157627
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend153",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend154",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0099691365
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0051054048
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0020729131
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0002325934
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0001106341
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend155",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.008695892
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0074044958
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0062528524
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0050994844
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0038029038
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0017146129
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend158",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.000379618
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0037199857
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0068884622
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0068884622
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0065088442
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0031684764
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend159",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0035021764
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.007614269
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0148088278
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0217752428
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend18",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0071120311
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0071295732
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.007203627
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0073127788
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.007435019
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0075572592
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0076794995
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend19",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0003004311
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0002994803
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0003003033
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0003023143
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0003047416
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0003071689
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.000309596
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend20",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0039452756
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0039554136
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0039965043
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0040568995
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0041245158
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0041921322
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0042597486
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend21",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0039903128
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0039790447
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0039927355
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0040220887
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0040572943
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0040924998
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0041277054
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend22",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.6250540942
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.6757092588
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.7263644233
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.7770195879
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.8276747524
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.878329917
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.9289850815
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend23",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.1840272613
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1789995908
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.1765820627
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.1744517807
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.1720303799
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.1701466395
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.1681052554
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend24",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0003982405
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0002588207
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0002770445
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend25",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0081845631
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0079758297
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0078515093
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0077391995
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0076305827
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0075219663
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0074133496
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend26",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0912059553
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0902828147
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0911281825
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0847460388
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0439102928
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0450530074
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.045158265
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend27",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0053034242
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0044672002
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0033504002
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0097521154
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0507160939
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0497016119
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0497245869
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend28",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.091745563
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0899317553
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.089231536
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0818028914
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0718612992
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0672204244
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0706453536
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend29",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0051820392
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.004597566
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.004110881
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0105161887
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0194955213
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0231741365
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0187869476
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend30",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 5.82494e-05
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0001265417
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0001001788
+                      },
+                      {
+                        "year": 2035,
+                        "total": 7.3816e-05
+                      },
+                      {
+                        "year": 2040,
+                        "total": 4.74531e-05
+                      },
+                      {
+                        "year": 2045,
+                        "total": 2.10903e-05
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend31",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.1327429991
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1098562752
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0869695512
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0640828272
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0411961032
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0183093792
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend34",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0266847862
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0624281653
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0982661996
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.134104234
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.1699422683
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.2057803026
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.2370357195
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend56",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0001080727
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0001057161
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0009010124
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0009959374
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0011236984
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0011170991
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend57",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend58",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.01618462
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.1259156644
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend59",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0634422044
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0615957071
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.1754331209
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.2064957617
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.2385619921
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.262750824
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend60",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0956393376
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend61",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.3591996938
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.430833715
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.4734224348
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.555613428
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.6062821952
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.6006493354
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.6011315108
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend62",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0048588141
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0047333984
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.013885043
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0146470221
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0159162411
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0157398194
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend63",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 7.7088e-06
+                      },
+                      {
+                        "year": 2030,
+                        "total": 7.582e-06
+                      },
+                      {
+                        "year": 2035,
+                        "total": 7.99002e-05
+                      },
+                      {
+                        "year": 2040,
+                        "total": 8.24329e-05
+                      },
+                      {
+                        "year": 2045,
+                        "total": 8.79522e-05
+                      },
+                      {
+                        "year": 2050,
+                        "total": 8.75532e-05
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend64",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0001726791
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0451144102
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0521849991
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend65",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.1728712812
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1190040426
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.1728712812
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.034641723
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0295727546
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0124604694
+                      },
+                      {
+                        "year": 2050,
+                        "total": 1.283e-07
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend66",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend67",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.028994607
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0008491545
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend68",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend69",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 1.121e-07
+                      },
+                      {
+                        "year": 2025,
+                        "total": 2.6409e-06
+                      },
+                      {
+                        "year": 2030,
+                        "total": 2.6095e-06
+                      },
+                      {
+                        "year": 2035,
+                        "total": 1.84995e-05
+                      },
+                      {
+                        "year": 2040,
+                        "total": 1.98304e-05
+                      },
+                      {
+                        "year": 2045,
+                        "total": 2.10209e-05
+                      },
+                      {
+                        "year": 2050,
+                        "total": 2.09044e-05
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend7",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend70",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 2.5771e-06
+                      },
+                      {
+                        "year": 2025,
+                        "total": 3.91943e-05
+                      },
+                      {
+                        "year": 2030,
+                        "total": 3.86172e-05
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0003264647
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0003437372
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0003664115
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0003646922
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend71",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 5.095e-07
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0004258894
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0004164766
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0013609716
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0014133952
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0015453502
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0015295342
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend72",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 1.066646056
+                      },
+                      {
+                        "year": 2025,
+                        "total": 1.2464485359
+                      },
+                      {
+                        "year": 2030,
+                        "total": 1.4089054375
+                      },
+                      {
+                        "year": 2035,
+                        "total": 1.4099973972
+                      },
+                      {
+                        "year": 2040,
+                        "total": 1.5945763188
+                      },
+                      {
+                        "year": 2045,
+                        "total": 1.8009712909
+                      },
+                      {
+                        "year": 2050,
+                        "total": 2.0653292325
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend73",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 3.1718e-06
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0001694944
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0001664923
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0013084766
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0013605433
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0014581858
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0014504128
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend74",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 1.2569e-06
+                      },
+                      {
+                        "year": 2025,
+                        "total": 2.73762e-05
+                      },
+                      {
+                        "year": 2030,
+                        "total": 2.70934e-05
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0002210218
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0002321204
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0002470072
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0002458783
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend75",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 5.38e-08
+                      },
+                      {
+                        "year": 2025,
+                        "total": 1.6474e-06
+                      },
+                      {
+                        "year": 2030,
+                        "total": 1.5612e-06
+                      },
+                      {
+                        "year": 2035,
+                        "total": 1.19535e-05
+                      },
+                      {
+                        "year": 2040,
+                        "total": 1.25462e-05
+                      },
+                      {
+                        "year": 2045,
+                        "total": 1.33693e-05
+                      },
+                      {
+                        "year": 2050,
+                        "total": 1.33121e-05
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend76",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 8.45815e-05
+                      },
+                      {
+                        "year": 2030,
+                        "total": 8.26355e-05
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0007162844
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0007876796
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0008841899
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0008791174
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend77",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 4.2785e-06
+                      },
+                      {
+                        "year": 2030,
+                        "total": 4.219e-06
+                      },
+                      {
+                        "year": 2035,
+                        "total": 1.26497e-05
+                      },
+                      {
+                        "year": 2040,
+                        "total": 1.33926e-05
+                      },
+                      {
+                        "year": 2045,
+                        "total": 1.43672e-05
+                      },
+                      {
+                        "year": 2050,
+                        "total": 1.42108e-05
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend78",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend79",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0024405967
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0502859682
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0537731559
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0572413915
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0606443592
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0630463692
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend8",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.2263165729
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.1356301098
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend80",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 5.36e-08
+                      },
+                      {
+                        "year": 2025,
+                        "total": 9.261e-07
+                      },
+                      {
+                        "year": 2030,
+                        "total": 9.476e-07
+                      },
+                      {
+                        "year": 2035,
+                        "total": 7.1123e-06
+                      },
+                      {
+                        "year": 2040,
+                        "total": 7.5699e-06
+                      },
+                      {
+                        "year": 2045,
+                        "total": 8.0111e-06
+                      },
+                      {
+                        "year": 2050,
+                        "total": 7.9587e-06
+                      }
+                    ]
+                  },
+                  {
+                    "legend": "legend9",
+                    "indicatorGroupValues": [
+                      {
+                        "year": 2020,
+                        "total": 0.0928303849
+                      },
+                      {
+                        "year": 2025,
+                        "total": 0.0902389999
+                      },
+                      {
+                        "year": 2030,
+                        "total": 0.0897749761
+                      },
+                      {
+                        "year": 2035,
+                        "total": 0.0897273527
+                      },
+                      {
+                        "year": 2040,
+                        "total": 0.0899656419
+                      },
+                      {
+                        "year": 2045,
+                        "total": 0.0901966179
+                      },
+                      {
+                        "year": 2050,
+                        "total": 0.0899371492
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
