@@ -56,8 +56,8 @@ const StackedBarChart = props => {
 
   let maxY2 = 1
   
-  const dataScenario1 = createAccumulatedData(stackedBar.data, scenario, false, chartName, selectedCountries)
-  const dataScenario2 = createAccumulatedData(stackedBar.data, scenario2, false, chartName, selectedCountries)
+  const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries)
+  const dataScenario2 = createAccumulatedData(stackedBar, scenario2, false, chartName, selectedCountries)
 
   const accumulatedDataScenario1 = dataScenario1[0]
   const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
@@ -100,9 +100,10 @@ const StackedBarChart = props => {
     base = maxY
   //let legendsOld = new Set()
   let legends = new Set()
-  //console.log("accum1: ", accumulatedDataScenario1)
+  console.log("accum1: ", accumulatedDataScenario1)
+  console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
-    legends.add(legendNames.legends[key][0]["name_" + i18next.language].substring(0,16))
+    legends.add(legendNames[key]["name_" + i18next.language].substring(0,16))
   })
   /* stackedBar.data.scenarios
   .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
@@ -251,7 +252,7 @@ return(<div>No DAta yet</div>)
                       return({
                       ...chartGroupValue,
                       label:
-                        legendNames.legends[chartGroupName][0]["name_" + i18next.language] +
+                        legendNames[chartGroupName]["name_" + i18next.language] +
                         ': ' +
                         (props.YPercentage
                           ? (

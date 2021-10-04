@@ -28,29 +28,34 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
     if (scenario.includes("_copy"))
       scenario = scenario.replace("_copy", "")
     console.log("data.scenarios: ", data)
-    let scen = data.scenarios.find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
+    let scen = data[scenario]
+
+    //let scen = data.scenarios.find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
     console.log("scen: ", scen)
     console.log("chartname: ", chartName)
-    let ind = scen.indicators.find(o => o.chart === chartName)
+    //let ind = scen.indicators.find(o => o.chart === chartName)
+    let ind = scen.charts[chartName][0]
+    console.log("ind: ", ind)
     if (!ind) return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]
         unit = ind.unit
         ind.regions.forEach(r => {
-            r.indicatorGroups.forEach(indicatorGroup => {
+            console.log("Object.keys(r.legends): ", Object.keys(r.legends))
+            Object.entries(r.legends).forEach(legend => {
               //console.log("indicatorGroup: ", indicatorGroup)
               //console.log("accumulatedData: ", accumulatedData)
-              if (!accumulatedData[indicatorGroup.legend]) {
-                accumulatedData[indicatorGroup.legend]=[]
+              if (!accumulatedData[legend[0]]) {
+                accumulatedData[legend[0]]=[]
                 years.forEach(y => {
-                  accumulatedData[indicatorGroup.legend].push({"year": y, "total": 0})
+                  accumulatedData[legend[0]].push({"year": y, "total": 0})
                 })
               }
               if (selectedDataRegions.includes(r.region)) {//Only include selected countries
-                indicatorGroup.indicatorGroupValues.forEach((value, index) => {
-                  if (accumulatedData[indicatorGroup.legend][index].year !== value.year ) {
+                legend[1].forEach((value, index) => {
+                  if (accumulatedData[legend[0]][index].year !== value.year ) {
                      //Extra check we rely on the two arrays being indexed the same way
                     console.log("Error in array indexing")
                   }
-                  accumulatedData[indicatorGroup.legend][index].total += percentage ? value.total/selectedCountries.length : value.total
+                  accumulatedData[legend[0]][index].total += percentage ? value.total/selectedCountries.length : value.total
                   if (value.total > 0)
                     totalYearValuesPositive[value.year] += percentage ? value.total/selectedCountries.length : value.total
                   else

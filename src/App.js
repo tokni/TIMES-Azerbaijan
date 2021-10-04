@@ -15,7 +15,7 @@ import { withTranslation } from 'react-i18next'
 import { useAuth0, withAuth0 } from "@auth0/auth0-react";
 import tabsList from "./translations/tabs"
 
-const createRoutes = Object.entries(tabsList.tabs)
+const createRoutes = Object.entries(tabsList)
 
 let dev = false
 
@@ -110,8 +110,8 @@ export class App extends React.Component {
       return {
         scenarioSelection:
           state.scenarioSelectionNoOptions +
-          (state.options[state.scenarioSelectionNoOptions].opt0 ? '_cf' : '') +
-          (state.options[state.scenarioSelectionNoOptions].opt1 ? '_bio' : '') +
+          (state.options[state.scenarioSelectionNoOptions].opt0 ? '_opt0' : '') +
+          (state.options[state.scenarioSelectionNoOptions].opt1 ? '_opt1' : '') +
           (state.options[state.scenarioSelectionNoOptions].opt2 ? '_ELC' : '') +
           (state.options[state.scenarioSelectionNoOptions].opt3 ? '_SAC' : ''),
       }
@@ -122,9 +122,9 @@ export class App extends React.Component {
           state.scenarioSelectionNoOptions2 !== ''
             ? state.scenarioSelectionNoOptions2 +
               (state.options[state.scenarioSelectionNoOptions2].opt0
-                ? '_cf'
+                ? '_opt0'
                 : '') +
-              (state.options[state.scenarioSelectionNoOptions2].opt1 ? '_bio' : '') +
+              (state.options[state.scenarioSelectionNoOptions2].opt1 ? '_opt1' : '') +
               (state.options[state.scenarioSelectionNoOptions2].opt2 ? '_ELC' : '') +
               (state.options[state.scenarioSelectionNoOptions2].opt3 ? '_SAC' : '')
             : '',

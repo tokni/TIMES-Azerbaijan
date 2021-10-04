@@ -20,18 +20,37 @@ const Charts = props => {
   const [t] = useTranslation()
   const [stackedBar, setStackedBar] = useState(null)
   const [indicators, setIndicators] = useState(null)
+  const [indicatorReady, setIndicatorReady] = useState(false)
+  const [stackReady, setStackReady] = useState(false)
+  const [previousTab, setPreviousTab] = useState(null)
+
   console.log("props ***************************** : ", props)
+
+  if (previousTab !== props.tab) {
+    setIndicatorReady(false)
+    setStackReady(false)
+    setPreviousTab(props.tab)
+  }
+
   import('../data/charts' + props.tab).then((indicators) => {
     console.log("indicators: ", indicators)
     setIndicators(indicators.default)
+    setIndicatorReady(true)
   })
   import('../data/' + props.tab).then((stack) => {
     console.log("stack: ", stack)
     setStackedBar(stack.default)
+    setStackReady(true)
   })
+  
 
+//console.log("indicatorready: ", indicatorReady)
+//console.log("stackready: ", stackReady)
+  if (!indicatorReady || !stackReady) return <div>Data not ready</div>
+  
 
-  if (!stackedBar) return <div>Data not ready</div>
+  //setIndicatorReady(false)
+  //setStackReady(false)
   console.log("stackedBar: ", stackedBar)
   console.log("indicators: ", indicators)
   return (
