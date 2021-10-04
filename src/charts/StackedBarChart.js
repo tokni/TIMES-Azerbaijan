@@ -216,7 +216,7 @@ return(<div>No DAta yet</div>)
             ((tick * base) / props.divideValues).toLocaleString()
           }
           tickValues={getTickValues()}
-          label={t(props.label)}
+          label={unit}
         />
         {combinedChart === true && (
           <VictoryAxis

@@ -96,6 +96,7 @@ const Charts = props => {
            
             indicators.map((i, index) => 
             {
+              
               return (
                 <StackedBarChart
                   key={i+' '+index}
