@@ -22,6 +22,7 @@ import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next';
 import legendNames from '../translations/legends'
 import i18next from 'i18next';
+import charts from '../translations/charts'
 
 const ChartContainer = styled.div`
   width: 550px;
@@ -190,7 +191,7 @@ return(<div>No DAta yet</div>)
   return (
     <ChartContainer>
     <ChartHeader>
-      <ChartTitle>{parseHtml(t(chartName))}</ChartTitle>
+      <ChartTitle>{charts[chartName]["name_" + i18next.language]}</ChartTitle>
       <CSVLink 
         data={getCSVData(dataScenario1[0], scenario, dataScenario2 ? dataScenario2[0] : [], scenario2, unit )}
         filename={chartTitle + " " + selectedCountries + ".csv"}
@@ -243,7 +244,7 @@ return(<div>No DAta yet</div>)
         <VictoryGroup offset={15} style={{ data: { width: 15 } }}>
           <VictoryStack>
             {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => {
-            //console.log("chartGroupName: ", chartGroupName)
+            console.log("chartGroupName: ", chartGroupName)
             return(
                 <VictoryBar
                   key={chartGroupName}
@@ -270,10 +271,14 @@ return(<div>No DAta yet</div>)
                   style={{
                     data: { fill: () => {
                       //console.log("chartGroupName: ", chartGroupName)
-                      if (indicatorgroup_colors[chartGroupName]) 
-                        return indicatorgroup_colors[chartGroupName]
-                      else
-                        return colorNER[i]
+                        let ret
+                        if (indicatorgroup_colors[chartGroupName]) 
+                          ret=indicatorgroup_colors[chartGroupName]
+                        else
+                          ret=colorNER[i]
+                        console.log("stack name: ", chartGroupName)
+                        console.log("stack ret: ", ret)
+                        return ret
                       }, 
                     },
                   }}
@@ -292,7 +297,7 @@ return(<div>No DAta yet</div>)
                       chartGroupValue => ({
                         ...chartGroupValue,
                         label:
-                          chartGroupName +
+                          legendNames[chartGroupName]["name_" + i18next.language] +
                           ': ' +
                           (props.YPercentage
                             ? (
@@ -309,7 +314,8 @@ return(<div>No DAta yet</div>)
                     labelComponent={<VictoryTooltip />}
                     style={{
                     data: { fill: () => {
-                      //console.log("chartGroupName 2: ", chartGroupName)
+                      console.log("chartGroupName 2: ", indicatorgroup_colors[chartGroupName])
+                      console.log("colorNER[i]: ", colorNER[i])
                       if (indicatorgroup_colors[chartGroupName]) 
                         return indicatorgroup_colors[chartGroupName] + '88'
                       else
@@ -354,10 +360,14 @@ return(<div>No DAta yet</div>)
             return({
               name: legend,
               symbol: { fill: () => {
+                let ret
                 if (indicatorgroup_colors[legend]) 
-                  return indicatorgroup_colors[legend]
+                  ret=indicatorgroup_colors[legend]
                 else
-                  return colorNER[i]
+                  ret=colorNER[i]
+                console.log("legend name: ", legend)
+                console.log("legend ret: ", ret)
+                return ret
                 },
               }}
           )}

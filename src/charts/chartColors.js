@@ -117,7 +117,7 @@ const colors = [
     '#bde095',
     '#3395f7',
     '#4346fa',
-    '#52627f',
+    '#52627f'
   ]
 
   export {colors, colors2, colorNER}
