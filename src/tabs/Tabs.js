@@ -46,7 +46,7 @@ const TabItem = styled(Link)`
 `;
 
 const createTabs = Object.entries(tabList)
-console.log("createTabs: ", createTabs)
+//console.log("createTabs: ", createTabs)
 function Tabs(props) {
   //const { t } = useTranslation();
   return (
@@ -59,9 +59,10 @@ function Tabs(props) {
       </TabItem> */}
       {
         createTabs.map((tab)=>{
-          console.log("tab: ", tab)
+          //console.log("tab: ", tab)
           return(
-            <TabItem 
+            <TabItem
+              key={tab[0]} 
               to={tab[0] === 'tab1' ? '/' : '/' + tab[0]} 
               selected={props.selectedChartgroup === tab[0]}
             >

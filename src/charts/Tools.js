@@ -2,6 +2,8 @@ import years from "./../data/years"
 import historicalYears from "./../data/historicalyears"
 import mapRegionToDataRegions from "./../data/mapRegionToDataRegions"
 import { colorNER } from "./chartColors"
+import legendNames from '../translations/legends'
+import i18next from "i18next"
 
 const kiloToMega = 1000;
 
@@ -27,35 +29,35 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
     let accumulatedData = {}
     if (scenario.includes("_copy"))
       scenario = scenario.replace("_copy", "")
-    console.log("data.scenarios: ", data)
+    //console.log("data.scenarios: ", data)
     let scen = data[scenario]
 
     //let scen = data.scenarios.find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
-    console.log("scen: ", scen)
-    console.log("chartname: ", chartName)
+    //console.log("scen: ", scen)
+    //console.log("chartname: ", chartName)
     //let ind = scen.indicators.find(o => o.chart === chartName)
     let ind = scen.charts[chartName][0]
-    console.log("ind: ", ind)
+    //console.log("ind: ", ind)
     if (!ind) return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]
         unit = ind.unit
         ind.regions.forEach(r => {
-            console.log("Object.keys(r.legends): ", Object.keys(r.legends))
+            //console.log("Object.keys(r.legends): ", Object.keys(r.legends))
             Object.entries(r.legends).forEach(legend => {
               //console.log("indicatorGroup: ", indicatorGroup)
               //console.log("accumulatedData: ", accumulatedData)
-              if (!accumulatedData[legend[0]]) {
-                accumulatedData[legend[0]]=[]
+              if (!accumulatedData[legendNames[legend[0]]['name_' + i18next.language]]) {
+                accumulatedData[legendNames[legend[0]]['name_' + i18next.language]]=[]
                 years.forEach(y => {
-                  accumulatedData[legend[0]].push({"year": y, "total": 0})
+                  accumulatedData[legendNames[legend[0]]['name_' + i18next.language]].push({"year": y, "total": 0})
                 })
               }
               if (selectedDataRegions.includes(r.region)) {//Only include selected countries
                 legend[1].forEach((value, index) => {
-                  if (accumulatedData[legend[0]][index].year !== value.year ) {
+                  if (accumulatedData[legendNames[legend[0]]['name_' + i18next.language]][index].year !== value.year ) {
                      //Extra check we rely on the two arrays being indexed the same way
                     console.log("Error in array indexing")
                   }
-                  accumulatedData[legend[0]][index].total += percentage ? value.total/selectedCountries.length : value.total
+                  accumulatedData[legendNames[legend[0]]['name_' + i18next.language]][index].total += percentage ? value.total/selectedCountries.length : value.total
                   if (value.total > 0)
                     totalYearValuesPositive[value.year] += percentage ? value.total/selectedCountries.length : value.total
                   else

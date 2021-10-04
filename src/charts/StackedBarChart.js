@@ -101,10 +101,10 @@ const StackedBarChart = props => {
     base = maxY
   //let legendsOld = new Set()
   let legends = new Set()
-  console.log("accum1: ", accumulatedDataScenario1)
-  console.log("legendNames: ", legendNames)
+  //console.log("accum1: ", accumulatedDataScenario1)
+  //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
-    legends.add(legendNames[key]["name_" + i18next.language].substring(0,16))
+    legends.add(key.substring(0,16))
   })
   /* stackedBar.data.scenarios
   .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
@@ -184,7 +184,7 @@ getTickValues().forEach((val) => {
 })
 let t1 = tickValueNumberOfNegativeElements === 0 ? 0 : tickValueNumberOfNegativeElements/tickValueLength*550 - topPadding/2
 //console.log("legendNames: ", legendNames)
-console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)
+//console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)
 if (Object.keys(accumulatedDataScenario1).length === 0) 
 //console.log("accumulatedDataScenario1Empty: ", accumulatedDataScenario1)
 return(<div>No DAta yet</div>)
@@ -244,7 +244,7 @@ return(<div>No DAta yet</div>)
         <VictoryGroup offset={15} style={{ data: { width: 15 } }}>
           <VictoryStack>
             {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => {
-            console.log("chartGroupName: ", chartGroupName)
+            //console.log("chartGroupName: ", chartGroupName)
             return(
                 <VictoryBar
                   key={chartGroupName}
@@ -253,7 +253,8 @@ return(<div>No DAta yet</div>)
                       return({
                       ...chartGroupValue,
                       label:
-                        legendNames[chartGroupName]["name_" + i18next.language] +
+                        //legendNames[chartGroupName]["name_" + i18next.language] +
+                        chartGroupName + 
                         ': ' +
                         (props.YPercentage
                           ? (
@@ -276,8 +277,8 @@ return(<div>No DAta yet</div>)
                           ret=indicatorgroup_colors[chartGroupName]
                         else
                           ret=colorNER[i]
-                        console.log("stack name: ", chartGroupName)
-                        console.log("stack ret: ", ret)
+                        //console.log("stack name: ", chartGroupName)
+                        //console.log("stack ret: ", ret)
                         return ret
                       }, 
                     },
@@ -297,7 +298,8 @@ return(<div>No DAta yet</div>)
                       chartGroupValue => ({
                         ...chartGroupValue,
                         label:
-                          legendNames[chartGroupName]["name_" + i18next.language] +
+                          //legendNames[chartGroupName]["name_" + i18next.language] +
+                          chartGroupName + 
                           ': ' +
                           (props.YPercentage
                             ? (
@@ -314,8 +316,8 @@ return(<div>No DAta yet</div>)
                     labelComponent={<VictoryTooltip />}
                     style={{
                     data: { fill: () => {
-                      console.log("chartGroupName 2: ", indicatorgroup_colors[chartGroupName])
-                      console.log("colorNER[i]: ", colorNER[i])
+                      //console.log("chartGroupName 2: ", indicatorgroup_colors[chartGroupName])
+                      //console.log("colorNER[i]: ", colorNER[i])
                       if (indicatorgroup_colors[chartGroupName]) 
                         return indicatorgroup_colors[chartGroupName] + '88'
                       else
@@ -365,8 +367,8 @@ return(<div>No DAta yet</div>)
                   ret=indicatorgroup_colors[legend]
                 else
                   ret=colorNER[i]
-                console.log("legend name: ", legend)
-                console.log("legend ret: ", ret)
+                //console.log("legend name: ", legend)
+                //console.log("legend ret: ", ret)
                 return ret
                 },
               }}

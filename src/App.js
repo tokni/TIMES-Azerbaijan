@@ -263,6 +263,7 @@ LoginButton = () => {
                 createRoutes.map(route => {
                   return(
                     <Route 
+                      key={'route' + route[0]}
                       exact={route[0] === 'tab1' ? true : false}
                       path={route[0] === 'tab1' ? '/' : '/' + route[0]}
                       render={() => (

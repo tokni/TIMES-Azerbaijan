@@ -24,7 +24,7 @@ const Charts = props => {
   const [stackReady, setStackReady] = useState(false)
   const [previousTab, setPreviousTab] = useState(null)
 
-  console.log("props ***************************** : ", props)
+  //console.log("props ***************************** : ", props)
 
   if (previousTab !== props.tab) {
     setIndicatorReady(false)
@@ -33,12 +33,12 @@ const Charts = props => {
   }
 
   import('../data/charts' + props.tab).then((indicators) => {
-    console.log("indicators: ", indicators)
+    //console.log("indicators: ", indicators)
     setIndicators(indicators.default)
     setIndicatorReady(true)
   })
   import('../data/' + props.tab).then((stack) => {
-    console.log("stack: ", stack)
+    //console.log("stack: ", stack)
     setStackedBar(stack.default)
     setStackReady(true)
   })
@@ -50,8 +50,8 @@ const Charts = props => {
   
   //setIndicatorReady(false)
   //setStackReady(false)
-  console.log("stackedBar: ", stackedBar)
-  console.log("indicators: ", indicators)
+  //console.log("stackedBar: ", stackedBar)
+  //console.log("indicators: ", indicators)
   return (
     <MainArea>
         <Welcome 
@@ -66,12 +66,14 @@ const Charts = props => {
             {/* {scenarioCombinations.scenarioCombinations.scenarioOptions.find(
               (option)=>option.name.toLowerCase() === selectedScenario.toLowerCase())?.desc.toUpperCase()
             } */}
-            {console.log("selectedScenario: ", selectedScenario)}
+            {
+              //console.log("selectedScenario: ", selectedScenario)
+              }
             {
               //t("scenarios.description" + props.index)
               scenarioCombinations.scenarioCombinations.scenarioOptions.find(
               (option)=>{
-                console.log("option: ", option)
+                //console.log("option: ", option)
                 return((option.id.toLowerCase() === selectedScenario.toLowerCase()))
                 }
               )['desc_' + i18next.language]?.toUpperCase()
