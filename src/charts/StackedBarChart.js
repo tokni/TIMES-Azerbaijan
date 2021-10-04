@@ -20,7 +20,7 @@ import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import { CSVLink } from 'react-csv'
 import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next';
-import legendNames from '../translations/legends'
+//import legendNames from '../translations/legends'
 import i18next from 'i18next';
 import charts from '../translations/charts'
 
