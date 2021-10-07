@@ -8,5 +8,4 @@ export default
 		"chart-titles.tab5.chart6",
 		"chart-titles.tab5.chart7",
 		"chart-titles.tab5.chart8",
-		"chart-titles.tab5.chart9",
 	 ]

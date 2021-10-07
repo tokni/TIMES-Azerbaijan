@@ -706,7 +706,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -1576,7 +1576,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -2446,7 +2446,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -3316,7 +3316,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -4186,7 +4186,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -5056,7 +5056,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -5526,17 +5526,17 @@ export default {
                   },
                   {
                     "year": 2050,
-                    "total": 1.5729736583
+                    "total": 1.3727158337
                   }
                 ],
                 "legend38": [
                   {
                     "year": 2020,
-                    "total": 1.0025524537
+                    "total": 0.9641978681
                   },
                   {
                     "year": 2025,
-                    "total": 1.2409912614
+                    "total": 1.2706496683
                   },
                   {
                     "year": 2030,
@@ -5556,13 +5556,13 @@ export default {
                   },
                   {
                     "year": 2050,
-                    "total": 0.0892184423
+                    "total": 0.0630043908
                   }
                 ],
                 "legend42": [
                   {
                     "year": 2020,
-                    "total": 0.0347003091
+                    "total": 0.0360278263
                   },
                   {
                     "year": 2025,
@@ -5574,7 +5574,7 @@ export default {
                   },
                   {
                     "year": 2035,
-                    "total": 0.0491927232
+                    "total": 0.0490676769
                   },
                   {
                     "year": 2040,
@@ -5582,11 +5582,11 @@ export default {
                   },
                   {
                     "year": 2045,
-                    "total": 0.2214089554
+                    "total": 0.2218533205
                   },
                   {
                     "year": 2050,
-                    "total": 0.2415548092
+                    "total": 0.3197451646
                   }
                 ],
                 "legend45": [
@@ -5616,7 +5616,7 @@ export default {
                   },
                   {
                     "year": 2050,
-                    "total": 0.1087005207
+                    "total": 0.1030803636
                   }
                 ],
                 "legend46": [
@@ -5652,11 +5652,11 @@ export default {
                 "legend47": [
                   {
                     "year": 2020,
-                    "total": 1.3990191969
+                    "total": 1.4141885557
                   },
                   {
                     "year": 2025,
-                    "total": 1.0129050233
+                    "total": 0.9832466164
                   },
                   {
                     "year": 2030,
@@ -5676,13 +5676,13 @@ export default {
                   },
                   {
                     "year": 2050,
-                    "total": 0.1951295234
+                    "total": 0.1704267707
                   }
                 ],
                 "legend48": [
                   {
                     "year": 2020,
-                    "total": 0.0
+                    "total": 0.0042428526
                   },
                   {
                     "year": 2025,
@@ -5706,7 +5706,7 @@ export default {
                   },
                   {
                     "year": 2050,
-                    "total": 0.0228856718
+                    "total": 0.0221830474
                   }
                 ],
                 "legend52": [
@@ -5754,7 +5754,7 @@ export default {
                   },
                   {
                     "year": 2035,
-                    "total": 0.3105334309
+                    "total": 0.3108987393
                   },
                   {
                     "year": 2040,
@@ -5762,7 +5762,7 @@ export default {
                   },
                   {
                     "year": 2045,
-                    "total": 0.2769352715
+                    "total": 0.27563711
                   },
                   {
                     "year": 2050,
@@ -5926,7 +5926,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -5947,7 +5947,7 @@ export default {
                   },
                   {
                     "year": 2035,
-                    "total": 0.9348016438
+                    "total": 0.9359013353
                   },
                   {
                     "year": 2040,
@@ -5955,7 +5955,7 @@ export default {
                   },
                   {
                     "year": 2045,
-                    "total": 0.8336607956
+                    "total": 0.8297529279
                   },
                   {
                     "year": 2050,
@@ -6007,7 +6007,7 @@ export default {
                   },
                   {
                     "year": 2035,
-                    "total": 0.114826779
+                    "total": 0.1159264705
                   },
                   {
                     "year": 2040,
@@ -6015,7 +6015,7 @@ export default {
                   },
                   {
                     "year": 2045,
-                    "total": 0.0044279024
+                    "total": 0.0005200348
                   },
                   {
                     "year": 2050,
@@ -6055,11 +6055,11 @@ export default {
                 "legend6": [
                   {
                     "year": 2020,
-                    "total": 7.1958623576
+                    "total": 7.1208835428
                   },
                   {
                     "year": 2025,
-                    "total": 6.8024581506
+                    "total": 6.8084184938
                   },
                   {
                     "year": 2030,
@@ -6079,7 +6079,7 @@ export default {
                   },
                   {
                     "year": 2050,
-                    "total": 0.8429519967
+                    "total": 0.6899511695
                   }
                 ]
               }
@@ -6796,7 +6796,7 @@ export default {
       ],
       "chart-titles.tab4.chart2": [
         {
-          "type": "line",
+          "type": "stackedBar",
           "unit": "Mt CO2",
           "regions": [
             {
