@@ -105,7 +105,11 @@ const StackedBarChart = props => {
   //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
     legends.add(key.substring(0,16))
+
   })
+  /* Object.keys(accumulatedDataScenario1).forEach((key) => {
+    legends.add(key.substring(0,16))
+  }) */
   /* stackedBar.data.scenarios
   .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
   .indicators.find(o => o.indicator === chartName).regions.forEach((reg)=>{

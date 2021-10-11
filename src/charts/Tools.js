@@ -43,7 +43,7 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
         ind.regions.forEach(r => {
             //console.log("Object.keys(r.legends): ", Object.keys(r.legends))
             Object.entries(r.legends).forEach(legend => {
-              //console.log("indicatorGroup: ", indicatorGroup)
+              //console.log("indicatorGroup: ", legend)
               //console.log("accumulatedData: ", accumulatedData)
               if (!accumulatedData[legendNames[legend[0]]['name_' + i18next.language]]) {
                 accumulatedData[legendNames[legend[0]]['name_' + i18next.language]]=[]
