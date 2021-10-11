@@ -311,8 +311,8 @@ return(<div>No DAta yet</div>)
                                 props.divideValues
                               ).toFixed(0) + '%'
                             : (
-                                chartGroupValue.total / props.divideValues
-                              ).toFixed(0)),
+                              Math.round(chartGroupValue.total / props.divideValues * 100, 2)/100
+                              )),
                       })
                     )}
                     x="year"
