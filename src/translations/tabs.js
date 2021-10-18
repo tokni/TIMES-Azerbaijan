@@ -9,11 +9,11 @@ export default {
   },
   "tab3": {
     "name_en": "Power & Heat",
-    "name_az": "Power & Heat AZ"
+    "name_az": "Power & Heat_AZ"
   },
   "tab4": {
     "name_en": "Transport",
-    "name_az": "Transport AZ"
+    "name_az": "Transport_AZ"
   },
   "tab5": {
     "name_en": "Other End-Use",
