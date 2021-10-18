@@ -3689,7 +3689,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -3762,7 +3762,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -8721,7 +8721,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -8794,7 +8794,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -13753,7 +13753,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -13826,7 +13826,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -18785,7 +18785,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -18858,7 +18858,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -23817,7 +23817,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -23890,7 +23890,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -28849,7 +28849,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -28922,7 +28922,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -33881,7 +33881,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -33954,7 +33954,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -38913,7 +38913,7 @@ export default {
       ],
       "chart-titles.tab1.chart3": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
@@ -38986,7 +38986,7 @@ export default {
       ],
       "chart-titles.tab1.chart4": [
         {
-          "type": "stackedBar",
+          "type": "line",
           "unit": "Mt CO2",
           "regions": [
             {
