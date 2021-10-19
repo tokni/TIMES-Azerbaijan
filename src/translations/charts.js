@@ -13,13 +13,13 @@ export default {
   },
   "chart-titles.tab1.chart3": {
     "type": "line",
-    "unit": "kt",
+    "unit": "kt CO2",
     "name_en": "Negative CO2 Emissions",
     "name_az": "Negative CO2 Emissions AZ"
   },
   "chart-titles.tab1.chart4": {
     "type": "line",
-    "unit": "kt",
+    "unit": "kt CO2",
     "name_en": "Positive CO2 Emissions",
     "name_az": "Positive CO2 Emissions AZ"
   },
