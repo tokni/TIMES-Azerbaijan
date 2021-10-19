@@ -12,6 +12,8 @@ import { MainArea, Flex, Scenario1Description, Scenario2Description } from './Ch
 import { useTranslation } from 'react-i18next';
 import scenarioCombinations from '../data/scenarioCombinations'
 import i18next from 'i18next'
+import chartSettings from "../translations/charts"
+import unitSettings from "../translations/units"
 
 const Charts = props => {
   const selectedScenario = props.scenarioSelection.scenarioSelection
@@ -23,6 +25,7 @@ const Charts = props => {
   const [indicatorReady, setIndicatorReady] = useState(false)
   const [stackReady, setStackReady] = useState(false)
   const [previousTab, setPreviousTab] = useState(null)
+  const selectedUnit = props.unitSelection
 
   //console.log("props ***************************** : ", props)
 
@@ -96,24 +99,41 @@ const Charts = props => {
            
             indicators.map((i, index) => 
             {
-              
-              return (
-                <StackedBarChart
-                  key={i+' '+index}
-                  chartName={i}
-                  chartTitle={i}
-                  selectedScenario={selectedScenario}
-                  selectedScenario2={selectedScenario2}
-                  selectedCountries={selectedCountries}
-                  combinedChart={false}
-                  label={i + ".unit" + index}
-                  minY={0}
-                  maxY={1500}
-                  stackedBar={stackedBar}
-                  tab={"tab1"}
-                  chart={"chart" + (index + 1)}
-                />)}
-            )
+              console.log("i: ", i)
+              //console.log("stackedBar: ", stackedBar)
+              if (chartSettings[i]) {
+                //console.log("chartSetting i: ", chartSettings[i])
+                if (unitSettings[chartSettings[i].unit]) {
+                  console.log("chartSettings[i].unit: ", chartSettings[i].unit)
+                  return (
+                  <StackedBarChart
+                    key={i+' '+index}
+                    chartName={i}
+                    chartTitle={i}
+                    selectedScenario={selectedScenario}
+                    selectedScenario2={selectedScenario2}
+                    selectedCountries={selectedCountries}
+                    combinedChart={false}
+                    label={chartSettings[i].unit}
+                    minY={0}
+                    maxY={1500}
+                    stackedBar={stackedBar}
+                    tab={"tab1"}
+                    chart={"chart" + (index + 1)}
+                  />
+                )
+                } else {
+                  console.log("unit setting mismatch check data files and units.js tag must correspond")
+                  return (
+                    <div>unit setting mismatch check data files and units.js tag must correspond</div>
+                  )
+                }
+              }
+              else {
+                console.log("chart name mismatch, check data files and charts.js tag must correspond")
+                return(<div>chart name mismatch, check data files and charts.js tag must correspond</div>)
+              } 
+            })
           }
         </Flex>
       )}

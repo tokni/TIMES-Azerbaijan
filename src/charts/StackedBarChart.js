@@ -54,6 +54,7 @@ const StackedBarChart = props => {
   const chartName = props.chartName
   const chartTitle = props.chartTitle
   const combinedChart = false //props.combinedChart
+  const unit = props.label
 
   let maxY2 = 1
   
@@ -66,7 +67,6 @@ const StackedBarChart = props => {
   const totalYearValuesNegativeScenario1 = dataScenario1[2]
   const totalYearValuesPositiveScenario2 = scenario2 ? dataScenario2[1] : undefined
   const totalYearValuesNegativeScenario2 = scenario2 ? dataScenario2[2] : undefined
-  const unit = dataScenario1[3]
   let maxY = -Infinity
   let minY = Infinity
   let base = 0

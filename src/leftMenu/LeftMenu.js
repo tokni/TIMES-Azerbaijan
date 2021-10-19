@@ -10,6 +10,7 @@ import i18next from 'i18next';
 import parseHtml from 'html-react-parser';
 import { useAuth0 } from '@auth0/auth0-react';
 import queryString from 'query-string';
+import unitSettings from '../translations/units'
 
 const MenuLayout = styled.div`
   display: none;
@@ -364,22 +365,22 @@ function ScenarioSelectionMenu(props) {
             </LanguageButton>
           </LanguageGroup>
         <MenuSeparatorLine />
-        {isAuthenticated && <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
+        <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
           <LanguageGroup>
-            <LanguageButton
-              selected={unitSelected === "unit1"}
-              onClick={() => setUnitSelected("unit1")}
-            >
-              Unit1
-            </LanguageButton>
-            <LanguageButton
-              selected={unitSelected === "unit2"}
-              onClick={() => setUnitSelected("unit2")}
-            >
-              Unit2
-            </LanguageButton>
+            {
+              Object.entries(unitSettings).forEach(unit => {
+                console.log("unit: ", unit)
+                return(
+                  <LanguageButton
+                    selected={unitSelected === "unit1"}
+                    onClick={() => this.selectUnit("unit1")}
+                  >
+                    {unit}
+                  </LanguageButton>)
+              })
+            }
           </LanguageGroup>
-          <MenuSeparatorLine /></>}
+          <MenuSeparatorLine /></>
       </>
       
       {(dev || isAuthenticated) && scenarioSelectorVisible &&

@@ -97,6 +97,12 @@ export class App extends React.Component {
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: '',
       selectedCountries: default_countries,
+      unitSelection: {
+        'MW': 'MW', 
+        'Mio. Euro 2020': 'Mio. Euro 2020', 
+        'PJ': 'PJ',
+        'kt CO2': 'kt CO2'
+      }
   }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
@@ -105,6 +111,14 @@ export class App extends React.Component {
     history: PropTypes.object,
     location: PropTypes.object,
   }
+  selectUnit = (unit) => {
+    this.setState(state => {
+      let ret = state
+      ret.unitSelection = unit.name
+      return ret
+    })
+  }
+
   UpdateScenarioNames = () => {
     this.setState(state => {
       return {
@@ -225,6 +239,8 @@ LoginButton = () => {
               toggleOption={this.ToggleOption}
               selectedCountries={this.state.selectedCountries}
               selectCountry={this.selectCountry}
+              selectedUnits={this.state.unitSelection}
+              selectUnit={this.state.selectUnit}
             />
             <LeftMenuMobile
               selectedChartgroup={this.state.scenarioSelection}
@@ -274,6 +290,7 @@ LoginButton = () => {
                             selectedCountries={this.state.selectedCountries}
                             tab={route[0]}
                             index={1}
+                            unitSelection={this.state.selectedUnits}
                           />
                         </Suspense>
                       )}
