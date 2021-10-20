@@ -7,7 +7,7 @@ import StackedBarChart from './StackedBarChart'
 //import StackedBarDiffChart from './StackedBarDiffChart'
 import { MainArea, Flex, Scenario1Description, Scenario2Description } from './Charts.style'
 //import stackedBar from '../data/tab1'
-//import LineChart from './LineChart'
+import LineChart from './LineChart'
 //import indicators from '../data/chartstab1'
 import { useTranslation } from 'react-i18next';
 import scenarioCombinations from '../data/scenarioCombinations'
@@ -99,12 +99,13 @@ const Charts = props => {
            
             indicators.map((i, index) => 
             {
-              console.log("i: ", i)
+              //console.log("i: ", i)
               //console.log("stackedBar: ", stackedBar)
               if (chartSettings[i]) {
                 //console.log("chartSetting i: ", chartSettings[i])
                 if (unitSettings[chartSettings[i].unit]) {
-                  console.log("chartSettings[i].unit: ", chartSettings[i].unit)
+                  //console.log("chartSettings[i].unit: ", chartSettings[i].unit)
+                  if (chartSettings[i].type==="stackedBar")
                   return (
                   <StackedBarChart
                     key={i+' '+index}
@@ -122,6 +123,21 @@ const Charts = props => {
                     chart={"chart" + (index + 1)}
                   />
                 )
+                else if (chartSettings[i].type==="line") 
+                return(<LineChart 
+                  key={i+' '+index}
+                  chartName={i}
+                  chartTitle={i}
+                  selectedScenario={selectedScenario}
+                  selectedScenario2={selectedScenario2}
+                  selectedCountries={selectedCountries}
+                  label=" "
+                  minY={0}
+                  maxY={15}
+                  lineData={stackedBar}
+                />)
+                else 
+                    return (<div>Chart type mismatch, must be stackedbar or line: {chartSettings[i].type==="line"}</div>)
                 } else {
                   console.log("unit setting mismatch check data files and units.js tag must correspond")
                   return (

@@ -111,10 +111,12 @@ export class App extends React.Component {
     history: PropTypes.object,
     location: PropTypes.object,
   }
-  selectUnit = (unit) => {
+  selectUnit = (unitType, unit) => {
     this.setState(state => {
       let ret = state
-      ret.unitSelection = unit.name
+      console.log("unitType: ", unitType)
+      console.log("unit: ", unit)
+      //ret.unitSelection = unit.name
       return ret
     })
   }

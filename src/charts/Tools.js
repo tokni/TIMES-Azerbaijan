@@ -36,13 +36,14 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
     //console.log("scen: ", scen)
     //console.log("chartname: ", chartName)
     //let ind = scen.indicators.find(o => o.chart === chartName)
-    let ind = scen.charts[chartName][0]
+    let ind = scen.charts[chartName]
     //console.log("ind: ", ind)
     if (!ind) return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]
         unit = ind.unit
-        ind.regions.forEach(r => {
+        Object.entries(ind).forEach(region => {
             //console.log("Object.keys(r.legends): ", Object.keys(r.legends))
-            Object.entries(r.legends).forEach(legend => {
+            //console.log("region: ", region)
+            Object.entries(region[1]).forEach(legend => {
               //console.log("indicatorGroup: ", legend)
               //console.log("accumulatedData: ", accumulatedData)
               if (!accumulatedData[legendNames[legend[0]]['name_' + i18next.language]]) {
@@ -51,7 +52,8 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
                   accumulatedData[legendNames[legend[0]]['name_' + i18next.language]].push({"year": y, "total": 0})
                 })
               }
-              if (selectedDataRegions.includes(r.region)) {//Only include selected countries
+              //console.log("selectedDataReg: ", selectedDataRegions)
+              if (selectedDataRegions.includes(region[0])) {//Only include selected countries
                 legend[1].forEach((value, index) => {
                   if (accumulatedData[legendNames[legend[0]]['name_' + i18next.language]][index].year !== value.year ) {
                      //Extra check we rely on the two arrays being indexed the same way

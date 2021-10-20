@@ -18,6 +18,8 @@ import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import { CSVLink } from 'react-csv'
 import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next'
+import legendSettings from "../translations/legends"
+import i18next from 'i18next';
 
 const ChartHeader = styled.div`
   display: flex;
@@ -50,6 +52,7 @@ const LineChart = ({
   chartName, 
   label
 }) => {
+  //console.log("data --------------------------------: ", lineData)
   const [t] = useTranslation()
   let selectedDataRegions = [] 
     mapRegionToDataRegions.forEach((mapRegion) => {
@@ -71,38 +74,50 @@ const LineChart = ({
         legends.add(group.indicatorGroup)
       })
     }) */
-    
-  legends = selectedDataRegions
+  
+  //legends = selectedDataRegions
   let dataFailure = "no"
   let indicatorData1 = []
   let indicatorData2 = []
-  let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
+  /* let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
     return scenario.scenario.toLowerCase() === selectedScenario.toLowerCase()
-  })
+  }) */
+  //console.log("lineData.data: ", lineData)
+  //console.log("selectedScenario.toLowerCase(): ", selectedScenario.toLowerCase())
+  let selectedScenarioData = lineData[selectedScenario.toLowerCase()]
+  
   if (!selectedScenarioData) {
     console.log("Scenario: " + selectedScenario + " not found in data")
     dataFailure = "Scenario: " + selectedScenario + " not found in data"
   }
   //console.log("selectedScenarioData: ", selectedScenarioData)
   //console.log("chartName: ", chartName)
-  indicatorData1 = selectedScenarioData.indicators.find((indicator) => {
-    //console.log("indicator.indicator: ", indicator.indicator)
-    return indicator.indicator === chartName
-  })
+  indicatorData1 = selectedScenarioData.charts[chartName]
+  
   //console.log("indicatorData1: ", indicatorData1)
   if (!indicatorData1) {
-    //console.log("Indicator " + chartName + " not found in data")
+    console.log("Indicator " + chartName + " not found in data")
     dataFailure = "Indicator " + chartName + " not found in data"
   }
   selectedScenario2 !== "" && selectedDataRegions.forEach((country, i)=>{
-    let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
+    /* let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
       return scenario.scenario.toLowerCase() === selectedScenario2.toLowerCase()
-    })
+    }) */
+    let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
+    indicatorData2 = selectedScenarioData.charts[chartName]
     //console.log("indicatorData2: ", indicatorData2)
-    indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
+    /* indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
       return indicator.indicator === chartName
-    })
+    }) */
   })
+ Object.values(indicatorData1).forEach(region => {
+   Object.keys(region).forEach(legend => {
+    //console.log("legend: ", legendSettings[legend].name_en)
+    legends.add(legendSettings[legend]["name_" + i18next.language])
+   })
+   
+ })
+
   const getCSVData = (lineData1, scenarioName1, lineData2 = [], scenarioName2) => {
     let ret = []
     
@@ -148,11 +163,11 @@ const LineChart = ({
     <ChartHeader>
       {/* <ChartTitle>{parseHtml(indicatorData1.indicator.replaceAll("CO2", "CO<sub>2</sub>"))}</ChartTitle> */}
       <ChartTitle>{parseHtml(t(chartName))}</ChartTitle>
-      <CSVLink 
+      {/* <CSVLink 
         data={getCSVData(indicatorData1, selectedScenario, indicatorData2, selectedScenario2)}
         filename={indicatorData1.indicator + " " + selectedCountries + ".csv"}
       >
-        {t("general.download-as-csv")}</CSVLink>
+        {t("general.download-as-csv")}</CSVLink> */}
     </ChartHeader>
       <VictoryChart domainPadding={20}
         containerComponent={
@@ -190,12 +205,20 @@ const LineChart = ({
           <VictoryGroup >
             {selectedDataRegions.map((country, i)=>{
             let lineChartData = []
-          
-            indicatorData1.regions.forEach((region)=>{
-              if (region.region === country) {
-                region.indicatorGroups[0].indicatorGroupValues.forEach((item)=>{
-                  lineChartData.push({x: item.year, y: item.total, country: country})
+              console.log("indicatorData1: ", indicatorData1)
+            Object.entries(indicatorData1).forEach((region)=>{
+              if (region[0] === country) {
+                console.log("--region: ", region)
+                Object.values(region[1]).forEach(legend => {
+                  console.log("--legend: ", legend)
+                  Object.values(legend).forEach(item => {
+                    console.log("item: ", item)
+                    lineChartData.push({x: item.year, y: item.total, country: country})
+                  })
                 })
+                /* region.indicatorGroups[0].indicatorGroupValues.forEach((item)=>{
+                  lineChartData.push({x: item.year, y: item.total, country: country})
+                }) */
               }
             })
           return(
@@ -217,13 +240,11 @@ const LineChart = ({
         })}
         {selectedScenario2 !== "" && selectedDataRegions.map((country, i)=>{
           let lineChartData2 = []
-          let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
-            return scenario.scenario.toLowerCase() === selectedScenario2.toLowerCase()
-          })
-          let indicatorData = selectedScenarioData.indicators.find((indicator) => {
-            return indicator.indicator === chartName
-          })
-          indicatorData.regions.forEach((region)=>{
+          let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
+          let indicatorData = selectedScenarioData.charts[chartName]
+          console.log("---indicatorData2---: ", indicatorData)
+          Object.values(indicatorData).forEach((region)=>{
+            console.log("region 2 : ", region)
             if (region.region === country) {
               region.indicatorGroups[0].indicatorGroupValues.forEach((item)=>{
               lineChartData2.push({x: item.year, y: item.total, country: country})

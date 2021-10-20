@@ -37,7 +37,7 @@ export default [
     {
         country: "Azer",
         path_id : "az", 
-        data_regions: ["AZ"],
+        data_regions: ["AZ1", "AZ2", "AZ3"],
     },
 ]
 

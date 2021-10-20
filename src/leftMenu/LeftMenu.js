@@ -368,15 +368,19 @@ function ScenarioSelectionMenu(props) {
         <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
           <LanguageGroup>
             {
-              Object.entries(unitSettings).forEach(unit => {
-                console.log("unit: ", unit)
-                return(
+              Object.entries(unitSettings).forEach(unitType => {
+                console.log("unit: ", unitType)
+                Object.entries(unitType).forEach(unit => {
+                  return(
                   <LanguageButton
                     selected={unitSelected === "unit1"}
-                    onClick={() => this.selectUnit("unit1")}
+                    onClick={() => this.selectUnit(
+                      
+                    )}
                   >
-                    {unit}
+                    {unit[1]}
                   </LanguageButton>)
+                })
               })
             }
           </LanguageGroup>
