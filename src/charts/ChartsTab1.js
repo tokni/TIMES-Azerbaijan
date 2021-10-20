@@ -25,7 +25,7 @@ const Charts = props => {
   const [indicatorReady, setIndicatorReady] = useState(false)
   const [stackReady, setStackReady] = useState(false)
   const [previousTab, setPreviousTab] = useState(null)
-  const selectedUnit = props.unitSelection
+  //const selectedUnit = props.unitSelection
 
   //console.log("props ***************************** : ", props)
 

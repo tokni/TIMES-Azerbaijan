@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
@@ -267,7 +267,7 @@ const LoginContainer = styled.div`
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
   const location = useLocation()
-  const [unitSelected, setUnitSelected] = useState()
+  //const [unitSelected, setUnitSelected] = useState()
   const {user, isAuthenticated, isLoading, loginWithRedirect, logout} = useAuth0()
   const scenarioSelectorVisible = location.pathname.includes("tab") || location.pathname === "/"
   let params = queryString.parse(location.search)
@@ -373,9 +373,9 @@ function ScenarioSelectionMenu(props) {
                 Object.entries(unitType).forEach(unit => {
                   return(
                   <LanguageButton
-                    selected={unitSelected === "unit1"}
+                    //selected={unitSelected === "unit1"}
                     onClick={() => this.selectUnit(
-                      
+
                     )}
                   >
                     {unit[1]}

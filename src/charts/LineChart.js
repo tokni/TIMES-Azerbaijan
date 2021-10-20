@@ -15,8 +15,8 @@ import {colorNER} from './chartColors'
 import periods from './../data/years'
 import mapRegionToDataRegions from "./../data/mapRegionToDataRegions"
 import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
-import { CSVLink } from 'react-csv'
-import CSV_citation from "../data/citation"
+//import { CSVLink } from 'react-csv'
+//import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next'
 import legendSettings from "../translations/legends"
 import i18next from 'i18next';
@@ -105,7 +105,7 @@ const LineChart = ({
     }) */
     let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
     indicatorData2 = selectedScenarioData.charts[chartName]
-    //console.log("indicatorData2: ", indicatorData2)
+    console.log("indicatorData2: ", indicatorData2)
     /* indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
       return indicator.indicator === chartName
     }) */
@@ -118,7 +118,7 @@ const LineChart = ({
    
  })
 
-  const getCSVData = (lineData1, scenarioName1, lineData2 = [], scenarioName2) => {
+  /* const getCSVData = (lineData1, scenarioName1, lineData2 = [], scenarioName2) => {
     let ret = []
     
     lineData1.regions.forEach((region) => {
@@ -134,7 +134,7 @@ const LineChart = ({
     ret.push({citation: CSV_citation})
 
     return ret
-  }
+  } */
   const HTMLYAxisLabel = props => {
     const text = props.text.replaceAll('§', '')
     const co2Text = text.replace("CO2", "CO<sub>2</sub>")
