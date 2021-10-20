@@ -72,7 +72,7 @@ export const changeScenario = (name, value) => ({
   [name]: value,
 })
 const default_scenario = scenarioCombinations.scenarioCombinations.scenarioOptions[0].id;
-const default_countries = ['no','se','dk', "fi", "is", "az"];
+const default_countries = ["az1", "az2", "az3"];
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
   .filter(s => !s.opt0 && !s.op1 && !s.opt2 && !s.opt3)
