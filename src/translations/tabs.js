@@ -12,11 +12,15 @@ export default {
     "name_az": "Elektrik enerjisi və İstilik"
   },
   "tab4": {
+    "name_en": "Industry",
+    "name_az": "Sənaye"
+  },
+  "tab5": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat"
   },
-  "tab5": {
-    "name_en": "Other End-Use",
-    "name_az": "Other End-Use"
+  "tab6": {
+    "name_en": "Other Sectors",
+    "name_az": "Digər sektorlar üzrə"
   }
 }
