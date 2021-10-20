@@ -18,7 +18,7 @@ import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 //import { CSVLink } from 'react-csv'
 //import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next'
-import legendSettings from "../translations/legends"
+import chartSettings from "../translations/charts"
 import i18next from 'i18next';
 
 const ChartHeader = styled.div`
@@ -162,7 +162,7 @@ const LineChart = ({
   <ChartContainer>
     <ChartHeader>
       {/* <ChartTitle>{parseHtml(indicatorData1.indicator.replaceAll("CO2", "CO<sub>2</sub>"))}</ChartTitle> */}
-      <ChartTitle>{parseHtml(t(chartName))}</ChartTitle>
+      <ChartTitle>{chartSettings[chartName]["name_" + i18next.language]}</ChartTitle>
       {/* <CSVLink 
         data={getCSVData(indicatorData1, selectedScenario, indicatorData2, selectedScenario2)}
         filename={indicatorData1.indicator + " " + selectedCountries + ".csv"}

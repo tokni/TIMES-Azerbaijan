@@ -131,7 +131,7 @@ const Charts = props => {
                   selectedScenario={selectedScenario}
                   selectedScenario2={selectedScenario2}
                   selectedCountries={selectedCountries}
-                  label=" "
+                  label={chartSettings[i].unit}
                   minY={0}
                   maxY={15}
                   lineData={stackedBar}
