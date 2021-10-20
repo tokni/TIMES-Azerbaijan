@@ -75,7 +75,7 @@ const LineChart = ({
       })
     }) */
   
-  //legends = selectedDataRegions
+  legends = selectedDataRegions
   let dataFailure = "no"
   let indicatorData1 = []
   let indicatorData2 = []
@@ -110,13 +110,13 @@ const LineChart = ({
       return indicator.indicator === chartName
     }) */
   })
- Object.values(indicatorData1).forEach(region => {
+ /* Object.values(indicatorData1).forEach(region => {
    Object.keys(region).forEach(legend => {
     //console.log("legend: ", legendSettings[legend].name_en)
     legends.add(legendSettings[legend]["name_" + i18next.language])
    })
    
- })
+ }) */
 
   /* const getCSVData = (lineData1, scenarioName1, lineData2 = [], scenarioName2) => {
     let ret = []

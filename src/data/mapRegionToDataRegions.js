@@ -35,9 +35,19 @@ export default [
         data_regions: [],
     },
     {
-        country: "Azer",
-        path_id : "az", 
-        data_regions: ["AZ1", "AZ2", "AZ3"],
+        country: "Azer1",
+        path_id : "az1", 
+        data_regions: ["AZ1"],
+    },
+    {
+        country: "Azer2",
+        path_id : "az2", 
+        data_regions: ["AZ2"],
+    },
+    {
+        country: "Azer3",
+        path_id : "az3", 
+        data_regions: ["AZ3"],
     },
 ]
 
