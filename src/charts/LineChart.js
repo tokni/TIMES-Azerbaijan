@@ -140,7 +140,7 @@ const LineChart = ({
     const co2Text = text.replace("CO2", "CO<sub>2</sub>")
     return (
       <foreignObject x={props.x+3-115} y={props.y-9} width={120} height={90}>
-        <div style={{ fontSize: '12px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
+        <div style={{ fontSize: '18px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
       </foreignObject>
     );
   };
