@@ -4,7 +4,7 @@ export default {
 			scenarioOptions : [ 
 				{ 
 					"id": "scenario0_base", 
-					"id_noOptions": "scenario0", 
+					"id_noOptions": "scenario0_base", 
 					"name_en": "Reference", 
 					"name_az": "Reference", 
 					"short_description_en": "REF", 
@@ -14,10 +14,11 @@ export default {
 					"desc_en": "Reference scenario", 
 					"desc_az": "Bazis ssenarisi", 
 					"opt0": false, 
+					"opt1": false,
 				}, 
 				{ 
 					"id": "scenario0_base_opt0", 
-					"id_noOptions": "scenario0", 
+					"id_noOptions": "scenario0_base", 
 					"name_en": "Reference BIO", 
 					"name_az": "Reference BIO", 
 					"short_description_en": "REF_BIO", 
@@ -27,10 +28,11 @@ export default {
 					"desc_en": "Reference scenario with BIO", 
 					"desc_az": "Bazis ssenarisi ilə BIO", 
 					"opt0": true, 
+					"opt1": false,
 				}, 
 				{ 
-					"id": "scenario0_copy_base", 
-					"id_noOptions": "scenario0_copy", 
+					"id": "scenario0_base_copy", 
+					"id_noOptions": "scenario0_base_copy", 
 					"name_en": "Reference", 
 					"name_az": "Reference", 
 					"short_description_en": "REF", 
@@ -40,10 +42,11 @@ export default {
 					"desc_en": "Reference scenario", 
 					"desc_az": "Bazis ssenarisi", 
 					"opt0": false, 
+					"opt1": false,
 				}, 
 				{ 
-					"id": "scenario0_copy_base_opt0", 
-					"id_noOptions": "scenario0_copy", 
+					"id": "scenario0_base_copy_opt0", 
+					"id_noOptions": "scenario0_base_copy", 
 					"name_en": "Reference BIO", 
 					"name_az": "Reference BIO", 
 					"short_description_en": "REF_BIO", 
@@ -52,11 +55,12 @@ export default {
 					"ultra_short_description_az": "R_B", 
 					"desc_en": "Reference scenario with BIO", 
 					"desc_az": "Bazis ssenarisi ilə BIO", 
-					"opt0": true, 
+					"opt0": true,
+					"opt1": false, 
 				}, 
 				{ 
 					"id": "scenario1_cns", 
-					"id_noOptions": "scenario1", 
+					"id_noOptions": "scenario1_cns", 
 					"name_en": "CarbonNeutral", 
 					"name_az": "CarbonNeutral", 
 					"short_description_en": "CNS", 
@@ -66,10 +70,11 @@ export default {
 					"desc_en": "Carbon neutral scenario", 
 					"desc_az": "Karbon neytrallığı ssenarisi", 
 					"opt0": false, 
+					"opt1": false,
 				}, 
 				{ 
 					"id": "scenario1_cns_opt0", 
-					"id_noOptions": "scenario1", 
+					"id_noOptions": "scenario1_cns", 
 					"name_en": "CarbonNeutral BIO", 
 					"name_az": "CarbonNeutral BIO", 
 					"short_description_en": "CNS_BIO", 
@@ -79,10 +84,11 @@ export default {
 					"desc_en": "Carbon neutral scenario with BIO", 
 					"desc_az": "Karbon neytrallığı ssenarisi ilə BIO", 
 					"opt0": true, 
+					"opt1": false,
 				}, 
 				{ 
-					"id": "scenario1_copy_cns", 
-					"id_noOptions": "scenario1_copy", 
+					"id": "scenario1_cns_copy", 
+					"id_noOptions": "scenario1_cns_copy", 
 					"name_en": "CarbonNeutral", 
 					"name_az": "CarbonNeutral", 
 					"short_description_en": "CNS", 
@@ -92,10 +98,11 @@ export default {
 					"desc_en": "Carbon neutral scenario", 
 					"desc_az": "Karbon neytrallığı ssenarisi", 
 					"opt0": false, 
+					"opt1": false,
 				}, 
 				{ 
-					"id": "scenario1_copy_cns_opt0", 
-					"id_noOptions": "scenario1_copy", 
+					"id": "scenario1_cns_copy_opt0", 
+					"id_noOptions": "scenario1_cns_copy", 
 					"name_en": "CarbonNeutral BIO", 
 					"name_az": "CarbonNeutral BIO", 
 					"short_description_en": "CNS_BIO", 
@@ -105,9 +112,26 @@ export default {
 					"desc_en": "Carbon neutral scenario with BIO", 
 					"desc_az": "Karbon neytrallığı ssenarisi ilə BIO", 
 					"opt0": true, 
+					"opt1": false,
 				}, 
 			], 
 			optionsAvailable: { 
+				"scenario0_base_copy": { 
+					"opt0": true,
+					"opt1": false,
+					}, 
+				"scenario1_cns": { 
+					"opt0": true,
+					"opt1": false,
+					}, 
+				"scenario1_cns_copy": { 
+					"opt0": true,
+					"opt1": false,
+					}, 
+				"scenario0_base": { 
+					"opt0": true,
+					"opt1": false,
+					}, 
 			} 
 		} 
 	};
