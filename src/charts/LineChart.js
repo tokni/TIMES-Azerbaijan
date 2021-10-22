@@ -105,7 +105,7 @@ const LineChart = ({
     }) */
     let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
     indicatorData2 = selectedScenarioData.charts[chartName]
-    console.log("indicatorData2: ", indicatorData2)
+    //console.log("indicatorData2: ", indicatorData2)
     /* indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
       return indicator.indicator === chartName
     }) */
@@ -205,14 +205,14 @@ const LineChart = ({
           <VictoryGroup >
             {selectedDataRegions.map((country, i)=>{
             let lineChartData = []
-              console.log("indicatorData1: ", indicatorData1)
+              //console.log("indicatorData1: ", indicatorData1)
             Object.entries(indicatorData1).forEach((region)=>{
               if (region[0] === country) {
-                console.log("--region: ", region)
+                //console.log("--region: ", region)
                 Object.values(region[1]).forEach(legend => {
-                  console.log("--legend: ", legend)
+                  //console.log("--legend: ", legend)
                   Object.values(legend).forEach(item => {
-                    console.log("item: ", item)
+                    //console.log("item: ", item)
                     lineChartData.push({x: item.year, y: item.total, country: country})
                   })
                 })

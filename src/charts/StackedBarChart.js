@@ -55,7 +55,7 @@ const StackedBarChart = props => {
   const chartTitle = props.chartTitle
   const combinedChart = false //props.combinedChart
   const unit = props.label
-
+  console.log("props label: ", props.label)
   let maxY2 = 1
   
   const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries)

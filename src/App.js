@@ -14,6 +14,7 @@ import scenarioCombinations from './data/scenarioCombinations'
 import { withTranslation } from 'react-i18next'
 import { useAuth0, withAuth0 } from "@auth0/auth0-react";
 import tabsList from "./translations/tabs"
+import unitSettings from "./translations/units"
 
 const createRoutes = Object.entries(tabsList)
 
@@ -71,9 +72,18 @@ const MainSwitch = styled(Switch)`
 export const changeScenario = (name, value) => ({
   [name]: value,
 })
+const getDefaultUnits = () => {
+  let ret = {}
+  Object.entries(unitSettings).forEach((unitType) => {
+    console.log("default unitType: ", unitType)
+    ret[unitType[0]] = {displayName: unitType[0], factor: 1}
+  })
+  return ret
+}
 const default_scenario = scenarioCombinations.scenarioCombinations.scenarioOptions[0].id;
 const default_countries = ["az1", "az2", "az3"];
 const options = []
+const default_units = getDefaultUnits()
 scenarioCombinations.scenarioCombinations.scenarioOptions
   .filter(s => !s.opt0 && !s.op1 && !s.opt2 && !s.opt3)
   .forEach(s => {
@@ -97,12 +107,7 @@ export class App extends React.Component {
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: '',
       selectedCountries: default_countries,
-      unitSelection: {
-        'MW': 'MW', 
-        'Mio. Euro 2020': 'Mio. Euro 2020', 
-        'PJ': 'PJ',
-        'kt CO2': 'kt CO2'
-      }
+      unitSelection: default_units
   }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
@@ -112,12 +117,12 @@ export class App extends React.Component {
     location: PropTypes.object,
   }
   selectUnit = (unitType, unit) => {
-    this.setState(state => {
-      let ret = state
-      console.log("unitType: ", unitType)
+    console.log("unitType: ", unitType)
       console.log("unit: ", unit)
-      //ret.unitSelection = unit.name
-      return ret
+    this.setState(state => {
+      return(
+        state.unitSelection[unitType] = unit
+      ) 
     })
   }
 
@@ -225,6 +230,7 @@ LoginButton = () => {
 };
   
   render() {
+    console.log("state.unitSelection: ", this.state.unitSelection)
     console.log("from app options: ", this.state.options)
     return (
       <Page>
@@ -242,7 +248,7 @@ LoginButton = () => {
               selectedCountries={this.state.selectedCountries}
               selectCountry={this.selectCountry}
               selectedUnits={this.state.unitSelection}
-              selectUnit={this.state.selectUnit}
+              selectUnit={this.selectUnit}
             />
             <LeftMenuMobile
               selectedChartgroup={this.state.scenarioSelection}
@@ -292,7 +298,7 @@ LoginButton = () => {
                             selectedCountries={this.state.selectedCountries}
                             tab={route[0]}
                             index={1}
-                            unitSelection={this.state.selectedUnits}
+                            selectedUnits={this.state.unitSelection}
                           />
                         </Suspense>
                       )}
