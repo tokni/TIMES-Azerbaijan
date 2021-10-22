@@ -25,9 +25,9 @@ const Charts = props => {
   const [indicatorReady, setIndicatorReady] = useState(false)
   const [stackReady, setStackReady] = useState(false)
   const [previousTab, setPreviousTab] = useState(null)
-  //const selectedUnit = props.unitSelection
+  
 
-  //console.log("props ***************************** : ", props)
+  console.log("props ***************************** : ", props)
 
   if (previousTab !== props.tab) {
     setIndicatorReady(false)
@@ -104,7 +104,8 @@ const Charts = props => {
               if (chartSettings[i]) {
                 //console.log("chartSetting i: ", chartSettings[i])
                 if (unitSettings[chartSettings[i].unit]) {
-                  //console.log("chartSettings[i].unit: ", chartSettings[i].unit)
+                  console.log("chartSettings[i].unit: ", chartSettings[i].unit)
+                  console.log("unitSelection: ", props.selectedUnits)
                   if (chartSettings[i].type==="stackedBar")
                   return (
                   <StackedBarChart
@@ -114,8 +115,9 @@ const Charts = props => {
                     selectedScenario={selectedScenario}
                     selectedScenario2={selectedScenario2}
                     selectedCountries={selectedCountries}
-                    combinedChart={false}
-                    label={chartSettings[i].unit}
+                    combinedChart={false}selectedUnits
+                    label={props.selectedUnits[chartSettings[i].unit].displayName}
+                    unitFactor={props.selectedUnits[chartSettings[i].unit].factor}
                     minY={0}
                     maxY={1500}
                     stackedBar={stackedBar}

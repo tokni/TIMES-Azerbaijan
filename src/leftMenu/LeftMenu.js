@@ -69,6 +69,33 @@ const LanguageTitle = styled.div`
   color: #212121;
   opacity: 0.8;
 `
+const UnitContainer = styled.div`
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+`
+const UnitRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+const UnitItem = styled.button`
+  flex: 1;
+  border-radius: 4px;
+  transition: .2s;
+  border: none;
+  margin: 1px;
+  &:hover {
+    ${'' /* transform: scale(1.05) translate(0px); */}
+    cursor: pointer;
+    background: #3cccfc;
+    background-opacity: 0.5;
+  }
+  &:checked {
+    background: #3cccfc;
+  }
+`
 /* const AppLogo2 = styled.img`
   padding: 0px;
   max-width: 180px;
@@ -264,6 +291,18 @@ const LoginContainer = styled.div`
   height: 100vh;
   width: 100vw; */}
 ` 
+let unitList = []
+let unitRow = []
+Object.entries(unitSettings).forEach(unitType => {
+  console.log("unitType: ", unitType)
+  unitRow = []
+  Object.entries(unitType[1]).forEach(unit => {
+    console.log("--unit: ", unit)
+    unitRow.push({displayName: unit[0], factor: unit[1]})
+  })
+  unitList.push(unitRow)
+  console.log("unit list: ", unitList)
+})
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
   const location = useLocation()
@@ -366,24 +405,25 @@ function ScenarioSelectionMenu(props) {
           </LanguageGroup>
         <MenuSeparatorLine />
         <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
-          <LanguageGroup>
-            {
-              Object.entries(unitSettings).forEach(unitType => {
-                console.log("unit: ", unitType)
-                Object.entries(unitType).forEach(unit => {
-                  return(
-                  <LanguageButton
-                    //selected={unitSelected === "unit1"}
-                    onClick={() => this.selectUnit(
-
-                    )}
-                  >
-                    {unit[1]}
-                  </LanguageButton>)
-                })
-              })
-            }
-          </LanguageGroup>
+          <UnitContainer>
+            {unitList.map((unitRow, i) => {
+              return(<UnitRow key={'unitRow'+i}>
+                {
+                  unitRow.map((unitItem) => {
+                    return(
+                      <UnitItem
+                        key={unitItem.displayName} 
+                        onClick={() => props.selectUnit(unitRow[0].displayName, unitItem)}
+                        checked={true}
+                      >
+                        {unitItem.displayName}
+                      </UnitItem>
+                    )
+                  })
+                }
+              </UnitRow>)
+            })}
+          </UnitContainer>
           <MenuSeparatorLine /></>
       </>
       

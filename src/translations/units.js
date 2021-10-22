@@ -12,7 +12,7 @@ export default {
     "Bill.tkm": 0.001
   },
   "Mio. Euro 2020": {
-    "Mio Euro 2020": 1.0,
+    "Mio. Euro 2020": 1.0,
     "Bn. Euro 2020": 0.001
   },
   "Mio. Euro 2020_PJ": {

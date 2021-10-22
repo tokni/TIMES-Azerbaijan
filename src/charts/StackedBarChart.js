@@ -55,7 +55,7 @@ const StackedBarChart = props => {
   const chartTitle = props.chartTitle
   const combinedChart = false //props.combinedChart
   const unit = props.label
-
+  console.log("props label: ", props.label)
   let maxY2 = 1
   
   const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries)
@@ -166,7 +166,7 @@ const HTMLYAxisLabel = props => {
   const co2Text = text.replace("CO2", "CO<sub>2</sub>")
   return (
     <foreignObject x={props.x+3-95} y={props.y-9} width={120} height={120}>
-      <div style={{ fontSize: '12px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
+      <div style={{ fontSize: '18px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
     </foreignObject>
   );
 };
@@ -175,7 +175,7 @@ const HTMLLabel = props => {
   const text = props.text.replaceAll('§', '')
   const co2Text = text.replace("CO2", "CO<sub>2</sub>")
   return (
-    <foreignObject x={props.x+3} y={props.y-9} width={90} height={60}>
+    <foreignObject x={props.x+3} y={props.y-9} width={290} height={60}>
       <div style={{ fontSize: '12px' }}>{parseHtml(co2Text)}</div>
     </foreignObject>
   );

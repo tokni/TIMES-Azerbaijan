@@ -78,7 +78,7 @@ const LineChart = ({
   legends = selectedDataRegions
   let dataFailure = "no"
   let indicatorData1 = []
-  let indicatorData2 = []
+  //let indicatorData2 = []
   /* let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
     return scenario.scenario.toLowerCase() === selectedScenario.toLowerCase()
   }) */
@@ -103,9 +103,9 @@ const LineChart = ({
     /* let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
       return scenario.scenario.toLowerCase() === selectedScenario2.toLowerCase()
     }) */
-    let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
-    indicatorData2 = selectedScenarioData.charts[chartName]
-    console.log("indicatorData2: ", indicatorData2)
+    //let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
+    //indicatorData2 = selectedScenarioData.charts[chartName]
+    //console.log("indicatorData2: ", indicatorData2)
     /* indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
       return indicator.indicator === chartName
     }) */
@@ -140,7 +140,7 @@ const LineChart = ({
     const co2Text = text.replace("CO2", "CO<sub>2</sub>")
     return (
       <foreignObject x={props.x+3-115} y={props.y-9} width={120} height={90}>
-        <div style={{ fontSize: '12px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
+        <div style={{ fontSize: '18px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
       </foreignObject>
     );
   };
@@ -205,14 +205,14 @@ const LineChart = ({
           <VictoryGroup >
             {selectedDataRegions.map((country, i)=>{
             let lineChartData = []
-              console.log("indicatorData1: ", indicatorData1)
+              //console.log("indicatorData1: ", indicatorData1)
             Object.entries(indicatorData1).forEach((region)=>{
               if (region[0] === country) {
-                console.log("--region: ", region)
+                //console.log("--region: ", region)
                 Object.values(region[1]).forEach(legend => {
-                  console.log("--legend: ", legend)
+                  //console.log("--legend: ", legend)
                   Object.values(legend).forEach(item => {
-                    console.log("item: ", item)
+                    //console.log("item: ", item)
                     lineChartData.push({x: item.year, y: item.total, country: country})
                   })
                 })
