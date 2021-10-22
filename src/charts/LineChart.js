@@ -78,7 +78,7 @@ const LineChart = ({
   legends = selectedDataRegions
   let dataFailure = "no"
   let indicatorData1 = []
-  let indicatorData2 = []
+  //let indicatorData2 = []
   /* let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
     return scenario.scenario.toLowerCase() === selectedScenario.toLowerCase()
   }) */
@@ -103,8 +103,8 @@ const LineChart = ({
     /* let selectedScenarioData = lineData.data.scenarios.find((scenario)=>{
       return scenario.scenario.toLowerCase() === selectedScenario2.toLowerCase()
     }) */
-    let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
-    indicatorData2 = selectedScenarioData.charts[chartName]
+    //let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
+    //indicatorData2 = selectedScenarioData.charts[chartName]
     //console.log("indicatorData2: ", indicatorData2)
     /* indicatorData2 = selectedScenarioData.indicators.find((indicator) => {
       return indicator.indicator === chartName
