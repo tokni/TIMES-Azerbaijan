@@ -31,7 +31,7 @@ export default {
   },
   "chart-titles.tab1.chart6": {
     "type": "stackedBar",
-    "unit": "Mio. Euro 2020_kt CO2",
+    "unit": "Mio. Euro 2020 / kt CO2",
     "name_en": "Marginal Prices – CO2",
     "name_az": "not_defined"
   },
@@ -103,7 +103,7 @@ export default {
   },
   "chart-titles.tab3.chart10": {
     "type": "stackedBar",
-    "unit": "Mio. Euro 2020_PJ",
+    "unit": "Mio. Euro 2020 / PJ",
     "name_en": "Marginal Prices – District Heat Urban Suburban Rural",
     "name_az": "not_defined"
   },
@@ -151,13 +151,13 @@ export default {
   },
   "chart-titles.tab3.chart8": {
     "type": "stackedBar",
-    "unit": "Mio. Euro 2020_PJ",
+    "unit": "Mio. Euro 2020 / PJ",
     "name_en": "Marginal Prices – Electricity",
     "name_az": "Marjinal qiymətlər - elektrik enerjisi"
   },
   "chart-titles.tab3.chart9": {
     "type": "stackedBar",
-    "unit": "Mio. Euro 2020_PJ",
+    "unit": "Mio. Euro 2020 / PJ",
     "name_en": "Marginal Prices – District Heat",
     "name_az": "Marjinal qiymətlər - mərkəzi istilik"
   },

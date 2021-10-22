@@ -15,13 +15,13 @@ export default {
     "Mio. Euro 2020": 1.0,
     "Bn. Euro 2020": 0.001
   },
-  "Mio. Euro 2020_PJ": {
-    "Mio. Euro 2020_PJ": 1.0,
-    "Euro 2020_Mwh": 3.6
+  "Mio. Euro 2020 / PJ": {
+    "Mio. Euro 2020 / PJ": 1.0,
+    "Euro 2020 / Mwh": 3.6
   },
-  "Mio. Euro 2020_kt CO2": {
-    "Mio. Euro 2020_kt CO2": 1.0,
-    "Euro 2020_tCO2": 1000.0
+  "Mio. Euro 2020 / kt CO2": {
+    "Mio. Euro 2020 / kt CO2": 1.0,
+    "Euro 2020 / tCO2": 1000.0
   },
   "PJ": {
     "PJ": 1.0,
