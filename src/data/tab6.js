@@ -1,7 +1,7 @@
 export default {
   "scenario0": {
     "charts": {
-      "chart-titles.tab6.chart1": {
+      "chart-titles.tab06.chart01": {
         "AZ1": {
           "legend15": [
             {
@@ -279,7 +279,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart2": {
+      "chart-titles.tab06.chart02": {
         "AZ1": {
           "legend131": [
             {
@@ -587,7 +587,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart3": {
+      "chart-titles.tab06.chart03": {
         "AZ1": {
           "legend122": [
             {
@@ -1255,7 +1255,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart4": {
+      "chart-titles.tab06.chart04": {
         "AZ1": {
           "legend122": [
             {
@@ -1923,7 +1923,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart5": {
+      "chart-titles.tab06.chart05": {
         "AZ1": {
           "legend0": [
             {
@@ -2475,7 +2475,7 @@ export default {
   },
   "scenario1": {
     "charts": {
-      "chart-titles.tab6.chart1": {
+      "chart-titles.tab06.chart01": {
         "AZ1": {
           "legend15": [
             {
@@ -2753,7 +2753,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart2": {
+      "chart-titles.tab06.chart02": {
         "AZ1": {
           "legend131": [
             {
@@ -3061,7 +3061,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart3": {
+      "chart-titles.tab06.chart03": {
         "AZ1": {
           "legend122": [
             {
@@ -3729,7 +3729,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart4": {
+      "chart-titles.tab06.chart04": {
         "AZ1": {
           "legend122": [
             {
@@ -4397,7 +4397,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab6.chart5": {
+      "chart-titles.tab06.chart05": {
         "AZ1": {
           "legend0": [
             {

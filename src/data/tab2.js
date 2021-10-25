@@ -1,7 +1,7 @@
 export default {
   "scenario0": {
     "charts": {
-      "chart-titles.tab2.chart1": {
+      "chart-titles.tab02.chart01": {
         "AZ1": {
           "legend176": [
             {
@@ -125,7 +125,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart2": {
+      "chart-titles.tab02.chart02": {
         "AZ1": {
           "legend119": [
             {
@@ -369,7 +369,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart3": {
+      "chart-titles.tab02.chart03": {
         "AZ1": {
           "legend174": [
             {
@@ -1367,7 +1367,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart4": {
+      "chart-titles.tab02.chart04": {
         "AZ1": {
           "legend120": [
             {
@@ -2575,7 +2575,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart5": {
+      "chart-titles.tab02.chart05": {
         "AZ1": {
           "legend175": [
             {
@@ -2673,7 +2673,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart6": {
+      "chart-titles.tab02.chart06": {
         "AZ1": {
           "legend177": [
             {
@@ -3041,7 +3041,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart7": {
+      "chart-titles.tab02.chart07": {
         "AZ1": {
           "legend30": [
             {
@@ -3353,7 +3353,7 @@ export default {
   },
   "scenario1": {
     "charts": {
-      "chart-titles.tab2.chart1": {
+      "chart-titles.tab02.chart01": {
         "AZ1": {
           "legend176": [
             {
@@ -3477,7 +3477,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart2": {
+      "chart-titles.tab02.chart02": {
         "AZ1": {
           "legend119": [
             {
@@ -3721,7 +3721,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart3": {
+      "chart-titles.tab02.chart03": {
         "AZ1": {
           "legend174": [
             {
@@ -4719,7 +4719,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart4": {
+      "chart-titles.tab02.chart04": {
         "AZ1": {
           "legend120": [
             {
@@ -5927,7 +5927,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart5": {
+      "chart-titles.tab02.chart05": {
         "AZ1": {
           "legend175": [
             {
@@ -6025,7 +6025,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart6": {
+      "chart-titles.tab02.chart06": {
         "AZ1": {
           "legend177": [
             {
@@ -6393,7 +6393,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab2.chart7": {
+      "chart-titles.tab02.chart07": {
         "AZ1": {
           "legend30": [
             {
