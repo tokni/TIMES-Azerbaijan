@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 import scenarioCombinations from '../data/scenarioCombinations'
 import i18next from 'i18next'
 import chartSettings from "../translations/charts"
-import unitSettings from "../translations/units"
+import unitSettings from "../translations/units" 
 
 const Charts = props => {
   const selectedScenario = props.scenarioSelection.scenarioSelection
@@ -27,28 +27,29 @@ const Charts = props => {
   const [previousTab, setPreviousTab] = useState(null)
   
 
-  console.log("props ***************************** : ", props)
-
+  //console.log("props charts***************************** : ", props) 
+  //console.log("previous tab: ", previousTab)
   if (previousTab !== props.tab) {
     setIndicatorReady(false)
     setStackReady(false)
     setPreviousTab(props.tab)
   }
-
-  import('../data/charts' + props.tab).then((indicators) => {
-    //console.log("indicators: ", indicators)
+//console.log("data charts ----: ", props.tab)
+  import(`../data/charts${props.tab}`).then((indicators) => {
+    //console.log("indicators: ", indicators.default)
     setIndicators(indicators.default)
     setIndicatorReady(true)
   })
-  import('../data/' + props.tab).then((stack) => {
-    //console.log("stack: ", stack)
+  //console.log("'../data/' + props.tab: ", '../data/' + props.tab)
+  import(`../data/${props.tab}`).then((stack) => {
+    //console.log("stack: ", stack.default)
     setStackedBar(stack.default)
     setStackReady(true)
   })
   
 
 //console.log("indicatorready: ", indicatorReady)
-//console.log("stackready: ", stackReady)
+console.log("stackready: ", stackReady)
   if (!indicatorReady || !stackReady) return <div>Loading Data ...</div>
   
   //setIndicatorReady(false)
@@ -102,53 +103,42 @@ const Charts = props => {
               //console.log("i: ", i)
               //console.log("stackedBar: ", stackedBar)
               if (chartSettings[i]) {
-                //console.log("chartSetting i: ", chartSettings[i])
-                if (unitSettings[chartSettings[i].unit]) {
-                  console.log("chartSettings[i].unit: ", chartSettings[i].unit)
-                  console.log("unitSelection: ", props.selectedUnits)
-                  if (chartSettings[i].type==="stackedBar")
-                  return (
-                  <StackedBarChart
-                    key={i+' '+index}
-                    chartName={i}
-                    chartTitle={i}
-                    selectedScenario={selectedScenario}
-                    selectedScenario2={selectedScenario2}
-                    selectedCountries={selectedCountries}
-                    combinedChart={false}selectedUnits
-                    label={props.selectedUnits[chartSettings[i].unit].displayName}
-                    unitFactor={props.selectedUnits[chartSettings[i].unit].factor}
-                    minY={0}
-                    maxY={1500}
-                    stackedBar={stackedBar}
-                    tab={"tab1"}
-                    chart={"chart" + (index + 1)}
-                  />
-                )
-                else if (chartSettings[i].type==="line") 
-                return(<LineChart 
+                if (chartSettings[i].type==="stackedBar")
+                return (
+                <StackedBarChart
                   key={i+' '+index}
                   chartName={i}
                   chartTitle={i}
                   selectedScenario={selectedScenario}
                   selectedScenario2={selectedScenario2}
                   selectedCountries={selectedCountries}
-                  label={chartSettings[i].unit}
+                  combinedChart={false}
+                  label={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].displayName : chartSettings[i].unit}
+                  unitFactor={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].factor : 1}
                   minY={0}
-                  maxY={15}
-                  lineData={stackedBar}
-                />)
-                else 
-                    return (<div>Chart type mismatch, must be stackedbar or line: {chartSettings[i].type==="line"}</div>)
-                } else {
-                  console.log("unit setting mismatch check data files and units.js tag must correspond")
-                  return (
-                    <div>unit setting mismatch check data files and units.js tag must correspond</div>
-                  )
-                }
+                  maxY={1500}                    stackedBar={stackedBar}
+                  tab={"tab1"}
+                  chart={"chart" + (index + 1)}
+                />
+              )
+              else if (chartSettings[i].type==="line") 
+              return(<LineChart 
+                key={i+' '+index}
+                chartName={i}
+                chartTitle={i}
+                selectedScenario={selectedScenario}
+                selectedScenario2={selectedScenario2}
+                selectedCountries={selectedCountries}
+                label={chartSettings[i].unit}
+                minY={0}
+                maxY={15}
+                lineData={stackedBar}
+              />)
+              else 
+                return (<div>Chart type mismatch, must be stackedbar or line: {chartSettings[i].type==="line"}</div>)                
               }
               else {
-                console.log("chart name mismatch, check data files and charts.js tag must correspond")
+                console.log("chart name mismatch, check data files and charts.js tag must correspond") 
                 return(<div>chart name mismatch, check data files and charts.js tag must correspond</div>)
               } 
             })

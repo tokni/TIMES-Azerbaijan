@@ -30,7 +30,7 @@ else if (process.env.NODE_ENV === 'production')
 else
   console.log("something else build")
 
-const ChartsTab1 = React.lazy(() => import('./charts/ChartsTab1'));
+const ChartsTab1 = React.lazy(() => import('./charts/ChartsTab1')); 
 //const ChartsTab2 = React.lazy(() => import('./charts/ChartsTab2'));
 
 ReactGA.initialize('UA-145591344-2')
