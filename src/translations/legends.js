@@ -180,8 +180,8 @@ export default {
     "name_az": "Təbii qaz"
   },
   "legend139": {
-    "name_en": "Solid Fossil",
-    "name_az": "not_defined"
+    "name_en": "Coal",
+    "name_az": "Kömür"
   },
   "legend14": {
     "name_en": "Commercial",
@@ -724,7 +724,7 @@ export default {
     "name_az": "Dizel"
   },
   "legend30": {
-    "name_en": "Var. OPEX",
+    "name_en": "Variable O&M costs",
     "name_az": "not_defined"
   },
   "legend31": {
@@ -736,11 +736,11 @@ export default {
     "name_az": "not_defined"
   },
   "legend33": {
-    "name_en": "CAPEX",
+    "name_en": "Investment costs",
     "name_az": "not_defined"
   },
   "legend34": {
-    "name_en": "Fix. OPEX",
+    "name_en": "Fixed O&M costs",
     "name_az": "not_defined"
   },
   "legend35": {
