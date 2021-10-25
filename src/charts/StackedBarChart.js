@@ -55,6 +55,7 @@ const StackedBarChart = props => {
   const chartTitle = props.chartTitle
   const combinedChart = false //props.combinedChart
   const unit = props.label
+  const unitFactor = props.unitFactor
   console.log("props label: ", props.label)
   let maxY2 = 1
   
@@ -217,7 +218,7 @@ return(<div>No DAta yet</div>)
           offsetX={80}
           tickFormat={tick =>
             
-            ((tick * base) / props.divideValues).toLocaleString()
+            ((tick * base * unitFactor) / props.divideValues).toLocaleString()
           }
           tickValues={getTickValues()}
           label={unit}
@@ -266,7 +267,7 @@ return(<div>No DAta yet</div>)
                               props.divideValues
                             ).toFixed(0) + '%'
                           : 
-                              Math.round(chartGroupValue.total / props.divideValues * 100, 2)/100
+                              Math.round(unitFactor * chartGroupValue.total / props.divideValues * 100, 2)/100
                             ),
                     })}
                   )}
@@ -311,7 +312,7 @@ return(<div>No DAta yet</div>)
                                 props.divideValues
                               ).toFixed(0) + '%'
                             : (
-                              Math.round(chartGroupValue.total / props.divideValues * 100, 2)/100
+                              Math.round(unitFactor * chartGroupValue.total / props.divideValues * 100, 2)/100
                               )),
                       })
                     )}

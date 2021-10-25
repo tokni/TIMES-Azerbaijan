@@ -10,7 +10,7 @@ import i18next from 'i18next';
 import parseHtml from 'html-react-parser';
 import { useAuth0 } from '@auth0/auth0-react';
 import queryString from 'query-string';
-import unitSettings from '../translations/units'
+import unitSettings from '../translations/units';
 
 const MenuLayout = styled.div`
   display: none;
@@ -86,13 +86,14 @@ const UnitItem = styled.button`
   transition: .2s;
   border: none;
   margin: 1px;
+  background: ${props => props.checked ? '#3cccfc' : 'inherit'};
   &:hover {
     ${'' /* transform: scale(1.05) translate(0px); */}
     cursor: pointer;
-    background: #3cccfc;
+    background: #3cccfc55;
     background-opacity: 0.5;
   }
-  &:checked {
+  &:active {
     background: #3cccfc;
   }
 `
@@ -404,17 +405,19 @@ function ScenarioSelectionMenu(props) {
             </LanguageButton>
           </LanguageGroup>
         <MenuSeparatorLine />
-        <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
+        {(dev || isAuthenticated) && <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
           <UnitContainer>
             {unitList.map((unitRow, i) => {
               return(<UnitRow key={'unitRow'+i}>
                 {
                   unitRow.map((unitItem) => {
+                    console.log("unitItem.displayName: ", unitItem.displayName)
+                    console.log("props.selectedUnits: ", props.selectedUnits)
                     return(
                       <UnitItem
                         key={unitItem.displayName} 
                         onClick={() => props.selectUnit(unitRow[0].displayName, unitItem)}
-                        checked={true}
+                        checked={unitItem.displayName === props.selectedUnits[unitRow[0].displayName].displayName}
                       >
                         {unitItem.displayName}
                       </UnitItem>
@@ -424,7 +427,7 @@ function ScenarioSelectionMenu(props) {
               </UnitRow>)
             })}
           </UnitContainer>
-          <MenuSeparatorLine /></>
+          <MenuSeparatorLine /></>}
       </>
       
       {(dev || isAuthenticated) && scenarioSelectorVisible &&
