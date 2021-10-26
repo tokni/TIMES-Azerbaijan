@@ -77,69 +77,6 @@ const CloseWindowIcon = styled.div`
   }
 `;
 CloseWindowIcon.displayName = "CloseWindowIcon";
-const welcomeText = {
-  "tab1": {
-    "welcome1": <div>Welcome to Tab1</div>,
-	  "welcome2": <p>Text</p>,
-	  "welcome3": <p></p>,
-	  "welcome4": <p></p>,
-	  "welcome5": <p></p>,
-  },
-  "tab2": {
-    "welcome1": <p>Tab 2</p>,
-    "welcome2": <p>Text</p>,
-    "welcome3": <p></p>,
-  },
-  "tab3": {
-    "welcome1": <p>Power and district heat production.</p>,
-    "welcome2": <p>Here you can see the fuel use for power and district heat production, power plant capacities and the electricity and district heating production divided on fuels.</p>,
-    "welcome3": <p>The marginal electricity price and district heating price is the weighted average price of the time slices in the model over a year. These prices are endogenous calculated by the model and it is the prices which the model “trade” power and heat between sectors.</p>,
-    "welcome4": <p>Try to select the CNN scenario and the NPH scenario and compare electricity demand and the difference in needed power capacity.</p>,
-  },
-  "tab4": {
-	  "welcome1": <p>Heavy industry energy consumption.</p>,
-	  "welcome2": <p>Here you can investigate energy consumption and CO<sub>2</sub>-emissions from heavy industry.</p>,
-	  "welcome3": <p>In heavy industry we include: Pulp and paper, Mining, Iron and steel, Aluminium and Cement.</p>,
-	  "welcome4": <p>Try to select the CNN scenario and the NPH scenario and you will see the assumed increase in activity in NPH – if you choose to compare with CNB instead you can see the impact of the assumed decrease in activity.</p>,
-	  "welcome5": <p>Try also to select CNN twice and then activate increased cost of CO<sub>2</sub> storage and compare CO<sub>2</sub>-reductions.</p>,
-  },
-  "tab5": {
-	  "welcome1": <p>Other sectors energy consumption.</p>,
-	  "welcome2": <p>Here you can investigate energy consumption and CO<sub>2</sub>-emissions from other sectors.</p>,
-	  "welcome3": <p>In Other sectors we include: Manufacturing industries, Service sector, Agriculture and Fishery.</p>,
-	  "welcome4": <p>Try to select CNN twice and then activate increased cost of CO<sub>2</sub> storage and compare CO<sub>2</sub>-reductions and fuel use in agriculture and fishery.</p>,
-  },
-  "tab6": {
-	  "welcome1": <p>Residential sector.</p>,
-	  "welcome2": <p>Here you can investigate development in heat demand, electricity demand and fuel use for residential sector.</p>,
-	  "welcome3": <p>The results are split in room heat and electricity for appliances. The solutions for the residential sector are very robust towards the variation in assumptions are therefore all scenarios look very similar.</p>,
-	  "welcome4": <p>So instead of comparing two scenarios try to look at the difference in heating solutions between the countries. Turn on one country at the time on the map to the left to go through country results.</p>,
-  },
-  "tab7": {
-	  "welcome1": <p>Transport sector energy consumption.</p>,
-	  "welcome2": <p>Here you can investigate energy consumption, transport service level and CO<sub>2</sub>-emissions from passenger and freight transport.</p>,
-	  "welcome3": <p>The model includes international shipping and aviation which also can be shown on country level. For cars and trucks the stock are shown divided on vehicle types.</p>,
-	  "welcome4": <p>The results in the transport sector is very robust to the different scenario assumptions, which leads to only minor differences between the scenarios.</p>,
-	  "welcome5": <p>But the CNB scenarios differs as demand for transport are not assumed to increase in future. Therefore, try to select CNN and CNB and compare the need for cars.</p>,
-  },
-  "tab8": {
-	  "welcome1": <p>Key Performance Indicators.</p>,
-	  "welcome2": <p>Here we have chosen some indicators that can say something about the development of the Nordic energy system.</p>,
-	  "welcome3": <p>The indicators show development in renewable energy shares, electrification of end-use energy consumption and energy intensity of industries.</p>,
-	  "welcome4": <p>The indicators illustrate differences in the structure of the energy system across the Nordic countries.</p>,
-	  "welcome5": <p>Try to select the same scenario twice and see how increase price of CO<sub>2</sub> storage or limit on import of biomass influence the indicators.</p>,
-  },
-
-  "tabHistory": {
-    "welcome1": <p>Welcome to Nordic Energy Statistics Database visualisations.</p>,
-    "welcome2": <p>The database aims for harmonising energy sector and related data across all the five Nordic countries. It will serve as a reference for research work as well as for the general public to see energy related data and selected progress indicators. </p>,
-    "welcome3": <p>The database will be published and maintained by Nordic Energy Research. Original sources of the data are mentioned in the metadata part for each data item. </p>,
-    "welcome4": <p>Sources: Eurostat, IEA, national statistics</p>
-  },
-  "tabRawHistory": {
-    "welcome1": <p>Welcome to Nordic Energy Statistics Database Raw Historical Data</p>
-  }
-}
 function Welcome(props) {
   const [t] = useTranslation()
   return (
@@ -149,55 +86,39 @@ function Welcome(props) {
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome2"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome3"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome4"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome5"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome6}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome7}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome8}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome9}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab2" && <AlertBody>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab2.welcome2"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab2.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab3" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab3.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab3.welcome3"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab3.welcome4"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab4" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome5}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab4.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab4.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab5" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab5.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab5.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab6" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab6.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab6.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab7" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome5}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome3"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome4"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome5"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab8" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome5}</AlertBodyParagraph>
-      </AlertBody>}
-      {props.isOpen && props.tab === "tab-history" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-      </AlertBody>}
-      {props.isOpen && props.tab === "tab-raw-history" && <AlertBody>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome3"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome4"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome5"))}</AlertBodyParagraph>
       </AlertBody>}
       <CloseWindowIcon
         onClick={() => props.closeWelcome(!props.isOpen)}
