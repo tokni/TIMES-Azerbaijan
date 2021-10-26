@@ -102,89 +102,36 @@
   },
   "welcome-text": {
     "tab1": {
-      "welcome1": "<div>Welcome to Tab 1</div>",
-      "welcome2": "<p>Text 1</p>",
-      "welcome3": "<p>Text 2</p>",
-      "welcome4": "<p></p>",
-      "welcome5": "<p></p>"
+      "welcome1": "<div>On this webpage you can explore the modelling results from TIMES-Azerbaijan.</div>",
+      "welcome2": "<p>This web tool allows you to compare the results from different scenarios, view the effects on the energy system when applying additional assumptions to the model. Data from each figure and the full result dataset can be downloaded for detailed analysis. For further instructions on how to use the web tool and get the most out of the presented results please see, “How to use the results viewer tool”. </p>",
+      "welcome3": "<p>The results presented here are highly dependent on assumptions for technology developments and their potential availability, efficiency, and cost to just mention a few factors influencing future pathway developments. What these results tell us is rather which solutions are competing, what synergies exists between low carbon energy technologies, and what factors their development is contingent on.</p>",
+      "welcome4": "<p>Under main results we are showing total primary energy supply, total final energy demand, total CO2-emissions and capture together with the total discounted system cost.</p>"
     },
     "tab2": {
-      "welcome1": "Tab 2",
-      "welcome2": "Text 1",
-      "welcome3": "Text 2"
+      "welcome1": "<div>The upstream sector includes oil and gas production, fossil refineries, biorefineries and PtX plants. </div>",
+      "welcome2": "<p>The energy balance (inputs and outputs) from fossil fuel refineries and renewable refineries can be seen. Renewable refineries cover both biofuel production and Power to X plants producing hydrogen and e-fuels.</p>",
+      "welcome3": "<p>CO2 emissions from the production of oil and gas and from refineries are presented as well as biomass consumption for energy processes.</p>"
     },
     "tab3": {
-      "welcome-1": "Power and district heat production.",
-      "welcome-2": "Here you can see the fuel use for power and district heat production, power plant capacities and the electricity and district heating production divided on fuels.",
-      "welcome-3": "The marginal electricity price and district heating price is the weighted average price of the time slices in the model over a year. These prices are endogenous calculated by the model and it is the prices which the model “trade” power and heat between sectors.",
-      "welcome-4": "Try to select the CNN scenario and the NPH scenario and compare electricitydemand and the difference in needed power capacity."
+      "welcome1": "<div>Power and heat sector covers production of electricity and district heat.</div>",
+      "welcome2": "<p>Here you can see:</p>",
+      "welcome3": "<p>Power production and trade with neighbouring countries, the needed power capacity supplying demand and technologies and fuels used for district heat production.</p>",
+      "welcome4": "<p>CO2 emissions from power and district heat production and also the undiscounted yearly costs for this sector are also shown.</p>"
     },
-    "tab-history": {
-      "welcome-1": "Welcome to Nordic Energy Statistics Database visualisations.",
-      "welcome-2": "The database aims for harmonising energy sector and related data across all the five Nordic countries. It will serve as a reference for research work as well as for the general public to see energy related data and selected progress indicators. ",
-      "welcome-3": "The database will be published and maintained by Nordic Energy Research. Original sources of the data are mentioned in the metadata part for each data item. ",
-      "welcome-4": "Sources: Eurostat, IEA, national statistics"
+    "tab4": {
+      "welcome1": "<div>Under the industry tab the following 13 sub-sectors are included:</div>",
+      "welcome2": "<p>Iron&Steel, Chemical, Non-ferrous metals, Non- metallic minerals, Transport equipment, Machinery, Mining, Paper&Pulp, Wood, Food, Construction, Textile and other.</p>",
+      "welcome3": "<p>Total CO2-emission from all industry and the total final energy consumption are shown. There is a brake down on some of the most energy intensive industries and across all industries the undiscounted yearly costs.</p>"     
     },
-    "tab-raw-history": {
-      "welcome-1": "Welcome to Nordic Energy Statistics Database Raw Historical Data"
-    }
-  },
-  "chart-titles": {
-    "tab1": {
-      "chart0": "Primary Energy Supply by Energy Source",
-      "unit0": "tWh",
-      "chart1": "CO<sub>2</sub> Emissions",
-      "unit1": "EUR15/t CO2",
-      "chart2": "Carbon Capture",
-      "unit2": "u3",
-      "chart3": "Final Energy Consumption by Energy Source",
-      "unit3": "u4",
-      "chart4": "Final Energy Consumption by Sector",
-      "unit4": "u5",
-      "chart5": "Marginal Prices - CO<sub>2</sub>",
-      "unit5": "EUR15/t CO2"
+    "tab5": {
+      "welcome1": "<div>The transport sector includes land-based passenger and freight transport and both national and international aviation and shipping which can be assigned to Azerbaijan.</div>",
+      "welcome2": "<p>Passenger transport demand is divided on car, bus, train, ship, flight, while freight demand is divided on trucks and vans, ships, and flights.</p>",
+      "welcome3": "<p>Total CO2 emission and fuel consumption from the transport sector is shown. The number and type of cars are also presented and finally the total yearly undiscounted cost.</p>"     
     },
-    "tab2": {
-      "chart1": "Chart 1"
-    },
-    "tab3": {
-      "chart1": "Chart 1",
-      "chart2": "Chart 2"
-    }
-  },
-  "legends": {
-    "tab1": {
-      "common": {
-        "commonlegend1": "T1C Legend 1",
-        "commonlegend2": "T1C Legend 2"
-      },
-      "chart1": {
-        "legend1": "Biofuels",
-        "legend2": "Coal",
-        "legend3": "District Heat",
-        "legend4": "Electricity",
-        "legend5": "Hydro",
-        "legend6": "Natural gas",
-        "legend7": "Oil",
-        "legend8": "Others",
-        "legend9": "Solar",
-        "legend10": "Synthetic fuels",
-        "legend11": "Waste",
-        "legend12": "Wind",
-        "legend13": "Nuclear"
-      },
-      "legend1: ": "T1 Legend 1",
-      "legend2: ": "T1 Legend 2"
-    },
-    "tab2": {
-      "common": {
-
-      }
-    },
-    "tab3": {
-      "common": {
-        
-      }
+    "tab6": {
+      "welcome1": "<div>Other sectors consist of the residential sector, agriculture, trade and commerce and public institutions.</div>",
+      "welcome2": "<p>Passenger transport demand is divided on car, bus, train, ship, flight, while freight demand is divided on trucks and vans, ships, and flights.</p>",
+      "welcome3": "<p>CO2-emissions divided on the sub-sectors are shown and final energy consumption on fuels for each of the 3 sectors. Finally, total yearly undiscounted cost divided on sectors.</p>"     
     }
   }
 }

@@ -149,55 +149,39 @@ function Welcome(props) {
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome2"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome3"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome4"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab1.welcome5"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome6}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome7}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome8}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome9}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab2" && <AlertBody>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab2.welcome2"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab2.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab3" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab3.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab3.welcome3"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab3.welcome4"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab4" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome5}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab4.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab4.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab5" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab5.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab5.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab6" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab6.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab6.welcome3"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab7" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome5}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome3"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome4"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome5"))}</AlertBodyParagraph>
       </AlertBody>}
       {props.isOpen && props.tab === "tab8" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome5}</AlertBodyParagraph>
-      </AlertBody>}
-      {props.isOpen && props.tab === "tab-history" && <AlertBody>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome2}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome3}</AlertBodyParagraph>
-        <AlertBodyParagraph>{welcomeText[props.tab].welcome4}</AlertBodyParagraph>
-      </AlertBody>}
-      {props.isOpen && props.tab === "tab-raw-history" && <AlertBody>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome2"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome3"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome4"))}</AlertBodyParagraph>
+        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome5"))}</AlertBodyParagraph>
       </AlertBody>}
       <CloseWindowIcon
         onClick={() => props.closeWelcome(!props.isOpen)}
