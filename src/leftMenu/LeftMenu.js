@@ -348,43 +348,37 @@ function ScenarioSelectionMenu(props) {
         {
           isLoading && <div>{t("general.loading")}</div>
         }
-        {isAuthenticated && <MenuRoutes>
+        {(dev || isAuthenticated) && <MenuRoutes>
           <MenuItem
-            to="/about"
-            selected={props.selectedPage === "/about"}
+            to="/page1"
+            selected={props.selectedPage === "/page1"}
           >
             {parseHtml(t("menu.desktop.page1"))}
           </MenuItem>
-          {/* <MenuItem
-            to="/scenarios"
-            selected={props.selectedPage === "/scenarios"}
+          <MenuItem
+            to="/page2"
+            selected={props.selectedPage === "/page2"}
           >
             {parseHtml(t("menu.desktop.page2"))}
-          </MenuItem> */}
-          {/* <MenuItem
-            to="/findings"
-            selected={props.selectedPage === "/findings"}
+          </MenuItem>
+          <MenuItem
+            to="/page3"
+            selected={props.selectedPage === "/page3"}
           >
             {parseHtml(t("menu.desktop.page3"))}
-          </MenuItem> */}
-          {/* <MenuItem
-            to="/model"
-            selected={props.selectedPage === "/model"}
+          </MenuItem>
+          <MenuItem
+            to="/page4"
+            selected={props.selectedPage === "/page4"}
           >
             {parseHtml(t("menu.desktop.page4"))}
-          </MenuItem> */}
-          {/* <MenuItem
-            to="/historical"
-            selected={props.selectedPage === "/historical"}
+          </MenuItem>
+          <MenuItem
+            to="/page5"
+            selected={props.selectedPage === "/page5"}
           >
             {parseHtml(t("menu.desktop.page5"))}
-          </MenuItem> */}
-          {/* <MenuItem
-            to="/how-to-use"
-            selected={props.selectedPage === "/how-to-use"}
-          >
-            {parseHtml(t("menu.desktop.page6"))}
-          </MenuItem> */}
+          </MenuItem>
         </MenuRoutes>}
       </MenuHeader>
       <>
@@ -448,7 +442,7 @@ function ScenarioSelectionMenu(props) {
       </ScenarioSelection>
       {location.pathname !== "/tab8" && <><MenuSeparatorLine />
       
-      {isAuthenticated && <ToggleDifference
+      {(dev || isAuthenticated) && <ToggleDifference
         onClick={e => {
           if (props.scenarioSelection.scenarioSelection2 !== "") {
             props.toggleDifference(e);

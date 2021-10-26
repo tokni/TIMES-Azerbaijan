@@ -319,53 +319,44 @@ LoginButton = () => {
                 )}
               /> */}
               <Route
-                path="/about"
+                path="/page1"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/about']} />
+                    <PageRenderer markdownFiles={['descriptions/page1']} />
                   )
                 }}
               />
               <Route
-                path="/model"
+                path="/page2"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/model']} />
+                    <PageRenderer markdownFiles={['descriptions/page2']} />
                   )
                 }}
               />
               <Route
-                path="/scenarios"
+                path="/page3"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/scenarios']} />
+                    <PageRenderer markdownFiles={['descriptions/page3']} />
                   )
                 }}
               />
               <Route
                 exact
-                path="/findings"
+                path="/page4"
                   render={() => {
                     return (
-                      <PageRenderer markdownFiles={['descriptions/findings']} />
+                      <PageRenderer markdownFiles={['descriptions/page4']} />
                     )
                   }}
                 />
               <Route
                 exact
-                path="/historical"
+                path="/page5"
                 render={() => {
                   return (
-                    <PageRenderer markdownFiles={['descriptions/historical']} />
-                  )
-                }}
-              />
-              <Route
-                exact
-                path="/how-to-use"
-                render={() => {
-                  return (
-                    <PageRenderer markdownFiles={['descriptions/howto']} />
+                    <PageRenderer markdownFiles={['descriptions/page5']} />
                   )
                 }}
               />

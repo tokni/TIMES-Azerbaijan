@@ -2,20 +2,18 @@
   "title": "TIMES-AZ",
   "menu": {
     "mobile": {
-      "page1": "Page1",
-      "page2": "Page2",
-      "page3": "Page3",
-      "page4": "Page4",
-      "page5": "Page5",
-      "page6": "Page6"
+      "page1": "How to",
+      "page2": "Info",
+      "page3": "Model",
+      "page4": "Assumptions",
+      "page5": "Scenarios"
     },
     "desktop": {
-      "page1": "Page1",
-      "page2": "Page2",
-      "page3": "Page3",
-      "page4": "Page4",
-      "page5": "Page5",
-      "page6": "Page6"
+      "page1": "How to use the Web Tool",
+      "page2": "Country Info",
+      "page3": "Model Description",
+      "page4": "Main Assumptions",
+      "page5": "Scenario Definitions"
     }
   },
   "general": {
