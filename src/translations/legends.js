@@ -140,13 +140,13 @@ export default {
     "color": 122
   },
   "legend123": {
-    "name_en": "Naphtha",
-    "name_az": "Nafta",
+    "name_en": "Oil",
+    "name_az": "Oil",
     "color": 123
   },
   "legend124": {
-    "name_en": "Crude oil",
-    "name_az": "Xam neft",
+    "name_en": "Oil",
+    "name_az": "Oil",
     "color": 124
   },
   "legend125": {
@@ -765,23 +765,23 @@ export default {
     "color": 235
   },
   "legend236": {
-    "name_en": "(Bio-)Oil blend",
-    "name_az": "not_defined",
+    "name_en": "Liq. NGA & SNG blend",
+    "name_az": "Maye təbii qaz və sıxılmış təbii qaz qarışığı",
     "color": 236
   },
   "legend237": {
-    "name_en": "Synthetic natural gas",
-    "name_az": "Sintetik təbii qaz",
+    "name_en": "(Bio-)Oil blend",
+    "name_az": "not_defined",
     "color": 237
   },
   "legend238": {
-    "name_en": "Woodchips",
-    "name_az": "Odun talaşı",
+    "name_en": "Synthetic natural gas",
+    "name_az": "Sintetik təbii qaz",
     "color": 238
   },
   "legend239": {
-    "name_en": "Wind",
-    "name_az": "Külək",
+    "name_en": "Woodchips",
+    "name_az": "Odun talaşı",
     "color": 239
   },
   "legend24": {
@@ -790,53 +790,53 @@ export default {
     "color": 24
   },
   "legend240": {
-    "name_en": "Wood pellets",
-    "name_az": "Odun yanacaq qranulları",
+    "name_en": "Wind",
+    "name_az": "Külək",
     "color": 240
   },
   "legend241": {
-    "name_en": "Waste",
-    "name_az": "Tullantı",
+    "name_en": "Wood pellets",
+    "name_az": "Odun yanacaq qranulları",
     "color": 241
   },
   "legend242": {
-    "name_en": "Hydrogen",
-    "name_az": "Hidrogen",
+    "name_en": "Waste",
+    "name_az": "Tullantı",
     "color": 242
   },
   "legend243": {
-    "name_en": "Biogas",
-    "name_az": "Bioqaz",
+    "name_en": "Hydrogen",
+    "name_az": "Hidrogen",
     "color": 243
   },
   "legend244": {
-    "name_en": "Electric",
-    "name_az": "not_defined",
+    "name_en": "Biogas",
+    "name_az": "Bioqaz",
     "color": 244
   },
   "legend245": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
+    "name_en": "Electric",
+    "name_az": "not_defined",
     "color": 245
   },
   "legend246": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
+    "name_en": "Diesel blend",
+    "name_az": "Dizel qarışığı",
     "color": 246
   },
   "legend247": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
+    "name_en": "Gasoline blend",
+    "name_az": "Benzin qarışığı",
     "color": 247
   },
   "legend248": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
+    "name_en": "Liquid petrol gas",
+    "name_az": "not_defined",
     "color": 248
   },
   "legend249": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
+    "name_en": "Diesel blend",
+    "name_az": "Dizel qarışığı",
     "color": 249
   },
   "legend25": {
@@ -845,53 +845,53 @@ export default {
     "color": 25
   },
   "legend250": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
+    "name_en": "Gasoline blend",
+    "name_az": "Benzin qarışığı",
     "color": 250
   },
   "legend251": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
+    "name_en": "Liquid petrol gas",
+    "name_az": "not_defined",
     "color": 251
   },
   "legend252": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
+    "name_en": "Diesel blend",
+    "name_az": "Dizel qarışığı",
     "color": 252
   },
   "legend253": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
+    "name_en": "Gasoline blend",
+    "name_az": "Benzin qarışığı",
     "color": 253
   },
   "legend254": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
+    "name_en": "Liquid petrol gas",
+    "name_az": "not_defined",
     "color": 254
   },
   "legend255": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
+    "name_en": "Diesel blend",
+    "name_az": "Dizel qarışığı",
     "color": 255
   },
   "legend256": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
+    "name_en": "Gasoline blend",
+    "name_az": "Benzin qarışığı",
     "color": 256
   },
   "legend257": {
-    "name_en": "Import from Turkey",
-    "name_az": "Import from Turkey",
+    "name_en": "Liquid petrol gas",
+    "name_az": "not_defined",
     "color": 257
   },
   "legend258": {
-    "name_en": "Import from Russia",
-    "name_az": "Import from Russia",
+    "name_en": "Import from Turkey",
+    "name_az": "Import from Turkey",
     "color": 258
   },
   "legend259": {
-    "name_en": "Import from Iran",
-    "name_az": "Import from Iran",
+    "name_en": "Import from Russia",
+    "name_az": "Import from Russia",
     "color": 259
   },
   "legend26": {
@@ -900,29 +900,34 @@ export default {
     "color": 26
   },
   "legend260": {
-    "name_en": "Export to Iran",
-    "name_az": "Export to Iran",
+    "name_en": "Import from Iran",
+    "name_az": "Import from Iran",
     "color": 260
   },
   "legend261": {
-    "name_en": "Import from Georgia",
-    "name_az": "Import from Georgia",
+    "name_en": "Export to Iran",
+    "name_az": "Export to Iran",
     "color": 261
   },
   "legend262": {
-    "name_en": "Export to Turkey",
-    "name_az": "Export to Turkey",
+    "name_en": "Import from Georgia",
+    "name_az": "Import from Georgia",
     "color": 262
   },
   "legend263": {
-    "name_en": "Export to Russia",
-    "name_az": "Export to Russia",
+    "name_en": "Export to Turkey",
+    "name_az": "Export to Turkey",
     "color": 263
   },
   "legend264": {
+    "name_en": "Export to Russia",
+    "name_az": "Export to Russia",
+    "color": 264
+  },
+  "legend265": {
     "name_en": "Export to Georgia",
     "name_az": "Export to Georgia",
-    "color": 264
+    "color": 265
   },
   "legend27": {
     "name_en": "Heat",
@@ -980,8 +985,8 @@ export default {
     "color": 36
   },
   "legend37": {
-    "name_en": "Corn",
-    "name_az": "Qarğıdalı",
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
     "color": 37
   },
   "legend38": {
@@ -1000,8 +1005,8 @@ export default {
     "color": 4
   },
   "legend40": {
-    "name_en": "Deep liter",
-    "name_az": "Dərin litr",
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
     "color": 40
   },
   "legend41": {
@@ -1090,8 +1095,8 @@ export default {
     "color": 56
   },
   "legend57": {
-    "name_en": "Firewood",
-    "name_az": "Odun",
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
     "color": 57
   },
   "legend58": {
@@ -1135,7 +1140,7 @@ export default {
     "color": 64
   },
   "legend65": {
-    "name_en": "Glycerol",
+    "name_en": "Biofuels",
     "name_az": "not_defined",
     "color": 65
   },
@@ -1270,8 +1275,8 @@ export default {
     "color": 89
   },
   "legend9": {
-    "name_en": "Biogas",
-    "name_az": "Bioqaz",
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
     "color": 9
   },
   "legend90": {

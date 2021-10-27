@@ -5,7 +5,6 @@ export default
 		"chart-titles.tab03.chart03",
 		"chart-titles.tab03.chart04",
 		"chart-titles.tab03.chart05",
-		"chart-titles.tab03.chart06",
 		"chart-titles.tab03.chart07",
 		"chart-titles.tab03.chart08",
 		"chart-titles.tab03.chart09",
