@@ -108,11 +108,16 @@ const StackedBarChart = props => {
   Object.keys(accumulatedDataScenario1).forEach((key) => {
     let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
 
-    console.log("color bar: ", color)
+    //console.log("color bar: ", color)
     let legendColor = 'pink'
-    legends.add({name: key.substring(0,16), color: legendColor})
+    legends.add({name: key.substring(0,16), color: color})
 
   })
+  let legendColor = {}
+  legends.forEach(legend => {
+    legendColor[legend.name] = legend.color
+  })
+  console.log("legends -- -- ", legendColor)
   /* Object.keys(accumulatedDataScenario1).forEach((key) => {
     legends.add(key.substring(0,16))
   }) */
@@ -283,11 +288,12 @@ return(<div>No DAta yet</div>)
                     data: { fill: () => {
                       //console.log("chartGroupName: ", chartGroupName)
                         
-                        let ret
-                        if (indicatorgroup_colors[chartGroupName]) 
-                          ret=indicatorgroup_colors[chartGroupName]
-                        else
-                          ret=colorNER[i]
+                        let ret = legendColor[chartGroupName.substring(0,16)]
+                        
+                        //if (indicatorgroup_colors[chartGroupName]) 
+                          //ret=indicatorgroup_colors[chartGroupName]
+                        //else
+                          //ret=colorNER[i]
                         //console.log("stack name: ", chartGroupName)
                         //console.log("stack ret: ", ret)
                         return ret
