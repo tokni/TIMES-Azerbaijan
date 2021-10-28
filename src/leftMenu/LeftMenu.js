@@ -11,6 +11,7 @@ import parseHtml from 'html-react-parser';
 import { useAuth0 } from '@auth0/auth0-react';
 import queryString from 'query-string';
 import unitSettings from '../translations/units';
+import MapContainer from "../map/MapContainer";
 
 const MenuLayout = styled.div`
   display: none;
@@ -423,7 +424,16 @@ function ScenarioSelectionMenu(props) {
           </UnitContainer>
           <MenuSeparatorLine /></>}
       </>
-      
+      {false && (dev || isAuthenticated) && <>
+        <MenuSeparatorLine />
+        <Header narrowVersion={false}>{t("general.countries")}</Header>
+          <MapContainer
+            selectedCountries={props.selectedCountries}
+            selectCountry={props.selectCountry}
+            narrowVersion={false}
+          />
+        <MenuSeparatorLine />
+      </>}
       {(dev || isAuthenticated) && scenarioSelectorVisible &&
       <>
       <ScenarioSelection>

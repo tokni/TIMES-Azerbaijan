@@ -23,6 +23,7 @@ import { useTranslation } from 'react-i18next';
 //import legendNames from '../translations/legends'
 import i18next from 'i18next';
 import charts from '../translations/charts'
+import legendsForColor from '../translations/legends'
 
 const ChartContainer = styled.div`
   width: 550px;
@@ -105,7 +106,11 @@ const StackedBarChart = props => {
   //console.log("accum1: ", accumulatedDataScenario1)
   //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
-    legends.add(key.substring(0,16))
+    let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
+
+    console.log("color bar: ", color)
+    let legendColor = 'pink'
+    legends.add({name: key.substring(0,16), color: legendColor})
 
   })
   /* Object.keys(accumulatedDataScenario1).forEach((key) => {
@@ -277,6 +282,7 @@ return(<div>No DAta yet</div>)
                   style={{
                     data: { fill: () => {
                       //console.log("chartGroupName: ", chartGroupName)
+                        
                         let ret
                         if (indicatorgroup_colors[chartGroupName]) 
                           ret=indicatorgroup_colors[chartGroupName]
@@ -365,16 +371,16 @@ return(<div>No DAta yet</div>)
           colorScale={colorNER}
           data={Array.from(legends).map((legend, i) => {
             return({
-              name: legend,
+              name: legend.name,
               symbol: { fill: () => {
-                let ret
+                /* let ret
                 if (indicatorgroup_colors[legend]) 
                   ret=indicatorgroup_colors[legend]
                 else
-                  ret=colorNER[i]
+                  ret=colorNER[i]*/
                 //console.log("legend name: ", legend)
                 //console.log("legend ret: ", ret)
-                return ret
+                return legend.color
                 },
               }}
           )}

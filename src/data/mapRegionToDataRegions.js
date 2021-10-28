@@ -1,52 +1,20 @@
 export default [
     {
-        country: "Sweden",
-        path_id : "se", 
-        data_regions: ["SE"],
-        historical_data_regions: ["Sweden"],
-    }, 
-    {
-        country: "Norway",
-        path_id : "no", 
-        data_regions: ["NO"],
-        historical_data_regions: ["Norway"],
-    }, 
-    {
-        country: "Denmark",
-        path_id : "dk", 
-        data_regions: ["DK"],
-        historical_data_regions: ["Denmark"],
-    }, 
-    {
-        country: "Finland",
-        path_id : "fi", 
-        data_regions: ["FI"],
-        historical_data_regions: ["Finland"],
-    },
-    {
-        country: "Iceland",
-        path_id : "is", 
-        data_regions: ["IS"],
-        historical_data_regions: ["Iceland"],
-    },
-    {
-        country: "Faroe Islands",
-        path_id : "fo", 
-        data_regions: [],
-    },
-    {
-        country: "Azer1",
-        path_id : "az1", 
+        country: "AZ1",
+        color: "red",
+        path_ids : ["lachin", "khojali"], 
         data_regions: ["AZ1"],
     },
     {
-        country: "Azer2",
-        path_id : "az2", 
+        country: "AZ2",
+        color: "lightgreen",
+        path_ids : ["kurdamir"], 
         data_regions: ["AZ2"],
     },
     {
-        country: "Azer3",
-        path_id : "az3", 
+        country: "AZ3",
+        color: "lightblue",
+        path_ids : ["ujar"], 
         data_regions: ["AZ3"],
     },
 ]

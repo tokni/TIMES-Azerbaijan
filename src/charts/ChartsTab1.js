@@ -87,9 +87,12 @@ console.log("stackready: ", stackReady)
           <Scenario2Description>
             <div>{t("scenarios.selectedScenario2-bar-and-line")}</div> 
           
-            {/* scenarioCombinations.scenarioCombinations.scenarioOptions.find(
-              (option)=>option.name.toLowerCase() === selectedScenario2.toLowerCase()
-            )?.desc.toUpperCase() */}
+            {scenarioCombinations.scenarioCombinations.scenarioOptions.find(
+              (option)=>{
+                //console.log("option: ", option)
+                return((option.id.toLowerCase() === selectedScenario2.toLowerCase()))
+                }
+              )['desc_' + i18next.language]?.toUpperCase()}
           </Scenario2Description>}
         </ScenarioDescriptionsContainer> 
       {(props.scenarioSelection.showDifference === false ||
