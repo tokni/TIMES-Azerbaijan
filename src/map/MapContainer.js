@@ -14,7 +14,7 @@ const countryColorsCSS = props =>
     props.countries.forEach(
       country => {
         let foundRegion = mapRegionToDataRegions.find(region => region.country === country)
-        foundRegion.path_ids.map(district =>
+        foundRegion.path_ids.forEach(district =>
           {
             console.log("ccs country: ", country)
             console.log("ccs district: ", district)

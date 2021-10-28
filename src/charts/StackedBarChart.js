@@ -107,11 +107,7 @@ const StackedBarChart = props => {
   //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
     let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
-
-    //console.log("color bar: ", color)
-    let legendColor = 'pink'
     legends.add({name: key.substring(0,16), color: color})
-
   })
   let legendColor = {}
   legends.forEach(legend => {
