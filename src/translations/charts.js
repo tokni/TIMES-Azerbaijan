@@ -30,7 +30,7 @@ export default {
     "name_az": "Enerji idxalı"
   },
   "chart-titles.tab01.chart06": {
-    "type": "stackedBar",
+    "type": "line",
     "unit": "Euro / t CO2",
     "name_en": "Marginal Prices – CO2",
     "name_az": "Marjinal Qiymətlər – CO2"
@@ -108,7 +108,7 @@ export default {
     "name_az": "Enerji Mənbəyinə görə elektrik enerjisi istehsalı"
   },
   "chart-titles.tab03.chart03": {
-    "type": "line",
+    "type": "stackedBar",
     "unit": "Mt CO2",
     "name_en": "Power and Heat CO2 Emissions",
     "name_az": "Elektrik enerjisi və İstilik CO2 tullantıları"
@@ -216,7 +216,7 @@ export default {
     "name_az": "Sənayedə sistem xərcləri"
   },
   "chart-titles.tab05.chart01": {
-    "type": "line",
+    "type": "stackedBar",
     "unit": "Mt CO2",
     "name_en": "Transport CO2 Emissions",
     "name_az": "Nəqliyyat sektoru üzrə CO2 tullantıları "

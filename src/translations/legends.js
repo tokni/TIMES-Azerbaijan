@@ -2,1326 +2,1331 @@ export default {
   "legend0": {
     "name_en": "Agriculture",
     "name_az": "Kənd təsərrüfatı",
-    "color": 0
+    "color": "#FFE67F"
   },
   "legend1": {
     "name_en": "Biogas",
     "name_az": "Bioqaz",
-    "color": 1
+    "color": "#ACCC83"
   },
   "legend10": {
     "name_en": "CO2 storage",
     "name_az": "CO2 saxlama",
-    "color": 10
+    "color": "#006eb6"
   },
   "legend100": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 100
+    "color": "#FFE67F"
   },
   "legend101": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 101
+    "color": "#FFE67F"
   },
   "legend102": {
     "name_en": "Hydrogen",
     "name_az": "Hidrogen",
-    "color": 102
+    "color": "#ef403b"
   },
   "legend103": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 103
+    "color": "#FFE67F"
   },
   "legend104": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 104
+    "color": "#FFE67F"
   },
   "legend105": {
     "name_en": "Heavy fuel oil",
     "name_az": "Ağır mazut",
-    "color": 105
+    "color": "#888A8C"
   },
   "legend106": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 106
+    "color": "#FFE67F"
   },
   "legend107": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 107
+    "color": "#FFE67F"
   },
   "legend108": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 108
+    "color": "#FFE67F"
   },
   "legend109": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 109
+    "color": "#FFE67F"
   },
   "legend11": {
     "name_en": "CO2 sink",
     "name_az": "CO2 uducu",
-    "color": 11
+    "color": "#adcff1"
   },
   "legend110": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 110
+    "color": "#696a6c"
   },
   "legend111": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 111
+    "color": "#FFE67F"
   },
   "legend112": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 112
+    "color": "#FFE67F"
   },
   "legend113": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 113
+    "color": "#FFE67F"
   },
   "legend114": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 114
+    "color": "#FFE67F"
   },
   "legend115": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 115
+    "color": "#FFE67F"
   },
   "legend116": {
     "name_en": "Woodchips",
     "name_az": "Odun talaşı",
-    "color": 116
+    "color": "#AE0E16"
   },
   "legend117": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": 117
+    "color": "#a7a9ab"
   },
   "legend118": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 118
+    "color": "#FFE67F"
   },
   "legend119": {
-    "name_en": "Kerosene",
-    "name_az": "Kerosin",
-    "color": 119
+    "name_en": "Oil",
+    "name_az": "Oil",
+    "color": "#454547"
   },
   "legend12": {
     "name_en": "CO2 storage",
     "name_az": "CO2 saxlama",
-    "color": 12
+    "color": "#006eb6"
   },
   "legend120": {
-    "name_en": "Bio kerosene",
-    "name_az": "Bio kerosin",
-    "color": 120
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend121": {
-    "name_en": "Electro kerosene",
+    "name_en": "Electro fuels",
     "name_az": "not_defined",
-    "color": 121
+    "color": "#adcff1"
   },
   "legend122": {
-    "name_en": "Liquefied petroleum gas",
-    "name_az": "Mayeləşdirilmiş neft qazı",
-    "color": 122
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend123": {
-    "name_en": "Naphtha",
-    "name_az": "Nafta",
-    "color": 123
+    "name_en": "Oil",
+    "name_az": "Oil",
+    "color": "#454547"
   },
   "legend124": {
-    "name_en": "Crude oil",
-    "name_az": "Xam neft",
-    "color": 124
+    "name_en": "Oil",
+    "name_az": "Oil",
+    "color": "#454547"
   },
   "legend125": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": 125
+    "color": "#ecedee"
   },
   "legend126": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 126
+    "color": "#696a6c"
   },
   "legend127": {
     "name_en": "Manure",
     "name_az": "Peyin",
-    "color": 127
+    "color": "#454547"
   },
   "legend128": {
-    "name_en": "Bio Methanol",
-    "name_az": "Bio metanol",
-    "color": 128
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend129": {
-    "name_en": "Bio Methanol",
-    "name_az": "Bio metanol",
-    "color": 129
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend13": {
     "name_en": "Coal",
     "name_az": "Kömür",
-    "color": 13
+    "color": "#000000"
   },
   "legend130": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 130
+    "color": "#696a6c"
   },
   "legend131": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 131
+    "color": "#696a6c"
   },
   "legend132": {
     "name_en": "Biofuels",
     "name_az": "not_defined",
-    "color": 132
+    "color": "#c8cacc"
   },
   "legend133": {
     "name_en": "Biomass",
     "name_az": "Biokütlə",
-    "color": 133
+    "color": "#55A946"
   },
   "legend134": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 134
+    "color": "#006eb6"
   },
   "legend135": {
     "name_en": "Electro fuels",
     "name_az": "not_defined",
-    "color": 135
+    "color": "#adcff1"
   },
   "legend136": {
     "name_en": "Fossil Oil",
     "name_az": "not_defined",
-    "color": 136
+    "color": "#888A8C"
   },
   "legend137": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 137
+    "color": "#FFE67F"
   },
   "legend138": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 138
+    "color": "#696a6c"
   },
   "legend139": {
     "name_en": "Coal",
     "name_az": "Kömür",
-    "color": 139
+    "color": "#000000"
   },
   "legend14": {
     "name_en": "Commercial",
     "name_az": "Ticarət",
-    "color": 14
+    "color": "#ef403b"
   },
   "legend140": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": 140
+    "color": "#a7a9ab"
   },
   "legend141": {
     "name_en": "Other",
     "name_az": "Digər",
-    "color": 141
+    "color": "#adcff1"
   },
   "legend142": {
     "name_en": "Biomass",
     "name_az": "Biokütlə",
-    "color": 142
+    "color": "#55A946"
   },
   "legend143": {
     "name_en": "Hydro",
     "name_az": "Su",
-    "color": 143
+    "color": "#adcff1"
   },
   "legend144": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 144
+    "color": "#696a6c"
   },
   "legend145": {
     "name_en": "Other",
     "name_az": "Digər",
-    "color": 145
+    "color": "#adcff1"
   },
   "legend146": {
     "name_en": "Solar",
     "name_az": "Günəş",
-    "color": 146
+    "color": "#fdcf41"
   },
   "legend147": {
     "name_en": "Wind offshore",
     "name_az": "Külək dənizdə",
-    "color": 147
+    "color": "#385988"
   },
   "legend148": {
     "name_en": "Wind onshore",
     "name_az": "Külək quruda",
-    "color": 148
+    "color": "#d9d9ee"
   },
   "legend149": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": 149
+    "color": "#a7a9ab"
   },
   "legend15": {
     "name_en": "Commercial",
     "name_az": "Ticarət",
-    "color": 15
+    "color": "#ef403b"
   },
   "legend150": {
     "name_en": "RE refineries",
     "name_az": "not_defined",
-    "color": 150
+    "color": "#D8E8C5"
   },
   "legend151": {
     "name_en": "Residential",
     "name_az": "Əhali",
-    "color": 151
+    "color": "#385988"
   },
   "legend152": {
     "name_en": "Residential",
     "name_az": "Əhali",
-    "color": 152
+    "color": "#385988"
   },
   "legend153": {
     "name_en": "Crude oil",
     "name_az": "Xam neft",
-    "color": 153
+    "color": "#888A8C"
   },
   "legend154": {
     "name_en": "Cooling",
     "name_az": "Soyutma",
-    "color": 154
+    "color": "#4695CE"
   },
   "legend155": {
     "name_en": "Cooling",
     "name_az": "Soyutma",
-    "color": 155
+    "color": "#4695CE"
   },
   "legend156": {
     "name_en": "Cooling",
     "name_az": "Soyutma",
-    "color": 156
+    "color": "#4695CE"
   },
   "legend157": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 157
+    "color": "#006eb6"
   },
   "legend158": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": 158
+    "color": "#ecedee"
   },
   "legend159": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 159
+    "color": "#FFE67F"
   },
   "legend16": {
     "name_en": "Cooling",
     "name_az": "Soyutma",
-    "color": 16
+    "color": "#4695CE"
   },
   "legend160": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 160
+    "color": "#FFE67F"
   },
   "legend161": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 161
+    "color": "#FFE67F"
   },
   "legend162": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 162
+    "color": "#FFE67F"
   },
   "legend163": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 163
+    "color": "#FFE67F"
   },
   "legend164": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 164
+    "color": "#FFE67F"
   },
   "legend165": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 165
+    "color": "#FFE67F"
   },
   "legend166": {
-    "name_en": "Liquefied petroleum gas",
-    "name_az": "Mayeləşdirilmiş neft qazı",
-    "color": 166
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend167": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 167
+    "color": "#696a6c"
   },
   "legend168": {
     "name_en": "Rapeseed",
     "name_az": "Raps bitkisi",
-    "color": 168
+    "color": "#fff0be"
   },
   "legend169": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 169
+    "color": "#FFE67F"
   },
   "legend17": {
     "name_en": "Cooling",
     "name_az": "Soyutma",
-    "color": 17
+    "color": "#4695CE"
   },
   "legend170": {
-    "name_en": "Bio Synt. Nat. Gas",
-    "name_az": "Bio sintetik təbii qaz",
-    "color": 170
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
   },
   "legend171": {
-    "name_en": "Bio Synt. Nat. Gas",
-    "name_az": "Bio sintetik təbii qaz",
-    "color": 171
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
   },
   "legend172": {
     "name_en": "Solar",
     "name_az": "Günəş",
-    "color": 172
+    "color": "#fdcf41"
   },
   "legend173": {
     "name_en": "Straw",
     "name_az": "Saman",
-    "color": 173
+    "color": "#FFE67F"
   },
   "legend174": {
     "name_en": "Biogas",
     "name_az": "Bioqaz",
-    "color": 174
+    "color": "#ACCC83"
   },
   "legend175": {
     "name_en": "Supply",
     "name_az": "Təchizat",
-    "color": 175
+    "color": "#ecedee"
   },
   "legend176": {
     "name_en": "Crude oil",
     "name_az": "Xam neft",
-    "color": 176
+    "color": "#888A8C"
   },
   "legend177": {
-    "name_en": "Deep liter",
-    "name_az": "Dərin litr",
-    "color": 177
+    "name_en": "Biomass",
+    "name_az": "Biokütlə",
+    "color": "#55A946"
   },
   "legend178": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 178
+    "color": "#006eb6"
   },
   "legend179": {
     "name_en": "Hydrogen",
     "name_az": "Hidrogen",
-    "color": 179
+    "color": "#ef403b"
   },
   "legend18": {
     "name_en": "Cooling",
     "name_az": "Soyutma",
-    "color": 18
+    "color": "#4695CE"
   },
   "legend180": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 180
+    "color": "#FFE67F"
   },
   "legend181": {
     "name_en": "Manure",
     "name_az": "Peyin",
-    "color": 181
+    "color": "#454547"
   },
   "legend182": {
-    "name_en": "Bio Methanol",
-    "name_az": "Bio metanol",
-    "color": 182
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend183": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 183
+    "color": "#696a6c"
   },
   "legend184": {
     "name_en": "Rapeseed",
     "name_az": "Raps bitkisi",
-    "color": 184
+    "color": "#fff0be"
   },
   "legend185": {
-    "name_en": "Synthetic natural gas",
-    "name_az": "Sintetik təbii qaz",
-    "color": 185
+    "name_en": "SNG",
+    "name_az": "SNG",
+    "color": "#D8E8C5"
   },
   "legend186": {
     "name_en": "Woodchips",
     "name_az": "Odun talaşı",
-    "color": 186
+    "color": "#AE0E16"
   },
   "legend187": {
     "name_en": "AZ1 to AZ2",
     "name_az": "not_defined",
-    "color": 187
+    "color": "#c7c9e6"
   },
   "legend188": {
     "name_en": "AZ1 to AZ3",
     "name_az": "not_defined",
-    "color": 188
+    "color": "#FFFFFF"
   },
   "legend189": {
     "name_en": "AZ2 to AZ3",
     "name_az": "not_defined",
-    "color": 189
+    "color": "#fff0be"
   },
   "legend19": {
     "name_en": "Cooling",
     "name_az": "Soyutma",
-    "color": 19
+    "color": "#4695CE"
   },
   "legend190": {
     "name_en": "Aviation",
     "name_az": "not_defined",
-    "color": 190
+    "color": "#1C2C44"
   },
   "legend191": {
     "name_en": "Aviation",
     "name_az": "not_defined",
-    "color": 191
+    "color": "#1C2C44"
   },
   "legend192": {
     "name_en": "Bus",
     "name_az": "not_defined",
-    "color": 192
+    "color": "#668AB8"
   },
   "legend193": {
     "name_en": "Car",
     "name_az": "not_defined",
-    "color": 193
+    "color": "#006eb6"
   },
   "legend194": {
     "name_en": "Metro",
     "name_az": "not_defined",
-    "color": 194
+    "color": "#adcff1"
   },
   "legend195": {
     "name_en": "Rail",
     "name_az": "not_defined",
-    "color": 195
+    "color": "#FFFFFF"
   },
   "legend196": {
     "name_en": "Rail",
     "name_az": "not_defined",
-    "color": 196
+    "color": "#FFFFFF"
   },
   "legend197": {
     "name_en": "Ship",
     "name_az": "not_defined",
-    "color": 197
+    "color": "#fdcf41"
   },
   "legend198": {
     "name_en": "Ship",
     "name_az": "not_defined",
-    "color": 198
+    "color": "#fdcf41"
   },
   "legend199": {
     "name_en": "Truck",
     "name_az": "not_defined",
-    "color": 199
+    "color": "#888A8C"
   },
   "legend2": {
     "name_en": "Agriculture",
     "name_az": "Kənd təsərrüfatı",
-    "color": 2
+    "color": "#FFE67F"
   },
   "legend20": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 20
+    "color": "#006eb6"
   },
   "legend200": {
     "name_en": "Van",
     "name_az": "not_defined",
-    "color": 200
+    "color": "#ACCC83"
   },
   "legend201": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat",
-    "color": 201
+    "color": "#006eb6"
   },
   "legend202": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat",
-    "color": 202
+    "color": "#006eb6"
   },
   "legend203": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat",
-    "color": 203
+    "color": "#006eb6"
   },
   "legend204": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat",
-    "color": 204
+    "color": "#006eb6"
   },
   "legend205": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat",
-    "color": 205
+    "color": "#006eb6"
   },
   "legend206": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 206
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend207": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 207
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend208": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 208
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend209": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 209
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend21": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 21
+    "color": "#FFE67F"
   },
   "legend210": {
-    "name_en": "Biodiesel",
-    "name_az": "Biodizel",
-    "color": 210
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend211": {
     "name_en": "Diesel",
     "name_az": "Dizel",
-    "color": 211
+    "color": "#888A8C"
   },
   "legend212": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 212
+    "color": "#006eb6"
   },
   "legend213": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 213
+    "color": "#006eb6"
   },
   "legend214": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 214
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend215": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 215
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend216": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 216
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend217": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 217
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend218": {
-    "name_en": "Bioethanol",
-    "name_az": "Bioetanol",
-    "color": 218
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend219": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": 219
+    "color": "#ecedee"
   },
   "legend22": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 22
+    "color": "#FFE67F"
   },
   "legend220": {
     "name_en": "Hydrogen",
     "name_az": "Hidrogen",
-    "color": 220
+    "color": "#ef403b"
   },
   "legend221": {
     "name_en": "Heavy fuel oil",
     "name_az": "Ağır mazut",
-    "color": 221
+    "color": "#888A8C"
   },
   "legend222": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 222
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend223": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 223
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend224": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 224
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend225": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 225
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend226": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 226
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend227": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 227
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend228": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 228
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend229": {
-    "name_en": "(Bio-)Kerosene blend",
-    "name_az": "(Bio-)Kerosin qarışığı",
-    "color": 229
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend23": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 23
+    "color": "#FFE67F"
   },
   "legend230": {
-    "name_en": "Liquefied petroleum gas",
-    "name_az": "Mayeləşdirilmiş neft qazı",
-    "color": 230
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend231": {
-    "name_en": "MGO & Biodiesel blend",
-    "name_az": "Gəmi qazoylu və Biodizel qarışığı",
-    "color": 231
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend232": {
-    "name_en": "Marine gas oil",
-    "name_az": "Gəmi qazoylu",
-    "color": 232
+    "name_en": "Oil",
+    "name_az": "Oil",
+    "color": "#454547"
   },
   "legend233": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 233
+    "color": "#696a6c"
   },
   "legend234": {
-    "name_en": "Liq. NGA & SNG blend",
-    "name_az": "Maye təbii qaz və sıxılmış təbii qaz qarışığı",
-    "color": 234
+    "name_en": "SNG",
+    "name_az": "SNG",
+    "color": "#D8E8C5"
   },
   "legend235": {
-    "name_en": "Liq. NGA & SNG blend",
-    "name_az": "Maye təbii qaz və sıxılmış təbii qaz qarışığı",
-    "color": 235
+    "name_en": "SNG",
+    "name_az": "SNG",
+    "color": "#D8E8C5"
   },
   "legend236": {
-    "name_en": "(Bio-)Oil blend",
-    "name_az": "not_defined",
-    "color": 236
+    "name_en": "SNG",
+    "name_az": "SNG",
+    "color": "#D8E8C5"
   },
   "legend237": {
-    "name_en": "Synthetic natural gas",
-    "name_az": "Sintetik təbii qaz",
-    "color": 237
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend238": {
-    "name_en": "Woodchips",
-    "name_az": "Odun talaşı",
-    "color": 238
+    "name_en": "SNG",
+    "name_az": "SNG",
+    "color": "#D8E8C5"
   },
   "legend239": {
-    "name_en": "Wind",
-    "name_az": "Külək",
-    "color": 239
+    "name_en": "Woodchips",
+    "name_az": "Odun talaşı",
+    "color": "#AE0E16"
   },
   "legend24": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 24
+    "color": "#FFE67F"
   },
   "legend240": {
-    "name_en": "Wood pellets",
-    "name_az": "Odun yanacaq qranulları",
-    "color": 240
+    "name_en": "Wind",
+    "name_az": "Külək",
+    "color": "#d9d9ee"
   },
   "legend241": {
-    "name_en": "Waste",
-    "name_az": "Tullantı",
-    "color": 241
+    "name_en": "Wood pellets",
+    "name_az": "Odun yanacaq qranulları",
+    "color": "#adcff1"
   },
   "legend242": {
-    "name_en": "Hydrogen",
-    "name_az": "Hidrogen",
-    "color": 242
+    "name_en": "Waste",
+    "name_az": "Tullantı",
+    "color": "#a7a9ab"
   },
   "legend243": {
-    "name_en": "Biogas",
-    "name_az": "Bioqaz",
-    "color": 243
+    "name_en": "Hydrogen",
+    "name_az": "Hidrogen",
+    "color": "#ef403b"
   },
   "legend244": {
-    "name_en": "Electric",
-    "name_az": "not_defined",
-    "color": 244
+    "name_en": "Biogas",
+    "name_az": "Bioqaz",
+    "color": "#ACCC83"
   },
   "legend245": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 245
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
   },
   "legend246": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 246
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend247": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
-    "color": 247
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend248": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 248
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend249": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 249
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend25": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 25
+    "color": "#FFE67F"
   },
   "legend250": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
-    "color": 250
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend251": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 251
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend252": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 252
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend253": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
-    "color": 253
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend254": {
-    "name_en": "Diesel blend",
-    "name_az": "Dizel qarışığı",
-    "color": 254
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend255": {
-    "name_en": "Gasoline blend",
-    "name_az": "Benzin qarışığı",
-    "color": 255
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
   },
   "legend256": {
-    "name_en": "Liquid petrol gas",
-    "name_az": "not_defined",
-    "color": 256
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#ecedee"
   },
   "legend257": {
-    "name_en": "Import from Turkey",
-    "name_az": "Import from Turkey",
-    "color": 257
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend258": {
-    "name_en": "Import from Russia",
-    "name_az": "Import from Russia",
-    "color": 258
+    "name_en": "Import from Turkey",
+    "name_az": "Import from Turkey",
+    "color": "#D8E8C5"
   },
   "legend259": {
-    "name_en": "Import from Iran",
-    "name_az": "Import from Iran",
-    "color": 259
+    "name_en": "Import from Russia",
+    "name_az": "Import from Russia",
+    "color": "#55A946"
   },
   "legend26": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 26
+    "color": "#FFE67F"
   },
   "legend260": {
-    "name_en": "Export to Iran",
-    "name_az": "Export to Iran",
-    "color": 260
+    "name_en": "Import from Iran",
+    "name_az": "Import from Iran",
+    "color": "#fff0be"
   },
   "legend261": {
-    "name_en": "Import from Georgia",
-    "name_az": "Import from Georgia",
-    "color": 261
+    "name_en": "Export to Iran",
+    "name_az": "Export to Iran",
+    "color": "#fdcf41"
   },
   "legend262": {
-    "name_en": "Export to Turkey",
-    "name_az": "Export to Turkey",
-    "color": 262
+    "name_en": "Import from Georgia",
+    "name_az": "Import from Georgia",
+    "color": "#FFFFFF"
   },
   "legend263": {
-    "name_en": "Export to Russia",
-    "name_az": "Export to Russia",
-    "color": 263
+    "name_en": "Export to Turkey",
+    "name_az": "Export to Turkey",
+    "color": "#AE0E16"
   },
   "legend264": {
+    "name_en": "Export to Russia",
+    "name_az": "Export to Russia",
+    "color": "#adcff1"
+  },
+  "legend265": {
     "name_en": "Export to Georgia",
     "name_az": "Export to Georgia",
-    "color": 264
+    "color": "#006eb6"
   },
   "legend27": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 27
+    "color": "#FFE67F"
   },
   "legend28": {
-    "name_en": "Liquefied petroleum gas",
-    "name_az": "Mayeləşdirilmiş neft qazı",
-    "color": 28
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
   },
   "legend29": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 29
+    "color": "#696a6c"
   },
   "legend3": {
     "name_en": "Diesel",
     "name_az": "Dizel",
-    "color": 3
+    "color": "#888A8C"
   },
   "legend30": {
     "name_en": "Variable O&M costs",
     "name_az": "not_defined",
-    "color": 30
+    "color": "#006eb6"
   },
   "legend31": {
     "name_en": "Fuel costs",
     "name_az": "not_defined",
-    "color": 31
+    "color": "#888A8C"
   },
   "legend32": {
     "name_en": "Taxes/Subsidies",
     "name_az": "not_defined",
-    "color": 32
+    "color": "#fdcf41"
   },
   "legend33": {
     "name_en": "Fixed O&M costs",
     "name_az": "not_defined",
-    "color": 33
+    "color": "#55A946"
   },
   "legend34": {
     "name_en": "Investment costs",
     "name_az": "not_defined",
-    "color": 34
+    "color": "#ef403b"
   },
   "legend35": {
     "name_en": "Trade costs",
     "name_az": "not_defined",
-    "color": 35
+    "color": "#c7c9e6"
   },
   "legend36": {
     "name_en": "Crude oil",
     "name_az": "Xam neft",
-    "color": 36
+    "color": "#888A8C"
   },
   "legend37": {
-    "name_en": "Corn",
-    "name_az": "Qarğıdalı",
-    "color": 37
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend38": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 38
+    "color": "#FFE67F"
   },
   "legend39": {
-    "name_en": "Ethanol",
-    "name_az": "Etanol",
-    "color": 39
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend4": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 4
+    "color": "#006eb6"
   },
   "legend40": {
-    "name_en": "Deep liter",
-    "name_az": "Dərin litr",
-    "color": 40
+    "name_en": "Biomass",
+    "name_az": "Biokütlə",
+    "color": "#55A946"
   },
   "legend41": {
-    "name_en": "Biodiesel",
-    "name_az": "Biodizel",
-    "color": 41
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend42": {
     "name_en": "Diesel",
     "name_az": "Dizel",
-    "color": 42
+    "color": "#888A8C"
   },
   "legend43": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 43
+    "color": "#006eb6"
   },
   "legend44": {
     "name_en": "Power & Heat",
     "name_az": "Elektrik enerjisi və İstilik",
-    "color": 44
+    "color": "#AE0E16"
   },
   "legend45": {
     "name_en": "Power & Heat",
     "name_az": "Elektrik enerjisi və İstilik",
-    "color": 45
+    "color": "#AE0E16"
   },
   "legend46": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 46
+    "color": "#006eb6"
   },
   "legend47": {
     "name_en": "Hydro",
     "name_az": "Su",
-    "color": 47
+    "color": "#adcff1"
   },
   "legend48": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 48
+    "color": "#006eb6"
   },
   "legend49": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 49
+    "color": "#006eb6"
   },
   "legend5": {
     "name_en": "Hydrogen",
     "name_az": "Hidrogen",
-    "color": 5
+    "color": "#ef403b"
   },
   "legend50": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 50
+    "color": "#696a6c"
   },
   "legend51": {
     "name_en": "Solar",
     "name_az": "Günəş",
-    "color": 51
+    "color": "#fdcf41"
   },
   "legend52": {
     "name_en": "Straw",
     "name_az": "Saman",
-    "color": 52
+    "color": "#FFE67F"
   },
   "legend53": {
     "name_en": "Woodchips",
     "name_az": "Odun talaşı",
-    "color": 53
+    "color": "#AE0E16"
   },
   "legend54": {
     "name_en": "Wind",
     "name_az": "Külək",
-    "color": 54
+    "color": "#d9d9ee"
   },
   "legend55": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": 55
+    "color": "#a7a9ab"
   },
   "legend56": {
     "name_en": "Marginal CO2",
     "name_az": "not_defined",
-    "color": 56
+    "color": "#a7a9ab"
   },
   "legend57": {
-    "name_en": "Firewood",
-    "name_az": "Odun",
-    "color": 57
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend58": {
     "name_en": "Fossil refineries",
     "name_az": "not_defined",
-    "color": 58
+    "color": "#454547"
   },
   "legend59": {
     "name_en": "Agriculture",
     "name_az": "Kənd təsərrüfatı",
-    "color": 59
+    "color": "#FFE67F"
   },
   "legend6": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 6
+    "color": "#FFE67F"
   },
   "legend60": {
     "name_en": "Commercial",
     "name_az": "Ticarət",
-    "color": 60
+    "color": "#ef403b"
   },
   "legend61": {
     "name_en": "Industry",
     "name_az": "Sənaye",
-    "color": 61
+    "color": "#1C2C44"
   },
   "legend62": {
     "name_en": "Mining",
     "name_az": "not_defined",
-    "color": 62
+    "color": "#888A8C"
   },
   "legend63": {
     "name_en": "Residential",
     "name_az": "Əhali",
-    "color": 63
+    "color": "#385988"
   },
   "legend64": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat",
-    "color": 64
+    "color": "#006eb6"
   },
   "legend65": {
-    "name_en": "Glycerol",
-    "name_az": "not_defined",
-    "color": 65
+    "name_en": "Oil",
+    "name_az": "Oil",
+    "color": "#454547"
   },
   "legend66": {
-    "name_en": "Bioethanol",
-    "name_az": "Bioetanol",
-    "color": 66
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend67": {
-    "name_en": "Electro Gasoline",
-    "name_az": "Elektrik-benzin",
-    "color": 67
+    "name_en": "Electro fuels",
+    "name_az": "not_defined",
+    "color": "#adcff1"
   },
   "legend68": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": 68
+    "color": "#ecedee"
   },
   "legend69": {
     "name_en": "Hydrogen",
     "name_az": "Hidrogen",
-    "color": 69
+    "color": "#ef403b"
   },
   "legend7": {
     "name_en": "Heavy fuel oil",
     "name_az": "Ağır mazut",
-    "color": 7
+    "color": "#888A8C"
   },
   "legend70": {
     "name_en": "Hydrogen",
     "name_az": "Hidrogen",
-    "color": 70
+    "color": "#ef403b"
   },
   "legend71": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 71
+    "color": "#FFE67F"
   },
   "legend72": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 72
+    "color": "#FFE67F"
   },
   "legend73": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 73
+    "color": "#FFE67F"
   },
   "legend74": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 74
+    "color": "#FFE67F"
   },
   "legend75": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 75
+    "color": "#FFE67F"
   },
   "legend76": {
     "name_en": "Heavy fuel oil",
     "name_az": "Ağır mazut",
-    "color": 76
+    "color": "#888A8C"
   },
   "legend77": {
     "name_en": "Hydro",
     "name_az": "Su",
-    "color": 77
+    "color": "#adcff1"
   },
   "legend78": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 78
+    "color": "#FFE67F"
   },
   "legend79": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 79
+    "color": "#FFE67F"
   },
   "legend8": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
-    "color": 8
+    "color": "#696a6c"
   },
   "legend80": {
     "name_en": "Industry",
     "name_az": "Sənaye",
-    "color": 80
+    "color": "#1C2C44"
   },
   "legend81": {
     "name_en": "Chemical",
     "name_az": "not_defined",
-    "color": 81
+    "color": "#FFFFFF"
   },
   "legend82": {
     "name_en": "Construction",
     "name_az": "not_defined",
-    "color": 82
+    "color": "#c7c9e6"
   },
   "legend83": {
     "name_en": "Food",
     "name_az": "not_defined",
-    "color": 83
+    "color": "#fdcf41"
   },
   "legend84": {
     "name_en": "Glass and Concrete",
     "name_az": "not_defined",
-    "color": 84
+    "color": "#55A946"
   },
   "legend85": {
     "name_en": "Machinery",
     "name_az": "not_defined",
-    "color": 85
+    "color": "#ACCC83"
   },
   "legend86": {
-    "name_en": "Minnery",
+    "name_en": "Mining",
     "name_az": "not_defined",
-    "color": 86
+    "color": "#888A8C"
   },
   "legend87": {
     "name_en": "Other",
     "name_az": "Digər",
-    "color": 87
+    "color": "#adcff1"
   },
   "legend88": {
     "name_en": "Paper",
     "name_az": "not_defined",
-    "color": 88
+    "color": "#D8E8C5"
   },
   "legend89": {
     "name_en": "Iron and Steel",
     "name_az": "not_defined",
-    "color": 89
+    "color": "#AE0E16"
   },
   "legend9": {
-    "name_en": "Biogas",
-    "name_az": "Bioqaz",
-    "color": 9
+    "name_en": "Biofuels",
+    "name_az": "not_defined",
+    "color": "#c8cacc"
   },
   "legend90": {
     "name_en": "Textile",
     "name_az": "not_defined",
-    "color": 90
+    "color": "#fff0be"
   },
   "legend91": {
     "name_en": "Transport",
     "name_az": "Nəqliyyat",
-    "color": 91
+    "color": "#006eb6"
   },
   "legend92": {
     "name_en": "Wood",
     "name_az": "not_defined",
-    "color": 92
+    "color": "#4695CE"
   },
   "legend93": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 93
+    "color": "#FFE67F"
   },
   "legend94": {
     "name_en": "Biogas",
     "name_az": "Bioqaz",
-    "color": 94
+    "color": "#ACCC83"
   },
   "legend95": {
     "name_en": "Industry",
     "name_az": "Sənaye",
-    "color": 95
+    "color": "#1C2C44"
   },
   "legend96": {
     "name_en": "Coal",
     "name_az": "Kömür",
-    "color": 96
+    "color": "#000000"
   },
   "legend97": {
     "name_en": "Heat",
     "name_az": "İstilik",
-    "color": 97
+    "color": "#FFE67F"
   },
   "legend98": {
     "name_en": "Diesel",
     "name_az": "Dizel",
-    "color": 98
+    "color": "#888A8C"
   },
   "legend99": {
     "name_en": "Electricity",
     "name_az": "Elektrik enerjisi",
-    "color": 99
+    "color": "#006eb6"
   }
 }
