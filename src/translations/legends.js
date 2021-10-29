@@ -939,6 +939,11 @@ export default {
     "name_az": "Sənaye",
     "color": "#1C2C44"
   },
+  "legend268": {
+    "name_en": "Transport",
+    "name_az": "Nəqliyyat",
+    "color": "#006eb6"
+  },
   "legend27": {
     "name_en": "Heat",
     "name_az": "İstilik",
