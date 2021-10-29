@@ -23,6 +23,7 @@ import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import charts from '../translations/charts'
 import legendsForColor from '../translations/legends'
+import scenarioCombinations from '../data/scenarioCombinations'
 
 const ChartContainer = styled.div`
   width: 550px;
@@ -154,9 +155,17 @@ const StackedBarChart = props => {
 const getCSVData = (accumulatedData1, scenarioName1, accumulatedData2, scenarioName2, unit) => {
   let ret = []
   //console.log("accu1: ", accumulatedData1)
+  let scenarioTrans = scenarioCombinations.scenarioCombinations.scenarioOptions.find(
+    (option)=>{
+      //console.log("option: ", option)
+      return((option.id.toLowerCase() === scenarioName1.toLowerCase()))
+      }
+    )['short_description_' + i18next.language]
+  console.log("trans: ", scenarioTrans)
   Object.entries(accumulatedData1).forEach((indicatorGroup) => {
+
     indicatorGroup[1].forEach((item)=>{
-      ret.push({scenario: scenarioName1, indicatorGroup: indicatorGroup[0], year: item.year, value: item.total, unit: unit})
+      ret.push({scenario: scenarioTrans, indicatorGroup: indicatorGroup[0], year: item.year, value: item.total, unit: unit})
     })
   })
   Object.entries(accumulatedData2).forEach((indicatorGroup) => {
@@ -204,7 +213,7 @@ return(<div>No DAta yet</div>)
       <ChartTitle>{charts[chartName]["name_" + i18next.language]}</ChartTitle>
       <CSVLink 
         data={getCSVData(dataScenario1[0], scenario, dataScenario2 ? dataScenario2[0] : [], scenario2, unit )}
-        filename={chartTitle + " " + selectedCountries + ".csv"}
+        filename={charts[chartName]["name_" + i18next.language] + " " + selectedCountries + ".csv"}
       >
         {t("general.download-as-csv")}</CSVLink>
     </ChartHeader>
@@ -281,17 +290,7 @@ return(<div>No DAta yet</div>)
                   labelComponent={<VictoryTooltip />}
                   style={{
                     data: { fill: () => {
-                      //console.log("chartGroupName: ", chartGroupName)
-                        
-                        let ret = legendColor[chartGroupName.substring(0,16)]
-                        
-                        //if (indicatorgroup_colors[chartGroupName]) 
-                          //ret=indicatorgroup_colors[chartGroupName]
-                        //else
-                          //ret=colorNER[i]
-                        //console.log("stack name: ", chartGroupName)
-                        //console.log("stack ret: ", ret)
-                        return ret
+                        return legendColor[chartGroupName.substring(0,16)]
                       }, 
                     },
                   }}
@@ -369,13 +368,6 @@ return(<div>No DAta yet</div>)
             return({
               name: legend.name,
               symbol: { fill: () => {
-                /* let ret
-                if (indicatorgroup_colors[legend]) 
-                  ret=indicatorgroup_colors[legend]
-                else
-                  ret=colorNER[i]*/
-                //console.log("legend name: ", legend)
-                //console.log("legend ret: ", ret)
                 return legend.color
                 },
               }}
