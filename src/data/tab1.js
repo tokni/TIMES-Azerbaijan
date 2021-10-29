@@ -2987,7 +2987,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart03": {
+      "chart-titles.tab01.chart04": {
         "AZ1": {
           "legend12": [
             {
@@ -3109,6 +3109,36 @@ export default {
               "total": 0.726106657
             }
           ],
+          "legend267": [
+            {
+              "year": 2020,
+              "total": 2.6156699654
+            },
+            {
+              "year": 2025,
+              "total": 2.7808399661
+            },
+            {
+              "year": 2030,
+              "total": 3.6311807158
+            },
+            {
+              "year": 2035,
+              "total": 3.7354655095
+            },
+            {
+              "year": 2040,
+              "total": 4.8167408407
+            },
+            {
+              "year": 2045,
+              "total": 5.9808367452
+            },
+            {
+              "year": 2050,
+              "total": 7.1838746678
+            }
+          ],
           "legend45": [
             {
               "year": 2020,
@@ -3197,36 +3227,6 @@ export default {
             {
               "year": 2050,
               "total": 0.0
-            }
-          ],
-          "legend95": [
-            {
-              "year": 2020,
-              "total": 2.6156699654
-            },
-            {
-              "year": 2025,
-              "total": 2.7808399661
-            },
-            {
-              "year": 2030,
-              "total": 3.6311807158
-            },
-            {
-              "year": 2035,
-              "total": 3.7354655095
-            },
-            {
-              "year": 2040,
-              "total": 4.8167408407
-            },
-            {
-              "year": 2045,
-              "total": 5.9808367452
-            },
-            {
-              "year": 2050,
-              "total": 7.1838746678
             }
           ]
         },
@@ -3351,6 +3351,36 @@ export default {
               "total": 0.0403392889
             }
           ],
+          "legend267": [
+            {
+              "year": 2020,
+              "total": 0.0273224347
+            },
+            {
+              "year": 2025,
+              "total": 0.0086867943
+            },
+            {
+              "year": 2030,
+              "total": 0.0092098926
+            },
+            {
+              "year": 2035,
+              "total": 0.0097495771
+            },
+            {
+              "year": 2040,
+              "total": 0.0103850244
+            },
+            {
+              "year": 2045,
+              "total": 0.0122041952
+            },
+            {
+              "year": 2050,
+              "total": 0.017942256
+            }
+          ],
           "legend45": [
             {
               "year": 2020,
@@ -3439,36 +3469,6 @@ export default {
             {
               "year": 2050,
               "total": 0.009809779
-            }
-          ],
-          "legend95": [
-            {
-              "year": 2020,
-              "total": 0.0273224347
-            },
-            {
-              "year": 2025,
-              "total": 0.0086867943
-            },
-            {
-              "year": 2030,
-              "total": 0.0092098926
-            },
-            {
-              "year": 2035,
-              "total": 0.0097495771
-            },
-            {
-              "year": 2040,
-              "total": 0.0103850244
-            },
-            {
-              "year": 2045,
-              "total": 0.0122041952
-            },
-            {
-              "year": 2050,
-              "total": 0.017942256
             }
           ]
         },
@@ -3593,6 +3593,36 @@ export default {
               "total": 0.0403392889
             }
           ],
+          "legend267": [
+            {
+              "year": 2020,
+              "total": 0.0901724673
+            },
+            {
+              "year": 2025,
+              "total": 0.0675080437
+            },
+            {
+              "year": 2030,
+              "total": 0.0724329727
+            },
+            {
+              "year": 2035,
+              "total": 0.0768187628
+            },
+            {
+              "year": 2040,
+              "total": 0.0876511715
+            },
+            {
+              "year": 2045,
+              "total": 0.0929389209
+            },
+            {
+              "year": 2050,
+              "total": 0.0985438827
+            }
+          ],
           "legend45": [
             {
               "year": 2020,
@@ -3682,40 +3712,10 @@ export default {
               "year": 2050,
               "total": 0.0253114074
             }
-          ],
-          "legend95": [
-            {
-              "year": 2020,
-              "total": 0.0901724673
-            },
-            {
-              "year": 2025,
-              "total": 0.0675080437
-            },
-            {
-              "year": 2030,
-              "total": 0.0724329727
-            },
-            {
-              "year": 2035,
-              "total": 0.0768187628
-            },
-            {
-              "year": 2040,
-              "total": 0.0876511715
-            },
-            {
-              "year": 2045,
-              "total": 0.0929389209
-            },
-            {
-              "year": 2050,
-              "total": 0.0985438827
-            }
           ]
         }
       },
-      "chart-titles.tab01.chart04": {
+      "chart-titles.tab01.chart05": {
         "AZ1": {
           "legend145": [
             {
@@ -4143,7 +4143,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart05": {
+      "chart-titles.tab01.chart06": {
         "AZ1": {
           "legend119": [
             {
@@ -5051,7 +5051,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart06": {
+      "chart-titles.tab01.chart07": {
         "AZ1": {
           "legend56": [
             {
@@ -5149,7 +5149,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart07": {
+      "chart-titles.tab01.chart08": {
         "AZ1": {
           "legend145": [
             {
@@ -5577,7 +5577,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart08": {
+      "chart-titles.tab01.chart09": {
         "AZ1": {
           "legend119": [
             {
@@ -6485,7 +6485,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart09": {
+      "chart-titles.tab01.chart10": {
         "AZ1": {
           "legend30": [
             {
@@ -9933,7 +9933,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart03": {
+      "chart-titles.tab01.chart04": {
         "AZ1": {
           "legend12": [
             {
@@ -10055,6 +10055,36 @@ export default {
               "total": 0.0154855906
             }
           ],
+          "legend267": [
+            {
+              "year": 2020,
+              "total": 2.6156699654
+            },
+            {
+              "year": 2025,
+              "total": 2.2810146384
+            },
+            {
+              "year": 2030,
+              "total": 2.6811230559
+            },
+            {
+              "year": 2035,
+              "total": 3.0046755649
+            },
+            {
+              "year": 2040,
+              "total": 3.2973632779
+            },
+            {
+              "year": 2045,
+              "total": 2.3129086491
+            },
+            {
+              "year": 2050,
+              "total": 1.5176865484
+            }
+          ],
           "legend45": [
             {
               "year": 2020,
@@ -10143,36 +10173,6 @@ export default {
             {
               "year": 2050,
               "total": 0.0
-            }
-          ],
-          "legend95": [
-            {
-              "year": 2020,
-              "total": 2.6156699654
-            },
-            {
-              "year": 2025,
-              "total": 2.2810146384
-            },
-            {
-              "year": 2030,
-              "total": 2.6811230559
-            },
-            {
-              "year": 2035,
-              "total": 3.0046755649
-            },
-            {
-              "year": 2040,
-              "total": 3.2973632779
-            },
-            {
-              "year": 2045,
-              "total": 2.3129086491
-            },
-            {
-              "year": 2050,
-              "total": 1.5176865484
             }
           ]
         },
@@ -10297,6 +10297,36 @@ export default {
               "total": 0.0008603113
             }
           ],
+          "legend267": [
+            {
+              "year": 2020,
+              "total": 0.0273224347
+            },
+            {
+              "year": 2025,
+              "total": 0.0073113934
+            },
+            {
+              "year": 2030,
+              "total": 0.0077038632
+            },
+            {
+              "year": 2035,
+              "total": 0.00807457
+            },
+            {
+              "year": 2040,
+              "total": 0.0083555796
+            },
+            {
+              "year": 2045,
+              "total": 0.0086807106
+            },
+            {
+              "year": 2050,
+              "total": 0.0121417401
+            }
+          ],
           "legend45": [
             {
               "year": 2020,
@@ -10385,36 +10415,6 @@ export default {
             {
               "year": 2050,
               "total": 0.0
-            }
-          ],
-          "legend95": [
-            {
-              "year": 2020,
-              "total": 0.0273224347
-            },
-            {
-              "year": 2025,
-              "total": 0.0073113934
-            },
-            {
-              "year": 2030,
-              "total": 0.0077038632
-            },
-            {
-              "year": 2035,
-              "total": 0.00807457
-            },
-            {
-              "year": 2040,
-              "total": 0.0083555796
-            },
-            {
-              "year": 2045,
-              "total": 0.0086807106
-            },
-            {
-              "year": 2050,
-              "total": 0.0121417401
             }
           ]
         },
@@ -10539,6 +10539,36 @@ export default {
               "total": 0.0008603113
             }
           ],
+          "legend267": [
+            {
+              "year": 2020,
+              "total": 0.0901724673
+            },
+            {
+              "year": 2025,
+              "total": 0.0577404021
+            },
+            {
+              "year": 2030,
+              "total": 0.0608918617
+            },
+            {
+              "year": 2035,
+              "total": 0.0594277952
+            },
+            {
+              "year": 2040,
+              "total": 0.061821857
+            },
+            {
+              "year": 2045,
+              "total": 0.0673311567
+            },
+            {
+              "year": 2050,
+              "total": 0.0693150062
+            }
+          ],
           "legend45": [
             {
               "year": 2020,
@@ -10628,40 +10658,10 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ],
-          "legend95": [
-            {
-              "year": 2020,
-              "total": 0.0901724673
-            },
-            {
-              "year": 2025,
-              "total": 0.0577404021
-            },
-            {
-              "year": 2030,
-              "total": 0.0608918617
-            },
-            {
-              "year": 2035,
-              "total": 0.0594277952
-            },
-            {
-              "year": 2040,
-              "total": 0.061821857
-            },
-            {
-              "year": 2045,
-              "total": 0.0673311567
-            },
-            {
-              "year": 2050,
-              "total": 0.0693150062
-            }
           ]
         }
       },
-      "chart-titles.tab01.chart04": {
+      "chart-titles.tab01.chart05": {
         "AZ1": {
           "legend145": [
             {
@@ -11089,7 +11089,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart05": {
+      "chart-titles.tab01.chart06": {
         "AZ1": {
           "legend119": [
             {
@@ -11997,7 +11997,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart06": {
+      "chart-titles.tab01.chart07": {
         "AZ1": {
           "legend56": [
             {
@@ -12095,7 +12095,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart07": {
+      "chart-titles.tab01.chart08": {
         "AZ1": {
           "legend145": [
             {
@@ -12523,7 +12523,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart08": {
+      "chart-titles.tab01.chart09": {
         "AZ1": {
           "legend119": [
             {
@@ -13431,7 +13431,7 @@ export default {
           ]
         }
       },
-      "chart-titles.tab01.chart09": {
+      "chart-titles.tab01.chart10": {
         "AZ1": {
           "legend30": [
             {
