@@ -3,7 +3,7 @@ export default {
     "charts": {
       "chart-titles.tab05.chart01": {
         "AZ1": {
-          "legend205": [
+          "legend268": [
             {
               "year": 2020,
               "total": 7.3157485557
@@ -35,7 +35,7 @@ export default {
           ]
         },
         "AZ2": {
-          "legend205": [
+          "legend268": [
             {
               "year": 2020,
               "total": 0.4782603156
@@ -67,7 +67,7 @@ export default {
           ]
         },
         "AZ3": {
-          "legend205": [
+          "legend268": [
             {
               "year": 2020,
               "total": 0.2704750612
@@ -3807,7 +3807,7 @@ export default {
     "charts": {
       "chart-titles.tab05.chart01": {
         "AZ1": {
-          "legend205": [
+          "legend268": [
             {
               "year": 2020,
               "total": 7.3157485557
@@ -3839,7 +3839,7 @@ export default {
           ]
         },
         "AZ2": {
-          "legend205": [
+          "legend268": [
             {
               "year": 2020,
               "total": 0.4782603156
@@ -3871,7 +3871,7 @@ export default {
           ]
         },
         "AZ3": {
-          "legend205": [
+          "legend268": [
             {
               "year": 2020,
               "total": 0.2704750612
