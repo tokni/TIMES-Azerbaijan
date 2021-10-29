@@ -25,14 +25,13 @@ const countryColorsCSS = props =>
             #${district} {
               fill:  ${props.selectedCountries.includes(country) ? foundRegion.color : '#aaa'};
               :hover {fill: #3cccfc55;}
-          
+              #agdash2:hover {fill: pink;}
             }
           `)}
         )
       }
-
     )
-    //console.log("----- ccs ret -----  ", ret)
+    console.log("----- ccs ret -----  ", ret)
     return(ret)
   }
 

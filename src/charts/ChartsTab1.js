@@ -80,7 +80,7 @@ console.log("stackready: ", stackReady)
                 //console.log("option: ", option)
                 return((option.id.toLowerCase() === selectedScenario.toLowerCase()))
                 }
-              )['desc_' + i18next.language]?.toUpperCase()
+              )['desc_' + i18next.language]
             }
           </Scenario1Description>
           {selectedScenario2 && 
@@ -92,7 +92,7 @@ console.log("stackready: ", stackReady)
                 //console.log("option: ", option)
                 return((option.id.toLowerCase() === selectedScenario2.toLowerCase()))
                 }
-              )['desc_' + i18next.language]?.toUpperCase()}
+              )['desc_' + i18next.language]}
           </Scenario2Description>}
         </ScenarioDescriptionsContainer> 
       {(props.scenarioSelection.showDifference === false ||
