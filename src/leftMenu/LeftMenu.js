@@ -424,7 +424,7 @@ function ScenarioSelectionMenu(props) {
           </UnitContainer>
           <MenuSeparatorLine /></>}
       </>
-      {false && (dev || isAuthenticated) && <>
+      {(dev || isAuthenticated) && <>
         <MenuSeparatorLine />
         <Header narrowVersion={false}>{t("general.countries")}</Header>
           <MapContainer

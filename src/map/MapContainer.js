@@ -16,15 +16,15 @@ const countryColorsCSS = props =>
         let foundRegion = mapRegionToDataRegions.find(region => region.country === country)
         foundRegion.path_ids.forEach(district =>
           {
-            console.log("ccs country: ", country)
-            console.log("ccs district: ", district)
-            console.log("ccs props.selectedCountries: ", props.selectedCountries)
-            console.log("props.selectedCountries.includes(country): ", props.selectedCountries.includes(country))
+            //console.log("ccs country: ", country)
+            //console.log("ccs district: ", district)
+            //console.log("ccs props.selectedCountries: ", props.selectedCountries)
+            //console.log("props.selectedCountries.includes(country): ", props.selectedCountries.includes(country))
             props.selectedCountries.includes(country)
             ret.push(`
             #${district} {
               fill:  ${props.selectedCountries.includes(country) ? foundRegion.color : '#aaa'};
-              :hover {fill: #adcff1;}
+              :hover {fill: #3cccfc55;}
           
             }
           `)}
@@ -32,7 +32,7 @@ const countryColorsCSS = props =>
       }
 
     )
-    console.log("----- ccs ret -----  ", ret)
+    //console.log("----- ccs ret -----  ", ret)
     return(ret)
   }
 
@@ -55,7 +55,7 @@ const CountryName = styled.div`
 const CountryNameContainer = styled.div`
   position: absolute;
   bottom: ${props => props.narrowVersion ? '5px' :'20px'};
-  left: ${props => props.narrowVersion ? '5px' :'20px'};
+  right: ${props => props.narrowVersion ? '5px' :'20px'};
 `
 const MapContainer = (props) => {
   const [hoverCountry, setHoverCountry] = useState(null) 
