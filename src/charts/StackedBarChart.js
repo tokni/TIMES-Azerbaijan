@@ -16,7 +16,6 @@ import {
 import {createAccumulatedData} from './Tools'
 import {colorNER} from './chartColors'
 import periods from './../data/years'
-import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import { CSVLink } from 'react-csv'
 import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next';
@@ -329,12 +328,7 @@ return(<div>No DAta yet</div>)
                     labelComponent={<VictoryTooltip />}
                     style={{
                     data: { fill: () => {
-                      //console.log("chartGroupName 2: ", indicatorgroup_colors[chartGroupName])
-                      //console.log("colorNER[i]: ", colorNER[i])
-                      if (indicatorgroup_colors[chartGroupName]) 
-                        return indicatorgroup_colors[chartGroupName] + '88'
-                      else
-                        return colorNER[i] +'88'
+                      return legendColor[chartGroupName.substring(0,16)] + '88'
                       }, 
                     },
                   }}
