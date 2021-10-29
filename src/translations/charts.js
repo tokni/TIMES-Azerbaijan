@@ -30,7 +30,7 @@ export default {
     "name_az": "Enerji idxalı"
   },
   "chart-titles.tab01.chart06": {
-    "type": "stackedBar",
+    "type": "line",
     "unit": "Euro / t CO2",
     "name_en": "Marginal Prices – CO2",
     "name_az": "Marjinal Qiymətlər – CO2"
@@ -144,19 +144,19 @@ export default {
     "name_az": "Sektorlar üzrə elektrik enerjisi sərfi"
   },
   "chart-titles.tab03.chart09": {
-    "type": "stackedBar",
+    "type": "line",
     "unit": "Euro / MWh",
     "name_en": "Marginal Prices – Electricity",
     "name_az": "Marjinal qiymətlər - elektrik enerjisi"
   },
   "chart-titles.tab03.chart10": {
-    "type": "stackedBar",
+    "type": "line",
     "unit": "Euro / MWh",
     "name_en": "Marginal Prices – Central District Heat",
     "name_az": "Marginal Prices – Central District Heat"
   },
   "chart-titles.tab03.chart11": {
-    "type": "stackedBar",
+    "type": "line",
     "unit": "Euro / MWh",
     "name_en": "Marginal Prices – Decentral District Heat",
     "name_az": "Marginal Prices – Decentral District Heat"
