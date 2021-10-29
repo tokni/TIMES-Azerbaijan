@@ -12,7 +12,7 @@ export default {
 					"ultra_short_description_en": "R", 
 					"ultra_short_description_az": "B", 
 					"desc_en": "Continuing already implemented policies as taxes/subsidies and planned new power capacity. It is assumed that trade of energy carriers and investment in new capacity in all sectors will happen on a competing market.", 
-					"desc_az": "not_defined", 
+					"desc_az": "Vergilər/subsidiyalar və planlaşdırılan yeni enerji gücü timsalında artıq həyata keçirilən siyasətlərin davam etdirilməsi. Enerji daşıyıcılarının ticarətinin və bütün sektorlarda yeni gücə investisiya qoyuluşunun rəqabətli bazarda baş verəcəyi fərziyyəsi ", 
 				}, 
 				{ 
 					"id": "scenario1", 
@@ -24,7 +24,7 @@ export default {
 					"ultra_short_description_en": "C", 
 					"ultra_short_description_az": "K", 
 					"desc_en": "Same assumptions as in Base, but with a constraint on the CO2-emissions from the whole energy system of Azerbaijan securing net-zero emissions by 2050.", 
-					"desc_az": "not_defined", 
+					"desc_az": "Baza ssenarisi ilə eyni fərziyyələr irəli sürülür, lakin Azərbaycanın bütöv energetika sistemindən CO2 tullantıları üzrə 2050-ci ilə qədər sıfır tullantı məhdudiyyəti qoyulur.", 
 				}, 
 			], 
 			optionsAvailable: { 

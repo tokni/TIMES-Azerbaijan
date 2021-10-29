@@ -115,8 +115,8 @@ export default {
     "color": "#FFE67F"
   },
   "legend119": {
-    "name_en": "Oil",
-    "name_az": "Oil",
+    "name_en": "Kerosene",
+    "name_az": "Kerosin",
     "color": "#454547"
   },
   "legend12": {
@@ -126,12 +126,12 @@ export default {
   },
   "legend120": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend121": {
     "name_en": "Electro fuels",
-    "name_az": "not_defined",
+    "name_az": "Elektro yanacaqlar",
     "color": "#adcff1"
   },
   "legend122": {
@@ -166,12 +166,12 @@ export default {
   },
   "legend128": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend129": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend13": {
@@ -191,7 +191,7 @@ export default {
   },
   "legend132": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend133": {
@@ -206,12 +206,12 @@ export default {
   },
   "legend135": {
     "name_en": "Electro fuels",
-    "name_az": "not_defined",
+    "name_az": "Elektro yanacaqlar",
     "color": "#adcff1"
   },
   "legend136": {
     "name_en": "Fossil Oil",
-    "name_az": "not_defined",
+    "name_az": "Karbohidrogen mənşəli neft ",
     "color": "#888A8C"
   },
   "legend137": {
@@ -291,7 +291,7 @@ export default {
   },
   "legend150": {
     "name_en": "RE refineries",
-    "name_az": "not_defined",
+    "name_az": "BOE  emalı zavodları",
     "color": "#D8E8C5"
   },
   "legend151": {
@@ -466,7 +466,7 @@ export default {
   },
   "legend182": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend183": {
@@ -491,17 +491,17 @@ export default {
   },
   "legend187": {
     "name_en": "AZ1 to AZ2",
-    "name_az": "not_defined",
+    "name_az": "AZ1-dən AZ2-yə",
     "color": "#c7c9e6"
   },
   "legend188": {
     "name_en": "AZ1 to AZ3",
-    "name_az": "not_defined",
-    "color": "#FFFFFF"
+    "name_az": "AZ1-dən AZ3-ə",
+    "color": "#ecedee"
   },
   "legend189": {
     "name_en": "AZ2 to AZ3",
-    "name_az": "not_defined",
+    "name_az": "AZ2-dən AZ3-ə",
     "color": "#fff0be"
   },
   "legend19": {
@@ -511,52 +511,52 @@ export default {
   },
   "legend190": {
     "name_en": "Aviation",
-    "name_az": "not_defined",
+    "name_az": "Aviasiya",
     "color": "#1C2C44"
   },
   "legend191": {
     "name_en": "Aviation",
-    "name_az": "not_defined",
+    "name_az": "Aviasiya",
     "color": "#1C2C44"
   },
   "legend192": {
     "name_en": "Bus",
-    "name_az": "not_defined",
+    "name_az": "Avtobus",
     "color": "#668AB8"
   },
   "legend193": {
     "name_en": "Car",
-    "name_az": "not_defined",
+    "name_az": "Avtomobil",
     "color": "#006eb6"
   },
   "legend194": {
     "name_en": "Metro",
-    "name_az": "not_defined",
+    "name_az": "Metro",
     "color": "#adcff1"
   },
   "legend195": {
     "name_en": "Rail",
-    "name_az": "not_defined",
-    "color": "#FFFFFF"
+    "name_az": "Dəmiryolu",
+    "color": "#ecedee"
   },
   "legend196": {
     "name_en": "Rail",
-    "name_az": "not_defined",
-    "color": "#FFFFFF"
+    "name_az": "Dəmiryolu",
+    "color": "#ecedee"
   },
   "legend197": {
     "name_en": "Ship",
-    "name_az": "not_defined",
+    "name_az": "Gəmi",
     "color": "#fdcf41"
   },
   "legend198": {
     "name_en": "Ship",
-    "name_az": "not_defined",
+    "name_az": "Gəmi",
     "color": "#fdcf41"
   },
   "legend199": {
     "name_en": "Truck",
-    "name_az": "not_defined",
+    "name_az": "Yük maşını",
     "color": "#888A8C"
   },
   "legend2": {
@@ -571,7 +571,7 @@ export default {
   },
   "legend200": {
     "name_en": "Van",
-    "name_az": "not_defined",
+    "name_az": "Furqon",
     "color": "#ACCC83"
   },
   "legend201": {
@@ -626,7 +626,7 @@ export default {
   },
   "legend210": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend211": {
@@ -666,7 +666,7 @@ export default {
   },
   "legend218": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend219": {
@@ -690,43 +690,43 @@ export default {
     "color": "#888A8C"
   },
   "legend222": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend223": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend224": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend225": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend226": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend227": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend228": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend229": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Kerosene blend",
+    "name_az": "Kerosene blend",
     "color": "#c8cacc"
   },
   "legend23": {
@@ -741,7 +741,7 @@ export default {
   },
   "legend231": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend232": {
@@ -770,8 +770,8 @@ export default {
     "color": "#D8E8C5"
   },
   "legend237": {
-    "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_en": "Oil blend",
+    "name_az": "Oil blend",
     "color": "#c8cacc"
   },
   "legend238": {
@@ -912,7 +912,7 @@ export default {
   "legend262": {
     "name_en": "Import from Georgia",
     "name_az": "Import from Georgia",
-    "color": "#FFFFFF"
+    "color": "#ecedee"
   },
   "legend263": {
     "name_en": "Export to Turkey",
@@ -951,32 +951,32 @@ export default {
   },
   "legend30": {
     "name_en": "Variable O&M costs",
-    "name_az": "not_defined",
+    "name_az": "Dəyişən İ&TX xərcləri",
     "color": "#006eb6"
   },
   "legend31": {
     "name_en": "Fuel costs",
-    "name_az": "not_defined",
+    "name_az": "Yanacaq xərcləri",
     "color": "#888A8C"
   },
   "legend32": {
     "name_en": "Taxes/Subsidies",
-    "name_az": "not_defined",
+    "name_az": "Vergilər/Subsidiyalar",
     "color": "#fdcf41"
   },
   "legend33": {
     "name_en": "Fixed O&M costs",
-    "name_az": "not_defined",
+    "name_az": "Sabit İ&TX xərcləri",
     "color": "#55A946"
   },
   "legend34": {
     "name_en": "Investment costs",
-    "name_az": "not_defined",
+    "name_az": "Əsaslı vəsait qoyuluşu xərcləri",
     "color": "#ef403b"
   },
   "legend35": {
     "name_en": "Trade costs",
-    "name_az": "not_defined",
+    "name_az": "Ticarət xərcləri",
     "color": "#c7c9e6"
   },
   "legend36": {
@@ -986,7 +986,7 @@ export default {
   },
   "legend37": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend38": {
@@ -996,7 +996,7 @@ export default {
   },
   "legend39": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend4": {
@@ -1011,7 +1011,7 @@ export default {
   },
   "legend41": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend42": {
@@ -1091,17 +1091,17 @@ export default {
   },
   "legend56": {
     "name_en": "Marginal CO2",
-    "name_az": "not_defined",
+    "name_az": "Marjinal CO2",
     "color": "#a7a9ab"
   },
   "legend57": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend58": {
     "name_en": "Fossil refineries",
-    "name_az": "not_defined",
+    "name_az": "Neft və qaz emalı zavodları",
     "color": "#454547"
   },
   "legend59": {
@@ -1126,7 +1126,7 @@ export default {
   },
   "legend62": {
     "name_en": "Mining",
-    "name_az": "not_defined",
+    "name_az": "Mədən",
     "color": "#888A8C"
   },
   "legend63": {
@@ -1146,12 +1146,12 @@ export default {
   },
   "legend66": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend67": {
     "name_en": "Electro fuels",
-    "name_az": "not_defined",
+    "name_az": "Elektro yanacaqlar",
     "color": "#adcff1"
   },
   "legend68": {
@@ -1231,32 +1231,32 @@ export default {
   },
   "legend81": {
     "name_en": "Chemical",
-    "name_az": "not_defined",
-    "color": "#FFFFFF"
+    "name_az": "Kimyəvi",
+    "color": "#ecedee"
   },
   "legend82": {
     "name_en": "Construction",
-    "name_az": "not_defined",
+    "name_az": "Tikinti",
     "color": "#c7c9e6"
   },
   "legend83": {
     "name_en": "Food",
-    "name_az": "not_defined",
+    "name_az": "Qida",
     "color": "#fdcf41"
   },
   "legend84": {
     "name_en": "Glass and Concrete",
-    "name_az": "not_defined",
+    "name_az": "Şüşə və Beton",
     "color": "#55A946"
   },
   "legend85": {
     "name_en": "Machinery",
-    "name_az": "not_defined",
+    "name_az": "Maşınqayırma",
     "color": "#ACCC83"
   },
   "legend86": {
     "name_en": "Mining",
-    "name_az": "not_defined",
+    "name_az": "Mədən",
     "color": "#888A8C"
   },
   "legend87": {
@@ -1266,22 +1266,22 @@ export default {
   },
   "legend88": {
     "name_en": "Paper",
-    "name_az": "not_defined",
+    "name_az": "Kağız",
     "color": "#D8E8C5"
   },
   "legend89": {
     "name_en": "Iron and Steel",
-    "name_az": "not_defined",
+    "name_az": "Dəmir və polad",
     "color": "#AE0E16"
   },
   "legend9": {
     "name_en": "Biofuels",
-    "name_az": "not_defined",
+    "name_az": "Bioyanacaqlar",
     "color": "#c8cacc"
   },
   "legend90": {
     "name_en": "Textile",
-    "name_az": "not_defined",
+    "name_az": "Tekstil",
     "color": "#fff0be"
   },
   "legend91": {
@@ -1291,7 +1291,7 @@ export default {
   },
   "legend92": {
     "name_en": "Wood",
-    "name_az": "not_defined",
+    "name_az": "Taxta",
     "color": "#4695CE"
   },
   "legend93": {
