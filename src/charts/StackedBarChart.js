@@ -16,13 +16,14 @@ import {
 import {createAccumulatedData} from './Tools'
 import {colorNER} from './chartColors'
 import periods from './../data/years'
-import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import { CSVLink } from 'react-csv'
 import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next';
 //import legendNames from '../translations/legends'
 import i18next from 'i18next';
 import charts from '../translations/charts'
+import legendsForColor from '../translations/legends'
+import scenarioCombinations from '../data/scenarioCombinations'
 
 const ChartContainer = styled.div`
   width: 550px;
@@ -52,7 +53,6 @@ const StackedBarChart = props => {
   const scenario2 = props.selectedScenario2
   const selectedCountries = props.selectedCountries
   const chartName = props.chartName
-  const chartTitle = props.chartTitle
   const combinedChart = false //props.combinedChart
   const unit = props.label
   const unitFactor = props.unitFactor
@@ -105,9 +105,14 @@ const StackedBarChart = props => {
   //console.log("accum1: ", accumulatedDataScenario1)
   //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
-    legends.add(key.substring(0,16))
-
+    let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
+    legends.add({name: key.substring(0,16), color: color})
   })
+  let legendColor = {}
+  legends.forEach(legend => {
+    legendColor[legend.name] = legend.color
+  })
+  console.log("legends -- -- ", legendColor)
   /* Object.keys(accumulatedDataScenario1).forEach((key) => {
     legends.add(key.substring(0,16))
   }) */
@@ -149,9 +154,17 @@ const StackedBarChart = props => {
 const getCSVData = (accumulatedData1, scenarioName1, accumulatedData2, scenarioName2, unit) => {
   let ret = []
   //console.log("accu1: ", accumulatedData1)
+  let scenarioTrans = scenarioCombinations.scenarioCombinations.scenarioOptions.find(
+    (option)=>{
+      //console.log("option: ", option)
+      return((option.id.toLowerCase() === scenarioName1.toLowerCase()))
+      }
+    )['short_description_' + i18next.language]
+  console.log("trans: ", scenarioTrans)
   Object.entries(accumulatedData1).forEach((indicatorGroup) => {
+
     indicatorGroup[1].forEach((item)=>{
-      ret.push({scenario: scenarioName1, indicatorGroup: indicatorGroup[0], year: item.year, value: item.total, unit: unit})
+      ret.push({scenario: scenarioTrans, indicatorGroup: indicatorGroup[0], year: item.year, value: item.total, unit: unit})
     })
   })
   Object.entries(accumulatedData2).forEach((indicatorGroup) => {
@@ -199,7 +212,7 @@ return(<div>No DAta yet</div>)
       <ChartTitle>{charts[chartName]["name_" + i18next.language]}</ChartTitle>
       <CSVLink 
         data={getCSVData(dataScenario1[0], scenario, dataScenario2 ? dataScenario2[0] : [], scenario2, unit )}
-        filename={chartTitle + " " + selectedCountries + ".csv"}
+        filename={charts[chartName]["name_" + i18next.language] + " " + selectedCountries + ".csv"}
       >
         {t("general.download-as-csv")}</CSVLink>
     </ChartHeader>
@@ -276,15 +289,7 @@ return(<div>No DAta yet</div>)
                   labelComponent={<VictoryTooltip />}
                   style={{
                     data: { fill: () => {
-                      //console.log("chartGroupName: ", chartGroupName)
-                        let ret
-                        if (indicatorgroup_colors[chartGroupName]) 
-                          ret=indicatorgroup_colors[chartGroupName]
-                        else
-                          ret=colorNER[i]
-                        //console.log("stack name: ", chartGroupName)
-                        //console.log("stack ret: ", ret)
-                        return ret
+                        return legendColor[chartGroupName.substring(0,16)]
                       }, 
                     },
                   }}
@@ -321,12 +326,7 @@ return(<div>No DAta yet</div>)
                     labelComponent={<VictoryTooltip />}
                     style={{
                     data: { fill: () => {
-                      //console.log("chartGroupName 2: ", indicatorgroup_colors[chartGroupName])
-                      //console.log("colorNER[i]: ", colorNER[i])
-                      if (indicatorgroup_colors[chartGroupName]) 
-                        return indicatorgroup_colors[chartGroupName] + '88'
-                      else
-                        return colorNER[i] +'88'
+                      return legendColor[chartGroupName.substring(0,16)] + '88'
                       }, 
                     },
                   }}
@@ -365,16 +365,9 @@ return(<div>No DAta yet</div>)
           colorScale={colorNER}
           data={Array.from(legends).map((legend, i) => {
             return({
-              name: legend,
+              name: legend.name,
               symbol: { fill: () => {
-                let ret
-                if (indicatorgroup_colors[legend]) 
-                  ret=indicatorgroup_colors[legend]
-                else
-                  ret=colorNER[i]
-                //console.log("legend name: ", legend)
-                //console.log("legend ret: ", ret)
-                return ret
+                return legend.color
                 },
               }}
           )}

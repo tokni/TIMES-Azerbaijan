@@ -10,7 +10,7 @@ const kiloToMega = 1000;
 function createAccumulatedData(data, scenario, percentage, chartName, selectedCountries) { 
   let selectedDataRegions = [] 
   mapRegionToDataRegions.forEach((mapRegion) => {
-      if(selectedCountries.includes(mapRegion.path_id)) {
+      if(selectedCountries.includes(mapRegion.country)) {
       mapRegion.data_regions.forEach((dataRegion) => {
         selectedDataRegions.push(dataRegion)
       })
@@ -70,7 +70,7 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
               }
             })
         })
-        //console.log("accum: ", accumulatedData)
+        console.log("accum: ", accumulatedData)
         //console.log("totalYearValuesPositive: ", totalYearValuesPositive)
         //console.log("totalYearValuesNegative: ", totalYearValuesNegative)
         return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]

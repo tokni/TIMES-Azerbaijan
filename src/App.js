@@ -81,7 +81,7 @@ const getDefaultUnits = () => {
   return ret
 }
 const default_scenario = scenarioCombinations.scenarioCombinations.scenarioOptions[0].id;
-const default_countries = ["az1", "az2", "az3"];
+const default_countries = ["AZ1", "AZ2", "AZ3"];
 const options = []
 const default_units = getDefaultUnits()
 scenarioCombinations.scenarioCombinations.scenarioOptions
