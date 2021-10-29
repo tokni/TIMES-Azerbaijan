@@ -53,7 +53,6 @@ const StackedBarChart = props => {
   const scenario2 = props.selectedScenario2
   const selectedCountries = props.selectedCountries
   const chartName = props.chartName
-  const chartTitle = props.chartTitle
   const combinedChart = false //props.combinedChart
   const unit = props.label
   const unitFactor = props.unitFactor
