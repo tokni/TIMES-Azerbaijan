@@ -50,8 +50,8 @@ export default {
   "chart-titles.tab01.chart09": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
-    "name_en": "System Cost",
-    "name_az": "Sistemin xərcləri"
+    "name_en": "Annual System Cost (undiscounted)",
+    "name_az": "Annual System Cost (undiscounted)"
   },
   "chart-titles.tab02.chart01": {
     "type": "stackedBar",
@@ -92,8 +92,8 @@ export default {
   "chart-titles.tab02.chart07": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
-    "name_en": "Upstream System Cost",
-    "name_az": "Neft-qaz emalı sisteminin xərcləri"
+    "name_en": "Annual System Cost (undiscounted)",
+    "name_az": "Annual System Cost (undiscounted)"
   },
   "chart-titles.tab03.chart01": {
     "type": "stackedBar",
@@ -123,7 +123,7 @@ export default {
     "type": "stackedBar",
     "unit": "TWh",
     "name_en": "Inter-regional Power Trade",
-    "name_az": "not_defined"
+    "name_az": "Regionlararası Elektrik Ticarəti"
   },
   "chart-titles.tab03.chart06": {
     "type": "stackedBar",
@@ -164,8 +164,8 @@ export default {
   "chart-titles.tab03.chart12": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
-    "name_en": "Power and Heat System Cost",
-    "name_az": "Elektrik enerjisi və istilik sistemi xərcləri"
+    "name_en": "Annual System Cost (undiscounted)",
+    "name_az": "Annual System Cost (undiscounted)"
   },
   "chart-titles.tab04.chart01": {
     "type": "stackedBar",
@@ -212,8 +212,8 @@ export default {
   "chart-titles.tab04.chart08": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
-    "name_en": "Industry System Cost",
-    "name_az": "Sənayedə sistem xərcləri"
+    "name_en": "Annual System Cost (undiscounted)",
+    "name_az": "Annual System Cost (undiscounted)"
   },
   "chart-titles.tab05.chart01": {
     "type": "stackedBar",
@@ -272,8 +272,8 @@ export default {
   "chart-titles.tab05.chart10": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
-    "name_en": "Transport System Cost",
-    "name_az": "Nəqliyyat sisteminin xərcləri"
+    "name_en": "Annual System Cost (undiscounted)",
+    "name_az": "Annual System Cost (undiscounted)"
   },
   "chart-titles.tab06.chart01": {
     "type": "stackedBar",
@@ -302,7 +302,7 @@ export default {
   "chart-titles.tab06.chart05": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
-    "name_en": "Other Sectors System Cost",
-    "name_az": "Digər sektorlar üzrə sistem xərcləri"
+    "name_en": "Annual System Cost (undiscounted)",
+    "name_az": "Annual System Cost (undiscounted)"
   }
 }
