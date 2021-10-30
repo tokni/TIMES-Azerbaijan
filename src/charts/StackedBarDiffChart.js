@@ -18,6 +18,10 @@ import {createAccumulatedData} from './Tools'
 import parseHtml from 'html-react-parser'
 import { colorNER } from "./chartColors"
 import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
+import i18next from 'i18next';
+import charts from '../translations/charts'
+import legendsForColor from '../translations/legends'
+import scenarioCombinations from '../data/scenarioCombinations'
 
 const ChartTitle = styled.div`
   margin-left: 70px;
@@ -41,6 +45,8 @@ const StackedBarChart = props => {
   const chartName = props.chartName
   const chartTitle = props.chartTitle
   const combinedChart = props.combinedChart
+  const unit = props.label
+  const unitFactor = props.unitFactor
   const periods = years
   let gutter, rowGutter
   let minY = props.minY
@@ -72,12 +78,12 @@ const StackedBarChart = props => {
     yDomain = stackedRatio < lineRatio ? [stackedRatio, 1] : [lineRatio, 1]
   }
 
-  const dataScenario1 = createAccumulatedData(stackedBar.data, scenario, false, chartName, selectedCountries)
-  const dataScenario2 = createAccumulatedData(stackedBar.data, scenario2, false, chartName, selectedCountries)
+  const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries)
+  const dataScenario2 = createAccumulatedData(stackedBar, scenario2, false, chartName, selectedCountries)
   const accumulatedDataScenario1 = dataScenario1[0]
   const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
   let diffData = JSON.parse(JSON.stringify(accumulatedDataScenario1))
-  const unit = dataScenario1[3]
+  //const unit = dataScenario1[3]
   Object.keys(accumulatedDataScenario2).forEach(indicatorName => {
     accumulatedDataScenario2[indicatorName].forEach((yearValue, index) => {
       diffData[indicatorName][index].total =  diffData[indicatorName][index].total - yearValue.total
@@ -154,19 +160,41 @@ const StackedBarChart = props => {
       return ret
     }
 
-  const HTMLLabel = props => {
+    const HTMLLabel = props => {
+      //console.log("label; ", props)
+      const text = props.text.replaceAll('§', '')
+      const co2Text = text.replace("CO2", "CO<sub>2</sub>")
+      return (
+        <foreignObject x={props.x+3} y={props.y-9} width={290} height={60}>
+          <div style={{ fontSize: '12px' }}>{parseHtml(co2Text)}</div>
+        </foreignObject>
+      );
+    };
+  let legends = new Set()
+  //console.log("accum1: ", accumulatedDataScenario1)
+  //console.log("legendNames: ", legendNames)
+  Object.keys(accumulatedDataScenario1).forEach((key) => {
+    let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
+    legends.add({name: key.substring(0,16), color: color})
+  })
+  let legendColor = {}
+  legends.forEach(legend => {
+    legendColor[legend.name] = legend.color
+  })
+
+  const HTMLYAxisLabel = props => {
     const text = props.text.replaceAll('§', '')
-  
+    const co2Text = text.replace("CO2", "CO<sub>2</sub>")
     return (
-      <foreignObject x={props.x+3} y={props.y-9} width={600} height={700}>
-        <div style={{ fontSize: '12px', fontFamily: "Open Sans" }}>{parseHtml(text)}</div>
+      <foreignObject x={props.x+3-95} y={props.y-9} width={120} height={120}>
+        <div style={{ fontSize: '18px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
       </foreignObject>
     );
   };
-
+  
   return (
     <ChartContainer>
-      <ChartTitle>{parseHtml(chartTitle.replaceAll("CO2", "CO<sub>2</sub>"))}</ChartTitle>
+      <ChartTitle>{charts[chartName]["name_" + i18next.language]}</ChartTitle>
       <VictoryChart
         domainPadding={20}
         width={550}
@@ -174,12 +202,13 @@ const StackedBarChart = props => {
         padding={{ left: 80, right: 50, top: 50, bottom: 50 }}
         theme={VictoryTheme.material}
         domain={{ y: yDomain }}
+        label={unit}
       >
         
         <VictoryAxis key={0} tickValues={periods} tickFormat={periods} />
         <VictoryAxis
           dependentAxis
-          axisLabelComponent={<VictoryLabel dx={10} dy={-50} />}
+          axisLabelComponent={<HTMLYAxisLabel dx={100} dy={-50}/>}
           key={2}
           offsetX={80}
           tickFormat={tick => {
@@ -192,7 +221,7 @@ const StackedBarChart = props => {
                 '%'
               )
             }
-            return Math.round((tick * base) / props.divideValues, 0)
+            return ((unitFactor * tick * base) / props.divideValues).toLocaleString()
           }}
           tickValues={getTickValues()}
           label={unit}
@@ -214,10 +243,7 @@ const StackedBarChart = props => {
               .concat('§§§§§§§§§§§§§§§§§§§§§')
               .substr(0, 16),
               symbol: { fill: () => {
-                if (indicatorgroup_colors[indicatorName]) 
-                  return indicatorgroup_colors[indicatorName]
-                else
-                  return colorNER[i]
+                return legendColor[indicatorName.substring(0,16)]
                 },
               }
           }))}
@@ -239,19 +265,15 @@ const StackedBarChart = props => {
                           (chartGroupValue.total * 100) /
                           props.divideValues
                         ).toFixed(0) + '%'
-                      : (chartGroupValue.total / props.divideValues).toFixed(
-                          0
-                        )),
+                      : Math.round(unitFactor * chartGroupValue.total / props.divideValues * 100, 2)/100
+                        ),
                 }))}
                 x="year"
                 y={datum => maxValue === 0 ? 0 : datum['total'] / base}
                 labelComponent={<VictoryTooltip />}
                 style={{
                     data: { fill: () => {
-                      if (indicatorgroup_colors[indicatorName]) 
-                        return indicatorgroup_colors[indicatorName]
-                      else
-                        return colorNER[i]
+                      return legendColor[indicatorName.substring(0,16)]
                       }, 
                     },
                   }}

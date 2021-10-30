@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { createBreakpoint } from 'styled-components-breakpoint'
 import Welcome from '../alert/Welcome'
 import StackedBarChart from './StackedBarChart'
-//import StackedBarDiffChart from './StackedBarDiffChart'
+import StackedBarDiffChart from './StackedBarDiffChart'
 import { MainArea, Flex, Scenario1Description, Scenario2Description } from './Charts.style'
 //import stackedBar from '../data/tab1'
 import LineChart from './LineChart'
@@ -119,7 +119,8 @@ console.log("stackready: ", stackReady)
                   label={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].displayName : chartSettings[i].unit}
                   unitFactor={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].factor : 1}
                   minY={0}
-                  maxY={1500}                    stackedBar={stackedBar}
+                  maxY={1500}                    
+                  stackedBar={stackedBar}
                   tab={"tab1"}
                   chart={"chart" + (index + 1)}
                 />
@@ -148,7 +149,7 @@ console.log("stackready: ", stackReady)
           }
         </Flex>
       )}
-      {/* {props.scenarioSelection.showDifference === true &&
+      {props.scenarioSelection.showDifference === true &&
         selectedScenario2 !== '' && (
         <Flex>
           {
@@ -160,7 +161,8 @@ console.log("stackready: ", stackReady)
                 selectedScenario2={selectedScenario2}
                 selectedCountries={selectedCountries}
                 combinedChart={false}
-                label=" "
+                label={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].displayName : chartSettings[i].unit}
+                unitFactor={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].factor : 1}
                 minY={-1}
                 maxY={1}
                 stackedBar={stackedBar}
@@ -168,7 +170,7 @@ console.log("stackready: ", stackReady)
             )
           }
           </Flex>
-        )} */}
+        )}
         {console.log("tab1 end")}
     </MainArea>
   )
