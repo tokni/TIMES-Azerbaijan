@@ -20,23 +20,39 @@ const countryColorsCSS = props =>
             //console.log("ccs district: ", district)
             //console.log("ccs props.selectedCountries: ", props.selectedCountries)
             //console.log("props.selectedCountries.includes(country): ", props.selectedCountries.includes(country))
-            props.selectedCountries.includes(country)
-            ret.push(`
-            #${district} {
-              fill:  ${props.selectedCountries.includes(country) ? foundRegion.color : '#aaa'};
-              :hover {fill: #3cccfc55;}
-              #agdash2:hover {fill: pink;}
+            
+              ret.push(`
+              #${district} {
+                fill:  ${props.selectedCountries.includes(country) ? foundRegion.color : '#aaa'};
+                
+              }
+            `)
+            
             }
-          `)}
         )
       }
     )
-    console.log("----- ccs ret -----  ", ret)
+    //console.log("----- ccs ret -----  ", ret)
     return(ret)
   }
 
  const StyledRegions = styled.div`
   ${props => countryColorsCSS(props)}
+  
+  
+  .az1_reg:hover {
+    opacity: 0.3;
+  }
+  
+  .az3_reg:hover {
+    opacity: 0.3;
+  }
+  .az2_reg:hover {
+    opacity: 0.3;
+  }
+  .az1_reg:hover {
+    opacity: 0.3;
+  }
   fill: #616161;
   stroke: gray;
   stroke-width: 10;
@@ -61,7 +77,7 @@ const MapContainer = (props) => {
   console.log("--selected countries: ", props.selectedCountries)
   console.log("hoverCountry: ", hoverCountry)
   return(
-  <StyledRegions selectedCountries={props.selectedCountries} countries={activeCountries}>
+  <StyledRegions selectedCountries={props.selectedCountries} countries={activeCountries} hoverCountry={hoverCountry}>
     <Regions
       onClick={event => {
         const id = event.target.id
