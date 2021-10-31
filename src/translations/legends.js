@@ -141,12 +141,12 @@ export default {
   },
   "legend123": {
     "name_en": "Oil",
-    "name_az": "Oil",
+    "name_az": "Neft",
     "color": "#454547"
   },
   "legend124": {
-    "name_en": "Oil",
-    "name_az": "Oil",
+    "name_en": "Crude oil",
+    "name_az": "Xam neft",
     "color": "#454547"
   },
   "legend125": {
@@ -210,8 +210,8 @@ export default {
     "color": "#adcff1"
   },
   "legend136": {
-    "name_en": "Fossil Oil",
-    "name_az": "Karbohidrogen mənşəli neft ",
+    "name_en": "Oil",
+    "name_az": "Neft",
     "color": "#888A8C"
   },
   "legend137": {
@@ -691,42 +691,42 @@ export default {
   },
   "legend222": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend223": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend224": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend225": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend226": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend227": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend228": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend229": {
     "name_en": "Kerosene blend",
-    "name_az": "Kerosene blend",
+    "name_az": "Kerosin qarışığı",
     "color": "#c8cacc"
   },
   "legend23": {
@@ -746,7 +746,7 @@ export default {
   },
   "legend232": {
     "name_en": "Oil",
-    "name_az": "Oil",
+    "name_az": "Neft",
     "color": "#454547"
   },
   "legend233": {
@@ -927,6 +927,21 @@ export default {
   "legend265": {
     "name_en": "Export to Georgia",
     "name_az": "Export to Georgia",
+    "color": "#006eb6"
+  },
+  "legend266": {
+    "name_en": "Gasoline blend",
+    "name_az": "Benzin qarışığı",
+    "color": "#668AB8"
+  },
+  "legend267": {
+    "name_en": "Industry",
+    "name_az": "Sənaye",
+    "color": "#1C2C44"
+  },
+  "legend268": {
+    "name_en": "Transport",
+    "name_az": "Nəqliyyat",
     "color": "#006eb6"
   },
   "legend27": {
@@ -1141,7 +1156,7 @@ export default {
   },
   "legend65": {
     "name_en": "Oil",
-    "name_az": "Oil",
+    "name_az": "Neft",
     "color": "#454547"
   },
   "legend66": {

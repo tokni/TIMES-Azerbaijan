@@ -9,4 +9,5 @@ export default
 		"chart-titles.tab01.chart07",
 		"chart-titles.tab01.chart08",
 		"chart-titles.tab01.chart09",
+		"chart-titles.tab01.chart10",
 	 ]
