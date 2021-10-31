@@ -1,5 +1,5 @@
 export default {
-  "chart-titles.tab01.chart01": {
+  /* "chart-titles.tab01.chart01": {
     "type": "stackedBar",
     "unit": "TWh",
     "name_en": "Primary Energy Supply by Energy Source",
@@ -28,7 +28,7 @@ export default {
     "unit": "TWh",
     "name_en": "Import of Energy",
     "name_az": "Enerji idxalı"
-  },
+  }, */
   "chart-titles.tab01.chart06": {
     "type": "line",
     "unit": "Euro / t CO2",

@@ -55,13 +55,15 @@ const LineChart = ({
   //console.log("data --------------------------------: ", lineData)
   const [t] = useTranslation()
   let selectedDataRegions = [] 
-    mapRegionToDataRegions.forEach((mapRegion) => {
-        if(selectedCountries.includes(mapRegion.path_id)) {
-        mapRegion.data_regions.forEach((dataRegion) => {
-          selectedDataRegions.push(dataRegion)
-        })
-      }
-    })
+  mapRegionToDataRegions.forEach((mapRegion) => {
+      if(selectedCountries.includes(mapRegion.country)) {
+      mapRegion.data_regions.forEach((dataRegion) => {
+        selectedDataRegions.push(dataRegion)
+      })
+    }
+  })
+
+    console.log("selectedCountries: ", selectedCountries)
     if (selectedScenario.includes("_copy"))
   selectedScenario = selectedScenario.replace("_copy", "")
   if (selectedScenario2.includes("_copy"))

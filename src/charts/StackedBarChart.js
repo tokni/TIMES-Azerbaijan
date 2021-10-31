@@ -56,7 +56,7 @@ const StackedBarChart = props => {
   const combinedChart = false //props.combinedChart
   const unit = props.label
   const unitFactor = props.unitFactor
-  console.log("props label: ", props.label)
+  //console.log("props label: ", props.label)
   let maxY2 = 1
   
   const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries)
@@ -112,7 +112,7 @@ const StackedBarChart = props => {
   legends.forEach(legend => {
     legendColor[legend.name] = legend.color
   })
-  console.log("legends -- -- ", legendColor)
+  //console.log("legends -- -- ", legendColor)
   /* Object.keys(accumulatedDataScenario1).forEach((key) => {
     legends.add(key.substring(0,16))
   }) */
@@ -160,7 +160,7 @@ const getCSVData = (accumulatedData1, scenarioName1, accumulatedData2, scenarioN
       return((option.id.toLowerCase() === scenarioName1.toLowerCase()))
       }
     )['short_description_' + i18next.language]
-  console.log("trans: ", scenarioTrans)
+  //console.log("trans: ", scenarioTrans)
   Object.entries(accumulatedData1).forEach((indicatorGroup) => {
 
     indicatorGroup[1].forEach((item)=>{

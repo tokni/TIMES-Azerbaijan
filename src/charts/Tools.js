@@ -70,7 +70,7 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
               }
             })
         })
-        console.log("accum: ", accumulatedData)
+        //console.log("accum: ", accumulatedData)
         //console.log("totalYearValuesPositive: ", totalYearValuesPositive)
         //console.log("totalYearValuesNegative: ", totalYearValuesNegative)
         return [accumulatedData, totalYearValuesPositive, totalYearValuesNegative , unit]

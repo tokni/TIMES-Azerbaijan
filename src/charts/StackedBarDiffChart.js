@@ -5,7 +5,6 @@ import years from "../data/years"
 
 import {
   VictoryChart,
-  VictoryLabel,
   VictoryLegend,
   VictoryGroup,
   VictoryStack,
@@ -17,11 +16,9 @@ import {
 import {createAccumulatedData} from './Tools'
 import parseHtml from 'html-react-parser'
 import { colorNER } from "./chartColors"
-import {indicatorgroup_colors} from '../charts/indicatorgroup_color'
 import i18next from 'i18next';
 import charts from '../translations/charts'
 import legendsForColor from '../translations/legends'
-import scenarioCombinations from '../data/scenarioCombinations'
 
 const ChartTitle = styled.div`
   margin-left: 70px;
@@ -43,7 +40,6 @@ const StackedBarChart = props => {
   const scenario2 = props.selectedScenario2
   const selectedCountries = props.selectedCountries
   const chartName = props.chartName
-  const chartTitle = props.chartTitle
   const combinedChart = props.combinedChart
   const unit = props.label
   const unitFactor = props.unitFactor

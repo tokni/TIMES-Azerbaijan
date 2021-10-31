@@ -296,14 +296,14 @@ const LoginContainer = styled.div`
 let unitList = []
 let unitRow = []
 Object.entries(unitSettings).forEach(unitType => {
-  console.log("unitType: ", unitType)
+  //console.log("unitType: ", unitType)
   unitRow = []
   Object.entries(unitType[1]).forEach(unit => {
-    console.log("--unit: ", unit)
+    //console.log("--unit: ", unit)
     unitRow.push({displayName: unit[0], factor: unit[1]})
   })
   unitList.push(unitRow)
-  console.log("unit list: ", unitList)
+  //console.log("unit list: ", unitList)
 })
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
@@ -406,8 +406,8 @@ function ScenarioSelectionMenu(props) {
               return(<UnitRow key={'unitRow'+i}>
                 {
                   unitRow.map((unitItem) => {
-                    console.log("unitItem.displayName: ", unitItem.displayName)
-                    console.log("props.selectedUnits: ", props.selectedUnits)
+                   // console.log("unitItem.displayName: ", unitItem.displayName)
+                    //console.log("props.selectedUnits: ", props.selectedUnits)
                     return(
                       <UnitItem
                         key={unitItem.displayName} 

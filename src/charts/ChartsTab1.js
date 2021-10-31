@@ -49,7 +49,7 @@ const Charts = props => {
   
 
 //console.log("indicatorready: ", indicatorReady)
-console.log("stackready: ", stackReady)
+//console.log("stackready: ", stackReady)
   if (!indicatorReady || !stackReady) return <div>Loading Data ...</div>
   
   //setIndicatorReady(false)

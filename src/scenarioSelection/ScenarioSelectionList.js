@@ -47,7 +47,7 @@ const ScenarioSelectionList = props => {
         !s.opt2 && 
         !s.opt3) //ensure that each scenario is only listed once
     }).forEach((element)=>{
-      console.log("element: ", element)
+      //console.log("element: ", element)
       let newOption = scenarioCombinations.scenarioOptions.find((option) => {
         return(
           option.id_noOptions === element.id_noOptions &&
@@ -57,16 +57,16 @@ const ScenarioSelectionList = props => {
           option.opt3===props.options[element.nameNoOptions_en].opt3 */
         )
       })
-      console.log("props.option: ", props.options)
-      console.log("newOption: ", newOption)
+      //console.log("props.option: ", props.options)
+      //console.log("newOption: ", newOption)
       if (newOption)
         OptionDisplay.push(newOption)
       else
         OptionDisplay.push(element)
     })
-    console.log("OptionDisplay: ", OptionDisplay)
+    //console.log("OptionDisplay: ", OptionDisplay)
   let scenarioOptions = OptionDisplay.map((option, i) => {
-      console.log("ssl option---------------------------: ", option)
+      //console.log("ssl option---------------------------: ", option)
       let optionValue = option.id_noOptions
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
@@ -100,7 +100,8 @@ const ScenarioSelectionList = props => {
                 }
             </ScenarioNameContainer>
             {Object.keys(scenarioCombinations.optionsAvailable).length !== 0 && <IconContainer narrowVersion={narrowVersion}>
-            {console.log("optionValue -- -- -- ", optionValue)
+            {
+              //console.log("optionValue -- -- -- ", optionValue)
             }
               {scenarioCombinations.optionsAvailable[optionValue].opt0 && <Icon
                 available={

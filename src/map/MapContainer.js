@@ -8,7 +8,7 @@ const activeCountries = ['AZ1', 'AZ2', 'AZ3']
 
 const countryColorsCSS = props =>
   {
-    console.log("css props: ", props)
+    //console.log("css props: ", props)
 
     let ret = []
     props.countries.forEach(
@@ -74,23 +74,23 @@ const CountryNameContainer = styled.div`
 `
 const MapContainer = (props) => {
   const [hoverCountry, setHoverCountry] = useState(null) 
-  console.log("--selected countries: ", props.selectedCountries)
-  console.log("hoverCountry: ", hoverCountry)
+  //console.log("--selected countries: ", props.selectedCountries)
+  //console.log("hoverCountry: ", hoverCountry)
   return(
   <StyledRegions selectedCountries={props.selectedCountries} countries={activeCountries} hoverCountry={hoverCountry}>
     <Regions
       onClick={event => {
         const id = event.target.id
-        console.log("clicked id: ", id)
+        //console.log("clicked id: ", id)
         let country
         
         if (id) {
           country = mapRegionToDataRegions.find((region)=>region.path_ids.includes(event.target.id))?.country
           if (activeCountries.includes(country)) {
             event.preventDefault()
-            console.log("clicked id in active: ", id)
+            //console.log("clicked id in active: ", id)
           
-            console.log("clicked country: ", country)
+            //console.log("clicked country: ", country)
             props.selectCountry(country)
           }
           
@@ -99,7 +99,7 @@ const MapContainer = (props) => {
       onMouseOver={(e) => {
         let country
         if (e.target.id) {
-          console.log("target.id: ", e.target.id)
+          //console.log("target.id: ", e.target.id)
           country = mapRegionToDataRegions.find((region)=>region.path_ids.includes(e.target.id))?.country
         }
         
