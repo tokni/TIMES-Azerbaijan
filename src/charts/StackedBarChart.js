@@ -79,7 +79,7 @@ const StackedBarChart = props => {
     minY = Math.min(minY, totalYearValuesNegativeScenario1[year],
       scenario2 ? totalYearValuesNegativeScenario2[year] : Infinity)
   })
-  console.log("--------------------------------------------------chartName: ", chartName)
+  //console.log("--------------------------------------------------chartName: ", chartName)
   //console.log("maxY: ", maxY)
   //console.log("minY: ", minY)
   let ttt = -1000
@@ -93,7 +93,7 @@ const StackedBarChart = props => {
       ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
       //console.log("i pos ttt: ", ttt)
     }
-    console.log("ttt: ", ttt)
+    //console.log("ttt: ", ttt)
     //ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
     i++
   }
@@ -126,12 +126,12 @@ const StackedBarChart = props => {
   else 
     base = maxY
 
-console.log("base: ", base)
-console.log("floor log base: ", Math.floor(Math.log10(base)))
+//console.log("base: ", base)
+//console.log("floor log base: ", Math.floor(Math.log10(base)))
 let sig_digits = Math.floor(Math.log10(base))
 if (sig_digits > -1) sig_digits = -1
 Math.pow(-sig_digits, 10)
-console.log("Math.pow(-sig_digits, 10): ", Math.pow(10, -sig_digits))
+//console.log("Math.pow(-sig_digits, 10): ", Math.pow(10, -sig_digits))
   //let legendsOld = new Set()
   let legends = new Set()
   //console.log("accum1: ", accumulatedDataScenario1)
@@ -232,7 +232,6 @@ const topPadding = Math.ceil(legends.size / 4) * 21
 getTickValues().forEach((val) => {
   if (val < 0) tickValueNumberOfNegativeElements++
 })
-console.log("tick values: ", getTickValues())
 let t1 = tickValueNumberOfNegativeElements === 0 ? 0 : tickValueNumberOfNegativeElements/tickValueLength*550 - topPadding/2
 //console.log("legendNames: ", legendNames)
 //console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)
@@ -265,7 +264,6 @@ return(<div>No DAta yet</div>)
           tickFormat={tick =>
             
             {
-             console.log("hello: ", tick * base * unitFactor)
               return(((tick * base * unitFactor) / props.divideValues).toLocaleString())}
           }
           tickValues={getTickValues()}
