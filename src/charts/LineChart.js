@@ -218,9 +218,6 @@ const LineChart = ({
                     lineChartData.push({x: item.year, y: item.total, country: country})
                   })
                 })
-                /* region.indicatorGroups[0].indicatorGroupValues.forEach((item)=>{
-                  lineChartData.push({x: item.year, y: item.total, country: country})
-                }) */
               }
             })
           return(
@@ -244,15 +241,21 @@ const LineChart = ({
           let lineChartData2 = []
           let selectedScenarioData = lineData[selectedScenario2.toLowerCase()]
           let indicatorData = selectedScenarioData.charts[chartName]
+          console.log("chartName: ", chartName)
           console.log("---indicatorData2---: ", indicatorData)
-          Object.values(indicatorData).forEach((region)=>{
-            console.log("region 2 : ", region)
-            if (region.region === country) {
-              region.indicatorGroups[0].indicatorGroupValues.forEach((item)=>{
-              lineChartData2.push({x: item.year, y: item.total, country: country})
-              })
-            }
-          })
+          Object.entries(indicatorData).forEach((region)=>{
+              if (region[0] === country) {
+                //console.log("--region: ", region)
+                Object.values(region[1]).forEach(legend => {
+                  //console.log("--legend: ", legend)
+                  Object.values(legend).forEach(item => {
+                    //console.log("item: ", item)
+                    lineChartData2.push({x: item.year, y: item.total, country: country})
+                  })
+                })
+              }
+            })
+          console.log("---lineChartData2---: ", lineChartData2)
           return(
             <VictoryLine 
               key={"lini"+i} 
@@ -263,7 +266,7 @@ const LineChart = ({
                         return indicatorgroup_colors[country]
                       else
                         return colorNER[i]
-                      }, strokeDasharray: "4" },
+                      }, strokeDasharray: "8" },
               }}
             >
             </VictoryLine>
