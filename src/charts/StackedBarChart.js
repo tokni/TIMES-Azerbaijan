@@ -80,43 +80,44 @@ const StackedBarChart = props => {
       scenario2 ? totalYearValuesNegativeScenario2[year] : Infinity)
   })
   console.log("--------------------------------------------------chartName: ", chartName)
-  console.log("maxY: ", maxY)
-  console.log("minY: ", minY)
+  //console.log("maxY: ", maxY)
+  //console.log("minY: ", minY)
   let ttt = -1000
-  let i = -40
+  let i = -50
   let range = [2,4,6,8,10]
   while(ttt < maxY) {
     if (i < 0 ) {
-      ttt = range[Math.abs((i+40)%5)]*Math.pow(range[4], Math.floor(i/5))
+      ttt = range[Math.abs((i+50)%5)]*Math.pow(range[4], Math.floor(i/5))
       
     } else {
       ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
-      console.log("i pos ttt: ", ttt)
+      //console.log("i pos ttt: ", ttt)
     }
+    console.log("ttt: ", ttt)
     //ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
     i++
   }
-  console.log("total ttt: ", ttt)
-  console.log("maxY: ", maxY)
+  //console.log("total ttt: ", ttt)
+  //console.log("maxY: ", maxY)
   maxY = ttt
   let u=0
-  let j=-40
+  let j=-30
   while(u > minY && j < 40) {
     if (j < 0) {
-      u = -range[(j+40)%5]*Math.pow(range[4], Math.floor(j/5))
-      console.log("range[Math.abs((j+20)%5)]: ", range[Math.abs((j+20)%5)])
-      console.log("Math.pow(range[4], Math.floor(j/5)): ", Math.pow(range[4], Math.floor(j/5)))
-      console.log("Math.floor(j/5): ", Math.floor(j/5))
-      console.log("i neg u: ", u)
+      u = -range[(j+30)%5]*Math.pow(range[4], Math.floor(j/5))
+      //console.log("range[Math.abs((j+20)%5)]: ", range[Math.abs((j+20)%5)])
+      //console.log("Math.pow(range[4], Math.floor(j/5)): ", Math.pow(range[4], Math.floor(j/5)))
+      //console.log("Math.floor(j/5): ", Math.floor(j/5))
+      //console.log("i neg u: ", u)
     } else {
       u = -range[Math.abs(j%5)]*Math.pow(range[4], Math.floor(j/5))
-      console.log("i pos u: ", u)
+      //console.log("i pos u: ", u)
     }
     
     j++
   }
-  console.log("maxY: ", maxY)
-  console.log("minY: ", minY)
+  //console.log("maxY: ", maxY)
+  //console.log("minY: ", minY)
   minY = u
 
   //base is used in tickFormat
@@ -126,6 +127,11 @@ const StackedBarChart = props => {
     base = maxY
 
 console.log("base: ", base)
+console.log("floor log base: ", Math.floor(Math.log10(base)))
+let sig_digits = Math.floor(Math.log10(base))
+if (sig_digits > -1) sig_digits = -1
+Math.pow(-sig_digits, 10)
+console.log("Math.pow(-sig_digits, 10): ", Math.pow(10, -sig_digits))
   //let legendsOld = new Set()
   let legends = new Set()
   //console.log("accum1: ", accumulatedDataScenario1)
@@ -226,6 +232,7 @@ const topPadding = Math.ceil(legends.size / 4) * 21
 getTickValues().forEach((val) => {
   if (val < 0) tickValueNumberOfNegativeElements++
 })
+console.log("tick values: ", getTickValues())
 let t1 = tickValueNumberOfNegativeElements === 0 ? 0 : tickValueNumberOfNegativeElements/tickValueLength*550 - topPadding/2
 //console.log("legendNames: ", legendNames)
 //console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)
@@ -257,7 +264,9 @@ return(<div>No DAta yet</div>)
           offsetX={80}
           tickFormat={tick =>
             
-            ((tick * base * unitFactor) / props.divideValues).toLocaleString()
+            {
+             console.log("hello: ", tick * base * unitFactor)
+              return(((tick * base * unitFactor) / props.divideValues).toLocaleString())}
           }
           tickValues={getTickValues()}
           label={unit}
@@ -306,7 +315,7 @@ return(<div>No DAta yet</div>)
                               props.divideValues
                             ).toFixed(0) + '%'
                           : 
-                              Math.round(unitFactor * chartGroupValue.total / props.divideValues * 100, 2)/100
+                              Math.round(unitFactor * chartGroupValue.total / props.divideValues * Math.pow(10, -sig_digits + 1), 2)/Math.pow(10, -sig_digits + 1)
                             ),
                     })}
                   )}
