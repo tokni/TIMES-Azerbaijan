@@ -13,41 +13,47 @@ export default {
   },
   "chart-titles.tab01.chart03": {
     "type": "stackedBar",
+    "unit": "TWh",
+    "name_en": "Final Energy Consumption by Sector",
+    "name_az": "Final Energy Consumption by Sector"
+  },
+  "chart-titles.tab01.chart04": {
+    "type": "stackedBar",
     "unit": "Mt CO2",
     "name_en": "CO2 Emissions",
     "name_az": "CO2 tullantıları"
   },
-  "chart-titles.tab01.chart04": {
+  "chart-titles.tab01.chart05": {
     "type": "stackedBar",
     "unit": "TWh",
     "name_en": "Export of Energy",
     "name_az": "Enerji ixracı"
   },
-  "chart-titles.tab01.chart05": {
+  "chart-titles.tab01.chart06": {
     "type": "stackedBar",
     "unit": "TWh",
     "name_en": "Import of Energy",
     "name_az": "Enerji idxalı"
   },
-  "chart-titles.tab01.chart06": {
+  "chart-titles.tab01.chart07": {
     "type": "line",
     "unit": "Euro / t CO2",
     "name_en": "Marginal Prices – CO2",
     "name_az": "Marjinal Qiymətlər – CO2"
   },
-  "chart-titles.tab01.chart07": {
+  "chart-titles.tab01.chart08": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
     "name_en": "Exports Cost",
     "name_az": "İxrac Xərcləri"
   },
-  "chart-titles.tab01.chart08": {
+  "chart-titles.tab01.chart09": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
     "name_en": "Imports Cost",
     "name_az": "İdxal Xərcləri"
   },
-  "chart-titles.tab01.chart09": {
+  "chart-titles.tab01.chart10": {
     "type": "stackedBar",
     "unit": "Bn. Euro",
     "name_en": "Annual System Cost (undiscounted)",
