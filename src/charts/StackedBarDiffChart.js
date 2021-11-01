@@ -133,7 +133,7 @@ const StackedBarChart = props => {
     base = -minValue
   else 
     base = maxValue
-
+    
   const defTick = [0, 0.25, 0.5, 0.75]
   const getTickValues = () => {
       let ret = []

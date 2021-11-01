@@ -74,25 +74,49 @@ const StackedBarChart = props => {
   //console.log("dataScenario1: ", dataScenario1)
   //console.log("dataScenario2: ", dataScenario2)
   Object.keys(totalYearValuesPositiveScenario1).forEach(year => {
-    maxY = Math.round(Math.max(maxY, totalYearValuesPositiveScenario1[year],
-      scenario2 ? totalYearValuesPositiveScenario2[year] : -Infinity))
-    minY = Math.round(Math.min(minY, totalYearValuesNegativeScenario1[year],
-      scenario2 ? totalYearValuesNegativeScenario2[year] : Infinity))
+    maxY = Math.max(maxY, totalYearValuesPositiveScenario1[year],
+      scenario2 ? totalYearValuesPositiveScenario2[year] : -Infinity)
+    minY = Math.min(minY, totalYearValuesNegativeScenario1[year],
+      scenario2 ? totalYearValuesNegativeScenario2[year] : Infinity)
   })
-  let ttt = 1
-  let i = 0
+  console.log("--------------------------------------------------chartName: ", chartName)
+  console.log("maxY: ", maxY)
+  console.log("minY: ", minY)
+  let ttt = -1000
+  let i = -40
   let range = [2,4,6,8,10]
   while(ttt < maxY) {
-    ttt = range[i%5]*Math.pow(range[4], Math.floor(i/5))
+    if (i < 0 ) {
+      ttt = range[Math.abs((i+40)%5)]*Math.pow(range[4], Math.floor(i/5))
+      
+    } else {
+      ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
+      console.log("i pos ttt: ", ttt)
+    }
+    //ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
     i++
   }
+  console.log("total ttt: ", ttt)
+  console.log("maxY: ", maxY)
   maxY = ttt
   let u=0
-  let j=0
+  let j=-40
   while(u > minY && j < 40) {
-    u = -range[j%5]*Math.pow(range[4], Math.floor(j/5))
+    if (j < 0) {
+      u = -range[(j+40)%5]*Math.pow(range[4], Math.floor(j/5))
+      console.log("range[Math.abs((j+20)%5)]: ", range[Math.abs((j+20)%5)])
+      console.log("Math.pow(range[4], Math.floor(j/5)): ", Math.pow(range[4], Math.floor(j/5)))
+      console.log("Math.floor(j/5): ", Math.floor(j/5))
+      console.log("i neg u: ", u)
+    } else {
+      u = -range[Math.abs(j%5)]*Math.pow(range[4], Math.floor(j/5))
+      console.log("i pos u: ", u)
+    }
+    
     j++
   }
+  console.log("maxY: ", maxY)
+  console.log("minY: ", minY)
   minY = u
 
   //base is used in tickFormat
@@ -100,6 +124,8 @@ const StackedBarChart = props => {
     base = -minY
   else 
     base = maxY
+
+console.log("base: ", base)
   //let legendsOld = new Set()
   let legends = new Set()
   //console.log("accum1: ", accumulatedDataScenario1)
