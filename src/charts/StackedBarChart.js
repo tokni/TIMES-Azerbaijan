@@ -125,7 +125,7 @@ const StackedBarChart = props => {
     base = -minY
   else 
     base = maxY
-
+if (base < 0.004) base = 0.004
 //console.log("base: ", base)
 //console.log("floor log base: ", Math.floor(Math.log10(base)))
 let sig_digits = Math.floor(Math.log10(base))
