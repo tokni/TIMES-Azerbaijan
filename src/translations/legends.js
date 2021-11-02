@@ -152,7 +152,7 @@ export default {
   "legend125": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend126": {
     "name_en": "Natural gas",
@@ -332,7 +332,7 @@ export default {
   "legend158": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend159": {
     "name_en": "Heat",
@@ -647,22 +647,22 @@ export default {
   "legend214": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend215": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend216": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend217": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend218": {
     "name_en": "Biofuels",
@@ -672,7 +672,7 @@ export default {
   "legend219": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend22": {
     "name_en": "Heat",
@@ -692,42 +692,42 @@ export default {
   "legend222": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A0"
   },
   "legend223": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A1"
   },
   "legend224": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A2"
   },
   "legend225": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A3"
   },
   "legend226": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A4"
   },
   "legend227": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A5"
   },
   "legend228": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A6"
   },
   "legend229": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#c8cacc"
+    "color": "#F4A6A7"
   },
   "legend23": {
     "name_en": "Heat",
@@ -772,7 +772,7 @@ export default {
   "legend237": {
     "name_en": "Oil blend",
     "name_az": "Oil blend",
-    "color": "#c8cacc"
+    "color": "#c7c9e6"
   },
   "legend238": {
     "name_en": "SNG",
@@ -827,7 +827,7 @@ export default {
   "legend247": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend248": {
     "name_en": "LPG",
@@ -847,7 +847,7 @@ export default {
   "legend250": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend251": {
     "name_en": "LPG",
@@ -862,7 +862,7 @@ export default {
   "legend253": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend254": {
     "name_en": "LPG",
@@ -877,7 +877,7 @@ export default {
   "legend256": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend257": {
     "name_en": "LPG",
@@ -932,7 +932,7 @@ export default {
   "legend266": {
     "name_en": "Gasoline blend",
     "name_az": "Benzin qarışığı",
-    "color": "#668AB8"
+    "color": "#adcff1"
   },
   "legend267": {
     "name_en": "Industry",
@@ -1172,7 +1172,7 @@ export default {
   "legend68": {
     "name_en": "Gasoline",
     "name_az": "Benzin",
-    "color": "#ecedee"
+    "color": "#c8cacc"
   },
   "legend69": {
     "name_en": "Hydrogen",
