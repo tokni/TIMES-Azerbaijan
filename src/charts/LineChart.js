@@ -50,7 +50,8 @@ const LineChart = ({
   selectedScenario2, 
   selectedCountries, 
   chartName, 
-  label
+  label,
+  unitFactor
 }) => {
   //console.log("data --------------------------------: ", lineData)
   const [t] = useTranslation()
@@ -141,8 +142,8 @@ const LineChart = ({
     const text = props.text.replaceAll('§', '')
     const co2Text = text.replace("CO2", "CO<sub>2</sub>")
     return (
-      <foreignObject x={props.x+3-115} y={props.y-9} width={120} height={90}>
-        <div style={{ fontSize: '18px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
+      <foreignObject x={props.x+3-140} y={props.y-9} width={180} height={120}>
+        <div style={{ fontSize: '18px', transform: "rotate(-90deg)"}}>{parseHtml(co2Text)}</div>
       </foreignObject>
     );
   };
@@ -215,7 +216,7 @@ const LineChart = ({
                   //console.log("--legend: ", legend)
                   Object.values(legend).forEach(item => {
                     //console.log("item: ", item)
-                    lineChartData.push({x: item.year, y: item.total, country: country})
+                    lineChartData.push({x: item.year, y: item.total*unitFactor, country: country})
                   })
                 })
               }
@@ -250,7 +251,7 @@ const LineChart = ({
                   //console.log("--legend: ", legend)
                   Object.values(legend).forEach(item => {
                     //console.log("item: ", item)
-                    lineChartData2.push({x: item.year, y: item.total, country: country})
+                    lineChartData2.push({x: item.year, y: item.total*unitFactor, country: country})
                   })
                 })
               }

@@ -133,7 +133,8 @@ const Charts = props => {
                 selectedScenario={selectedScenario}
                 selectedScenario2={selectedScenario2}
                 selectedCountries={selectedCountries}
-                label={chartSettings[i].unit}
+                label={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].displayName : chartSettings[i].unit}
+                unitFactor={unitSettings[chartSettings[i].unit] ? props.selectedUnits[chartSettings[i].unit].factor : 1}
                 minY={0}
                 maxY={15}
                 lineData={stackedBar}

@@ -211,7 +211,7 @@ const HTMLYAxisLabel = props => {
   const text = props.text.replaceAll('§', '')
   const co2Text = text.replace("CO2", "CO<sub>2</sub>")
   return (
-    <foreignObject x={props.x+3-95} y={props.y-9} width={120} height={120}>
+    <foreignObject x={props.x+3-140} y={props.y-9} width={180} height={120}>
       <div style={{ fontSize: '18px', transform: "rotate(-90deg)" }}>{parseHtml(co2Text)}</div>
     </foreignObject>
   );
