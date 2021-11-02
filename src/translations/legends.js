@@ -692,42 +692,42 @@ export default {
   "legend222": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A0"
   },
   "legend223": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A1"
   },
   "legend224": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A2"
   },
   "legend225": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A3"
   },
   "legend226": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A4"
   },
   "legend227": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A5"
   },
   "legend228": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A6"
   },
   "legend229": {
     "name_en": "Kerosene blend",
     "name_az": "Kerosin qarışığı",
-    "color": "#87898c"
+    "color": "#F4A6A7"
   },
   "legend23": {
     "name_en": "Heat",
