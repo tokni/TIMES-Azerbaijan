@@ -59,8 +59,8 @@ const StackedBarChart = props => {
   //console.log("props label: ", props.label)
   let maxY2 = 1
   
-  const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries)
-  const dataScenario2 = createAccumulatedData(stackedBar, scenario2, false, chartName, selectedCountries)
+  const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries, unitFactor)
+  const dataScenario2 = createAccumulatedData(stackedBar, scenario2, false, chartName, selectedCountries, unitFactor)
 
   const accumulatedDataScenario1 = dataScenario1[0]
   const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
@@ -80,8 +80,8 @@ const StackedBarChart = props => {
       scenario2 ? totalYearValuesNegativeScenario2[year] : Infinity)
   })
   //console.log("--------------------------------------------------chartName: ", chartName)
-  //console.log("maxY: ", maxY)
-  //console.log("minY: ", minY)
+  //console.log("a maxY: ", maxY)
+  //console.log("a minY: ", minY)
   let ttt = -1000
   let i = -50
   let range = [2,4,6,8,10]
@@ -116,8 +116,8 @@ const StackedBarChart = props => {
     
     j++
   }
-  //console.log("maxY: ", maxY)
-  //console.log("minY: ", minY)
+  //console.log("a maxY: ", maxY)
+  //console.log("a minY: ", minY)
   minY = u
 
   //base is used in tickFormat
@@ -262,9 +262,10 @@ return(<div>No DAta yet</div>)
           key={2}
           offsetX={80}
           tickFormat={tick =>
-            
             {
-              return(((tick * base * unitFactor) / props.divideValues).toLocaleString())}
+              return(
+                ((tick * base) / props.divideValues).toLocaleString()
+              )}
           }
           tickValues={getTickValues()}
           label={unit}
@@ -294,6 +295,7 @@ return(<div>No DAta yet</div>)
         
         <VictoryGroup offset={15} style={{ data: { width: 15 } }}>
           <VictoryStack>
+            {console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)}
             {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => {
             //console.log("chartGroupName: ", chartGroupName)
             return(
@@ -313,7 +315,7 @@ return(<div>No DAta yet</div>)
                               props.divideValues
                             ).toFixed(0) + '%'
                           : 
-                              Math.round(unitFactor * chartGroupValue.total / props.divideValues * Math.pow(10, -sig_digits + 1), 2)/Math.pow(10, -sig_digits + 1)
+                              Math.round(chartGroupValue.total / props.divideValues * Math.pow(10, -sig_digits + 1), 2)/Math.pow(10, -sig_digits + 1)
                             ),
                     })}
                   )}
@@ -350,7 +352,7 @@ return(<div>No DAta yet</div>)
                                 props.divideValues
                               ).toFixed(0) + '%'
                             : (
-                              Math.round(unitFactor * chartGroupValue.total / props.divideValues * 100, 2)/100
+                              Math.round(unitFactor * chartGroupValue.total / props.divideValues * Math.pow(10, -sig_digits + 1), 2)/Math.pow(10, -sig_digits + 1)
                               )),
                       })
                     )}

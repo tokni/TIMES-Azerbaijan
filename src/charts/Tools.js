@@ -7,7 +7,7 @@ import i18next from "i18next"
 
 const kiloToMega = 1000;
 
-function createAccumulatedData(data, scenario, percentage, chartName, selectedCountries) { 
+function createAccumulatedData(data, scenario, percentage, chartName, selectedCountries, unitFactor) { 
   let selectedDataRegions = [] 
   mapRegionToDataRegions.forEach((mapRegion) => {
       if(selectedCountries.includes(mapRegion.country)) {
@@ -61,11 +61,11 @@ function createAccumulatedData(data, scenario, percentage, chartName, selectedCo
                      //Extra check we rely on the two arrays being indexed the same way
                     console.log("Error in array indexing")
                   }
-                  accumulatedData[legendNames[legend[0]]['name_' + i18next.language]][index].total += percentage ? value.total/selectedCountries.length : value.total
+                  accumulatedData[legendNames[legend[0]]['name_' + i18next.language]][index].total += percentage ? value.total/selectedCountries.length : value.total * unitFactor
                   if (value.total > 0)
-                    totalYearValuesPositive[value.year] += percentage ? value.total/selectedCountries.length : value.total
+                    totalYearValuesPositive[value.year] += percentage ? value.total/selectedCountries.length : value.total * unitFactor
                   else
-                    totalYearValuesNegative[value.year] += percentage ? value.total/selectedCountries.length : value.total
+                    totalYearValuesNegative[value.year] += percentage ? value.total/selectedCountries.length : value.total * unitFactor
                 })
               }
             })

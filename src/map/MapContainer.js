@@ -91,6 +91,7 @@ const MapContainer = (props) => {
       }}
       onMouseOver={(e) => {
         let country
+        //console.log("target.id: ", e.target.id)
         if (e.target.id) {
           //console.log("target.id: ", e.target.id)
           country = mapRegionToDataRegions.find((region)=>region.path_ids.includes(e.target.id))?.country
