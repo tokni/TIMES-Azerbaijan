@@ -107,7 +107,7 @@ export default {
   "legend117": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend118": {
     "name_en": "Heat",
@@ -127,7 +127,7 @@ export default {
   "legend120": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend121": {
     "name_en": "Electro fuels",
@@ -167,12 +167,12 @@ export default {
   "legend128": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend129": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend13": {
     "name_en": "Coal",
@@ -192,7 +192,7 @@ export default {
   "legend132": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend133": {
     "name_en": "Biomass",
@@ -237,7 +237,7 @@ export default {
   "legend140": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend141": {
     "name_en": "Other",
@@ -277,12 +277,12 @@ export default {
   "legend148": {
     "name_en": "Wind onshore",
     "name_az": "Külək quruda",
-    "color": "#d9d9ee"
+    "color": "#4695CE"
   },
   "legend149": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend15": {
     "name_en": "Commercial",
@@ -467,7 +467,7 @@ export default {
   "legend182": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend183": {
     "name_en": "Natural gas",
@@ -627,7 +627,7 @@ export default {
   "legend210": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend211": {
     "name_en": "Diesel",
@@ -667,7 +667,7 @@ export default {
   "legend218": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend219": {
     "name_en": "Gasoline",
@@ -742,7 +742,7 @@ export default {
   "legend231": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend232": {
     "name_en": "Oil",
@@ -792,7 +792,7 @@ export default {
   "legend240": {
     "name_en": "Wind",
     "name_az": "Külək",
-    "color": "#d9d9ee"
+    "color": "#4695CE"
   },
   "legend241": {
     "name_en": "Wood pellets",
@@ -802,7 +802,7 @@ export default {
   "legend242": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend243": {
     "name_en": "Hydrogen",
@@ -1002,7 +1002,7 @@ export default {
   "legend37": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend38": {
     "name_en": "Heat",
@@ -1012,7 +1012,7 @@ export default {
   "legend39": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend4": {
     "name_en": "Electricity",
@@ -1027,7 +1027,7 @@ export default {
   "legend41": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend42": {
     "name_en": "Diesel",
@@ -1097,12 +1097,12 @@ export default {
   "legend54": {
     "name_en": "Wind",
     "name_az": "Külək",
-    "color": "#d9d9ee"
+    "color": "#4695CE"
   },
   "legend55": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend56": {
     "name_en": "Marginal CO2",
@@ -1112,7 +1112,7 @@ export default {
   "legend57": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend58": {
     "name_en": "Fossil refineries",
@@ -1162,7 +1162,7 @@ export default {
   "legend66": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend67": {
     "name_en": "Electro fuels",
@@ -1292,7 +1292,7 @@ export default {
   "legend9": {
     "name_en": "Biofuels",
     "name_az": "Bioyanacaqlar",
-    "color": "#c8cacc"
+    "color": "#ACCC83"
   },
   "legend90": {
     "name_en": "Textile",
