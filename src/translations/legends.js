@@ -107,7 +107,7 @@ export default {
   "legend117": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend118": {
     "name_en": "Heat",
@@ -237,7 +237,7 @@ export default {
   "legend140": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend141": {
     "name_en": "Other",
@@ -282,7 +282,7 @@ export default {
   "legend149": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend15": {
     "name_en": "Commercial",
@@ -802,7 +802,7 @@ export default {
   "legend242": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend243": {
     "name_en": "Hydrogen",
@@ -1102,7 +1102,7 @@ export default {
   "legend55": {
     "name_en": "Waste",
     "name_az": "Tullantı",
-    "color": "#a7a9ab"
+    "color": "#65350F"
   },
   "legend56": {
     "name_en": "Marginal CO2",
