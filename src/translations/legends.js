@@ -944,10 +944,35 @@ export default {
     "name_az": "Nəqliyyat",
     "color": "#006eb6"
   },
+  "legend269": {
+    "name_en": "Hydrogen",
+    "name_az": "Hidrogen",
+    "color": "#ef403b"
+  },
   "legend27": {
     "name_en": "Heat",
     "name_az": "İstilik",
     "color": "#FFE67F"
+  },
+  "legend270": {
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
+  },
+  "legend271": {
+    "name_en": "Biofuels ",
+    "name_az": "Biofuels ",
+    "color": "#ACCC83"
+  },
+  "legend272": {
+    "name_en": "SNG",
+    "name_az": "SNG",
+    "color": "#D8E8C5"
+  },
+  "legend273": {
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
   },
   "legend28": {
     "name_en": "LPG",

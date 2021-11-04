@@ -98,31 +98,31 @@ export default {
           "legend152": [
             {
               "year": 2020,
-              "total": 0.159821623
+              "total": 0.1571571537
             },
             {
               "year": 2025,
-              "total": 0.1347615962
+              "total": 0.1321558703
             },
             {
               "year": 2030,
-              "total": 0.1238342686
+              "total": 0.12355138
             },
             {
               "year": 2035,
-              "total": 0.1131274579
+              "total": 0.1128749426
             },
             {
               "year": 2040,
-              "total": 0.0985294541
+              "total": 0.0983179129
             },
             {
               "year": 2045,
-              "total": 0.0928346473
+              "total": 0.0926619003
             },
             {
               "year": 2050,
-              "total": 0.0944588447
+              "total": 0.0944456768
             }
           ],
           "legend59": [
@@ -158,31 +158,31 @@ export default {
           "legend60": [
             {
               "year": 2020,
-              "total": 0.0314355546
+              "total": 0.0314587705
             },
             {
               "year": 2025,
-              "total": 0.0170435227
+              "total": 0.0169430756
             },
             {
               "year": 2030,
-              "total": 0.0152008087
+              "total": 0.0152002177
             },
             {
               "year": 2035,
-              "total": 0.0139192982
+              "total": 0.0139187072
             },
             {
               "year": 2040,
-              "total": 0.0110236876
+              "total": 0.0110234142
             },
             {
               "year": 2045,
-              "total": 0.0098069929
+              "total": 0.009805601
             },
             {
               "year": 2050,
-              "total": 0.009809779
+              "total": 0.0098083872
             }
           ]
         },
@@ -281,6 +281,36 @@ export default {
       },
       "chart-titles.tab06.chart02": {
         "AZ1": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend221": [
             {
               "year": 2020,
@@ -309,6 +339,36 @@ export default {
             {
               "year": 2050,
               "total": 2.3250270595
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend233": [
@@ -400,9 +460,99 @@ export default {
               "year": 2050,
               "total": 0.0
             }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         },
         "AZ2": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend221": [
             {
               "year": 2020,
@@ -431,6 +581,36 @@ export default {
             {
               "year": 2050,
               "total": 0.12916817
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend233": [
@@ -492,9 +672,99 @@ export default {
               "year": 2050,
               "total": 0.0522984523
             }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         },
         "AZ3": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend221": [
             {
               "year": 2020,
@@ -523,6 +793,36 @@ export default {
             {
               "year": 2050,
               "total": 0.12916817
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend233": [
@@ -583,6 +883,66 @@ export default {
             {
               "year": 2050,
               "total": 0.0522984523
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ]
         }
@@ -798,6 +1158,36 @@ export default {
               "year": 2050,
               "total": 0.0
             }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         },
         "AZ2": {
@@ -854,11 +1244,11 @@ export default {
             },
             {
               "year": 2045,
-              "total": 0.0194554247
+              "total": 0.019462491
             },
             {
               "year": 2050,
-              "total": 0.0198195075
+              "total": 0.0198265737
             }
           ],
           "legend231": [
@@ -868,7 +1258,7 @@ export default {
             },
             {
               "year": 2025,
-              "total": 0.0046031479
+              "total": 0.0046013621
             },
             {
               "year": 2030,
@@ -894,31 +1284,31 @@ export default {
           "legend233": [
             {
               "year": 2020,
-              "total": 0.1520299053
+              "total": 0.1521431026
             },
             {
               "year": 2025,
-              "total": 0.0827913579
+              "total": 0.0823015918
             },
             {
               "year": 2030,
-              "total": 0.0738712255
+              "total": 0.0738683435
             },
             {
               "year": 2035,
-              "total": 0.0673393188
+              "total": 0.0673364369
             },
             {
               "year": 2040,
-              "total": 0.0535196043
+              "total": 0.0535182713
             },
             {
               "year": 2045,
-              "total": 0.0477657829
+              "total": 0.0477589965
             },
             {
               "year": 2050,
-              "total": 0.047831115
+              "total": 0.0478243286
             }
           ],
           "legend245": [
@@ -928,7 +1318,7 @@ export default {
             },
             {
               "year": 2025,
-              "total": 0.1588612064
+              "total": 0.1593243018
             },
             {
               "year": 2030,
@@ -940,15 +1330,15 @@ export default {
             },
             {
               "year": 2040,
-              "total": 0.1955868792
+              "total": 0.1971178943
             },
             {
               "year": 2045,
-              "total": 0.2065118325
+              "total": 0.2065118319
             },
             {
               "year": 2050,
-              "total": 0.2173025429
+              "total": 0.2173025422
             }
           ],
           "legend257": [
@@ -975,6 +1365,36 @@ export default {
             {
               "year": 2045,
               "total": 4.672e-05
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
             },
             {
               "year": 2050,
@@ -1162,12 +1582,8 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ]
-        }
-      },
-      "chart-titles.tab06.chart04": {
-        "AZ1": {
-          "legend171": [
+          ],
+          "legend273": [
             {
               "year": 2020,
               "total": 0.0
@@ -1196,7 +1612,11 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ],
+          ]
+        }
+      },
+      "chart-titles.tab06.chart04": {
+        "AZ1": {
           "legend180": [
             {
               "year": 2020,
@@ -1287,6 +1707,36 @@ export default {
               "total": 17.1766307849
             }
           ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend245": [
             {
               "year": 2020,
@@ -1346,10 +1796,8 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ]
-        },
-        "AZ2": {
-          "legend171": [
+          ],
+          "legend273": [
             {
               "year": 2020,
               "total": 0.0
@@ -1378,7 +1826,9 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ],
+          ]
+        },
+        "AZ2": {
           "legend180": [
             {
               "year": 2020,
@@ -1386,23 +1836,23 @@ export default {
             },
             {
               "year": 2025,
-              "total": 0.029558067
+              "total": 0.02932612
             },
             {
               "year": 2030,
-              "total": 0.0564058957
+              "total": 0.0563194865
             },
             {
               "year": 2035,
-              "total": 0.0833435529
+              "total": 0.0832577339
             },
             {
               "year": 2040,
-              "total": 0.110411108
+              "total": 0.1103257347
             },
             {
               "year": 2045,
-              "total": 0.1100783595
+              "total": 0.109993301
             },
             {
               "year": 2050,
@@ -1442,57 +1892,87 @@ export default {
           "legend233": [
             {
               "year": 2020,
-              "total": 0.7785419575
+              "total": 0.7655503767
             },
             {
               "year": 2025,
-              "total": 0.6561691965
+              "total": 0.6434640403
             },
             {
               "year": 2030,
-              "total": 0.6030868005
+              "total": 0.6017074751
             },
             {
               "year": 2035,
-              "total": 0.5510796148
+              "total": 0.5498483855
             },
             {
               "year": 2040,
-              "total": 0.4800995138
+              "total": 0.4790680683
             },
             {
               "year": 2045,
-              "total": 0.4525618561
+              "total": 0.4517195661
             },
             {
               "year": 2050,
-              "total": 0.460568158
+              "total": 0.4605039532
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend245": [
             {
               "year": 2020,
-              "total": 0.1356229546
+              "total": 0.148212734
             },
             {
               "year": 2025,
-              "total": 0.1465231547
+              "total": 0.1591967286
             },
             {
               "year": 2030,
-              "total": 0.1584860433
+              "total": 0.1598351927
             },
             {
               "year": 2035,
-              "total": 0.1713533018
+              "total": 0.1736477595
             },
             {
               "year": 2040,
-              "total": 0.1882888348
+              "total": 0.1864990615
             },
             {
               "year": 2045,
-              "total": 0.2003947141
+              "total": 0.2014007467
             },
             {
               "year": 2050,
@@ -1528,10 +2008,8 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ]
-        },
-        "AZ3": {
-          "legend171": [
+          ],
+          "legend273": [
             {
               "year": 2020,
               "total": 0.0
@@ -1560,7 +2038,9 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ],
+          ]
+        },
+        "AZ3": {
           "legend180": [
             {
               "year": 2020,
@@ -1651,6 +2131,36 @@ export default {
               "total": 1.4701646195
             }
           ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend245": [
             {
               "year": 2020,
@@ -1710,6 +2220,36 @@ export default {
               "year": 2050,
               "total": 0.0
             }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         }
       },
@@ -1748,31 +2288,31 @@ export default {
           "legend59": [
             {
               "year": 2020,
-              "total": 0.0447747847
+              "total": 0.0089514232
             },
             {
               "year": 2025,
-              "total": 0.0399169535
+              "total": -0.0007733916
             },
             {
               "year": 2030,
-              "total": 0.0581332081
+              "total": -0.0010329192
             },
             {
               "year": 2035,
-              "total": 0.0508904364
+              "total": -0.0015684153
             },
             {
               "year": 2040,
-              "total": 0.0512509128
+              "total": -0.0015818746
             },
             {
               "year": 2045,
-              "total": 0.0513177141
+              "total": -0.0015959788
             },
             {
               "year": 2050,
-              "total": 0.0532551645
+              "total": -0.0016846419
             }
           ],
           "legend60": [
@@ -1810,91 +2350,91 @@ export default {
           "legend152": [
             {
               "year": 2020,
-              "total": -0.0018299664
+              "total": -0.0018867643
             },
             {
               "year": 2025,
-              "total": 0.0013167615
+              "total": 0.0012624757
             },
             {
               "year": 2030,
-              "total": 0.0043790224
+              "total": 0.0045168038
             },
             {
               "year": 2035,
-              "total": 0.0074392872
+              "total": 0.0075795257
             },
             {
               "year": 2040,
-              "total": 0.0106240523
+              "total": 0.0107859059
             },
             {
               "year": 2045,
-              "total": 0.0131740616
+              "total": 0.0133384664
             },
             {
               "year": 2050,
-              "total": 0.0144624021
+              "total": 0.0144512555
             }
           ],
           "legend59": [
             {
               "year": 2020,
-              "total": 0.0019531074
+              "total": -3.70794e-05
             },
             {
               "year": 2025,
-              "total": 0.0022176085
+              "total": -4.29662e-05
             },
             {
               "year": 2030,
-              "total": 0.0032296227
+              "total": -5.73844e-05
             },
             {
               "year": 2035,
-              "total": 0.0028272465
+              "total": -8.71342e-05
             },
             {
               "year": 2040,
-              "total": 0.0028472729
+              "total": -8.78819e-05
             },
             {
               "year": 2045,
-              "total": 0.0028509841
+              "total": -8.86655e-05
             },
             {
               "year": 2050,
-              "total": 0.0029594343
+              "total": -9.37811e-05
             }
           ],
           "legend60": [
             {
               "year": 2020,
-              "total": -0.0001017071
+              "total": -0.0001033916
             },
             {
               "year": 2025,
-              "total": 0.0014899136
+              "total": 0.0014900881
             },
             {
               "year": 2030,
-              "total": 0.0023467723
+              "total": 0.0023467038
             },
             {
               "year": 2035,
-              "total": 0.0031473522
+              "total": 0.0031472838
             },
             {
               "year": 2040,
-              "total": 0.0040720467
+              "total": 0.004072542
             },
             {
               "year": 2045,
-              "total": 0.0048259186
+              "total": 0.0048260002
             },
             {
               "year": 2050,
-              "total": 0.005565365
+              "total": 0.0055649239
             }
           ]
         },
@@ -1932,31 +2472,31 @@ export default {
           "legend59": [
             {
               "year": 2020,
-              "total": 0.0019531074
+              "total": -3.70794e-05
             },
             {
               "year": 2025,
-              "total": 0.0022176085
+              "total": -4.29662e-05
             },
             {
               "year": 2030,
-              "total": 0.0032296227
+              "total": -5.73844e-05
             },
             {
               "year": 2035,
-              "total": 0.0028272465
+              "total": -8.71342e-05
             },
             {
               "year": 2040,
-              "total": 0.0028472729
+              "total": -8.78819e-05
             },
             {
               "year": 2045,
-              "total": 0.0028509841
+              "total": -8.86655e-05
             },
             {
               "year": 2050,
-              "total": 0.0029594343
+              "total": -9.37811e-05
             }
           ],
           "legend60": [
@@ -2008,7 +2548,7 @@ export default {
             },
             {
               "year": 2030,
-              "total": 3.4230994589
+              "total": 3.4231255631
             },
             {
               "year": 2035,
@@ -2092,31 +2632,31 @@ export default {
           "legend152": [
             {
               "year": 2020,
-              "total": 0.159821623
+              "total": 0.1571571537
             },
             {
               "year": 2025,
-              "total": 0.0867915028
+              "total": 0.0867410832
             },
             {
               "year": 2030,
-              "total": 0.0776670583
+              "total": 0.0774321648
             },
             {
               "year": 2035,
-              "total": 0.077712747
+              "total": 0.0775173897
             },
             {
               "year": 2040,
-              "total": 0.0782786348
+              "total": 0.0781239897
             },
             {
               "year": 2045,
-              "total": 0.0740345523
+              "total": 0.0738870546
             },
             {
               "year": 2050,
-              "total": 0.0740923628
+              "total": 0.0740857817
             }
           ],
           "legend59": [
@@ -2152,7 +2692,7 @@ export default {
           "legend60": [
             {
               "year": 2020,
-              "total": 0.0314355546
+              "total": 0.0314587705
             },
             {
               "year": 2025,
@@ -2256,7 +2796,7 @@ export default {
             },
             {
               "year": 2035,
-              "total": 0.0120832427
+              "total": 0.0121077719
             },
             {
               "year": 2040,
@@ -2275,6 +2815,36 @@ export default {
       },
       "chart-titles.tab06.chart02": {
         "AZ1": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend221": [
             {
               "year": 2020,
@@ -2303,6 +2873,36 @@ export default {
             {
               "year": 2050,
               "total": 2.1792414135
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend233": [
@@ -2394,9 +2994,99 @@ export default {
               "year": 2050,
               "total": 0.0
             }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         },
         "AZ2": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend221": [
             {
               "year": 2020,
@@ -2425,6 +3115,36 @@ export default {
             {
               "year": 2050,
               "total": 0.1210689674
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend233": [
@@ -2486,9 +3206,99 @@ export default {
               "year": 2050,
               "total": 0.0522984523
             }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         },
         "AZ3": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend221": [
             {
               "year": 2020,
@@ -2517,6 +3327,36 @@ export default {
             {
               "year": 2050,
               "total": 0.1210689674
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend233": [
@@ -2577,6 +3417,66 @@ export default {
             {
               "year": 2050,
               "total": 0.0522485723
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ]
         }
@@ -2792,6 +3692,36 @@ export default {
               "year": 2050,
               "total": 0.0
             }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         },
         "AZ2": {
@@ -2832,7 +3762,7 @@ export default {
             },
             {
               "year": 2025,
-              "total": 0.0240056644
+              "total": 0.0240772271
             },
             {
               "year": 2030,
@@ -2888,7 +3818,7 @@ export default {
           "legend233": [
             {
               "year": 2020,
-              "total": 0.1520299053
+              "total": 0.1521431026
             },
             {
               "year": 2025,
@@ -2918,11 +3848,11 @@ export default {
           "legend245": [
             {
               "year": 2020,
-              "total": 0.153206396
+              "total": 0.1532063963
             },
             {
               "year": 2025,
-              "total": 0.1589327684
+              "total": 0.1588612057
             },
             {
               "year": 2030,
@@ -2965,6 +3895,36 @@ export default {
             {
               "year": 2040,
               "total": 7.82354e-05
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
             },
             {
               "year": 2045,
@@ -3022,7 +3982,7 @@ export default {
             },
             {
               "year": 2035,
-              "total": 0.1170414288
+              "total": 0.1169255271
             },
             {
               "year": 2040,
@@ -3082,7 +4042,7 @@ export default {
             },
             {
               "year": 2035,
-              "total": 0.0587350923
+              "total": 0.058854693
             },
             {
               "year": 2040,
@@ -3156,12 +4116,8 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ]
-        }
-      },
-      "chart-titles.tab06.chart04": {
-        "AZ1": {
-          "legend171": [
+          ],
+          "legend273": [
             {
               "year": 2020,
               "total": 0.0
@@ -3180,17 +4136,21 @@ export default {
             },
             {
               "year": 2040,
-              "total": 0.0215263148
+              "total": 0.0
             },
             {
               "year": 2045,
-              "total": 0.0262039366
+              "total": 0.0
             },
             {
               "year": 2050,
               "total": 0.0
             }
-          ],
+          ]
+        }
+      },
+      "chart-titles.tab06.chart04": {
+        "AZ1": {
           "legend180": [
             {
               "year": 2020,
@@ -3262,7 +4222,7 @@ export default {
             },
             {
               "year": 2030,
-              "total": 16.6827206213
+              "total": 16.682847902
             },
             {
               "year": 2035,
@@ -3279,6 +4239,36 @@ export default {
             {
               "year": 2050,
               "total": 17.1739667006
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend245": [
@@ -3340,10 +4330,8 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ]
-        },
-        "AZ2": {
-          "legend171": [
+          ],
+          "legend273": [
             {
               "year": 2020,
               "total": 0.0
@@ -3358,21 +4346,23 @@ export default {
             },
             {
               "year": 2035,
-              "total": 0.001671558
+              "total": 0.0
             },
             {
               "year": 2040,
-              "total": 0.0021077089
+              "total": 0.0215263148
             },
             {
               "year": 2045,
-              "total": 0.0021216484
+              "total": 0.0262039366
             },
             {
               "year": 2050,
               "total": 0.0
             }
-          ],
+          ]
+        },
+        "AZ2": {
           "legend180": [
             {
               "year": 2020,
@@ -3380,7 +4370,7 @@ export default {
             },
             {
               "year": 2025,
-              "total": 0.1690484932
+              "total": 0.1689769305
             },
             {
               "year": 2030,
@@ -3392,11 +4382,11 @@ export default {
             },
             {
               "year": 2040,
-              "total": 0.2497470929
+              "total": 0.2496102566
             },
             {
               "year": 2045,
-              "total": 0.4124342993
+              "total": 0.4123903346
             },
             {
               "year": 2050,
@@ -3436,57 +4426,87 @@ export default {
           "legend233": [
             {
               "year": 2020,
-              "total": 0.7785419575
+              "total": 0.7655503767
             },
             {
               "year": 2025,
-              "total": 0.4228299192
+              "total": 0.4225840805
             },
             {
               "year": 2030,
-              "total": 0.378417215
+              "total": 0.3772719067
             },
             {
               "year": 2035,
-              "total": 0.3787168017
+              "total": 0.3777642666
             },
             {
               "year": 2040,
-              "total": 0.3815528065
+              "total": 0.3807987788
             },
             {
               "year": 2045,
-              "total": 0.3609360669
+              "total": 0.3602168884
             },
             {
               "year": 2050,
-              "total": 0.3612640318
+              "total": 0.3612319432
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
             }
           ],
           "legend245": [
             {
               "year": 2020,
-              "total": 0.1356229546
+              "total": 0.148212734
             },
             {
               "year": 2025,
-              "total": 0.1465231547
+              "total": 0.146777137
             },
             {
               "year": 2030,
-              "total": 0.1584166268
+              "total": 0.1594696554
             },
             {
               "year": 2035,
-              "total": 0.1713297807
+              "total": 0.172193514
             },
             {
               "year": 2040,
-              "total": 0.1852853883
+              "total": 0.1862914208
             },
             {
               "year": 2045,
-              "total": 0.2003947141
+              "total": 0.2010773791
             },
             {
               "year": 2050,
@@ -3522,10 +4542,8 @@ export default {
               "year": 2050,
               "total": 0.0
             }
-          ]
-        },
-        "AZ3": {
-          "legend171": [
+          ],
+          "legend273": [
             {
               "year": 2020,
               "total": 0.0
@@ -3540,21 +4558,23 @@ export default {
             },
             {
               "year": 2035,
-              "total": 0.0
+              "total": 0.001671558
             },
             {
               "year": 2040,
-              "total": 0.001495885
+              "total": 0.0021077089
             },
             {
               "year": 2045,
-              "total": 0.0018987259
+              "total": 0.0021216484
             },
             {
               "year": 2050,
               "total": 0.0
             }
-          ],
+          ]
+        },
+        "AZ3": {
           "legend180": [
             {
               "year": 2020,
@@ -3645,6 +4665,36 @@ export default {
               "total": 1.3879005317
             }
           ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
           "legend245": [
             {
               "year": 2020,
@@ -3704,6 +4754,36 @@ export default {
               "year": 2050,
               "total": 0.0
             }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.001495885
+            },
+            {
+              "year": 2045,
+              "total": 0.0018987259
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
           ]
         }
       },
@@ -3720,53 +4800,53 @@ export default {
             },
             {
               "year": 2030,
-              "total": 0.3480192335
+              "total": 0.3480157364
             },
             {
               "year": 2035,
-              "total": 0.4394864111
+              "total": 0.4394863624
             },
             {
               "year": 2040,
-              "total": 0.5233457442
+              "total": 0.5233456954
             },
             {
               "year": 2045,
-              "total": 0.5790337827
+              "total": 0.5790337339
             },
             {
               "year": 2050,
-              "total": 0.6147661738
+              "total": 0.6147662403
             }
           ],
           "legend59": [
             {
               "year": 2020,
-              "total": 0.0479548803
+              "total": 0.0121315187
             },
             {
               "year": 2025,
-              "total": 0.0426118316
+              "total": 0.0025303599
             },
             {
               "year": 2030,
-              "total": 0.0852352708
+              "total": 0.001814575
             },
             {
               "year": 2035,
-              "total": 0.052693183
+              "total": 0.0018268956
             },
             {
               "year": 2040,
-              "total": 0.0529656832
+              "total": 0.0018387754
             },
             {
               "year": 2045,
-              "total": 0.0529373189
+              "total": 0.0018499936
             },
             {
               "year": 2050,
-              "total": 0.0557718461
+              "total": 0.0016311535
             }
           ],
           "legend60": [
@@ -3804,91 +4884,91 @@ export default {
           "legend152": [
             {
               "year": 2020,
-              "total": 0.0005866743
+              "total": 0.0004895497
             },
             {
               "year": 2025,
-              "total": 0.0062142025
+              "total": 0.0063726925
             },
             {
               "year": 2030,
-              "total": 0.0088182625
+              "total": 0.0089615537
             },
             {
               "year": 2035,
-              "total": 0.0108261623
+              "total": 0.0109732216
             },
             {
               "year": 2040,
-              "total": 0.0125825328
+              "total": 0.0127513788
             },
             {
               "year": 2045,
-              "total": 0.0127811389
+              "total": 0.0129314022
             },
             {
               "year": 2050,
-              "total": 0.0138166902
+              "total": 0.013811347
             }
           ],
           "legend59": [
             {
               "year": 2020,
-              "total": 0.0021297794
+              "total": 0.0001395926
             },
             {
               "year": 2025,
-              "total": 0.002367324
+              "total": 0.0001405756
             },
             {
               "year": 2030,
-              "total": 0.0047352928
+              "total": 0.0001008097
             },
             {
               "year": 2035,
-              "total": 0.0029273313
+              "total": 0.0001014942
             },
             {
               "year": 2040,
-              "total": 0.002942538
+              "total": 0.0001021542
             },
             {
               "year": 2045,
-              "total": 0.0029413415
+              "total": 0.0001027774
             },
             {
               "year": 2050,
-              "total": 0.0030994398
+              "total": 9.06196e-05
             }
           ],
           "legend60": [
             {
               "year": 2020,
-              "total": 0.0003702028
+              "total": 0.0003688697
             },
             {
               "year": 2025,
-              "total": 0.0024096953
+              "total": 0.0024085869
             },
             {
               "year": 2030,
-              "total": 0.003088813
+              "total": 0.0030874854
             },
             {
               "year": 2035,
-              "total": 0.0040112596
+              "total": 0.0040099321
             },
             {
               "year": 2040,
-              "total": 0.0045515689
+              "total": 0.0045514542
             },
             {
               "year": 2045,
-              "total": 0.0050791084
+              "total": 0.0050790931
             },
             {
               "year": 2050,
-              "total": 0.0057485086
+              "total": 0.0057485137
             }
           ]
         },
@@ -3926,31 +5006,31 @@ export default {
           "legend59": [
             {
               "year": 2020,
-              "total": 0.0021297794
+              "total": 0.0001395926
             },
             {
               "year": 2025,
-              "total": 0.002367324
+              "total": 0.0001405756
             },
             {
               "year": 2030,
-              "total": 0.0047352928
+              "total": 0.0001008097
             },
             {
               "year": 2035,
-              "total": 0.0029273313
+              "total": 0.0001014942
             },
             {
               "year": 2040,
-              "total": 0.002942538
+              "total": 0.0001021542
             },
             {
               "year": 2045,
-              "total": 0.0029413415
+              "total": 0.0001027774
             },
             {
               "year": 2050,
-              "total": 0.0030994398
+              "total": 9.06196e-05
             }
           ],
           "legend60": [
@@ -3968,19 +5048,5087 @@ export default {
             },
             {
               "year": 2035,
-              "total": 0.01218315
+              "total": 0.0121821413
             },
             {
               "year": 2040,
-              "total": 0.0140655751
+              "total": 0.0140655507
             },
             {
               "year": 2045,
-              "total": 0.0159265672
+              "total": 0.0159265428
             },
             {
               "year": 2050,
-              "total": 0.0186175185
+              "total": 0.0186174941
+            }
+          ]
+        }
+      }
+    }
+  },
+  "scenario2": {
+    "charts": {
+      "chart-titles.tab06.chart01": {
+        "AZ1": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 6.1655428585
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 1.1477563637
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 1.2794257303
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ2": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 0.1571571537
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0648472614
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 0.0314587705
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ3": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 0.5061304531
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0648472614
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 0.101038051
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart02": {
+        "AZ1": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0286556192
+            },
+            {
+              "year": 2030,
+              "total": 0.0279813467
+            },
+            {
+              "year": 2035,
+              "total": 0.0272926987
+            },
+            {
+              "year": 2040,
+              "total": 0.0002834791
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend221": [
+            {
+              "year": 2020,
+              "total": 2.3155900635
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 2.3560691218
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 1.0244956369
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 1.0348233816
+            },
+            {
+              "year": 2025,
+              "total": 1.4255735812
+            },
+            {
+              "year": 2030,
+              "total": 1.4343952536
+            },
+            {
+              "year": 2035,
+              "total": 1.4424867857
+            },
+            {
+              "year": 2040,
+              "total": 1.4446902246
+            },
+            {
+              "year": 2045,
+              "total": 0.9393298545
+            },
+            {
+              "year": 2050,
+              "total": 1.6883548463
+            }
+          ],
+          "legend255": [
+            {
+              "year": 2020,
+              "total": 1.0413643603
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 1.9308918119
+            },
+            {
+              "year": 2035,
+              "total": 2.2171238251
+            },
+            {
+              "year": 2040,
+              "total": 2.2256728398
+            },
+            {
+              "year": 2045,
+              "total": 2.8509283942
+            },
+            {
+              "year": 2050,
+              "total": 1.4208512964
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.6637321475
+            },
+            {
+              "year": 2030,
+              "total": 0.2949920656
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ2": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.001357345
+            }
+          ],
+          "legend221": [
+            {
+              "year": 2020,
+              "total": 0.186497468
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.1325231442
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.0569164243
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.0574901879
+            },
+            {
+              "year": 2025,
+              "total": 0.0799700335
+            },
+            {
+              "year": 2030,
+              "total": 0.1643581977
+            },
+            {
+              "year": 2035,
+              "total": 0.1639276591
+            },
+            {
+              "year": 2040,
+              "total": 0.1279268809
+            },
+            {
+              "year": 2045,
+              "total": 0.1008777785
+            },
+            {
+              "year": 2050,
+              "total": 0.0936535867
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 3.34106e-05
+            },
+            {
+              "year": 2035,
+              "total": 0.0104544367
+            },
+            {
+              "year": 2040,
+              "total": 0.0452829468
+            },
+            {
+              "year": 2045,
+              "total": 0.0789410125
+            },
+            {
+              "year": 2050,
+              "total": 0.0788118084
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0368740082
+            },
+            {
+              "year": 2030,
+              "total": 0.0104144728
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ3": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0015919788
+            },
+            {
+              "year": 2030,
+              "total": 0.0010442723
+            },
+            {
+              "year": 2035,
+              "total": 0.001516261
+            },
+            {
+              "year": 2040,
+              "total": 0.0014885744
+            },
+            {
+              "year": 2045,
+              "total": 0.0014534603
+            },
+            {
+              "year": 2050,
+              "total": 0.0014128062
+            }
+          ],
+          "legend221": [
+            {
+              "year": 2020,
+              "total": 0.186497468
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.130892729
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.0569164243
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.0537961678
+            },
+            {
+              "year": 2025,
+              "total": 0.0796943264
+            },
+            {
+              "year": 2030,
+              "total": 0.0804316756
+            },
+            {
+              "year": 2035,
+              "total": 0.0801381548
+            },
+            {
+              "year": 2040,
+              "total": 0.080260568
+            },
+            {
+              "year": 2045,
+              "total": 0.0521849919
+            },
+            {
+              "year": 2050,
+              "total": 0.0937974915
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.1072717673
+            },
+            {
+              "year": 2035,
+              "total": 0.1231735458
+            },
+            {
+              "year": 2040,
+              "total": 0.1221522874
+            },
+            {
+              "year": 2045,
+              "total": 0.156888707
+            },
+            {
+              "year": 2050,
+              "total": 0.0774664227
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0368740082
+            },
+            {
+              "year": 2030,
+              "total": 0.0163884481
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart03": {
+        "AZ1": {
+          "legend172": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 3.8385886221
+            },
+            {
+              "year": 2030,
+              "total": 3.8151707769
+            },
+            {
+              "year": 2035,
+              "total": 3.7929076889
+            },
+            {
+              "year": 2040,
+              "total": 3.7683352338
+            },
+            {
+              "year": 2045,
+              "total": 3.742162585
+            },
+            {
+              "year": 2050,
+              "total": 3.6441741941
+            }
+          ],
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.1267451417
+            },
+            {
+              "year": 2025,
+              "total": 0.8116103609
+            },
+            {
+              "year": 2030,
+              "total": 1.7806183254
+            },
+            {
+              "year": 2035,
+              "total": 1.9324911878
+            },
+            {
+              "year": 2040,
+              "total": 2.0476472598
+            },
+            {
+              "year": 2045,
+              "total": 2.1560982775
+            },
+            {
+              "year": 2050,
+              "total": 2.3367532226
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.1620587223
+            },
+            {
+              "year": 2025,
+              "total": 0.143651704
+            },
+            {
+              "year": 2030,
+              "total": 0.0715549731
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 6.2324355398
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 5.7961522131
+            },
+            {
+              "year": 2025,
+              "total": 6.256230522
+            },
+            {
+              "year": 2030,
+              "total": 6.7159774974
+            },
+            {
+              "year": 2035,
+              "total": 7.1759961225
+            },
+            {
+              "year": 2040,
+              "total": 7.6361739037
+            },
+            {
+              "year": 2045,
+              "total": 8.096351685
+            },
+            {
+              "year": 2050,
+              "total": 8.5565294662
+            }
+          ],
+          "legend255": [
+            {
+              "year": 2020,
+              "total": 0.0021830696
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0027359167
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.8101724398
+            },
+            {
+              "year": 2030,
+              "total": 0.0086898666
+            },
+            {
+              "year": 2035,
+              "total": 0.0086098205
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ2": {
+          "legend172": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0905928319
+            },
+            {
+              "year": 2030,
+              "total": 0.0898811771
+            },
+            {
+              "year": 2035,
+              "total": 0.0891611365
+            },
+            {
+              "year": 2040,
+              "total": 0.0884595582
+            },
+            {
+              "year": 2045,
+              "total": 0.0878510765
+            },
+            {
+              "year": 2050,
+              "total": 0.0791817057
+            }
+          ],
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0511753445
+            },
+            {
+              "year": 2030,
+              "total": 0.0555662732
+            },
+            {
+              "year": 2035,
+              "total": 0.0583292924
+            },
+            {
+              "year": 2040,
+              "total": 0.061719258
+            },
+            {
+              "year": 2045,
+              "total": 0.0640450094
+            },
+            {
+              "year": 2050,
+              "total": 0.074651407
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0069047218
+            },
+            {
+              "year": 2025,
+              "total": 0.0046031479
+            },
+            {
+              "year": 2030,
+              "total": 0.0015927252
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.1521431026
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.1532063963
+            },
+            {
+              "year": 2025,
+              "total": 0.1590052693
+            },
+            {
+              "year": 2030,
+              "total": 0.1710892818
+            },
+            {
+              "year": 2035,
+              "total": 0.183457688
+            },
+            {
+              "year": 2040,
+              "total": 0.1941533116
+            },
+            {
+              "year": 2045,
+              "total": 0.2058305237
+            },
+            {
+              "year": 2050,
+              "total": 0.2173025422
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0011244818
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0005081643
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ3": {
+          "legend172": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.3074422374
+            },
+            {
+              "year": 2030,
+              "total": 0.3055299698
+            },
+            {
+              "year": 2035,
+              "total": 0.3030528479
+            },
+            {
+              "year": 2040,
+              "total": 0.3000516091
+            },
+            {
+              "year": 2045,
+              "total": 0.2967067529
+            },
+            {
+              "year": 2050,
+              "total": 0.2833397407
+            }
+          ],
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.001752
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0376368452
+            },
+            {
+              "year": 2035,
+              "total": 0.1369090928
+            },
+            {
+              "year": 2040,
+              "total": 0.1656780668
+            },
+            {
+              "year": 2045,
+              "total": 0.1743618066
+            },
+            {
+              "year": 2050,
+              "total": 0.1930892238
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0192432699
+            },
+            {
+              "year": 2025,
+              "total": 0.0123935458
+            },
+            {
+              "year": 2030,
+              "total": 0.0060707409
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.4914019742
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.4663900877
+            },
+            {
+              "year": 2025,
+              "total": 0.5034021262
+            },
+            {
+              "year": 2030,
+              "total": 0.5403918614
+            },
+            {
+              "year": 2035,
+              "total": 0.5774020106
+            },
+            {
+              "year": 2040,
+              "total": 0.6144244887
+            },
+            {
+              "year": 2045,
+              "total": 0.6514469669
+            },
+            {
+              "year": 2050,
+              "total": 0.688469445
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0011244818
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.1308979008
+            },
+            {
+              "year": 2030,
+              "total": 0.1045136925
+            },
+            {
+              "year": 2035,
+              "total": 0.0200928099
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart04": {
+        "AZ1": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 1.2925993083
+            },
+            {
+              "year": 2025,
+              "total": 4.9082650199
+            },
+            {
+              "year": 2030,
+              "total": 5.4463538013
+            },
+            {
+              "year": 2035,
+              "total": 6.1062879183
+            },
+            {
+              "year": 2040,
+              "total": 6.7751431633
+            },
+            {
+              "year": 2045,
+              "total": 7.2537553541
+            },
+            {
+              "year": 2050,
+              "total": 7.3079212228
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0477499136
+            },
+            {
+              "year": 2025,
+              "total": 0.0751013311
+            },
+            {
+              "year": 2030,
+              "total": 0.0462162037
+            },
+            {
+              "year": 2035,
+              "total": 0.0173310764
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 30.0501394656
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0269715789
+            },
+            {
+              "year": 2030,
+              "total": 0.0165978947
+            },
+            {
+              "year": 2035,
+              "total": 0.0062242105
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 5.3733954925
+            },
+            {
+              "year": 2025,
+              "total": 7.1263479516
+            },
+            {
+              "year": 2030,
+              "total": 7.9427587531
+            },
+            {
+              "year": 2035,
+              "total": 9.235604342
+            },
+            {
+              "year": 2040,
+              "total": 10.5180504939
+            },
+            {
+              "year": 2045,
+              "total": 11.4015650658
+            },
+            {
+              "year": 2050,
+              "total": 11.4638118323
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0110039409
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 13.2946035106
+            },
+            {
+              "year": 2030,
+              "total": 12.1208480549
+            },
+            {
+              "year": 2035,
+              "total": 10.0585284999
+            },
+            {
+              "year": 2040,
+              "total": 8.2732210715
+            },
+            {
+              "year": 2045,
+              "total": 7.5698126697
+            },
+            {
+              "year": 2050,
+              "total": 8.8617906354
+            }
+          ]
+        },
+        "AZ2": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.141958235
+            },
+            {
+              "year": 2030,
+              "total": 0.1993631736
+            },
+            {
+              "year": 2035,
+              "total": 0.2006243812
+            },
+            {
+              "year": 2040,
+              "total": 0.1988010574
+            },
+            {
+              "year": 2045,
+              "total": 0.5158343276
+            },
+            {
+              "year": 2050,
+              "total": 0.6052385317
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0030184915
+            },
+            {
+              "year": 2025,
+              "total": 0.0021800216
+            },
+            {
+              "year": 2030,
+              "total": 0.0010010822
+            },
+            {
+              "year": 2035,
+              "total": 0.0003754058
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.7655503767
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0008051218
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.148212734
+            },
+            {
+              "year": 2025,
+              "total": 0.1805047188
+            },
+            {
+              "year": 2030,
+              "total": 0.3727917789
+            },
+            {
+              "year": 2035,
+              "total": 0.3916133929
+            },
+            {
+              "year": 2040,
+              "total": 0.3903547135
+            },
+            {
+              "year": 2045,
+              "total": 0.3770560805
+            },
+            {
+              "year": 2050,
+              "total": 0.3708354246
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0006554669
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.3394235849
+            },
+            {
+              "year": 2030,
+              "total": 0.1099597687
+            },
+            {
+              "year": 2035,
+              "total": 0.1196913936
+            },
+            {
+              "year": 2040,
+              "total": 0.1527610705
+            },
+            {
+              "year": 2045,
+              "total": 0.0133482561
+            },
+            {
+              "year": 2050,
+              "total": 0.0042598186
+            }
+          ]
+        },
+        "AZ3": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.2429215212
+            },
+            {
+              "year": 2030,
+              "total": 0.4443968175
+            },
+            {
+              "year": 2035,
+              "total": 0.4944642067
+            },
+            {
+              "year": 2040,
+              "total": 0.5810462015
+            },
+            {
+              "year": 2045,
+              "total": 0.676872063
+            },
+            {
+              "year": 2050,
+              "total": 0.7541914011
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0086838797
+            },
+            {
+              "year": 2025,
+              "total": 0.0062716909
+            },
+            {
+              "year": 2030,
+              "total": 0.0038595021
+            },
+            {
+              "year": 2035,
+              "total": 0.0014473133
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 2.4662261506
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0022811783
+            },
+            {
+              "year": 2030,
+              "total": 0.001403802
+            },
+            {
+              "year": 2035,
+              "total": 0.0005264258
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.4320946019
+            },
+            {
+              "year": 2025,
+              "total": 0.573104271
+            },
+            {
+              "year": 2030,
+              "total": 0.7389593072
+            },
+            {
+              "year": 2035,
+              "total": 0.7915355983
+            },
+            {
+              "year": 2040,
+              "total": 0.8473431281
+            },
+            {
+              "year": 2045,
+              "total": 0.9108629775
+            },
+            {
+              "year": 2050,
+              "total": 0.9715773031
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.001440392
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 1.2922961876
+            },
+            {
+              "year": 2030,
+              "total": 0.9039589443
+            },
+            {
+              "year": 2035,
+              "total": 0.8469581585
+            },
+            {
+              "year": 2040,
+              "total": 0.7865802638
+            },
+            {
+              "year": 2045,
+              "total": 0.7303344866
+            },
+            {
+              "year": 2050,
+              "total": 0.7488060347
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart05": {
+        "AZ1": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": -0.0866412298
+            },
+            {
+              "year": 2025,
+              "total": 0.2835228557
+            },
+            {
+              "year": 2030,
+              "total": 0.3662674025
+            },
+            {
+              "year": 2035,
+              "total": 0.4602912409
+            },
+            {
+              "year": 2040,
+              "total": 0.5454659351
+            },
+            {
+              "year": 2045,
+              "total": 0.5900851001
+            },
+            {
+              "year": 2050,
+              "total": 0.6238518378
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0089514232
+            },
+            {
+              "year": 2025,
+              "total": 0.0238544524
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": -0.0075712459
+            },
+            {
+              "year": 2025,
+              "total": 0.1266846404
+            },
+            {
+              "year": 2030,
+              "total": 0.152304844
+            },
+            {
+              "year": 2035,
+              "total": 0.1747084661
+            },
+            {
+              "year": 2040,
+              "total": 0.1937929655
+            },
+            {
+              "year": 2045,
+              "total": 0.2144832418
+            },
+            {
+              "year": 2050,
+              "total": 0.2487989684
+            }
+          ]
+        },
+        "AZ2": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": -0.0018867643
+            },
+            {
+              "year": 2025,
+              "total": 0.0077748237
+            },
+            {
+              "year": 2030,
+              "total": 0.0108686296
+            },
+            {
+              "year": 2035,
+              "total": 0.0117335222
+            },
+            {
+              "year": 2040,
+              "total": 0.0123322235
+            },
+            {
+              "year": 2045,
+              "total": 0.0116628666
+            },
+            {
+              "year": 2050,
+              "total": 0.0125525406
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": -3.70794e-05
+            },
+            {
+              "year": 2025,
+              "total": 0.0013447835
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": -0.0001033916
+            },
+            {
+              "year": 2025,
+              "total": 0.0029363501
+            },
+            {
+              "year": 2030,
+              "total": 0.0035200887
+            },
+            {
+              "year": 2035,
+              "total": 0.0040923354
+            },
+            {
+              "year": 2040,
+              "total": 0.0046114802
+            },
+            {
+              "year": 2045,
+              "total": 0.0051784339
+            },
+            {
+              "year": 2050,
+              "total": 0.0057926196
+            }
+          ]
+        },
+        "AZ3": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": -0.0058114387
+            },
+            {
+              "year": 2025,
+              "total": 0.0228034407
+            },
+            {
+              "year": 2030,
+              "total": 0.0293809467
+            },
+            {
+              "year": 2035,
+              "total": 0.0353054009
+            },
+            {
+              "year": 2040,
+              "total": 0.0401745646
+            },
+            {
+              "year": 2045,
+              "total": 0.0440904708
+            },
+            {
+              "year": 2050,
+              "total": 0.0466288
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": -3.70794e-05
+            },
+            {
+              "year": 2025,
+              "total": 0.0013252474
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": -0.0002648486
+            },
+            {
+              "year": 2025,
+              "total": 0.0098421495
+            },
+            {
+              "year": 2030,
+              "total": 0.0117877141
+            },
+            {
+              "year": 2035,
+              "total": 0.0138360835
+            },
+            {
+              "year": 2040,
+              "total": 0.0152274777
+            },
+            {
+              "year": 2045,
+              "total": 0.01681526
+            },
+            {
+              "year": 2050,
+              "total": 0.0192924874
+            }
+          ]
+        }
+      }
+    }
+  },
+  "scenario3": {
+    "charts": {
+      "chart-titles.tab06.chart01": {
+        "AZ1": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 6.1655428585
+            },
+            {
+              "year": 2025,
+              "total": 4.5713490966
+            },
+            {
+              "year": 2030,
+              "total": 4.308666107
+            },
+            {
+              "year": 2035,
+              "total": 3.6993981915
+            },
+            {
+              "year": 2040,
+              "total": 3.0962661889
+            },
+            {
+              "year": 2045,
+              "total": 2.7904734581
+            },
+            {
+              "year": 2050,
+              "total": 2.5873882533
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 1.1477563637
+            },
+            {
+              "year": 2025,
+              "total": 1.1821605995
+            },
+            {
+              "year": 2030,
+              "total": 1.0944371367
+            },
+            {
+              "year": 2035,
+              "total": 0.9016241549
+            },
+            {
+              "year": 2040,
+              "total": 0.9078236344
+            },
+            {
+              "year": 2045,
+              "total": 0.9137700133
+            },
+            {
+              "year": 2050,
+              "total": 0.8137434638
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 1.2794257303
+            },
+            {
+              "year": 2025,
+              "total": 0.4775739038
+            },
+            {
+              "year": 2030,
+              "total": 0.4447282225
+            },
+            {
+              "year": 2035,
+              "total": 0.3351878628
+            },
+            {
+              "year": 2040,
+              "total": 0.1003233677
+            },
+            {
+              "year": 2045,
+              "total": 0.0395190991
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ2": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 0.1571571537
+            },
+            {
+              "year": 2025,
+              "total": 0.1321048302
+            },
+            {
+              "year": 2030,
+              "total": 0.1138609886
+            },
+            {
+              "year": 2035,
+              "total": 0.0939025533
+            },
+            {
+              "year": 2040,
+              "total": 0.0786945635
+            },
+            {
+              "year": 2045,
+              "total": 0.0711540961
+            },
+            {
+              "year": 2050,
+              "total": 0.0619509988
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0648472614
+            },
+            {
+              "year": 2025,
+              "total": 0.0656755889
+            },
+            {
+              "year": 2030,
+              "total": 0.0608020632
+            },
+            {
+              "year": 2035,
+              "total": 0.0500902308
+            },
+            {
+              "year": 2040,
+              "total": 0.0504346464
+            },
+            {
+              "year": 2045,
+              "total": 0.0507650007
+            },
+            {
+              "year": 2050,
+              "total": 0.0452205159
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 0.0314587705
+            },
+            {
+              "year": 2025,
+              "total": 0.0135818436
+            },
+            {
+              "year": 2030,
+              "total": 0.0131416235
+            },
+            {
+              "year": 2035,
+              "total": 0.0105599248
+            },
+            {
+              "year": 2040,
+              "total": 0.0039101802
+            },
+            {
+              "year": 2045,
+              "total": 0.0010191077
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ3": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 0.5061304531
+            },
+            {
+              "year": 2025,
+              "total": 0.4194653601
+            },
+            {
+              "year": 2030,
+              "total": 0.3714312132
+            },
+            {
+              "year": 2035,
+              "total": 0.3022755903
+            },
+            {
+              "year": 2040,
+              "total": 0.2516562067
+            },
+            {
+              "year": 2045,
+              "total": 0.227894385
+            },
+            {
+              "year": 2050,
+              "total": 0.208693729
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0648472614
+            },
+            {
+              "year": 2025,
+              "total": 0.0656755889
+            },
+            {
+              "year": 2030,
+              "total": 0.0608020632
+            },
+            {
+              "year": 2035,
+              "total": 0.0500902308
+            },
+            {
+              "year": 2040,
+              "total": 0.0504346464
+            },
+            {
+              "year": 2045,
+              "total": 0.0507650007
+            },
+            {
+              "year": 2050,
+              "total": 0.0452205159
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 0.101038051
+            },
+            {
+              "year": 2025,
+              "total": 0.0413427774
+            },
+            {
+              "year": 2030,
+              "total": 0.0400998358
+            },
+            {
+              "year": 2035,
+              "total": 0.0363625874
+            },
+            {
+              "year": 2040,
+              "total": 0.0122564231
+            },
+            {
+              "year": 2045,
+              "total": 0.0031894077
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart02": {
+        "AZ1": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend221": [
+            {
+              "year": 2020,
+              "total": 2.3155900635
+            },
+            {
+              "year": 2025,
+              "total": 3.3805924528
+            },
+            {
+              "year": 2030,
+              "total": 3.0671467608
+            },
+            {
+              "year": 2035,
+              "total": 2.3851037545
+            },
+            {
+              "year": 2040,
+              "total": 2.4009752358
+            },
+            {
+              "year": 2045,
+              "total": 2.4159628697
+            },
+            {
+              "year": 2050,
+              "total": 2.3250270595
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 1.0244956369
+            },
+            {
+              "year": 2025,
+              "total": 1.0643324917
+            },
+            {
+              "year": 2030,
+              "total": 1.0723590014
+            },
+            {
+              "year": 2035,
+              "total": 1.0804096327
+            },
+            {
+              "year": 2040,
+              "total": 1.088572812
+            },
+            {
+              "year": 2045,
+              "total": 1.0967306376
+            },
+            {
+              "year": 2050,
+              "total": 0.7354345786
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 1.0348233816
+            },
+            {
+              "year": 2025,
+              "total": 0.9362165073
+            },
+            {
+              "year": 2030,
+              "total": 0.9353246761
+            },
+            {
+              "year": 2035,
+              "total": 0.9350035531
+            },
+            {
+              "year": 2040,
+              "total": 0.937206992
+            },
+            {
+              "year": 2045,
+              "total": 0.9393298545
+            },
+            {
+              "year": 2050,
+              "total": 0.9377369981
+            }
+          ],
+          "legend255": [
+            {
+              "year": 2020,
+              "total": 1.0413643603
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ2": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend221": [
+            {
+              "year": 2020,
+              "total": 0.186497468
+            },
+            {
+              "year": 2025,
+              "total": 0.1878106918
+            },
+            {
+              "year": 2030,
+              "total": 0.1703970423
+            },
+            {
+              "year": 2035,
+              "total": 0.1325057641
+            },
+            {
+              "year": 2040,
+              "total": 0.1333875131
+            },
+            {
+              "year": 2045,
+              "total": 0.1342201594
+            },
+            {
+              "year": 2050,
+              "total": 0.12916817
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.0569164243
+            },
+            {
+              "year": 2025,
+              "total": 0.0591295829
+            },
+            {
+              "year": 2030,
+              "total": 0.0595755001
+            },
+            {
+              "year": 2035,
+              "total": 0.0600227574
+            },
+            {
+              "year": 2040,
+              "total": 0.0604762673
+            },
+            {
+              "year": 2045,
+              "total": 0.0609294799
+            },
+            {
+              "year": 2050,
+              "total": 0.0409186476
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.0574901879
+            },
+            {
+              "year": 2025,
+              "total": 0.0520120282
+            },
+            {
+              "year": 2030,
+              "total": 0.051962482
+            },
+            {
+              "year": 2035,
+              "total": 0.0519446418
+            },
+            {
+              "year": 2040,
+              "total": 0.0520670551
+            },
+            {
+              "year": 2045,
+              "total": 0.0521849919
+            },
+            {
+              "year": 2050,
+              "total": 0.0522984523
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ3": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend221": [
+            {
+              "year": 2020,
+              "total": 0.186497468
+            },
+            {
+              "year": 2025,
+              "total": 0.1878106918
+            },
+            {
+              "year": 2030,
+              "total": 0.1703970423
+            },
+            {
+              "year": 2035,
+              "total": 0.1325057641
+            },
+            {
+              "year": 2040,
+              "total": 0.1333875131
+            },
+            {
+              "year": 2045,
+              "total": 0.1342201594
+            },
+            {
+              "year": 2050,
+              "total": 0.12916817
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.0569164243
+            },
+            {
+              "year": 2025,
+              "total": 0.0591295829
+            },
+            {
+              "year": 2030,
+              "total": 0.0595755001
+            },
+            {
+              "year": 2035,
+              "total": 0.0600227574
+            },
+            {
+              "year": 2040,
+              "total": 0.0604762673
+            },
+            {
+              "year": 2045,
+              "total": 0.0609294799
+            },
+            {
+              "year": 2050,
+              "total": 0.0409186476
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.0537961678
+            },
+            {
+              "year": 2025,
+              "total": 0.0520120282
+            },
+            {
+              "year": 2030,
+              "total": 0.051962482
+            },
+            {
+              "year": 2035,
+              "total": 0.0519446418
+            },
+            {
+              "year": 2040,
+              "total": 0.0520670551
+            },
+            {
+              "year": 2045,
+              "total": 0.0521849919
+            },
+            {
+              "year": 2050,
+              "total": 0.0522984523
+            }
+          ],
+          "legend269": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart03": {
+        "AZ1": {
+          "legend172": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 2.4871705749
+            },
+            {
+              "year": 2030,
+              "total": 2.645213614
+            },
+            {
+              "year": 2035,
+              "total": 2.7323010198
+            },
+            {
+              "year": 2040,
+              "total": 3.0404445757
+            },
+            {
+              "year": 2045,
+              "total": 3.0014130118
+            },
+            {
+              "year": 2050,
+              "total": 2.989120078
+            }
+          ],
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.1267451417
+            },
+            {
+              "year": 2025,
+              "total": 0.6058083264
+            },
+            {
+              "year": 2030,
+              "total": 0.580459298
+            },
+            {
+              "year": 2035,
+              "total": 0.938735571
+            },
+            {
+              "year": 2040,
+              "total": 1.5239529416
+            },
+            {
+              "year": 2045,
+              "total": 1.7245890022
+            },
+            {
+              "year": 2050,
+              "total": 1.7712369458
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.1620587223
+            },
+            {
+              "year": 2025,
+              "total": 0.1080391482
+            },
+            {
+              "year": 2030,
+              "total": 0.0755738438
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 6.2324355398
+            },
+            {
+              "year": 2025,
+              "total": 2.3275747075
+            },
+            {
+              "year": 2030,
+              "total": 2.1676339673
+            },
+            {
+              "year": 2035,
+              "total": 1.6325285459
+            },
+            {
+              "year": 2040,
+              "total": 0.4881782937
+            },
+            {
+              "year": 2045,
+              "total": 0.19252144
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 5.7961522131
+            },
+            {
+              "year": 2025,
+              "total": 5.6398426998
+            },
+            {
+              "year": 2030,
+              "total": 5.7225603138
+            },
+            {
+              "year": 2035,
+              "total": 5.6705131129
+            },
+            {
+              "year": 2040,
+              "total": 5.5606899075
+            },
+            {
+              "year": 2045,
+              "total": 5.3930431265
+            },
+            {
+              "year": 2050,
+              "total": 5.16757277
+            }
+          ],
+          "legend255": [
+            {
+              "year": 2020,
+              "total": 0.0021830696
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0027359167
+            },
+            {
+              "year": 2025,
+              "total": 0.00091104
+            },
+            {
+              "year": 2030,
+              "total": 0.00072124
+            },
+            {
+              "year": 2035,
+              "total": 0.0016258067
+            },
+            {
+              "year": 2040,
+              "total": 0.0008888233
+            },
+            {
+              "year": 2045,
+              "total": 0.00015184
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ2": {
+          "legend172": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0722370381
+            },
+            {
+              "year": 2030,
+              "total": 0.073405017
+            },
+            {
+              "year": 2035,
+              "total": 0.0748006958
+            },
+            {
+              "year": 2040,
+              "total": 0.0809232508
+            },
+            {
+              "year": 2045,
+              "total": 0.0797448612
+            },
+            {
+              "year": 2050,
+              "total": 0.0747586257
+            }
+          ],
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0014895547
+            },
+            {
+              "year": 2030,
+              "total": 0.002234332
+            },
+            {
+              "year": 2035,
+              "total": 0.011406039
+            },
+            {
+              "year": 2040,
+              "total": 0.0307819326
+            },
+            {
+              "year": 2045,
+              "total": 0.0430327733
+            },
+            {
+              "year": 2050,
+              "total": 0.0498176922
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0069047218
+            },
+            {
+              "year": 2025,
+              "total": 0.0046031479
+            },
+            {
+              "year": 2030,
+              "total": 0.0023015739
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.1521431026
+            },
+            {
+              "year": 2025,
+              "total": 0.0659126931
+            },
+            {
+              "year": 2030,
+              "total": 0.0638309254
+            },
+            {
+              "year": 2035,
+              "total": 0.0509594822
+            },
+            {
+              "year": 2040,
+              "total": 0.0188511087
+            },
+            {
+              "year": 2045,
+              "total": 0.00491728
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.1532063963
+            },
+            {
+              "year": 2025,
+              "total": 0.143607159
+            },
+            {
+              "year": 2030,
+              "total": 0.1458047379
+            },
+            {
+              "year": 2035,
+              "total": 0.1444784333
+            },
+            {
+              "year": 2040,
+              "total": 0.1438108007
+            },
+            {
+              "year": 2045,
+              "total": 0.1378272939
+            },
+            {
+              "year": 2050,
+              "total": 0.1312294397
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0011244818
+            },
+            {
+              "year": 2025,
+              "total": 0.00028032
+            },
+            {
+              "year": 2030,
+              "total": 0.00022192
+            },
+            {
+              "year": 2035,
+              "total": 0.0004778247
+            },
+            {
+              "year": 2040,
+              "total": 0.0001935578
+            },
+            {
+              "year": 2045,
+              "total": 4.672e-05
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ3": {
+          "legend172": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.2243404779
+            },
+            {
+              "year": 2030,
+              "total": 0.2280848589
+            },
+            {
+              "year": 2035,
+              "total": 0.2303473516
+            },
+            {
+              "year": 2040,
+              "total": 0.2540254705
+            },
+            {
+              "year": 2045,
+              "total": 0.2503038476
+            },
+            {
+              "year": 2050,
+              "total": 0.248349045
+            }
+          ],
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.001752
+            },
+            {
+              "year": 2025,
+              "total": 0.0042558704
+            },
+            {
+              "year": 2030,
+              "total": 0.0063838057
+            },
+            {
+              "year": 2035,
+              "total": 0.0196438067
+            },
+            {
+              "year": 2040,
+              "total": 0.0942041249
+            },
+            {
+              "year": 2045,
+              "total": 0.1318917721
+            },
+            {
+              "year": 2050,
+              "total": 0.1367635151
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0192432699
+            },
+            {
+              "year": 2025,
+              "total": 0.0128288466
+            },
+            {
+              "year": 2030,
+              "total": 0.0064144233
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.4914019742
+            },
+            {
+              "year": 2025,
+              "total": 0.2012711365
+            },
+            {
+              "year": 2030,
+              "total": 0.1952754102
+            },
+            {
+              "year": 2035,
+              "total": 0.1771177918
+            },
+            {
+              "year": 2040,
+              "total": 0.0596107977
+            },
+            {
+              "year": 2045,
+              "total": 0.01549936
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.4663900877
+            },
+            {
+              "year": 2025,
+              "total": 0.4538161105
+            },
+            {
+              "year": 2030,
+              "total": 0.4604685593
+            },
+            {
+              "year": 2035,
+              "total": 0.4562789572
+            },
+            {
+              "year": 2040,
+              "total": 0.4474412449
+            },
+            {
+              "year": 2045,
+              "total": 0.4339518608
+            },
+            {
+              "year": 2050,
+              "total": 0.4158108049
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0011244818
+            },
+            {
+              "year": 2025,
+              "total": 0.00028032
+            },
+            {
+              "year": 2030,
+              "total": 0.00022192
+            },
+            {
+              "year": 2035,
+              "total": 0.00016352
+            },
+            {
+              "year": 2040,
+              "total": 0.0001352588
+            },
+            {
+              "year": 2045,
+              "total": 4.672e-05
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart04": {
+        "AZ1": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 1.2925993083
+            },
+            {
+              "year": 2025,
+              "total": 2.6100120996
+            },
+            {
+              "year": 2030,
+              "total": 2.1345889696
+            },
+            {
+              "year": 2035,
+              "total": 3.0923201536
+            },
+            {
+              "year": 2040,
+              "total": 4.0737974567
+            },
+            {
+              "year": 2045,
+              "total": 4.0224948029
+            },
+            {
+              "year": 2050,
+              "total": 4.304666606
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0477499136
+            },
+            {
+              "year": 2025,
+              "total": 0.0751013311
+            },
+            {
+              "year": 2030,
+              "total": 0.0330534995
+            },
+            {
+              "year": 2035,
+              "total": 0.0123950623
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 30.0501394656
+            },
+            {
+              "year": 2025,
+              "total": 22.2669560138
+            },
+            {
+              "year": 2030,
+              "total": 20.9866251806
+            },
+            {
+              "year": 2035,
+              "total": 18.0219836753
+            },
+            {
+              "year": 2040,
+              "total": 15.0872600257
+            },
+            {
+              "year": 2045,
+              "total": 13.6023710464
+            },
+            {
+              "year": 2050,
+              "total": 12.6157444136
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 5.3733954925
+            },
+            {
+              "year": 2025,
+              "total": 5.2351796522
+            },
+            {
+              "year": 2030,
+              "total": 5.3449756124
+            },
+            {
+              "year": 2035,
+              "total": 5.3562039796
+            },
+            {
+              "year": 2040,
+              "total": 5.335385698
+            },
+            {
+              "year": 2045,
+              "total": 5.2762639991
+            },
+            {
+              "year": 2050,
+              "total": 5.1720741676
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0110039409
+            },
+            {
+              "year": 2025,
+              "total": 0.0201380251
+            },
+            {
+              "year": 2030,
+              "total": 0.0197093478
+            },
+            {
+              "year": 2035,
+              "total": 0.014234529
+            },
+            {
+              "year": 2040,
+              "total": 0.0087597102
+            },
+            {
+              "year": 2045,
+              "total": 0.0032398989
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ2": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0293839495
+            },
+            {
+              "year": 2030,
+              "total": 0.0538560275
+            },
+            {
+              "year": 2035,
+              "total": 0.0783281055
+            },
+            {
+              "year": 2040,
+              "total": 0.1029440684
+            },
+            {
+              "year": 2045,
+              "total": 0.1046486506
+            },
+            {
+              "year": 2050,
+              "total": 0.1663173087
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0030184915
+            },
+            {
+              "year": 2025,
+              "total": 0.0021800216
+            },
+            {
+              "year": 2030,
+              "total": 0.0010010822
+            },
+            {
+              "year": 2035,
+              "total": 0.0003444396
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 0.7655503767
+            },
+            {
+              "year": 2025,
+              "total": 0.6432151755
+            },
+            {
+              "year": 2030,
+              "total": 0.5544584776
+            },
+            {
+              "year": 2035,
+              "total": 0.4573416601
+            },
+            {
+              "year": 2040,
+              "total": 0.3833873525
+            },
+            {
+              "year": 2045,
+              "total": 0.3468505112
+            },
+            {
+              "year": 2050,
+              "total": 0.3020644335
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.148212734
+            },
+            {
+              "year": 2025,
+              "total": 0.1331865965
+            },
+            {
+              "year": 2030,
+              "total": 0.1359903695
+            },
+            {
+              "year": 2035,
+              "total": 0.1362929031
+            },
+            {
+              "year": 2040,
+              "total": 0.1359879446
+            },
+            {
+              "year": 2045,
+              "total": 0.1343680289
+            },
+            {
+              "year": 2050,
+              "total": 0.1306592399
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.0006554669
+            },
+            {
+              "year": 2025,
+              "total": 0.0008211982
+            },
+            {
+              "year": 2030,
+              "total": 0.0006426769
+            },
+            {
+              "year": 2035,
+              "total": 0.0004641555
+            },
+            {
+              "year": 2040,
+              "total": 0.0002856342
+            },
+            {
+              "year": 2045,
+              "total": 7.84958e-05
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        },
+        "AZ3": {
+          "legend180": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0918551709
+            },
+            {
+              "year": 2030,
+              "total": 0.1693122685
+            },
+            {
+              "year": 2035,
+              "total": 0.2467693661
+            },
+            {
+              "year": 2040,
+              "total": 0.3249312796
+            },
+            {
+              "year": 2045,
+              "total": 0.328587349
+            },
+            {
+              "year": 2050,
+              "total": 0.3804031456
+            }
+          ],
+          "legend231": [
+            {
+              "year": 2020,
+              "total": 0.0086838797
+            },
+            {
+              "year": 2025,
+              "total": 0.0062716909
+            },
+            {
+              "year": 2030,
+              "total": 0.0028380935
+            },
+            {
+              "year": 2035,
+              "total": 0.0010642851
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend233": [
+            {
+              "year": 2020,
+              "total": 2.4662261506
+            },
+            {
+              "year": 2025,
+              "total": 2.0429262083
+            },
+            {
+              "year": 2030,
+              "total": 1.8092245803
+            },
+            {
+              "year": 2035,
+              "total": 1.4725375803
+            },
+            {
+              "year": 2040,
+              "total": 1.2262306985
+            },
+            {
+              "year": 2045,
+              "total": 1.1109409373
+            },
+            {
+              "year": 2050,
+              "total": 1.0175615283
+            }
+          ],
+          "legend241": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend245": [
+            {
+              "year": 2020,
+              "total": 0.4320946019
+            },
+            {
+              "year": 2025,
+              "total": 0.4209827776
+            },
+            {
+              "year": 2030,
+              "total": 0.4298159676
+            },
+            {
+              "year": 2035,
+              "total": 0.4307252218
+            },
+            {
+              "year": 2040,
+              "total": 0.4290476219
+            },
+            {
+              "year": 2045,
+              "total": 0.4242938423
+            },
+            {
+              "year": 2050,
+              "total": 0.4159157892
+            }
+          ],
+          "legend257": [
+            {
+              "year": 2020,
+              "total": 0.001440392
+            },
+            {
+              "year": 2025,
+              "total": 0.0021022107
+            },
+            {
+              "year": 2030,
+              "total": 0.0016452084
+            },
+            {
+              "year": 2035,
+              "total": 0.0011882061
+            },
+            {
+              "year": 2040,
+              "total": 0.0007312037
+            },
+            {
+              "year": 2045,
+              "total": 0.0002169673
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ],
+          "legend273": [
+            {
+              "year": 2020,
+              "total": 0.0
+            },
+            {
+              "year": 2025,
+              "total": 0.0
+            },
+            {
+              "year": 2030,
+              "total": 0.0
+            },
+            {
+              "year": 2035,
+              "total": 0.0
+            },
+            {
+              "year": 2040,
+              "total": 0.0
+            },
+            {
+              "year": 2045,
+              "total": 0.0
+            },
+            {
+              "year": 2050,
+              "total": 0.0
+            }
+          ]
+        }
+      },
+      "chart-titles.tab06.chart05": {
+        "AZ1": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 0.0066361945
+            },
+            {
+              "year": 2025,
+              "total": 0.1211942654
+            },
+            {
+              "year": 2030,
+              "total": 0.2040599831
+            },
+            {
+              "year": 2035,
+              "total": 0.2880472044
+            },
+            {
+              "year": 2040,
+              "total": 0.3707552106
+            },
+            {
+              "year": 2045,
+              "total": 0.4189222112
+            },
+            {
+              "year": 2050,
+              "total": 0.4269870973
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0121315187
+            },
+            {
+              "year": 2025,
+              "total": 0.0025303599
+            },
+            {
+              "year": 2030,
+              "total": 0.0022957471
+            },
+            {
+              "year": 2035,
+              "total": 0.0017852406
+            },
+            {
+              "year": 2040,
+              "total": 0.0017971203
+            },
+            {
+              "year": 2045,
+              "total": 0.0018083385
+            },
+            {
+              "year": 2050,
+              "total": 0.0017402734
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 0.0117746055
+            },
+            {
+              "year": 2025,
+              "total": 0.0626265512
+            },
+            {
+              "year": 2030,
+              "total": 0.0844479285
+            },
+            {
+              "year": 2035,
+              "total": 0.1043202083
+            },
+            {
+              "year": 2040,
+              "total": 0.1284730296
+            },
+            {
+              "year": 2045,
+              "total": 0.1436446972
+            },
+            {
+              "year": 2050,
+              "total": 0.1624433733
+            }
+          ]
+        },
+        "AZ2": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 0.0004895497
+            },
+            {
+              "year": 2025,
+              "total": 0.0028738745
+            },
+            {
+              "year": 2030,
+              "total": 0.0053556437
+            },
+            {
+              "year": 2035,
+              "total": 0.0077865852
+            },
+            {
+              "year": 2040,
+              "total": 0.009584967
+            },
+            {
+              "year": 2045,
+              "total": 0.0108000895
+            },
+            {
+              "year": 2050,
+              "total": 0.0104908143
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0001395926
+            },
+            {
+              "year": 2025,
+              "total": 0.0001405756
+            },
+            {
+              "year": 2030,
+              "total": 0.0001275415
+            },
+            {
+              "year": 2035,
+              "total": 9.918e-05
+            },
+            {
+              "year": 2040,
+              "total": 9.984e-05
+            },
+            {
+              "year": 2045,
+              "total": 0.0001004633
+            },
+            {
+              "year": 2050,
+              "total": 9.66819e-05
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 0.0003688697
+            },
+            {
+              "year": 2025,
+              "total": 0.0016565247
+            },
+            {
+              "year": 2030,
+              "total": 0.0021618989
+            },
+            {
+              "year": 2035,
+              "total": 0.0026665146
+            },
+            {
+              "year": 2040,
+              "total": 0.0032765458
+            },
+            {
+              "year": 2045,
+              "total": 0.0036878365
+            },
+            {
+              "year": 2050,
+              "total": 0.0040467648
+            }
+          ]
+        },
+        "AZ3": {
+          "legend152": [
+            {
+              "year": 2020,
+              "total": 0.0018438743
+            },
+            {
+              "year": 2025,
+              "total": 0.0087079441
+            },
+            {
+              "year": 2030,
+              "total": 0.0158335365
+            },
+            {
+              "year": 2035,
+              "total": 0.0240907864
+            },
+            {
+              "year": 2040,
+              "total": 0.02996714
+            },
+            {
+              "year": 2045,
+              "total": 0.0339001355
+            },
+            {
+              "year": 2050,
+              "total": 0.034302235
+            }
+          ],
+          "legend59": [
+            {
+              "year": 2020,
+              "total": 0.0001395926
+            },
+            {
+              "year": 2025,
+              "total": 0.0001405756
+            },
+            {
+              "year": 2030,
+              "total": 0.0001275415
+            },
+            {
+              "year": 2035,
+              "total": 9.918e-05
+            },
+            {
+              "year": 2040,
+              "total": 9.984e-05
+            },
+            {
+              "year": 2045,
+              "total": 0.0001004633
+            },
+            {
+              "year": 2050,
+              "total": 9.66819e-05
+            }
+          ],
+          "legend60": [
+            {
+              "year": 2020,
+              "total": 0.0012604925
+            },
+            {
+              "year": 2025,
+              "total": 0.0052961789
+            },
+            {
+              "year": 2030,
+              "total": 0.0068967766
+            },
+            {
+              "year": 2035,
+              "total": 0.0082965831
+            },
+            {
+              "year": 2040,
+              "total": 0.0101088527
+            },
+            {
+              "year": 2045,
+              "total": 0.0114016681
+            },
+            {
+              "year": 2050,
+              "total": 0.0129153489
             }
           ]
         }
