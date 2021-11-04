@@ -56,8 +56,8 @@ const StackedBarChart = props => {
     gutter = 0
     rowGutter = 0
   } else {
-    gutter = -40
-    rowGutter = -5
+    gutter = 0
+    rowGutter = 0
   }
 
   let maxY2 = 1
