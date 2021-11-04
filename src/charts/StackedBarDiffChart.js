@@ -74,8 +74,8 @@ const StackedBarChart = props => {
     yDomain = stackedRatio < lineRatio ? [stackedRatio, 1] : [lineRatio, 1]
   }
 
-  const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries)
-  const dataScenario2 = createAccumulatedData(stackedBar, scenario2, false, chartName, selectedCountries)
+  const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries, unitFactor)
+  const dataScenario2 = createAccumulatedData(stackedBar, scenario2, false, chartName, selectedCountries, unitFactor)
   const accumulatedDataScenario1 = dataScenario1[0]
   const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
   let diffData = JSON.parse(JSON.stringify(accumulatedDataScenario1))
@@ -167,7 +167,7 @@ const StackedBarChart = props => {
       );
     };
   let legends = new Set()
-  //console.log("accum1: ", accumulatedDataScenario1)
+  console.log("accum1: ", accumulatedDataScenario1)
   //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
     let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
@@ -217,7 +217,7 @@ const StackedBarChart = props => {
                 '%'
               )
             }
-            return ((unitFactor * tick * base) / props.divideValues).toLocaleString()
+            return ((tick * base) / props.divideValues).toLocaleString()
           }}
           tickValues={getTickValues()}
           label={unit}
@@ -261,7 +261,7 @@ const StackedBarChart = props => {
                           (chartGroupValue.total * 100) /
                           props.divideValues
                         ).toFixed(0) + '%'
-                      : Math.round(unitFactor * chartGroupValue.total / props.divideValues * 100, 2)/100
+                      : Math.round(chartGroupValue.total / props.divideValues * 100, 2)/100
                         ),
                 }))}
                 x="year"
