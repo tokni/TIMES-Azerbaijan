@@ -19,7 +19,7 @@ export default class Root extends Component {
         maxAge={1}
       >
         <Router>
-          <App />
+          <App /> 
           <GlobalStyle />
         </Router>
       </Auth0Provider>
