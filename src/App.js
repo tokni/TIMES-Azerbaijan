@@ -24,6 +24,7 @@ if(process.env.NODE_ENV === 'development'){
   dev = true
   console.log("developement build")
 }
+if(process.env.REACT_APP_VERCEL_GIT_COMMIT_REF === "internal") dev = true
   
 else if (process.env.NODE_ENV === 'production')
   console.log("production build")
