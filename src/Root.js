@@ -13,8 +13,8 @@ export default class Root extends Component {
         clientId="5RpAOZpRIdNCf8oHfu77DhHvzpKwH8FF"
         redirectUri={
           process.env.NODE_ENV === 'development' ? 
-          "http://localhost:3000" : 
-          "https://develop--times-azerbaijan.vercel.app/"
+          "http://localhost:3000" : process.env.REACT_APP_VERCEL_GIT_COMMIT_REF === "internal" ? "https://internal--times-azerbaijan.vercel.app/"
+          : "https://develop--times-azerbaijan.vercel.app/"
           }
         maxAge={1}
       >
