@@ -19,7 +19,7 @@ import unitSettings from "./translations/units"
 const createRoutes = Object.entries(tabsList)
 
 let dev = false
-
+console.log("proccess.env: ", process.env)
 if(process.env.NODE_ENV === 'development'){
   dev = true
   console.log("developement build")
