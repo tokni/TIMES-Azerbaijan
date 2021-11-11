@@ -317,6 +317,7 @@ function ScenarioSelectionMenu(props) {
     dev = true
     console.log("developement build")
   }
+  if(process.env.REACT_APP_VERCEL_GIT_COMMIT_REF === "internal") dev = true
   /* console.log("this.props: ", this.props)
       console.log("this.props.match.params: ", queryString.parse(this.props.location.search).error_description )
       let params = queryString.parse(this.props.location.search)
