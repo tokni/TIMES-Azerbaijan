@@ -198,31 +198,31 @@ export default {
         "opt1": false
       }
     ],
-		"optionsAvailable": {
-			"scenario0": {
-				"opt0": true,
-				"opt1": true
-			},
-			"scenario0_copy": {
-				"opt0": true,
-				"opt1": true
-			},
-			"scenario1": {
-				"opt0": true,
-				"opt1": false
-			},
-			"scenario1_copy": {
-				"opt0": true,
-				"opt1": false
-			},
-			"scenario2": {
-				"opt0": false,
-				"opt1": false
-			},
-			"scenario3": {
-				"opt0": false,
-				"opt1": false
-			}
-  	}
+    "optionsAvailable": {
+      "scenario0": {
+        "opt0": true,
+        "opt1": true
+      },
+      "scenario0_copy": {
+        "opt0": true,
+        "opt1": true
+      },
+      "scenario1": {
+        "opt0": true,
+        "opt1": false
+      },
+      "scenario1_copy": {
+        "opt0": true,
+        "opt1": false
+      },
+      "scenario2": {
+        "opt0": false,
+        "opt1": false
+      },
+      "scenario3": {
+        "opt0": false,
+        "opt1": false
+      }
+    }
   }
 }
