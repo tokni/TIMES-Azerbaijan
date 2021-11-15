@@ -295,7 +295,6 @@ return(<div>No DAta yet</div>)
         
         <VictoryGroup offset={15} style={{ data: { width: 15 } }}>
           <VictoryStack>
-            {console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)}
             {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => {
             //console.log("chartGroupName: ", chartGroupName)
             return(

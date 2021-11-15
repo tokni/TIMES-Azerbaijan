@@ -68,9 +68,14 @@ const ScenarioSelectionList = props => {
   let scenarioOptions = OptionDisplay.map((option, i) => {
       //console.log("ssl option---------------------------: ", option)
       let optionValue = option.id_noOptions
+      //console.log("optionValue---------------------------: ", optionValue)
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
       } else {
+        //console.log('option["desc_" + i18next.language]: ', option["desc_" + i18next.language])
+        //console.log('option["short_description_" + i18next.language]: ', option["short_description_" + i18next.language])
+        //console.log('option["ultra_short_description_" + i18next.language]: ', option["ultra_short_description_" + i18next.language])
+        //console.log("scenarioCombinations: ", scenarioCombinations)
         return (
           <ScenarioOption
             key={option.id}
