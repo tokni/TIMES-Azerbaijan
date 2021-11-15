@@ -127,7 +127,7 @@ const ScenarioSelectionList = props => {
                 }
                 selected={scenarioSwitches[optionValue].opt0}
               >
-                <FontAwesomeIcon icon={faDatabase} />
+                <FontAwesomeIcon icon={faLeaf} />
               </Icon>}
               {scenarioCombinations.optionsAvailable[optionValue].opt1 && <Icon
                 available={
@@ -148,7 +148,7 @@ const ScenarioSelectionList = props => {
                 }
                 selected={scenarioSwitches[optionValue].opt1}
               >
-                <FontAwesomeIcon icon={faLeaf} />
+                <FontAwesomeIcon icon={faDatabase} />
               </Icon>}
               {scenarioCombinations.optionsAvailable[optionValue].opt2 && <Icon
                 available={
