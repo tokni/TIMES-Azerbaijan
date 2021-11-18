@@ -1149,45 +1149,10 @@ export default {
     "name_az": "Geothermal",
     "color": "#87898c"
   },
-  "legend305": {
-    "name_en": "Savings",
-    "name_az": "Savings",
-    "color": "#87898c"
-  },
-  "legend306": {
-    "name_en": "Savings",
-    "name_az": "Savings",
-    "color": "#87898c"
-  },
-  "legend307": {
-    "name_en": "Savings",
-    "name_az": "Savings",
-    "color": "#87898c"
-  },
-  "legend308": {
-    "name_en": "Savings",
-    "name_az": "Savings",
-    "color": "#87898c"
-  },
-  "legend309": {
-    "name_en": "Savings",
-    "name_az": "Savings",
-    "color": "#87898c"
-  },
   "legend31": {
     "name_en": "Fuel costs",
     "name_az": "Yanacaq xərcləri",
     "color": "#888A8C"
-  },
-  "legend310": {
-    "name_en": "Savings",
-    "name_az": "Savings",
-    "color": "#87898c"
-  },
-  "legend311": {
-    "name_en": "Savings",
-    "name_az": "Savings",
-    "color": "#87898c"
   },
   "legend32": {
     "name_en": "Taxes/Subsidies",
