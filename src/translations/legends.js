@@ -1149,10 +1149,65 @@ export default {
     "name_az": "Geothermal",
     "color": "#87898c"
   },
+  "legend305": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend306": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend307": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend308": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend309": {
+    "name_en": "Geothermal",
+    "name_az": "Geothermal",
+    "color": "#87898c"
+  },
   "legend31": {
     "name_en": "Fuel costs",
     "name_az": "Yanacaq xərcləri",
     "color": "#888A8C"
+  },
+  "legend310": {
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#c8cacc"
+  },
+  "legend311": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend312": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend313": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend314": {
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
+  },
+  "legend315": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
   },
   "legend32": {
     "name_en": "Taxes/Subsidies",
