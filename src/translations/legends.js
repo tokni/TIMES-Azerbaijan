@@ -1209,6 +1209,21 @@ export default {
     "name_az": "İstilik",
     "color": "#FFE67F"
   },
+  "legend316": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend317": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend318": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
   "legend32": {
     "name_en": "Taxes/Subsidies",
     "name_az": "Vergilər/Subsidiyalar",
