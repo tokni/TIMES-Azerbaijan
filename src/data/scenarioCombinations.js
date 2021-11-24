@@ -30,12 +30,12 @@ export default {
         "name_en": "CO2Tax",
         "short_description_en": "CO2Tax",
         "ultra_short_description_en": "TAX",
-        "desc_en": "Carbon tax scenario",
+        "desc_en": "Introduces a CO2 tax across all energy sectors",
         "id_noOptions": "scenario2",
         "name_az": "CO2Vergisi",
         "short_description_az": "CO2Vergisi",
         "ultra_short_description_az": "V",
-        "desc_az": "Karbon vergisi ssenarisi"
+        "desc_az": "Introduces a CO2 tax across all energy sectors"
       },
       {
         "id": "scenario3",
