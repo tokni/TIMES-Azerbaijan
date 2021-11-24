@@ -79,7 +79,6 @@ const StackedBarChart = props => {
   const accumulatedDataScenario1 = dataScenario1[0]
   const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
   let diffData = JSON.parse(JSON.stringify(accumulatedDataScenario1))
-  //const unit = dataScenario1[3]
   Object.keys(accumulatedDataScenario2).forEach(indicatorName => {
     accumulatedDataScenario2[indicatorName].forEach((yearValue, index) => {
       diffData[indicatorName][index].total =  diffData[indicatorName][index].total - yearValue.total
@@ -157,7 +156,6 @@ const StackedBarChart = props => {
     }
 
     const HTMLLabel = props => {
-      //console.log("label; ", props)
       const text = props.text.replaceAll('§', '')
       const co2Text = text.replace("CO2", "CO<sub>2</sub>")
       return (
@@ -168,7 +166,6 @@ const StackedBarChart = props => {
     };
   let legends = new Set()
   console.log("accum1: ", accumulatedDataScenario1)
-  //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
     let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
     legends.add({name: key.substring(0,16), color: color})

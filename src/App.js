@@ -7,8 +7,6 @@ import LeftMenu from './leftMenu/LeftMenu'
 import LeftMenuMobile from './leftMenu/LeftMenu.mobile'
 import Tabs from './tabs/Tabs'
 import TabsMobile from './tabs/Tabs.mobile'
-/* import ChartsTab1 from './charts/ChartsTab1' */
-/* import ChartsTab2 from './charts/ChartsTab2' */
 import PageRenderer from './pages/PageRenderer'
 import scenarioCombinations from './data/scenarioCombinations'
 import { withTranslation } from 'react-i18next'
@@ -32,7 +30,6 @@ else
   console.log("something else build")
 
 const ChartsTab1 = React.lazy(() => import('./charts/ChartsTab1')); 
-//const ChartsTab2 = React.lazy(() => import('./charts/ChartsTab2'));
 
 ReactGA.initialize('UA-145591344-2')
 ReactGA.pageview(window.location.pathname + window.location.search)
@@ -69,14 +66,12 @@ const MainSwitch = styled(Switch)`
   align-content: flex-start;
 `
 
-
 export const changeScenario = (name, value) => ({
   [name]: value,
 })
 const getDefaultUnits = () => {
   let ret = {}
   Object.entries(unitSettings).forEach((unitType) => {
-    console.log("default unitType: ", unitType)
     ret[unitType[0]] = {displayName: unitType[0], factor: 1}
   })
   return ret
@@ -86,13 +81,14 @@ const default_countries = ["AZ1", "AZ2", "AZ3"];
 const options = []
 const default_units = getDefaultUnits()
 scenarioCombinations.scenarioCombinations.scenarioOptions
-  .filter(s => !s.opt0 && !s.op1 && !s.opt2 && !s.opt3)
+  .filter(s => !s.opt0 && !s.op1 && !s.opt2 && !s.opt3 && !s.opt4)
   .forEach(s => {
     options[s.id] = {}
     options[s.id]['opt0'] = false
     options[s.id]['opt1'] = false
     options[s.id]['opt2'] = false
     options[s.id]['opt3'] = false
+    options[s.id]['opt4'] = false
   })
 
 export class App extends React.Component {
@@ -118,8 +114,6 @@ export class App extends React.Component {
     location: PropTypes.object,
   }
   selectUnit = (unitType, unit) => {
-    console.log("unitType: ", unitType)
-      console.log("unit: ", unit)
     this.setState(state => {
       return(
         state.unitSelection[unitType] = unit
@@ -134,8 +128,9 @@ export class App extends React.Component {
           state.scenarioSelectionNoOptions +
           (state.options[state.scenarioSelectionNoOptions].opt0 ? '_opt0' : '') +
           (state.options[state.scenarioSelectionNoOptions].opt1 ? '_opt1' : '') +
-          (state.options[state.scenarioSelectionNoOptions].opt2 ? '_ELC' : '') +
-          (state.options[state.scenarioSelectionNoOptions].opt3 ? '_SAC' : ''),
+          (state.options[state.scenarioSelectionNoOptions].opt2 ? '_opt2' : '') +
+          (state.options[state.scenarioSelectionNoOptions].opt3 ? '_opt3' : '') +
+          (state.options[state.scenarioSelectionNoOptions].opt4 ? '_opt4' : ''),
       }
     })
     this.setState(state => {
@@ -143,12 +138,11 @@ export class App extends React.Component {
         scenarioSelection2:
           state.scenarioSelectionNoOptions2 !== ''
             ? state.scenarioSelectionNoOptions2 +
-              (state.options[state.scenarioSelectionNoOptions2].opt0
-                ? '_opt0'
-                : '') +
+              (state.options[state.scenarioSelectionNoOptions2].opt0 ? '_opt0' : '') +
               (state.options[state.scenarioSelectionNoOptions2].opt1 ? '_opt1' : '') +
-              (state.options[state.scenarioSelectionNoOptions2].opt2 ? '_ELC' : '') +
-              (state.options[state.scenarioSelectionNoOptions2].opt3 ? '_SAC' : '')
+              (state.options[state.scenarioSelectionNoOptions2].opt2 ? '_opt2' : '') +
+              (state.options[state.scenarioSelectionNoOptions2].opt3 ? '_opt3' : '') +
+              (state.options[state.scenarioSelectionNoOptions2].opt4 ? '_opt4' : '')
             : '',
       }
     })
@@ -231,8 +225,6 @@ LoginButton = () => {
 };
   
   render() {
-    console.log("state.unitSelection: ", this.state.unitSelection)
-    console.log("from app options: ", this.state.options)
     return (
       <Page>
         <LeftColumn>
@@ -270,20 +262,6 @@ LoginButton = () => {
             <Tabs selectedChartgroup={this.props.location.pathname} />
             <TabsMobile selectedChartgroup={this.props.location.pathname} />
             <MainSwitch>
-              {/* <Route
-                exact
-                path="/"
-                render={() => (
-                  <Suspense fallback={<div>Loading...</div>}>
-                    <ChartsTab1
-                      scenarioSelection={this.state}
-                      closeWelcome={this.CloseWelcomeWidget}
-                      selectedCountries={this.state.selectedCountries}
-                      index={1}
-                    />
-                  </Suspense>
-                )}
-              /> */}
               {
                 createRoutes.map(route => {
                   return(
@@ -306,19 +284,6 @@ LoginButton = () => {
                   />)
                 })
               }
-              {/* <Route
-                path="/tab2"
-                render={() => (
-                  <Suspense fallback={<div>Loading...</div>}>
-                    <ChartsTab2
-                      scenarioSelection={this.state}
-                      closeWelcome={this.CloseWelcomeWidget}
-                      selectedCountries={this.state.selectedCountries}
-                      index={2}
-                    />
-                  </Suspense>
-                )}
-              /> */}
               <Route
                 path="/page1"
                 render={() => {
@@ -366,10 +331,8 @@ LoginButton = () => {
         </RightColumn>}
       </Page> 
     ) 
-      
-    }
-      
-  }
+  } 
+}
 
 
 export default withAuth0(withRouter(withTranslation("common")(App)))

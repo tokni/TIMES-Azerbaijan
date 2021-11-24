@@ -62,7 +62,6 @@ const LanguageButton = styled.button`
   cursor: pointer;
   opacity:  ${props => (props.selected ? "0.8" : "0.6")};
   font-weight: ${props => (props.selected ? "bold" : "normal")};
-  ${'' /* box-shadow: ${props => (props.selected ? "0 3px 5px gray" : "normal")}; */}
 `;
 const LanguageTitle = styled.div`
   margin-right: 5px;
@@ -89,7 +88,6 @@ const UnitItem = styled.button`
   margin: 1px;
   background: ${props => props.checked ? '#3cccfc' : 'inherit'};
   &:hover {
-    ${'' /* transform: scale(1.05) translate(0px); */}
     cursor: pointer;
     background: #3cccfc55;
     background-opacity: 0.5;
@@ -98,18 +96,6 @@ const UnitItem = styled.button`
     background: #3cccfc;
   }
 `
-/* const AppLogo2 = styled.img`
-  padding: 0px;
-  max-width: 180px;
-  border: 0;
-  align-self: center;
-  
-  transition: .2s;
-  &:hover {
-    cursor: pointer;
-    transform: scale(2.3) translate(43px);
-  }
-`; */
 
 const MenuSeparatorLine = styled.hr`
   margin: 0.25em 12px 0.25em 15px;
@@ -206,15 +192,7 @@ const ExternalLink = styled.a`
     text-decoration: underline;
   }
 `;
-/* const HelpLink = styled.a`
-  width: 200px;
-  color: white;
-  text-decoration: none;
-  :hover {
-    text-decoration: underline;
-  }
-color: #666666;
-`; */
+
 const LinkLogo = styled.img`
   padding: 0px;
   max-width: 100px;
@@ -222,6 +200,7 @@ const LinkLogo = styled.img`
   align-self: center;
   transform: scale(0.85);
 `;
+
 const Header = styled.h1`
   font-size: ${props => (props.narrowVersion ? "0.9em" : "1em")};
   padding: ${props => (props.narrowVersion ? "5px" : "0 0 0 10px")};
@@ -230,40 +209,7 @@ const Header = styled.h1`
   align-self: flex-start;
   color: #666666;
 `;
-/* const Citation = styled.div`
-  padding: 5px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: left;
-  text-align: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #666666;
-  font-weight: bold;
-  font-size: 10px;
-`; */
-/* const CitationIntro = styled.div`
-  padding: 5px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: left;
-  text-align: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #666666;
-  font-weight: bold;
-`; */
-/* const HelpText = styled.div`
-  padding: 5px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: left;
-  text-align: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #666666;
-  font-weight: bold;
-`; */
+
 const Disclaimer = styled.div`
   padding: 5px 0;
   display: flex;
@@ -275,6 +221,7 @@ const Disclaimer = styled.div`
   color: #666666;
   font-weight: bold;
 `
+
 const FundedText = styled.div`
 padding: 5px 0;
   display: flex;
@@ -286,24 +233,19 @@ padding: 5px 0;
   color: #666666;
   font-weight: bold;
 `
+
 const LoginContainer = styled.div`
   display: flex;
-  ${'' /* justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw; */}
 ` 
+
 let unitList = []
 let unitRow = []
 Object.entries(unitSettings).forEach(unitType => {
-  //console.log("unitType: ", unitType)
   unitRow = []
   Object.entries(unitType[1]).forEach(unit => {
-    //console.log("--unit: ", unit)
     unitRow.push({displayName: unit[0], factor: unit[1]})
   })
   unitList.push(unitRow)
-  //console.log("unit list: ", unitList)
 })
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
@@ -318,13 +260,6 @@ function ScenarioSelectionMenu(props) {
     console.log("developement build")
   }
   if(process.env.REACT_APP_VERCEL_GIT_COMMIT_REF === "internal") dev = true
-  /* console.log("this.props: ", this.props)
-      console.log("this.props.match.params: ", queryString.parse(this.props.location.search).error_description )
-      let params = queryString.parse(this.props.location.search)
-      if(params.error === "unauthorized") {
-        return(<div>{params.error_description}</div>)
-      }
-      return(<LoginContainer><this.LoginButton>Log in</this.LoginButton></LoginContainer>) */
   return (
     <MenuLayout>
       <MenuHeader>
@@ -407,8 +342,6 @@ function ScenarioSelectionMenu(props) {
               return(<UnitRow key={'unitRow'+i}>
                 {
                   unitRow.map((unitItem) => {
-                   // console.log("unitItem.displayName: ", unitItem.displayName)
-                    //console.log("props.selectedUnits: ", props.selectedUnits)
                     return(
                       <UnitItem
                         key={unitItem.displayName} 
@@ -481,8 +414,6 @@ function ScenarioSelectionMenu(props) {
       <MenuSeparatorLine /></>}
       <MenuFooter>
         <CopyrightNotice>
-          {/* <CitationIntro>{parseHtml(t("general.citation-title"))}</CitationIntro>
-          <Citation>{parseHtml(t("general.citation"))}</Citation> */}
           <Disclaimer>{t('general.disclaimer')}</Disclaimer>
           <ExternalLink href="http://www.eu.com">
               <LinkLogo src="./images/EU LOGO.jpg" alt="EU" data-tip="EU"/>
@@ -503,13 +434,6 @@ function ScenarioSelectionMenu(props) {
               <LinkLogo src="./images/eml.png" alt="Energy Modelling Lab" maxWidth="75px" data-tip="Energy Modelling Lab"/>
             </ExternalLink>
           </CopyrightItem>
-          {/* <CopyrightItem>
-            <HelpText>{parseHtml(t("general.troubleshoot-title"))}
-            </HelpText>
-          </CopyrightItem>
-          <CopyrightItem>
-            <HelpLink href="mailto:kenneth.karlsson@energymodellinglab.com">kenneth.karlsson@ energymodellinglab.com</HelpLink>
-          </CopyrightItem> */}
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>

@@ -21,10 +21,6 @@ const AlertContainer = styled.div`
   padding-left: 15px;
   margin-bottom: 10px;
   margin-right: 15px;
-  ${'' /* border-width: 1px;
-  border-color: blue;
-  border-style: solid; */}
-  ${'' /* background-color: #eff0f9; */}
   background-color: #3cccfc;
   color: white;
   display: flex;
@@ -50,12 +46,10 @@ AlertBody.displayName = "AlertBody";
 const AlertTitle = styled.div`
   font-size: 1.7em;
   font-weight: 600;
-  ${'' /* color: #454547; */}
   color: white;
   max-width: 1090px;
 `;
 const AlertBodyParagraph = styled.div`
-  ${'' /* color: #6F7173; */}
   color: white;
 `;
 AlertBodyParagraph.displayName = "AlertBodyParagraph";
@@ -107,18 +101,6 @@ function Welcome(props) {
       {props.isOpen && props.tab === "tab6" && <AlertBody>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab6.welcome2"))}</AlertBodyParagraph>
         <AlertBodyParagraph>{parseHtml(t("welcome-text.tab6.welcome3"))}</AlertBodyParagraph>
-      </AlertBody>}
-      {props.isOpen && props.tab === "tab7" && <AlertBody>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome2"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome3"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome4"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab7.welcome5"))}</AlertBodyParagraph>
-      </AlertBody>}
-      {props.isOpen && props.tab === "tab8" && <AlertBody>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome2"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome3"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome4"))}</AlertBodyParagraph>
-        <AlertBodyParagraph>{parseHtml(t("welcome-text.tab8.welcome5"))}</AlertBodyParagraph>
       </AlertBody>}
       <CloseWindowIcon
         onClick={() => props.closeWelcome(!props.isOpen)}

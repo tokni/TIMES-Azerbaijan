@@ -43,39 +43,31 @@ const ScenarioSelectionList = props => {
     .filter(s => {
       return (
         !s.opt0 && 
-        !s.opt1 && 
+        !s.opt1 &&  
         !s.opt2 && 
-        !s.opt3) //ensure that each scenario is only listed once
+        !s.opt3 && 
+        !s.opt4) //ensure that each scenario is only listed once
     }).forEach((element)=>{
-      //console.log("element: ", element)
       let newOption = scenarioCombinations.scenarioOptions.find((option) => {
         return(
           option.id_noOptions === element.id_noOptions &&
           option.opt0===props.options[element.id_noOptions].opt0 && 
-          option.opt1===props.options[element.id_noOptions].opt1 /* && 
-          option.opt2===props.options[element.nameNoOptions_en].opt2 && 
-          option.opt3===props.options[element.nameNoOptions_en].opt3 */
+          option.opt1===props.options[element.id_noOptions].opt1 &&
+          option.opt2===props.options[element.id_noOptions].opt2 &&
+          option.opt3===props.options[element.id_noOptions].opt3 && 
+          option.opt4===props.options[element.id_noOptions].opt4
         )
       })
-      //console.log("props.option: ", props.options)
-      //console.log("newOption: ", newOption)
       if (newOption)
         OptionDisplay.push(newOption)
       else
         OptionDisplay.push(element)
     })
-    //console.log("OptionDisplay: ", OptionDisplay)
   let scenarioOptions = OptionDisplay.map((option, i) => {
-      //console.log("ssl option---------------------------: ", option)
       let optionValue = option.id_noOptions
-      //console.log("optionValue---------------------------: ", optionValue)
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
       } else {
-        //console.log('option["desc_" + i18next.language]: ', option["desc_" + i18next.language])
-        //console.log('option["short_description_" + i18next.language]: ', option["short_description_" + i18next.language])
-        //console.log('option["ultra_short_description_" + i18next.language]: ', option["ultra_short_description_" + i18next.language])
-        //console.log("scenarioCombinations: ", scenarioCombinations)
         return (
           <ScenarioOption
             key={option.id}
@@ -86,7 +78,6 @@ const ScenarioSelectionList = props => {
             
           >
             <ScenarioNameContainer
-              //data-tip={t("scenarios", {returnObjects: true})["short-description" + (i + 1)]}
               data-tip={option["desc_" + i18next.language]}
               narrowVersion={narrowVersion}
               onClick={event => {
@@ -95,19 +86,12 @@ const ScenarioSelectionList = props => {
             >
               {narrowVersion === false &&
                 option["short_description_" + i18next.language]
-                //t("scenarios", {returnObjects: true})["name" + (i + 1)]
-                //option.short_description
                 }
               {narrowVersion === true &&
                 option["ultra_short_description_" + i18next.language]
-                //t("scenarios", {returnObjects: true})["ultra-short-description" + (i + 1)]
-                //option.ultra_short_description
                 }
             </ScenarioNameContainer>
             {Object.keys(scenarioCombinations.optionsAvailable).length !== 0 && <IconContainer narrowVersion={narrowVersion}>
-            {
-              //console.log("optionValue -- -- -- ", optionValue)
-            }
               {scenarioCombinations.optionsAvailable[optionValue].opt0 && <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].opt0
@@ -190,6 +174,28 @@ const ScenarioSelectionList = props => {
                     : "")
                 }
                 selected={scenarioSwitches[optionValue].opt3}
+              >
+                <FontAwesomeIcon icon={faUserFriends} />
+                <FontAwesomeIcon icon={faCar} />
+              </Icon>}
+              {scenarioCombinations.optionsAvailable[optionValue].opt4 && <Icon
+                available={
+                  scenarioCombinations.optionsAvailable[optionValue].opt4
+                }
+                onClick={event => {
+                  if (scenarioCombinations.optionsAvailable[optionValue].opt4) {
+                    props.toggleOption(optionValue, "opt4");
+                  }
+                  cancelBubble(event); //prevent onclick for scenario being fired
+                }}
+                data-tip={
+                  t("options.opt4") +
+                  " " +
+                  (!scenarioCombinations.optionsAvailable[optionValue].opt4
+                    ? t("options.unavailable")
+                    : "")
+                }
+                selected={scenarioSwitches[optionValue].opt4}
               >
                 <FontAwesomeIcon icon={faUserFriends} />
                 <FontAwesomeIcon icon={faCar} />
