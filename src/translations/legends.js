@@ -1224,10 +1224,30 @@ export default {
     "name_az": "İstilik",
     "color": "#FFE67F"
   },
+  "legend319": {
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
+  },
   "legend32": {
     "name_en": "Taxes/Subsidies",
     "name_az": "Vergilər/Subsidiyalar",
     "color": "#fdcf41"
+  },
+  "legend320": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend321": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend322": {
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#c8cacc"
   },
   "legend33": {
     "name_en": "Fixed O&M costs",
