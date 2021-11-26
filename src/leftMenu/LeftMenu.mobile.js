@@ -7,6 +7,11 @@ import ScenarioSelectionList from "../scenarioSelection/ScenarioSelectionList";
 import ToggleSwitch from "./ToggleSwitch";
 import { useTranslation } from "react-i18next";
 import MapContainer from "../map/MapContainer";
+import { useAuth0 } from '@auth0/auth0-react';
+import parseHtml from 'html-react-parser';
+import queryString from 'query-string';
+import unitSettings from '../translations/units';
+import i18next from 'i18next';
 
 const MenuLayout = styled.div`
   display: none;
@@ -143,93 +148,230 @@ const CopyrightItem = styled.div`
   margin: 0px 0px 5px 0px;
   text-align: center;
 `;
+const LoginContainer = styled.div`
+  display: flex;
+` 
+const LanguageGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-top: 20px;
+`;
 
+const LanguageButton = styled.button`
+  margin-right: 5px;
+  cursor: pointer;
+  opacity:  ${props => (props.selected ? "0.8" : "0.6")};
+  font-weight: ${props => (props.selected ? "bold" : "normal")};
+`;
+const LanguageTitle = styled.div`
+  margin-right: 5px;
+  margin-left: 15px;
+  color: #212121;
+  opacity: 0.8;
+`
+const UnitContainer = styled.div`
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+`
+const UnitRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+const UnitItem = styled.button`
+  flex: 1;
+  border-radius: 4px;
+  transition: .2s;
+  border: none;
+  margin: 1px;
+  background: ${props => props.checked ? '#3cccfc' : 'inherit'};
+  &:hover {
+    cursor: pointer;
+    background: #3cccfc55;
+    background-opacity: 0.5;
+  }
+  &:active {
+    background: #3cccfc;
+  }
+`
+let unitList = []
+let unitRow = []
+Object.entries(unitSettings).forEach(unitType => {
+  unitRow = []
+  Object.entries(unitType[1]).forEach(unit => {
+    unitRow.push({displayName: unit[0], factor: unit[1]})
+  })
+  unitList.push(unitRow)
+})
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation()
   const location = useLocation()
+  const {user, isAuthenticated, isLoading, loginWithRedirect, logout} = useAuth0()
   const scenarioSelectorVisible = location.pathname.includes("tab") || location.pathname === "/"
+  let params = queryString.parse(location.search)
+  let dev
+  if(process.env.NODE_ENV === 'development'){
+    dev = true
+    console.log("developement build")
+  }
+  console.log("dev: ", dev)
+  console.log("isAuth: ", isAuthenticated)
   return (
     <MenuLayout>
       <MenuHeader>
-        <ExternalLink href="http://www.nordicenergy.org/flagship/project-shift/">
+        <ExternalLink href="https://minenergy.gov.az/">
         <AppLogo
-            src="./images/nordic_energy_research_cropped.png"
-            alt="Nordic Energy Research"
+            src="./images/LOGO AZ_transparent.png"
+            alt="The Ministry of Energy of the Republic of Azerbaijan"
           />
         </ExternalLink>
-        <MenuRoutes>
+        {
+    isAuthenticated && <><div>Logged in as: {user?.name} </div><div><button
+      onClick={() => logout({ returnTo: "http://localhost:3000"})}>{t("general.logout")}</button></div></>
+  }
+  {
+    !isAuthenticated && !isLoading && params.error!=="unauthorized" && <LoginContainer><button onClick={()=> loginWithRedirect()}>{t("general.login")}</button></LoginContainer>}
+      
+      {params.error==="unauthorized" ? <>
+        <div>{t("general." + params?.error_description?.replaceAll(" ", "_").replaceAll(",", "").replaceAll(".", ""))}</div>
+        <div>{t("general.access_contact")}</div>
+        <a href = "mailto:bl@tokni.com">bl@tokni.com</a>
+      </> : <div></div>}
+  {
+    isLoading && <div>{t("general.loading")}</div>
+  }
+        {(dev || isAuthenticated) && <MenuRoutes>
           <MenuItem
-            to="/about"
-            selected={props.selectedChartgroup === "/about"}
+            to="/page1"
+            selected={props.selectedPage === "/page1"}
           >
-            {t("menu.mobile.about")}
+            {parseHtml(t("menu.mobile.page1"))}
           </MenuItem>
           <MenuItem
-            to="/scenarios"
-            selected={props.selectedChartgroup === "/scenarios"}
+            to="/page2"
+            selected={props.selectedPage === "/page2"}
           >
-            {t("menu.mobile.scenarios")}
+            {parseHtml(t("menu.mobile.page2"))}
           </MenuItem>
           <MenuItem
-            to="/findings"
-            selected={props.selectedChartgroup === "/findings"}
+            to="/page3"
+            selected={props.selectedPage === "/page3"}
           >
-            {t("menu.mobile.findings")}
+            {parseHtml(t("menu.mobile.page3"))}
           </MenuItem>
           <MenuItem
-            to="/model"
-            selected={props.selectedChartgroup === "/model"}
+            to="/page4"
+            selected={props.selectedPage === "/page4"}
           >
-            {t("menu.desktop.model")}
+            {parseHtml(t("menu.mobile.page4"))}
           </MenuItem>
           <MenuItem
-            to="/historical"
-            selected={props.selectedChartgroup === "/historical"}
+            to="/page5"
+            selected={props.selectedPage === "/page5"}
           >
-            {t("menu.desktop.historical")}
+            {parseHtml(t("menu.mobile.page5"))}
           </MenuItem>
-        </MenuRoutes>
+        </MenuRoutes>}
       </MenuHeader>
       <MenuSeparatorLine />
-      <Header narrowVersion={true}> {t("general.countries")}</Header>
-      <MapContainer
-        narrowVersion={true}
-        selectedCountries={props.selectedCountries}
-        selectCountry={props.selectCountry}
-      />
       <MenuSeparatorLine />
-      {location.pathname !== "/tab9" && location.pathname !== "/tab10" && scenarioSelectorVisible &&<><ScenarioSelection>
+          <LanguageTitle>{parseHtml(t("general.change-language"))}</LanguageTitle>
+          <LanguageGroup>
+            <LanguageButton
+              selected={i18next.languages[0] === "az"}
+              onClick={() => i18next.changeLanguage("az")}
+            >
+              AZ
+            </LanguageButton>
+            <LanguageButton
+              selected={i18next.languages[0] === "en"}
+              onClick={() => i18next.changeLanguage("en")}
+            >
+              EN
+            </LanguageButton>
+          </LanguageGroup>
+        <MenuSeparatorLine />
+        {(dev || isAuthenticated) && <><LanguageTitle>{parseHtml(t("general.change-unit"))}</LanguageTitle>
+          <UnitContainer>
+            {unitList.map((unitRow, i) => {
+              return(<UnitRow key={'unitRow'+i}>
+                {
+                  unitRow.map((unitItem) => {
+                    console.log("unitRow: ", unitRow)
+                    console.log("unitItem: ", unitItem)
+                    return(
+                      <UnitItem
+                        key={unitItem.displayName} 
+                        onClick={() => props.selectUnit(unitRow[0].displayName, unitItem)}
+                        checked={unitItem.displayName === props.selectedUnits[unitRow[0].displayName].displayName}
+                      >
+                        {unitItem.displayName}
+                      </UnitItem>
+                    )
+                  })
+                }
+              </UnitRow>)
+            })}
+          </UnitContainer>
+          <MenuSeparatorLine /></>}
+      <Header narrowVersion={true}> {t("general.countries")}</Header>
+      {(dev || isAuthenticated) && <>
+        <MenuSeparatorLine />
+        <Header narrowVersion={false}>{t("general.countries")}</Header>
+          <MapContainer
+            selectedCountries={props.selectedCountries}
+            selectCountry={props.selectCountry}
+            narrowVersion={false}
+          />
+        <MenuSeparatorLine />
+      </>}
+      {(dev || isAuthenticated) && scenarioSelectorVisible &&
+      <>
+      <ScenarioSelection>
         <ScenarioSelectionList
           updateScenarioSelection={props.updateScenarioSelection}
           name="scenarioSelection"
           selectedValue={props.scenarioSelection.scenarioSelectionNoOptions}
           selectedValue2={props.scenarioSelection.scenarioSelectionNoOptions2}
           scenarioCombinations={props.scenarioCombinations}
-          dimensionTitle={t("general.scenarios")}
+          dimensionTitle={parseHtml(t("general.scenarios"))}
           narrowVersion={true}
           options={props.options}
           toggleOption={props.toggleOption}
+          scenarioSelection={props.scenarioSelection}
         />
       </ScenarioSelection>
-      <MenuSeparatorLine />
-      <ToggleDifference onClick={e => props.toggleDifference(e)}>
+      {location.pathname !== "/tab8" && <><MenuSeparatorLine />
+      
+      {(dev || isAuthenticated) && <ToggleDifference
+        onClick={e => {
+          if (props.scenarioSelection.scenarioSelection2 !== "") {
+            props.toggleDifference(e);
+          }
+        }}
+      > 
         <ToggleSwitchText
           singleMode={props.scenarioSelection.scenarioSelection2 === ""}
           selected={props.scenarioSelection.showDifference}
         >
-          {t("general.scenario-difference")}
+          {parseHtml(t("general.scenario-difference"))}
         </ToggleSwitchText>
         <ToggleSwitch
-          dimmed={props.scenarioSelection.scenarioSelection2 === ""}
+          available={props.scenarioSelection.scenarioSelection2 !== ""}
           checked={props.scenarioSelection.showDifference}
         />
-      </ToggleDifference>
-      <ScenarioDifferenceText
+      </ToggleDifference>}</>
+      }
+      {props.scenarioSelection.scenarioSelection2 !== "" && <ScenarioDifferenceText
         singleMode={props.scenarioSelection.scenarioSelection2 === ""}
         selected={props.scenarioSelection.showDifference}
       >
-        {t("general.red-minus-green")}
-      </ScenarioDifferenceText></>}
+        {parseHtml(t("general.red-minus-green"))}
+      </ScenarioDifferenceText>}
+      <MenuSeparatorLine /></>}
       <MenuFooter>
         <CopyrightNotice>
           <Header> {t("general.developed-by")}</Header>

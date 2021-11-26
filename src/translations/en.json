@@ -39,30 +39,7 @@
     "logout": "Log out",
     "loading": "Loading ..."
   },
-  "tabs": {
-    "tab1": "Main Results",
-    "tab2": "Tab2",
-    "tab3": "Power & DH",
-    "tab4": "Heavy Industry",
-    "tab5": "Other Sectors",
-    "tab6": "Residential",
-    "tab7": "Transport",
-    "tab8": "KPIs",
-    "tab9": "Historical Indicators",
-    "tab10": "Historical Data",
-	"mobile": {
-      "tab1": "Main Results",
-      "tab2": "Tab2",
-      "tab3": "Power & DH",
-      "tab4": "Heavy Industry",
-      "tab5": "Other Sectors",
-      "tab6": "Residential",
-      "tab7": "Transport",
-      "tab8": "KPIs",
-	    "tab9": "Hist Ind",
-      "tab10": "Hist Data"
-    }
-  },
+  
   "scenarios": {
     "selectedScenario-bar-and-line": "LEFT BAR OR FULL LINE IN CHART",
     "selectedScenario2-bar-and-line": "RIGHT BAR OR DASHED LINE IN CHART",

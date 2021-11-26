@@ -254,6 +254,8 @@ LoginButton = () => {
               toggleOption={this.ToggleOption}
               selectedCountries={this.state.selectedCountries}
               selectCountry={this.selectCountry}
+              selectedUnits={this.state.unitSelection}
+              selectUnit={this.selectUnit}
             />
           </Content>
         </LeftColumn>
