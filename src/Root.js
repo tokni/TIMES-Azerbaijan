@@ -4,18 +4,29 @@ import App from './App'
 import 'typeface-roboto'
 import { createGlobalStyle } from "styled-components"
 import { Auth0Provider } from "@auth0/auth0-react"
+import getRedirectURI from './getRedirectURI'
+
+const masterIsOpen = false
 
 export default class Root extends Component {
+  
   render() {
-    return (
+    if (masterIsOpen) {
+      return (
+        <Router>
+          <App /> 
+          <GlobalStyle />
+        </Router>
+      )
+    } else return (
       <Auth0Provider
         domain="times-az.eu.auth0.com"
         clientId="5RpAOZpRIdNCf8oHfu77DhHvzpKwH8FF"
-        redirectUri={process.env.NODE_ENV === 'development' ? "https://times-azerbaijan.vercel.app/" : "https://develop--times-azerbaijan.vercel.app/"}
+        redirectUri={getRedirectURI()}
         maxAge={1}
       >
         <Router>
-          <App />
+          <App /> 
           <GlobalStyle />
         </Router>
       </Auth0Provider>

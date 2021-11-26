@@ -944,20 +944,175 @@ export default {
     "name_az": "Nəqliyyat",
     "color": "#006eb6"
   },
+  "legend269": {
+    "name_en": "Hydrogen",
+    "name_az": "Hidrogen",
+    "color": "#ef403b"
+  },
   "legend27": {
     "name_en": "Heat",
     "name_az": "İstilik",
     "color": "#FFE67F"
+  },
+  "legend270": {
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
+  },
+  "legend271": {
+    "name_en": "Biofuels",
+    "name_az": "Bioyanacaqlar",
+    "color": "#ACCC83"
+  },
+  "legend272": {
+    "name_en": "SNG",
+    "name_az": "SNG",
+    "color": "#D8E8C5"
+  },
+  "legend273": {
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
+  },
+  "legend274": {
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#c8cacc"
+  },
+  "legend275": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend276": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend277": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend278": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend279": {
+    "name_en": "Electro fuels",
+    "name_az": "Elektro yanacaqlar",
+    "color": "#adcff1"
   },
   "legend28": {
     "name_en": "LPG",
     "name_az": "LPG",
     "color": "#ecedee"
   },
+  "legend280": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend281": {
+    "name_en": "Electro fuels",
+    "name_az": "Elektro yanacaqlar",
+    "color": "#adcff1"
+  },
+  "legend282": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend283": {
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#c8cacc"
+  },
+  "legend284": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend285": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend286": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend287": {
+    "name_en": "Biogas",
+    "name_az": "Bioqaz",
+    "color": "#ACCC83"
+  },
+  "legend288": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend289": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
   "legend29": {
     "name_en": "Natural gas",
     "name_az": "Təbii qaz",
     "color": "#696a6c"
+  },
+  "legend290": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend291": {
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#c8cacc"
+  },
+  "legend292": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend293": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend294": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend295": {
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
+  },
+  "legend296": {
+    "name_en": "Ammonia",
+    "name_az": "Ammonia",
+    "color": "#55A946"
+  },
+  "legend297": {
+    "name_en": "Ambient Heat",
+    "name_az": "Ambient Heat",
+    "color": "#adcff1"
+  },
+  "legend298": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend299": {
+    "name_en": "Steam",
+    "name_az": "Steam",
+    "color": "#d9d9ee"
   },
   "legend3": {
     "name_en": "Diesel",
@@ -969,15 +1124,130 @@ export default {
     "name_az": "Dəyişən İ&TX xərcləri",
     "color": "#006eb6"
   },
+  "legend300": {
+    "name_en": "Coal",
+    "name_az": "Kömür",
+    "color": "#000000"
+  },
+  "legend301": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend302": {
+    "name_en": "Bio-SNG",
+    "name_az": "Bio-SNG",
+    "color": "#55A946"
+  },
+  "legend303": {
+    "name_en": "Coal",
+    "name_az": "Kömür",
+    "color": "#000000"
+  },
+  "legend304": {
+    "name_en": "Geothermal",
+    "name_az": "Geothermal",
+    "color": "#87898c"
+  },
+  "legend305": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend306": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend307": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend308": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend309": {
+    "name_en": "Geothermal",
+    "name_az": "Geothermal",
+    "color": "#87898c"
+  },
   "legend31": {
     "name_en": "Fuel costs",
     "name_az": "Yanacaq xərcləri",
     "color": "#888A8C"
   },
+  "legend310": {
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#c8cacc"
+  },
+  "legend311": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend312": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend313": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend314": {
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
+  },
+  "legend315": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend316": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend317": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend318": {
+    "name_en": "Heat",
+    "name_az": "İstilik",
+    "color": "#FFE67F"
+  },
+  "legend319": {
+    "name_en": "LPG",
+    "name_az": "LPG",
+    "color": "#ecedee"
+  },
   "legend32": {
     "name_en": "Taxes/Subsidies",
     "name_az": "Vergilər/Subsidiyalar",
     "color": "#fdcf41"
+  },
+  "legend320": {
+    "name_en": "Diesel",
+    "name_az": "Dizel",
+    "color": "#888A8C"
+  },
+  "legend321": {
+    "name_en": "Electricity",
+    "name_az": "Elektrik enerjisi",
+    "color": "#006eb6"
+  },
+  "legend322": {
+    "name_en": "Gasoline",
+    "name_az": "Benzin",
+    "color": "#c8cacc"
   },
   "legend33": {
     "name_en": "Fixed O&M costs",

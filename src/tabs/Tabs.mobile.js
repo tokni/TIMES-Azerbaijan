@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 import { Link } from 'react-router-dom'
-import { useTranslation } from "react-i18next";
+import tabList from "../translations/tabs"
+import i18next from 'i18next';
 
 const TabLayout = styled.div`
   display: none;
@@ -45,22 +46,23 @@ const TabItem  = styled(Link)`
   `;
   TabItem.displayName = 'TabItem';
 
+const createTabs = Object.entries(tabList)
 function Tabs(props) {
-  const { t } = useTranslation();
-  
   return (
-      <TabLayout>
-          <TabItem to='/' selected={props.selectedChartgroup==='/'}>{t("tabs.mobile.tab1")}</TabItem>
-          <TabItem to='/tab2' selected={props.selectedChartgroup==='/tab2'}>{t("tabs.mobile.tab2")}</TabItem>
-          <TabItem to='/tab3' selected={props.selectedChartgroup==='/tab3'}>{t("tabs.mobile.tab3")}</TabItem>
-          <TabItem to='/tab4' selected={props.selectedChartgroup==='/tab4'}>{t("tabs.mobile.tab4")}</TabItem>
-          <TabItem to='/tab5' selected={props.selectedChartgroup==='/tab5'}>{t("tabs.mobile.tab5")}</TabItem>
-          <TabItem to='/tab6' selected={props.selectedChartgroup==='/tab6'}>{t("tabs.mobile.tab6")}</TabItem>
-          <TabItem to='/tab7' selected={props.selectedChartgroup==='/tab7'}>{t("tabs.mobile.tab7")}</TabItem>
-          <TabItem to="/tab8" selected={props.selectedChartgroup==="/tab8"}>{t("tabs.mobile.tab8")}</TabItem>
-          <TabItem historical="true" to='/tab9' selected={props.selectedChartgroup==='/tab9'}>{t("tabs.mobile.tab9")}</TabItem>
-          <TabItem historical="true" to="/tab10" selected={props.selectedChartgroup === "/tab10"}>{t("tabs.tab10")}</TabItem>
-      </TabLayout>
+    <TabLayout>
+    {
+      createTabs.map((tab)=>{
+        return(
+          <TabItem
+            key={tab[0]} 
+            to={tab[0] === 'tab1' ? '/' : '/' + tab[0]} 
+            selected={props.selectedChartgroup === '/' + (tab[0]==='tab1' ? '' : tab[0])}
+          >
+            {tab[1]["name_" + i18next.language]}  
+          </TabItem>)
+      })
+    }
+  </TabLayout>
     );
   }
 

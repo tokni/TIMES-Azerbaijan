@@ -17,9 +17,7 @@ import {createAccumulatedData} from './Tools'
 import {colorNER} from './chartColors'
 import periods from './../data/years'
 import { CSVLink } from 'react-csv'
-import CSV_citation from "../data/citation"
 import { useTranslation } from 'react-i18next';
-//import legendNames from '../translations/legends'
 import i18next from 'i18next';
 import charts from '../translations/charts'
 import legendsForColor from '../translations/legends'
@@ -56,7 +54,6 @@ const StackedBarChart = props => {
   const combinedChart = false //props.combinedChart
   const unit = props.label
   const unitFactor = props.unitFactor
-  //console.log("props label: ", props.label)
   let maxY2 = 1
   
   const dataScenario1 = createAccumulatedData(stackedBar, scenario, false, chartName, selectedCountries, unitFactor)
@@ -71,17 +68,12 @@ const StackedBarChart = props => {
   let maxY = -Infinity
   let minY = Infinity
   let base = 0
-  //console.log("dataScenario1: ", dataScenario1)
-  //console.log("dataScenario2: ", dataScenario2)
   Object.keys(totalYearValuesPositiveScenario1).forEach(year => {
     maxY = Math.max(maxY, totalYearValuesPositiveScenario1[year],
       scenario2 ? totalYearValuesPositiveScenario2[year] : -Infinity)
     minY = Math.min(minY, totalYearValuesNegativeScenario1[year],
       scenario2 ? totalYearValuesNegativeScenario2[year] : Infinity)
   })
-  //console.log("--------------------------------------------------chartName: ", chartName)
-  //console.log("a maxY: ", maxY)
-  //console.log("a minY: ", minY)
   let ttt = -1000
   let i = -50
   let range = [2,4,6,8,10]
@@ -91,33 +83,21 @@ const StackedBarChart = props => {
       
     } else {
       ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
-      //console.log("i pos ttt: ", ttt)
     }
-    //console.log("ttt: ", ttt)
-    //ttt = range[Math.abs(i%5)]*Math.pow(range[4], Math.floor(i/5))
     i++
   }
-  //console.log("total ttt: ", ttt)
-  //console.log("maxY: ", maxY)
   maxY = ttt
   let u=0
   let j=-30
   while(u > minY && j < 40) {
     if (j < 0) {
       u = -range[(j+30)%5]*Math.pow(range[4], Math.floor(j/5))
-      //console.log("range[Math.abs((j+20)%5)]: ", range[Math.abs((j+20)%5)])
-      //console.log("Math.pow(range[4], Math.floor(j/5)): ", Math.pow(range[4], Math.floor(j/5)))
-      //console.log("Math.floor(j/5): ", Math.floor(j/5))
-      //console.log("i neg u: ", u)
     } else {
       u = -range[Math.abs(j%5)]*Math.pow(range[4], Math.floor(j/5))
-      //console.log("i pos u: ", u)
     }
     
     j++
   }
-  //console.log("a maxY: ", maxY)
-  //console.log("a minY: ", minY)
   minY = u
 
   //base is used in tickFormat
@@ -126,16 +106,10 @@ const StackedBarChart = props => {
   else 
     base = maxY
 if (base < 0.004) base = 0.004
-//console.log("base: ", base)
-//console.log("floor log base: ", Math.floor(Math.log10(base)))
 let sig_digits = Math.floor(Math.log10(base))
 if (sig_digits > -1) sig_digits = -1
 Math.pow(-sig_digits, 10)
-//console.log("Math.pow(-sig_digits, 10): ", Math.pow(10, -sig_digits))
-  //let legendsOld = new Set()
   let legends = new Set()
-  //console.log("accum1: ", accumulatedDataScenario1)
-  //console.log("legendNames: ", legendNames)
   Object.keys(accumulatedDataScenario1).forEach((key) => {
     let color = Object.values(legendsForColor).find((legend)=>(legend['name_' + i18next.language] === key)).color
     legends.add({name: key.substring(0,16), color: color})
@@ -144,23 +118,6 @@ Math.pow(-sig_digits, 10)
   legends.forEach(legend => {
     legendColor[legend.name] = legend.color
   })
-  //console.log("legends -- -- ", legendColor)
-  /* Object.keys(accumulatedDataScenario1).forEach((key) => {
-    legends.add(key.substring(0,16))
-  }) */
-  /* stackedBar.data.scenarios
-  .find(o => o.scenario.toLowerCase() === scenario.toLowerCase())
-  .indicators.find(o => o.indicator === chartName).regions.forEach((reg)=>{
-    reg.indicatorGroups.forEach((group)=>{
-      legends.add(group.indicatorGroup)
-    })
-  }) */
-  //console.log("legends tab1 chart1: ", Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})))
-  /* Object.entries(t("legends." + props.tab + "." + props.chart, { returnObjects: true})).forEach((entry) => {
-    legendsOld.add(entry[1])
-  }) */
-  
-  //console.log("leg: ", legends)
   const defTick = [0, 0.25, 0.5, 0.75]
   const getTickValues = () => {
     let ret = []
@@ -185,14 +142,11 @@ Math.pow(-sig_digits, 10)
   }
 const getCSVData = (accumulatedData1, scenarioName1, accumulatedData2, scenarioName2, unit) => {
   let ret = []
-  //console.log("accu1: ", accumulatedData1)
   let scenarioTrans = scenarioCombinations.scenarioCombinations.scenarioOptions.find(
     (option)=>{
-      //console.log("option: ", option)
       return((option.id.toLowerCase() === scenarioName1.toLowerCase()))
       }
     )['short_description_' + i18next.language]
-  //console.log("trans: ", scenarioTrans)
   Object.entries(accumulatedData1).forEach((indicatorGroup) => {
 
     indicatorGroup[1].forEach((item)=>{
@@ -204,7 +158,6 @@ const getCSVData = (accumulatedData1, scenarioName1, accumulatedData2, scenarioN
       ret.push({scenario: scenarioName2, indicatorGroup: indicatorGroup[0], year: item.year, value: item.total, unit: unit})
     })
   })
-  ret.push({citation: CSV_citation})
   return ret
 }
 const HTMLYAxisLabel = props => {
@@ -217,7 +170,6 @@ const HTMLYAxisLabel = props => {
   );
 };
 const HTMLLabel = props => {
-  //console.log("label; ", props)
   const text = props.text.replaceAll('§', '')
   const co2Text = text.replace("CO2", "CO<sub>2</sub>")
   return (
@@ -233,10 +185,7 @@ getTickValues().forEach((val) => {
   if (val < 0) tickValueNumberOfNegativeElements++
 })
 let t1 = tickValueNumberOfNegativeElements === 0 ? 0 : tickValueNumberOfNegativeElements/tickValueLength*550 - topPadding/2
-//console.log("legendNames: ", legendNames)
-//console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)
 if (Object.keys(accumulatedDataScenario1).length === 0) 
-//console.log("accumulatedDataScenario1Empty: ", accumulatedDataScenario1)
 return(<div>No DAta yet</div>)
   return (
     <ChartContainer>
@@ -295,9 +244,7 @@ return(<div>No DAta yet</div>)
         
         <VictoryGroup offset={15} style={{ data: { width: 15 } }}>
           <VictoryStack>
-            {console.log("accumulatedDataScenario1: ", accumulatedDataScenario1)}
             {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => {
-            //console.log("chartGroupName: ", chartGroupName)
             return(
                 <VictoryBar
                   key={chartGroupName}
@@ -306,7 +253,6 @@ return(<div>No DAta yet</div>)
                       return({
                       ...chartGroupValue,
                       label:
-                        //legendNames[chartGroupName]["name_" + i18next.language] +
                         chartGroupName + 
                         ': ' +
                         (props.YPercentage
@@ -335,7 +281,6 @@ return(<div>No DAta yet</div>)
           {scenario2 !== '' && (
             <VictoryStack>
               {Object.keys(accumulatedDataScenario2).map((chartGroupName, i) => {
-                //console.log("chartGroupName 2: ", chartGroupName)
                 return(
                   <VictoryBar
                     key={chartGroupName}
@@ -343,7 +288,6 @@ return(<div>No DAta yet</div>)
                       chartGroupValue => ({
                         ...chartGroupValue,
                         label:
-                          //legendNames[chartGroupName]["name_" + i18next.language] +
                           chartGroupName + 
                           ': ' +
                           (props.YPercentage
