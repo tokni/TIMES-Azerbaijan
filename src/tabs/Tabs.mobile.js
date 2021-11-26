@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 import { Link } from 'react-router-dom'
-import { useTranslation } from "react-i18next";
 import tabList from "../translations/tabs"
 import i18next from 'i18next';
 
@@ -49,8 +48,6 @@ const TabItem  = styled(Link)`
 
 const createTabs = Object.entries(tabList)
 function Tabs(props) {
-  const { t } = useTranslation();
-  
   return (
     <TabLayout>
     {
